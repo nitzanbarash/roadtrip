@@ -1,0 +1,1284 @@
+{
+ "events": [
+  {
+   "name_en": "Rockefeller Center Christmas Tree Lighting",
+   "name_he": "הדלקת עץ חג המולד ברוקפלר סנטר",
+   "state": "New York",
+   "city": "New York",
+   "venue": "Rockefeller Plaza, Midtown Manhattan",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "confirmed": true,
+   "type": "holiday",
+   "segment_id": "nyc",
+   "why": "הטקס הכי מפורסם בעולם: מדליקים את העץ הענק עם הופעות חיות ושידור בטלוויזיה. מכאן עונת החגים בעיר מתחילה רשמית.",
+   "tip": "חינם אבל צפוף בטירוף: אנשים תופסים מקום כבר בצהריים והרחובות נסגרים מוקדם. ההדלקה קצת לפני 22:00. אם לא בא לכם על הדוחק – העץ דולק כל ערב אחרי זה.",
+   "cost": "חינם",
+   "url": "https://www.rockefellercenter.com/",
+   "coords": [
+    40.7587,
+    -73.9787
+   ]
+  },
+  {
+   "name_en": "Z100's Jingle Ball 2026",
+   "name_he": "ג'ינגל בול של Z100",
+   "state": "New York",
+   "city": "New York",
+   "venue": "Madison Square Garden",
+   "start": "2026-12-11",
+   "end": "2026-12-11",
+   "confirmed": true,
+   "type": "concert",
+   "segment_id": "nyc",
+   "why": "קונצרט הפופ הגדול של החגים במדיסון סקוור גארדן – הרבה כוכבים בערב אחד (השנה Charlie Puth, Teddy Swims, Hilary Duff, Alex Warren ועוד).",
+   "tip": "מתחיל ב-19:00. כרטיסים נגמרים מהר ובאתרי יד שנייה המחיר קופץ – לקנות כמה שיותר מוקדם.",
+   "cost": "$100+ (משתנה)",
+   "url": "https://z100.iheart.com/featured/z100-jingle-ball/",
+   "coords": [
+    40.7505,
+    -73.9934
+   ]
+  },
+  {
+   "name_en": "Doja Cat – Tour Ma Vie World Tour",
+   "name_he": "דוג'ה קאט במדיסון סקוור גארדן",
+   "state": "New York",
+   "city": "New York",
+   "venue": "Madison Square Garden",
+   "start": "2026-12-01",
+   "end": "2026-12-01",
+   "confirmed": true,
+   "type": "concert",
+   "segment_id": "nyc",
+   "why": "הופעה של אחת הכוכבות הכי גדולות בפופ והראפ, עם Latto כאורחת. הפקה גדולה באולם הכי מפורסם בעיר.",
+   "tip": "19:30. רלוונטי רק אם הם כבר בניו יורק ב-1 בדצמבר. כרטיסים באתר MSG / Ticketmaster.",
+   "cost": "כרטיסים מ-$80 בערך",
+   "url": "https://www.msg.com/events-tickets/doja-cat-madison-square-garden-december-2026/3B00633A23FD3029",
+   "coords": [
+    40.7505,
+    -73.9934
+   ]
+  },
+  {
+   "name_en": "SantaCon NYC",
+   "name_he": "סנטהקון ניו יורק",
+   "state": "New York",
+   "city": "New York",
+   "venue": "Bars across Midtown Manhattan",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "confirmed": false,
+   "type": "festival",
+   "segment_id": "nyc",
+   "why": "אלפי אנשים מחופשים לסנטה (ולאלפים) עוברים בין ברים במנהטן. מטורף, צבעוני ומאוד שיכור.",
+   "tip": "תאריך משוער לפי הדפוס (השבת השנייה של דצמבר) – לבדוק באתר קרוב למועד. מתחיל בבוקר ונהיה פרוע אחר הצהריים; יש ברים שלא מכניסים סנטות.",
+   "cost": "חינם להסתובב, ברים בתשלום",
+   "url": "https://santacon.nyc/",
+   "coords": [
+    40.758,
+    -73.9855
+   ]
+  },
+  {
+   "name_en": "World's Largest Menorah Lighting (Grand Army Plaza)",
+   "name_he": "הדלקת החנוכייה הגדולה בעולם",
+   "state": "New York",
+   "city": "New York",
+   "venue": "Grand Army Plaza, Fifth Avenue & 59th Street",
+   "start": "2026-12-04",
+   "end": "2026-12-11",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "nyc",
+   "why": "חנוכייה בגובה 11 מטר שעיצב יעקב אגם, בשדרה החמישית מול סנטרל פארק. מדליקים כל ערב של חנוכה עם מוזיקה, ולפעמים מחלקים לביבות.",
+   "tip": "חנוכה 2026: מהערב של 4 בדצמבר. שעות ההדלקה עוד לא פורסמו (בשישי מוקדם, בשבת אחרי צאת השבת) – לבדוק קרוב למועד.",
+   "cost": "חינם",
+   "url": "https://www.iloveny.com/thebeat/post/worlds-largest-menorah-to-rise-in-nyc/",
+   "coords": [
+    40.7646,
+    -73.973
+   ]
+  },
+  {
+   "name_en": "Holiday Nostalgia Rides (vintage subway train)",
+   "name_he": "רכבת התחתית הנוסטלגית של החגים",
+   "state": "New York",
+   "city": "New York",
+   "venue": "2 Av–Houston St station (F) / 96 St–2 Av (Q)",
+   "start": "2026-12-06",
+   "end": "2026-12-27",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "nyc",
+   "why": "קרונות רכבת תחתית ישנים משנות ה-30 נוסעים בימי ראשון בדצמבר על קווי F ו-Q. הרבה נוסעים מתלבשים וינטג' – חוויה חמודה וזולה.",
+   "tip": "תאריכים משוערים לפי הדפוס (כל יום ראשון בדצמבר, 10:00–17:00) – לוח 2026 עוד לא פורסם. עולים עם כרטיס רגיל.",
+   "cost": "מחיר נסיעה רגיל (~$3)",
+   "url": "https://www.nytransitmuseum.org/holiday-nostalgia-rides/",
+   "coords": [
+    40.7233,
+    -73.9899
+   ]
+  },
+  {
+   "name_en": "Grand Central Holiday Fair",
+   "name_he": "יריד החג בגרנד סנטרל",
+   "state": "New York",
+   "city": "New York",
+   "venue": "Vanderbilt Hall, Grand Central Terminal",
+   "start": "2026-11-09",
+   "end": "2026-12-24",
+   "confirmed": true,
+   "type": "market",
+   "segment_id": "nyc",
+   "why": "שוק חג מקורה באולם ונדרבילט המפואר, עם כ-40 אמנים ויוצרים מקומיים. חם ונעים גם כשקפוא בחוץ.",
+   "tip": "כניסה חופשית. הכי רגוע בבוקר של יום חול. אפשר לשלב עם מופע האורות על התקרה של האולם הראשי.",
+   "cost": "חינם",
+   "url": "https://grandcentralterminal.com/holiday-fair/",
+   "coords": [
+    40.7527,
+    -73.9772
+   ]
+  },
+  {
+   "name_en": "Army–Navy Game 2026",
+   "name_he": "משחק הפוטבול צבא–צי (Army–Navy)",
+   "state": "New Jersey",
+   "city": "East Rutherford",
+   "venue": "MetLife Stadium",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "nyc",
+   "why": "היריבות הכי מסורתית בפוטבול האמריקאי: צוערי וסט פוינט נגד האקדמיה הימית. לפני המשחק כל הצוערים צועדים על המגרש ויש טיסות מטוסי קרב.",
+   "tip": "באצטדיון MetLife בניו ג'רזי, כחצי שעה ממנהטן. 15:00 ב-CBS. להגיע מוקדם בשביל צעדת הצוערים. כרטיסים מראש.",
+   "cost": "$100+",
+   "url": "https://www.westpoint.edu/about/academy-events/army-navy-game-2026",
+   "coords": [
+    40.8135,
+    -74.0745
+   ]
+  },
+  {
+   "name_en": "Christkindlmarkt Bethlehem",
+   "name_he": "שוק חג המולד הגרמני בבית לחם, פנסילבניה",
+   "state": "Pennsylvania",
+   "city": "Bethlehem",
+   "venue": "PNC Plaza at SteelStacks",
+   "start": "2026-11-13",
+   "end": "2026-12-19",
+   "confirmed": true,
+   "type": "market",
+   "segment_id": "mid_atlantic",
+   "why": "שוק חג גרמני קלאסי בעיר שמכונה 'עיר חג המולד של אמריקה', מתחת לתנורי הפלדה הענקיים של SteelStacks. אומנים, אוכל גרמני וגלוויין.",
+   "tip": "פתוח רק בחלק מהימים (בדצמבר: 2–5, 9–12, 16–19). כשעה וחצי מפילדלפיה. כרטיסים באתר; חניה חינם ליד.",
+   "cost": "כניסה בתשלום (בערך $10–15)",
+   "url": "https://www.steelstacks.org/festivals/christkindlmarkt-bethlehem",
+   "coords": [
+    40.6147,
+    -75.3657
+   ]
+  },
+  {
+   "name_en": "Electrical Spectacle Holiday Light Show at Franklin Square",
+   "name_he": "מופע האורות בכיכר פרנקלין",
+   "state": "Pennsylvania",
+   "city": "Philadelphia",
+   "venue": "Franklin Square",
+   "start": "2026-11-19",
+   "end": "2027-01-03",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "mid_atlantic",
+   "why": "מופע אורות חינמי עם מוזיקה בהשראת הניסוי של בנג'מין פרנקלין עם העפיפון והמפתח. כל חצי שעה בערב, בכיכר היסטורית ליד העיר העתיקה.",
+   "tip": "תאריכים משוערים לפי הדפוס (מאמצע נובמבר עד תחילת ינואר, 17:00–21:00) – לא אושר ל-2026. 10 דקות הליכה מפעמון החירות.",
+   "cost": "חינם",
+   "url": "https://www.visitphilly.com/things-to-do/events/electrical-spectacle-holiday-light-show-at-franklin-square/",
+   "coords": [
+    39.9555,
+    -75.1504
+   ]
+  },
+  {
+   "name_en": "Mummers Parade",
+   "name_he": "מצעד המאמרס",
+   "state": "Pennsylvania",
+   "city": "Philadelphia",
+   "venue": "Broad Street & City Hall",
+   "start": "2027-01-01",
+   "end": "2027-01-01",
+   "confirmed": false,
+   "type": "parade",
+   "segment_id": "mid_atlantic",
+   "why": "המצעד העתיק בארה\"ב (מאז 1901): אלפי משתתפים בתחפושות ענקיות של נוצות ופאייטים, להקות כלי מיתר ומופעים לאורך ברוד סטריט כל היום.",
+   "tip": "תמיד ב-1 בינואר, אבל פרטי 2027 עוד לא פורסמו. הם יהיו רחוק מפילדלפיה אז – רק לידיעה (משודר בטלוויזיה).",
+   "cost": "חינם",
+   "url": "https://www.philadelphiamummersparade.com/",
+   "coords": [
+    39.9526,
+    -75.1635
+   ]
+  },
+  {
+   "name_en": "Pennsylvania Farm Show",
+   "name_he": "תערוכת החקלאות של פנסילבניה",
+   "state": "Pennsylvania",
+   "city": "Harrisburg",
+   "venue": "Pennsylvania Farm Show Complex & Expo Center",
+   "start": "2027-01-09",
+   "end": "2027-01-16",
+   "confirmed": false,
+   "type": "fair",
+   "segment_id": "mid_atlantic",
+   "why": "התערוכה החקלאית המקורה הגדולה בארה\"ב: אלפי חיות, פסל חמאה ענק ואוכל של חוות (המילקשייק שלהם מפורסם).",
+   "tip": "תאריכים משוערים לפי הדפוס (שבוע בתחילת ינואר) – לא אושר. הם כבר יהיו במערב, רק לידיעה.",
+   "cost": "כניסה חינם, חניה בתשלום",
+   "url": "https://www.farmshow.pa.gov/",
+   "coords": [
+    40.2875,
+    -76.887
+   ]
+  },
+  {
+   "name_en": "Eastport Yacht Club Lights Parade",
+   "name_he": "מצעד הסירות המוארות באנאפוליס",
+   "state": "Maryland",
+   "city": "Annapolis",
+   "venue": "Annapolis Harbor & Spa Creek (City Dock)",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "confirmed": true,
+   "type": "parade",
+   "segment_id": "mid_atlantic",
+   "why": "עשרות סירות מקושטות באורות שטות בנמל של אנאפוליס. אחד ממצעדי הסירות הכי יפים בחוף המזרחי.",
+   "tip": "מתחיל ב-18:00. מקומות טובים ליד City Dock או באיסטפורט. חניה קשה – יש שאטלים. להתלבש חם, קר ליד המים.",
+   "cost": "חינם",
+   "url": "https://eyclightsparade.org/",
+   "coords": [
+    38.9775,
+    -76.4862
+   ]
+  },
+  {
+   "name_en": "Christmas Village in Baltimore",
+   "name_he": "כפר חג המולד הגרמני בבולטימור",
+   "state": "Maryland",
+   "city": "Baltimore",
+   "venue": "West Shore Park, Inner Harbor",
+   "start": "2026-11-21",
+   "end": "2026-12-27",
+   "confirmed": true,
+   "type": "market",
+   "segment_id": "mid_atlantic",
+   "why": "שוק חג בסגנון גרמני על הנמל הפנימי: ביתני עץ, נקניקיות, גלוויין וקישוטים שמגיעים מגרמניה.",
+   "tip": "לפי האתר סגור בימים שני ושלישי – לבדוק לפני. ביום חול פחות עמוס. אפשר לשלב עם אורות Hampden ברחוב 34.",
+   "cost": "כניסה בתשלום קטן (משתנה לפי יום)",
+   "url": "https://www.baltimore-christmas.com/",
+   "coords": [
+    39.2848,
+    -76.6137
+   ]
+  },
+  {
+   "name_en": "Washington Monument Lighting (Mount Vernon Place)",
+   "name_he": "הדלקת אנדרטת וושינגטון בבולטימור",
+   "state": "Maryland",
+   "city": "Baltimore",
+   "venue": "Mount Vernon Place",
+   "start": "2026-12-03",
+   "end": "2026-12-03",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "mid_atlantic",
+   "why": "פתיחת עונת החגים בבולטימור: מדליקים אלפי נורות על האנדרטה ההיסטורית, עם זיקוקים, הופעות ודוכני אוכל.",
+   "tip": "תאריך משוער לפי הדפוס (יום חמישי הראשון של דצמבר) – לא אושר. להגיע לפני 18:00 כדי לתפוס מקום.",
+   "cost": "חינם",
+   "url": "https://mountvernonplace.org/",
+   "coords": [
+    39.2975,
+    -76.6156
+   ]
+  },
+  {
+   "name_en": "Downtown DC Holiday Market",
+   "name_he": "שוק החג של דאונטאון וושינגטון",
+   "state": "District of Columbia",
+   "city": "Washington",
+   "venue": "F Street NW between 7th & 9th Streets",
+   "start": "2026-11-13",
+   "end": "2026-12-23",
+   "confirmed": true,
+   "type": "market",
+   "segment_id": "mid_atlantic",
+   "why": "שוק החג הכי גדול בעיר: כ-120 אמנים ו-15 דוכני אוכל ברחוב F, מול מוזיאון האמנות האמריקאית ופורטרט גלרי.",
+   "tip": "חינם. ליד תחנת המטרו Gallery Place. פתוח עד 20:00–21:00, אפשר לשלב עם המוזיאון שמול השוק.",
+   "cost": "חינם",
+   "url": "https://www.downtowndc.org/holiday-market/",
+   "coords": [
+    38.8974,
+    -77.023
+   ]
+  },
+  {
+   "name_en": "Season's Greenings: National Parks and Historic Places",
+   "name_he": "תערוכת החגים בגן הבוטני של הקונגרס",
+   "state": "District of Columbia",
+   "city": "Washington",
+   "venue": "United States Botanic Garden",
+   "start": "2026-11-26",
+   "end": "2027-01-03",
+   "confirmed": true,
+   "type": "holiday",
+   "segment_id": "mid_atlantic",
+   "why": "רכבות מודל ודגמים של פארקים ואתרים היסטוריים שבנויים מצמחים, לכבוד 250 שנה לארה\"ב. ממש ליד הקפיטול.",
+   "tip": "חינם ובלי כרטיסים. 10:00–17:00, סגור ב-25 בדצמבר. בסופ\"ש יש תור – לבוא בפתיחה.",
+   "cost": "חינם",
+   "url": "https://www.usbg.gov/visit/exhibits/seasons-greenings-national-parks-and-historic-places-2026",
+   "coords": [
+    38.8881,
+    -77.0128
+   ]
+  },
+  {
+   "name_en": "National Menorah Lighting",
+   "name_he": "הדלקת החנוכייה הלאומית",
+   "state": "District of Columbia",
+   "city": "Washington",
+   "venue": "The Ellipse (President's Park)",
+   "start": "2026-12-06",
+   "end": "2026-12-06",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "mid_atlantic",
+   "why": "חנוכייה ענקית ליד הבית הלבן, מדליקים אותה בטקס רשמי עם מוזיקה, סופגניות ולביבות. מסורת מאז 1979.",
+   "tip": "תאריך משוער: חנוכה מתחיל בשישי 4 בדצמבר, אז הטקס כנראה ב-4 או ב-6 בדצמבר – לבדוק. צריך כרטיס חינמי מראש באתר.",
+   "cost": "חינם (כרטיס חינמי)",
+   "url": "https://nationalmenorah.org/",
+   "coords": [
+    38.8938,
+    -77.0365
+   ]
+  },
+  {
+   "name_en": "Christmas Town at Busch Gardens Williamsburg",
+   "name_he": "כריסמס טאון בבוש גרדנס",
+   "state": "Virginia",
+   "city": "Williamsburg",
+   "venue": "Busch Gardens Williamsburg",
+   "start": "2026-11-13",
+   "end": "2027-01-03",
+   "confirmed": true,
+   "type": "holiday",
+   "segment_id": "mid_atlantic",
+   "why": "פארק השעשועים מתקשט ביותר מ-10 מיליון נורות, עם מופעי חג, סנטה, אוכל חורפי וחלק מהמתקנים פתוחים.",
+   "tip": "פתוח רק בימים נבחרים – לבדוק בלוח. כרטיסים זולים יותר באונליין. כ-50 דקות מריצ'מונד.",
+   "cost": "$50+ (זול יותר באונליין)",
+   "url": "https://buschgardens.com/williamsburg/events/christmas-town/",
+   "coords": [
+    37.2343,
+    -76.6456
+   ]
+  },
+  {
+   "name_en": "Dominion Energy Christmas Parade",
+   "name_he": "מצעד חג המולד של ריצ'מונד",
+   "state": "Virginia",
+   "city": "Richmond",
+   "venue": "Broad Street (from Science Museum of Virginia)",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "confirmed": true,
+   "type": "parade",
+   "segment_id": "mid_atlantic",
+   "why": "המצעד הגדול של וירג'יניה: בלונים ענקיים, תזמורות ומרכבות לאורך רחוב Broad.",
+   "tip": "בבוקר. לעמוד לאורך הרחוב חינם, מושבים ביציע בתשלום. להגיע מוקדם לתפוס מקום.",
+   "cost": "חינם (יציע בתשלום)",
+   "url": "https://www.richmondparade.org/",
+   "coords": [
+    37.5612,
+    -77.4661
+   ]
+  },
+  {
+   "name_en": "Grand Illumination at Colonial Williamsburg",
+   "name_he": "ההארה הגדולה בוויליאמסבורג הקולוניאלית",
+   "state": "Virginia",
+   "city": "Williamsburg",
+   "venue": "Colonial Williamsburg Historic Area",
+   "start": "2026-12-05",
+   "end": "2026-12-19",
+   "confirmed": true,
+   "type": "holiday",
+   "segment_id": "mid_atlantic",
+   "why": "העיר הקולוניאלית מוארת בנרות ופנסים כמו במאה ה-18, עם הופעות ברחובות וזיקוקים מעל הקפיטול והארמון.",
+   "tip": "שלוש שבתות: 5, 12 ו-19 בדצמבר. המופעים בחוץ חינם; לבוא מוקדם בגלל החניה. אפשר לשלב עם כריסמס טאון.",
+   "cost": "חינם",
+   "url": "https://www.colonialwilliamsburg.org/visit/through-the-seasons/holiday-planner/",
+   "coords": [
+    37.2712,
+    -76.699
+   ]
+  },
+  {
+   "name_en": "North Carolina Chinese Lantern Festival",
+   "name_he": "פסטיבל הפנסים הסיני של צפון קרוליינה",
+   "state": "North Carolina",
+   "city": "Cary",
+   "venue": "Koka Booth Amphitheatre",
+   "start": "2026-11-20",
+   "end": "2027-01-10",
+   "confirmed": false,
+   "type": "festival",
+   "segment_id": "carolinas",
+   "why": "מאות פנסי משי ענקיים ומוארים – דרקונים, חיות ופרחים – סביב אגם בפארק בקארי, ליד ראלי. יפה מאוד בלילה.",
+   "tip": "תאריכים משוערים לפי הדפוס (מאמצע נובמבר עד אמצע ינואר) – לא אושר ל-2026. כרטיסים מראש באתר; סופ\"ש עמוס.",
+   "cost": "בערך $20–25 למבוגר",
+   "url": "https://www.boothamphitheatre.com/",
+   "coords": [
+    35.748,
+    -78.782
+   ]
+  },
+  {
+   "name_en": "Duke Blue Devils Men's Basketball at Cameron Indoor Stadium",
+   "name_he": "משחק כדורסל של דיוק בקמרון אינדור",
+   "state": "North Carolina",
+   "city": "Durham",
+   "venue": "Cameron Indoor Stadium, Duke University",
+   "start": "2026-12-01",
+   "end": "2026-12-13",
+   "confirmed": false,
+   "type": "sports",
+   "segment_id": "carolinas",
+   "why": "אחד האולמות הכי מפורסמים בכדורסל המכללות. הסטודנטים ('Cameron Crazies') קופצים וצועקים כל המשחק – אווירה מטורפת.",
+   "tip": "טווח משוער – לבדוק בלוח המשחקים איזה משחק ביתי נופל כשאתם באזור. כרטיסים כמעט רק ביד שנייה.",
+   "cost": "$100+ ביד שנייה",
+   "url": "https://goduke.com/sports/mens-basketball/schedule",
+   "coords": [
+    35.9978,
+    -78.9421
+   ]
+  },
+  {
+   "name_en": "Holiday Festival of Lights",
+   "name_he": "פסטיבל אורות החג בצ'רלסטון",
+   "state": "South Carolina",
+   "city": "Charleston",
+   "venue": "James Island County Park",
+   "start": "2026-11-13",
+   "end": "2027-01-01",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "carolinas",
+   "why": "מסלול נסיעה של כמה קילומטרים בין מיליוני נורות ומאות תצוגות, ובסוף כפר עם מרשמלו על האש, רכבת קטנה וחנויות.",
+   "tip": "תאריכים משוערים לפי הדפוס (מאמצע נובמבר עד 1 בינואר) – לא אושר. תשלום לרכב. להגיע מוקדם בערב כדי לחסוך פקק.",
+   "cost": "בערך $20–25 לרכב",
+   "url": "https://www.ccprc.com/",
+   "coords": [
+    32.7365,
+    -79.98
+   ]
+  },
+  {
+   "name_en": "Charleston Christmas Parade",
+   "name_he": "מצעד חג המולד של צ'רלסטון",
+   "state": "South Carolina",
+   "city": "Charleston",
+   "venue": "King Street & Marion Square",
+   "start": "2026-12-13",
+   "end": "2026-12-13",
+   "confirmed": false,
+   "type": "parade",
+   "segment_id": "carolinas",
+   "why": "מצעד עירוני חגיגי ברחוב King ההיסטורי, עם להקות, מרכבות ואווירה של עיירה דרומית.",
+   "tip": "תאריך משוער לפי הדפוס (יום ראשון השני של דצמבר) – לא אושר. מתחיל אחר הצהריים.",
+   "cost": "חינם",
+   "url": "https://www.charleston-sc.gov/",
+   "coords": [
+    32.7871,
+    -79.9363
+   ]
+  },
+  {
+   "name_en": "Charleston Holiday Parade of Boats",
+   "name_he": "מצעד הסירות המוארות של צ'רלסטון",
+   "state": "South Carolina",
+   "city": "Charleston",
+   "venue": "Charleston Harbor (view from Waterfront Park)",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "confirmed": false,
+   "type": "parade",
+   "segment_id": "carolinas",
+   "why": "עשרות סירות מוארות שטות בערב בנמל צ'רלסטון. רואים מעולה מהטיילת של Waterfront Park.",
+   "tip": "תאריך משוער לפי הדפוס (שבת ראשונה של דצמבר) – לא אושר. להביא מעיל, יש רוח מהים.",
+   "cost": "חינם",
+   "url": "https://www.charleston-sc.gov/",
+   "coords": [
+    32.7787,
+    -79.9253
+   ]
+  },
+  {
+   "name_en": "SEC Championship Game",
+   "name_he": "גמר אליפות ה-SEC בפוטבול",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Mercedes-Benz Stadium",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "georgia",
+   "why": "המשחק הכי גדול של פוטבול המכללות בדרום, באצטדיון מרצדס-בנץ עם הגג שנפתח כמו עדשת מצלמה.",
+   "tip": "16:00. בתאריך הזה הם עוד בחוף המזרחי (אטלנטה כ-4 שעות מסוואנה). כרטיסים יקרים – רק למי שממש רוצה.",
+   "cost": "$150+",
+   "url": "https://www.mercedesbenzstadium.com/events/sec-championship-4",
+   "coords": [
+    33.7554,
+    -84.4008
+   ]
+  },
+  {
+   "name_en": "Cricket Celebration Bowl",
+   "name_he": "סלבריישן בול – הבול של האוניברסיטאות השחורות",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Mercedes-Benz Stadium",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "georgia",
+   "why": "הגמר של האוניברסיטאות השחורות ההיסטוריות (HBCU). התזמורות הצועדות במחצית הן חוויה בפני עצמה.",
+   "tip": "12:00. כרטיסים זולים יחסית. בהפסקה לא לצאת – זה החלק הכי שווה.",
+   "cost": "$30+",
+   "url": "https://www.mercedesbenzstadium.com/events/cricket-celebration-bowl-2026",
+   "coords": [
+    33.7554,
+    -84.4008
+   ]
+  },
+  {
+   "name_en": "Chick-fil-A Peach Bowl (CFP Quarterfinal)",
+   "name_he": "פיץ' בול – רבע גמר הפלייאוף",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Mercedes-Benz Stadium",
+   "start": "2027-01-01",
+   "end": "2027-01-01",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "georgia",
+   "why": "רבע גמר פלייאוף פוטבול המכללות ביום הראשון של השנה. אווירה של משחק ענק.",
+   "tip": "הקבוצות נקבעות רק בתחילת דצמבר ואז המחירים קופצים. אם בטוחים שתהיו באטלנטה – לקנות מוקדם.",
+   "cost": "$150+",
+   "url": "https://www.chick-fil-apeachbowl.com/",
+   "coords": [
+    33.7554,
+    -84.4008
+   ]
+  },
+  {
+   "name_en": "Atlanta Falcons vs. New Orleans Saints",
+   "name_he": "פאלקונס נגד סיינטס",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Mercedes-Benz Stadium",
+   "start": "2027-01-03",
+   "end": "2027-01-03",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "georgia",
+   "why": "משחק NFL של יריבות דרומית ותיקה. באצטדיון הזה האוכל והשתייה זולים במיוחד (מחירי 'Fan First').",
+   "tip": "13:00 – השעה יכולה לזוז בגלל flex של ה-NFL. כרטיסים ב-Ticketmaster.",
+   "cost": "$70+",
+   "url": "https://www.atlantafalcons.com/schedule/",
+   "coords": [
+    33.7554,
+    -84.4008
+   ]
+  },
+  {
+   "name_en": "Countdown Over ATL (New Year's Eve drone & fireworks show)",
+   "name_he": "ספירה לאחור מעל אטלנטה – ערב ראש השנה",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Centennial Olympic Park & citywide viewing spots",
+   "start": "2026-12-31",
+   "end": "2026-12-31",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "georgia",
+   "why": "במקום הורדת האפרסק המסורתית, העיר עושה מופע רחפנים וזיקוקים בחצות מעל דאונטאון ומידטאון.",
+   "tip": "כך זה היה בשנה שעברה; התוכנית ל-2026 עוד לא פורסמה. נקודות צפייה: Centennial Olympic Park, Piedmont Park, גשר Jackson Street.",
+   "cost": "חינם",
+   "url": "https://www.atlantaga.gov/",
+   "coords": [
+    33.7603,
+    -84.3931
+   ]
+  },
+  {
+   "name_en": "King Holiday Observance (MLK Day)",
+   "name_he": "יום מרטין לותר קינג באטלנטה",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Ebenezer Baptist Church & Auburn Avenue",
+   "start": "2027-01-18",
+   "end": "2027-01-18",
+   "confirmed": false,
+   "type": "parade",
+   "segment_id": "georgia",
+   "why": "בעיר של קינג: טקס זיכרון בכנסיית אבנעזר, צעדה ומצעד ברחוב Auburn ליד הבית שבו נולד.",
+   "tip": "תמיד ביום שני השלישי בינואר; התוכנית ל-2027 עוד לא פורסמה. הם כנראה כבר בקולורדו – רק לידיעה.",
+   "cost": "חינם",
+   "url": "https://thekingcenter.org/",
+   "coords": [
+    33.7553,
+    -84.3735
+   ]
+  },
+  {
+   "name_en": "The Pink Pig at Lenox Square",
+   "name_he": "החזרזיר הוורוד בלנוקס סקוור",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Lenox Square mall (Buckhead)",
+   "start": "2026-11-14",
+   "end": "2027-01-03",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "georgia",
+   "why": "מסורת אטלנטית מ-1953: רכבת קטנה בצורת חזיר ורוד שעושה סיבוב חמוד. קיטשי ומתוק.",
+   "tip": "תאריכים משוערים לפי הדפוס (מאמצע נובמבר עד תחילת ינואר) – לא אושר. בסופ\"ש יש תור.",
+   "cost": "כמה דולרים לסיבוב",
+   "url": "https://www.simon.com/mall/lenox-square",
+   "coords": [
+    33.8463,
+    -84.3621
+   ]
+  },
+  {
+   "name_en": "Art Basel Miami Beach",
+   "name_he": "ארט באזל מיאמי ביץ'",
+   "state": "Florida",
+   "city": "Miami Beach",
+   "venue": "Miami Beach Convention Center",
+   "start": "2026-12-04",
+   "end": "2026-12-06",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "miami",
+   "why": "יריד האמנות הכי חשוב ביבשת. כל העיר הופכת לשבוע אמנות עם עשרות ירידים, מסיבות ואירועים חינמיים בווינווד ובמיאמי ביץ'.",
+   "tip": "ימי הציבור 4–6 בדצמבר (VIP ב-2–3). לקנות כרטיס מראש. המלונות יקרים מאוד והפקקים כבדים בשבוע הזה.",
+   "cost": "כרטיס יומי בערך $80+, הרבה אירועים מסביב בחינם",
+   "url": "https://www.artbasel.com/miami-beach",
+   "coords": [
+    25.7955,
+    -80.134
+   ]
+  },
+  {
+   "name_en": "Miami Heat vs. New York Knicks",
+   "name_he": "מיאמי היט נגד ניו יורק ניקס",
+   "state": "Florida",
+   "city": "Miami",
+   "venue": "Kaseya Center",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "miami",
+   "why": "יריבות NBA ותיקה, במוצאי שבת באולם שעל המפרץ במרכז העיר.",
+   "tip": "כרטיסים זולים בקומה העליונה. מגיעים בקלות ב-Metromover. השעה המדויקת באתר הקבוצה.",
+   "cost": "$40+",
+   "url": "https://www.nba.com/heat/schedule",
+   "coords": [
+    25.7814,
+    -80.187
+   ]
+  },
+  {
+   "name_en": "Miami Dolphins vs. Chicago Bears",
+   "name_he": "מיאמי דולפינס נגד שיקגו ברס",
+   "state": "Florida",
+   "city": "Miami Gardens",
+   "venue": "Hard Rock Stadium",
+   "start": "2026-12-13",
+   "end": "2026-12-13",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "miami",
+   "why": "משחק NFL בהארד רוק סטדיום, יום לפני שהם עוזבים את מיאמי. הטיילגייט בחניה עם מנגלים הוא חלק מהחוויה.",
+   "tip": "13:00, השעה יכולה לזוז. הרבה אוהדי שיקגו באים לחופש בשמש – לקנות כרטיסים מוקדם. החניה בתשלום.",
+   "cost": "$70+",
+   "url": "https://www.miamidolphins.com/schedule/",
+   "coords": [
+    25.958,
+    -80.2389
+   ]
+  },
+  {
+   "name_en": "Orange Bowl (CFP Semifinal)",
+   "name_he": "אורנג' בול – חצי גמר הפלייאוף",
+   "state": "Florida",
+   "city": "Miami Gardens",
+   "venue": "Hard Rock Stadium",
+   "start": "2027-01-14",
+   "end": "2027-01-14",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "miami",
+   "why": "חצי גמר פלייאוף פוטבול המכללות – אחד המשחקים הכי גדולים של העונה.",
+   "tip": "19:30. הם יהיו רחוק מאוד בתאריך הזה – רק לידיעה.",
+   "cost": "$200+",
+   "url": "https://www.orangebowl.org/",
+   "coords": [
+    25.958,
+    -80.2389
+   ]
+  },
+  {
+   "name_en": "Holiday in Paradise with Sandi the Sand Tree",
+   "name_he": "סנדי – עץ חג המולד מחול בווסט פאלם ביץ'",
+   "state": "Florida",
+   "city": "West Palm Beach",
+   "venue": "The Great Lawn, 100 N. Clematis St.",
+   "start": "2026-12-03",
+   "end": "2026-12-31",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "fl_east",
+   "why": "עץ חג מולד בגובה כ-11 מטר שבנוי מ-700 טון חול, עם מופע אור ומוזיקה כל ערב על שפת המים ופסלי חול מסביב.",
+   "tip": "תאריכים משוערים לפי הדפוס (תחילת דצמבר עד 31 בדצמבר) – לא אושר. המופעים כל ערב, חינם.",
+   "cost": "חינם",
+   "url": "https://www.thepalmbeaches.com/event/holiday-in-paradise",
+   "coords": [
+    26.713,
+    -80.0503
+   ]
+  },
+  {
+   "name_en": "British Night Watch & Grand Illumination",
+   "name_he": "המשמר הבריטי וההארה הגדולה בסנט אוגוסטין",
+   "state": "Florida",
+   "city": "St. Augustine",
+   "venue": "Historic downtown & Plaza de la Constitución",
+   "start": "2026-12-04",
+   "end": "2026-12-05",
+   "confirmed": false,
+   "type": "parade",
+   "segment_id": "ga_fl_coast",
+   "why": "תהלוכת לפידים של אנשים בתלבושות של חיילים בריטים מהמאה ה-18 ברחובות העיר העתיקה, עם מוזיקה ונרות.",
+   "tip": "תאריכים משוערים לפי הדפוס (סוף השבוע הראשון של דצמבר) – לא אושר. משתלב מעולה עם Nights of Lights.",
+   "cost": "חינם",
+   "url": "https://www.britishnightwatch.org/",
+   "coords": [
+    29.8925,
+    -81.3124
+   ]
+  },
+  {
+   "name_en": "Rolex 24 At Daytona",
+   "name_he": "רולקס 24 בדייטונה – מרוץ 24 שעות",
+   "state": "Florida",
+   "city": "Daytona Beach",
+   "venue": "Daytona International Speedway",
+   "start": "2027-01-28",
+   "end": "2027-01-31",
+   "confirmed": true,
+   "type": "motorsport",
+   "segment_id": "ga_fl_coast",
+   "why": "מרוץ סיבולת של 24 שעות רצוף עם מכוניות ספורט ואב-טיפוס (פורשה, BMW, קאדילק). הכרטיס נותן גישה לפיטים ולאינפילד.",
+   "tip": "המרוץ עצמו 30–31 בינואר; ה-Roar Before the Rolex 24 ב-22–24 בינואר. הם כבר במערב – רק לידיעה.",
+   "cost": "$70+",
+   "url": "https://www.daytonainternationalspeedway.com/events/rolex24-at-daytona/",
+   "coords": [
+    29.1852,
+    -81.0705
+   ]
+  },
+  {
+   "name_en": "Daytona 500 (Speedweeks)",
+   "name_he": "דייטונה 500",
+   "state": "Florida",
+   "city": "Daytona Beach",
+   "venue": "Daytona International Speedway",
+   "start": "2027-02-17",
+   "end": "2027-02-21",
+   "confirmed": false,
+   "type": "motorsport",
+   "segment_id": "ga_fl_coast",
+   "why": "המרוץ הכי מפורסם בנאסקאר שפותח את העונה: 40 מכוניות, יותר מ-100 אלף צופים ורעש שמרגישים בבטן.",
+   "tip": "המרוץ עצמו ב-21 בפברואר 2027 (אושר); תאריכי המוקדמות והמרוצים שלפניו בשבוע משוערים. הם יהיו באריזונה – רק לידיעה.",
+   "cost": "$100+",
+   "url": "https://www.daytonainternationalspeedway.com/",
+   "coords": [
+    29.1852,
+    -81.0705
+   ]
+  },
+  {
+   "name_en": "Mickey's Very Merry Christmas Party",
+   "name_he": "מסיבת חג המולד של מיקי במג'יק קינגדום",
+   "state": "Florida",
+   "city": "Lake Buena Vista",
+   "venue": "Magic Kingdom, Walt Disney World",
+   "start": "2026-11-08",
+   "end": "2026-12-22",
+   "confirmed": true,
+   "type": "holiday",
+   "segment_id": "florida_north",
+   "why": "ערב מיוחד בממלכת הקסם: מצעד חג מולד, 'שלג' ב-Main Street, זיקוקים מיוחדים, ועוגיות וקקאו בחינם.",
+   "tip": "רק בערבים נבחרים – אצלכם: 13, 15, 17, 18, 20, 22 בדצמבר. נמכר לגמרי מראש, לקנות עכשיו. נכנסים כבר מ-16:00.",
+   "cost": "$150+ לאדם",
+   "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/",
+   "coords": [
+    28.4177,
+    -81.5812
+   ]
+  },
+  {
+   "name_en": "EPCOT International Festival of the Holidays",
+   "name_he": "פסטיבל החגים של אפקוט",
+   "state": "Florida",
+   "city": "Lake Buena Vista",
+   "venue": "EPCOT, Walt Disney World",
+   "start": "2026-11-27",
+   "end": "2026-12-30",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "florida_north",
+   "why": "מסביב לאגם של אפקוט: דוכני אוכל חג מכל העולם, מספרי סיפורים, וה-Candlelight Processional עם מקהלה ותזמורת.",
+   "tip": "כלול בכרטיס לפארק. למופע ה-Candlelight עומדים בתור הרבה לפני – או לקנות חבילת ארוחה שכוללת מקום.",
+   "cost": "כלול בכרטיס לפארק ($120+)",
+   "url": "https://disneyworld.disney.go.com/events-tours/epcot/holiday-festival/",
+   "coords": [
+    28.3747,
+    -81.5494
+   ]
+  },
+  {
+   "name_en": "ICE! featuring The Polar Express at Gaylord Palms",
+   "name_he": "ICE! – עולם פסלי קרח בגיילורד פאלמס",
+   "state": "Florida",
+   "city": "Kissimmee",
+   "venue": "Gaylord Palms Resort",
+   "start": "2026-11-13",
+   "end": "2027-01-03",
+   "confirmed": true,
+   "type": "show",
+   "segment_id": "florida_north",
+   "why": "אולם קפוא (כמינוס 13 מעלות) עם פסלי קרח ענקיים בנושא 'הקוטב הצפוני' (Polar Express) ומגלשות קרח.",
+   "tip": "נותנים מעילים בכניסה. כרטיסים לפי שעה – לקנות מראש. יש גם הרבה קישוטים ואטרקציות חינם במלון.",
+   "cost": "$35+",
+   "url": "https://www.christmasatgaylordpalms.com/",
+   "coords": [
+    28.347,
+    -81.509
+   ]
+  },
+  {
+   "name_en": "Cure Bowl",
+   "name_he": "קיור בול",
+   "state": "Florida",
+   "city": "Orlando",
+   "venue": "Acrisure Bounce House (UCF)",
+   "start": "2026-12-22",
+   "end": "2026-12-22",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "florida_north",
+   "why": "משחק בול של פוטבול מכללות באורלנדו, לטובת המאבק בסרטן השד. קטן, זול ונעים.",
+   "tip": "17:00. רלוונטי אם הם עוד באזור אורלנדו. כרטיסים זולים, אפשר גם ביום המשחק.",
+   "cost": "$25+",
+   "url": "https://www.curebowl.com/",
+   "coords": [
+    28.608,
+    -81.1925
+   ]
+  },
+  {
+   "name_en": "Pop-Tarts Bowl",
+   "name_he": "פופ-טארטס בול",
+   "state": "Florida",
+   "city": "Orlando",
+   "venue": "Camping World Stadium",
+   "start": "2026-12-29",
+   "end": "2026-12-29",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "florida_north",
+   "why": "הבול הכי מצחיק: הקמע הוא פופ-טארט ענק שנכנס לטוסטר ענק והמנצחים 'אוכלים' אותו. הפך לוויראלי.",
+   "tip": "17:30. הם כבר יהיו בטנסי בתאריך הזה – רלוונטי רק אם נשארים בפלורידה.",
+   "cost": "$40+",
+   "url": "https://floridacitrussports.com/",
+   "coords": [
+    28.5392,
+    -81.4029
+   ]
+  },
+  {
+   "name_en": "Cheez-It Citrus Bowl",
+   "name_he": "סיטרוס בול",
+   "state": "Florida",
+   "city": "Orlando",
+   "venue": "Camping World Stadium",
+   "start": "2027-01-02",
+   "end": "2027-01-02",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "florida_north",
+   "why": "אחד הבולים הוותיקים, בתחילת השנה החדשה, בדרך כלל עם קבוצות חזקות מה-SEC וה-Big Ten.",
+   "tip": "12:00. הם כבר לא יהיו בפלורידה – רק לידיעה.",
+   "cost": "$60+",
+   "url": "https://floridacitrussports.com/event/citrus-bowl/",
+   "coords": [
+    28.5392,
+    -81.4029
+   ]
+  },
+  {
+   "name_en": "Gasparilla Pirate Fest",
+   "name_he": "פסטיבל הפיראטים גספרילה",
+   "state": "Florida",
+   "city": "Tampa",
+   "venue": "Tampa Convention Center & Bayshore Boulevard",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "confirmed": true,
+   "type": "parade",
+   "segment_id": "florida_north",
+   "why": "מאות 'פיראטים' פולשים לטמפה מספינת פיראטים, ואז מצעד ענק בשדרת Bayshore עם זריקת חרוזים. המרדי גרא של פלורידה.",
+   "tip": "המצעד הגדול ב-30 בינואר; מצעד ילדים ב-23 בינואר. הם כבר במערב – רק לידיעה. מושבים ביציע בתשלום.",
+   "cost": "חינם (יציע בתשלום)",
+   "url": "https://www.gasparillatreasures.com/",
+   "coords": [
+    27.9418,
+    -82.4566
+   ]
+  },
+  {
+   "name_en": "Florida State Fair",
+   "name_he": "יריד מדינת פלורידה",
+   "state": "Florida",
+   "city": "Tampa",
+   "venue": "Florida State Fairgrounds",
+   "start": "2027-02-04",
+   "end": "2027-02-15",
+   "confirmed": true,
+   "type": "fair",
+   "segment_id": "florida_north",
+   "why": "יריד ענק של 12 יום: מתקנים, חיות, אוכל מטוגן ומשוגע והופעות.",
+   "tip": "הם כבר באריזונה בזמן הזה – רק לידיעה.",
+   "cost": "$15+",
+   "url": "https://floridastatefair.com/",
+   "coords": [
+    27.988,
+    -82.365
+   ]
+  },
+  {
+   "name_en": "Jack Daniel's New Year's Eve Live: Nashville's Big Bash",
+   "name_he": "ערב ראש השנה בנאשוויל – Big Bash",
+   "state": "Tennessee",
+   "city": "Nashville",
+   "venue": "Bicentennial Capitol Mall State Park (2025 site)",
+   "start": "2026-12-31",
+   "end": "2026-12-31",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "tennessee",
+   "why": "מסיבת ראש השנה הגדולה בדרום: הופעות קאנטרי חינם, זיקוקים והורדת 'תו מוזיקלי' ענק בחצות. משודר ב-CBS.",
+   "tip": "תמיד ב-31 בדצמבר, אבל המיקום והאמנים ל-2026 עוד לא פורסמו. להגיע מוקדם – יש בדיקות ביטחון ותורים.",
+   "cost": "חינם",
+   "url": "https://www.visitmusiccity.com/newyearseve",
+   "coords": [
+    36.1706,
+    -86.787
+   ]
+  },
+  {
+   "name_en": "TransPerfect Music City Bowl",
+   "name_he": "מיוזיק סיטי בול",
+   "state": "Tennessee",
+   "city": "Nashville",
+   "venue": "Nissan Stadium",
+   "start": "2026-12-30",
+   "end": "2026-12-30",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "tennessee",
+   "why": "בול של פוטבול מכללות (SEC מול Big Ten) בנאשוויל. האוהדים ממלאים את Broadway לפני ואחרי.",
+   "tip": "15:00 שעון החוף המזרחי (14:00 מקומי). בדיוק כשהם בערך בנאשוויל. כרטיסים מראש.",
+   "cost": "$40+",
+   "url": "https://www.musiccitybowl.com/",
+   "coords": [
+    36.1665,
+    -86.7713
+   ]
+  },
+  {
+   "name_en": "Tennessee Titans vs. Pittsburgh Steelers",
+   "name_he": "טייטנס נגד סטילרס",
+   "state": "Tennessee",
+   "city": "Nashville",
+   "venue": "Nissan Stadium",
+   "start": "2027-01-03",
+   "end": "2027-01-03",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "tennessee",
+   "why": "המשחק הביתי האחרון בעונה הרגילה באצטדיון ניסאן הישן, לפני המעבר לאצטדיון החדש ב-2027.",
+   "tip": "12:00 שעון מקומי, יכול לזוז. אוהדי פיטסבורג מגיעים בהמוניהם. כרטיסים ב-Ticketmaster.",
+   "cost": "$60+",
+   "url": "https://www.tennesseetitans.com/schedule/",
+   "coords": [
+    36.1665,
+    -86.7713
+   ]
+  },
+  {
+   "name_en": "Nashville Predators vs. Florida Panthers (New Year's Day)",
+   "name_he": "פרדטורס נגד פנתרס – הוקי בראש השנה",
+   "state": "Tennessee",
+   "city": "Nashville",
+   "venue": "Bridgestone Arena",
+   "start": "2027-01-01",
+   "end": "2027-01-01",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "tennessee",
+   "why": "משחק NHL ביום הראשון של השנה באולם שצמוד ל-Broadway. הקהל של נאשוויל מהרועשים בליגה.",
+   "tip": "13:00 שעון מקומי – מושלם אחרי לילה של ראש השנה. כרטיסים ב-Ticketmaster.",
+   "cost": "$50+",
+   "url": "https://www.nhl.com/predators/schedule",
+   "coords": [
+    36.1592,
+    -86.7785
+   ]
+  },
+  {
+   "name_en": "Smoky Mountain Winterfest",
+   "name_he": "וינטרפסט בהרי הסמוקי",
+   "state": "Tennessee",
+   "city": "Pigeon Forge",
+   "venue": "Pigeon Forge, Gatlinburg & Sevierville",
+   "start": "2026-11-12",
+   "end": "2027-02-28",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "tennessee",
+   "why": "גטלינבורג, פיג'ן פורג' וסביירוויל מתקשטות במיליוני נורות לכל החורף, עם סיורי טרולי בין האורות.",
+   "tip": "תאריכים משוערים לפי הדפוס (מאמצע נובמבר עד סוף פברואר) – לא אושר. כ-2:30 שעות מצ'טנוגה. לראות את האורות – חינם.",
+   "cost": "חינם",
+   "url": "https://www.mypigeonforge.com/",
+   "coords": [
+    35.7884,
+    -83.5543
+   ]
+  },
+  {
+   "name_en": "Dancing Lights of Christmas",
+   "name_he": "האורות הרוקדים של חג המולד",
+   "state": "Tennessee",
+   "city": "Lebanon",
+   "venue": "James E. Ward Agricultural Center (Wilson County Fairgrounds)",
+   "start": "2026-11-13",
+   "end": "2027-01-01",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "tennessee",
+   "why": "מסלול נסיעה ברכב בין מיליוני נורות שמסונכרנות למוזיקה שמשדרים לרדיו של האוטו.",
+   "tip": "תאריכים משוערים לפי הדפוס (מאמצע נובמבר עד 1 בינואר) – לא אושר. כ-35 דק׳ מזרחית לנאשוויל. בסופ\"ש תור ארוך.",
+   "cost": "תשלום לרכב",
+   "url": "https://www.dancinglightsofchristmas.com/",
+   "coords": [
+    36.196,
+    -86.28
+   ]
+  },
+  {
+   "name_en": "Lights Under Louisville",
+   "name_he": "אורות מתחת ללואיוויל",
+   "state": "Kentucky",
+   "city": "Louisville",
+   "venue": "Louisville Mega Cavern",
+   "start": "2026-11-13",
+   "end": "2027-01-03",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "tennessee",
+   "why": "מופע אורות חג תת-קרקעי, היחיד מסוגו: נוסעים ברכב בתוך מחצבה ענקית מתחת לעיר בין מיליוני נורות.",
+   "tip": "תאריכים משוערים לפי הדפוס (מאמצע נובמבר עד תחילת ינואר) – לא אושר. כ-2:30 שעות מנאשוויל, עיקוף מהמסלול. כרטיס לפי שעה – מראש.",
+   "cost": "תשלום לרכב",
+   "url": "https://louisvillemegacavern.com/",
+   "coords": [
+    38.2004,
+    -85.6977
+   ]
+  },
+  {
+   "name_en": "Southern Lights at the Kentucky Horse Park",
+   "name_he": "סאות'רן לייטס בפארק הסוסים של קנטקי",
+   "state": "Kentucky",
+   "city": "Lexington",
+   "venue": "Kentucky Horse Park",
+   "start": "2026-11-20",
+   "end": "2026-12-31",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "tennessee",
+   "why": "מסלול אורות של כמה קילומטרים בפארק הסוסים המפורסם, עם תצוגות של סוסים ונופים של קנטקי.",
+   "tip": "תאריכים משוערים לפי הדפוס (מסוף נובמבר עד 31 בדצמבר) – לא אושר. רחוק מהמסלול (כ-3 שעות מנאשוויל).",
+   "cost": "תשלום לרכב",
+   "url": "https://kyhorsepark.com/",
+   "coords": [
+    38.147,
+    -84.521
+   ]
+  },
+  {
+   "name_en": "Way of Lights at the National Shrine of Our Lady of the Snows",
+   "name_he": "דרך האורות במקדש גבירתנו של השלגים",
+   "state": "Illinois",
+   "city": "Belleville",
+   "venue": "National Shrine of Our Lady of the Snows",
+   "start": "2026-11-20",
+   "end": "2026-12-31",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "ky_il",
+   "why": "מסלול אורות חינמי ענק שמספר את סיפור הלידה של ישו, באחד המקדשים הגדולים בצפון אמריקה.",
+   "tip": "תאריכים משוערים לפי הדפוס (מסוף נובמבר עד 31 בדצמבר) – לא אושר. ברכב או ברגל. כ-20 דק׳ מסנט לואיס.",
+   "cost": "חינם (תרומה)",
+   "url": "https://snows.org/",
+   "coords": [
+    38.5865,
+    -90.0716
+   ]
+  },
+  {
+   "name_en": "Bald Eagle Watching Season – Alton & Great River Road",
+   "name_he": "עונת העיטים הקירחים באלטון",
+   "state": "Illinois",
+   "city": "Alton",
+   "venue": "Alton riverfront & Great River Road to Grafton",
+   "start": "2027-01-01",
+   "end": "2027-02-28",
+   "confirmed": false,
+   "type": "other",
+   "segment_id": "ky_il",
+   "why": "בחורף מאות עיטים קירחים מגיעים לנהר המיסיסיפי ליד אלטון וגרפטון. יש תצפיות וסיורים מודרכים.",
+   "tip": "תאריכים משוערים לפי העונה – השיא בינואר. הכי טוב בבוקר לאורך Great River Road. 30 דק׳ מסנט לואיס.",
+   "cost": "חינם",
+   "url": "https://www.riversandroutes.com/",
+   "coords": [
+    38.8892,
+    -90.1823
+   ]
+  },
+  {
+   "name_en": "Anheuser-Busch Brewery Lights",
+   "name_he": "אורות החג במבשלת אנהייזר-בוש",
+   "state": "Missouri",
+   "city": "St. Louis",
+   "venue": "Anheuser-Busch Brewery (Soulard)",
+   "start": "2026-11-27",
+   "end": "2026-12-30",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "ky_il",
+   "why": "המבשלה ההיסטורית של באדוויזר מוארת בכמיליון נורות. אפשר לראות את סוסי הקליידסדייל ולשתות בירה.",
+   "tip": "תאריכים משוערים לפי הדפוס (מסוף נובמבר עד 30 בדצמבר, בערבים) – לא אושר. באמצע השבוע פחות עמוס.",
+   "cost": "חינם",
+   "url": "https://www.budweisertours.com/",
+   "coords": [
+    38.5993,
+    -90.2131
+   ]
+  },
+  {
+   "name_en": "Winter Wonderland at Tilles Park",
+   "name_he": "ווינטר וונדרלנד בפארק טילס",
+   "state": "Missouri",
+   "city": "Ladue",
+   "venue": "Tilles County Park",
+   "start": "2026-11-20",
+   "end": "2026-12-31",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "ky_il",
+   "why": "מסלול אורות ותיק בפרברי סנט לואיס – נוסעים ברכב או בעגלת סוסים בין מאות תצוגות.",
+   "tip": "תאריכים משוערים לפי הדפוס (מסוף נובמבר עד 31 בדצמבר) – לא אושר. את עגלת הסוסים צריך להזמין מראש.",
+   "cost": "תשלום קטן לרכב",
+   "url": "https://stlouiscountymo.gov/",
+   "coords": [
+    38.632,
+    -90.38
+   ]
+  },
+  {
+   "name_en": "Braggin' Rights: Illinois vs. Missouri",
+   "name_he": "בראגין' רייטס – אילינוי נגד מיזורי",
+   "state": "Missouri",
+   "city": "St. Louis",
+   "venue": "Enterprise Center",
+   "start": "2026-12-20",
+   "end": "2026-12-20",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "ky_il",
+   "why": "דרבי כדורסל מכללות שבו האולם מחולק בדיוק לחצי – כתום מול זהב-שחור. אחת האווירות הכי מגניבות בכדורסל המכללות.",
+   "tip": "ב-20 בדצמבר הם עוד בפלורידה – רק אם משנים קצב. כרטיסים ב-Ticketmaster.",
+   "cost": "$40+",
+   "url": "https://www.enterprisecenter.com/",
+   "coords": [
+    38.6268,
+    -90.2026
+   ]
+  },
+  {
+   "name_en": "Kansas City Chiefs vs. San Francisco 49ers",
+   "name_he": "צ'יפס נגד 49ers בארוהד",
+   "state": "Missouri",
+   "city": "Kansas City",
+   "venue": "GEHA Field at Arrowhead Stadium",
+   "start": "2026-12-27",
+   "end": "2026-12-27",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "missouri",
+   "why": "משחק NFL באחד האצטדיונים הכי רועשים בעולם, שחזור של גמר סופרבול. הטיילגייט עם ברביקיו של קנזס סיטי הוא חוויה בפני עצמה.",
+   "tip": "15:25 שעון מקומי. כרטיסים יקרים – לקנות מוקדם. יש עוד משחק בית נגד הריידרס בשבוע 18 (9 או 10 בינואר, ייקבע).",
+   "cost": "$120+",
+   "url": "https://www.chiefs.com/schedule/",
+   "coords": [
+    39.0489,
+    -94.4839
+   ]
+  },
+  {
+   "name_en": "An Old Time Christmas at Silver Dollar City",
+   "name_he": "חג המולד בסילבר דולר סיטי",
+   "state": "Missouri",
+   "city": "Branson",
+   "venue": "Silver Dollar City",
+   "start": "2026-11-07",
+   "end": "2026-12-30",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "missouri",
+   "why": "פארק שעשועים בסגנון עיירה מהמאה ה-19 בהרי האוזרק, עם מיליוני נורות, עץ ענק שמנגן ומופעי חג.",
+   "tip": "תאריכים משוערים לפי הדפוס (מתחילת נובמבר עד 30 בדצמבר) – לא אושר. רחוק מהמסלול (כ-3.5 שעות מקנזס סיטי).",
+   "cost": "$70+",
+   "url": "https://www.silverdollarcity.com/",
+   "coords": [
+    36.668,
+    -93.3386
+   ]
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+<div class="fin" id="fin">
+  <div class="fin-top">
+    <div class="fsync" id="fSync" data-s=""><i></i><span id="fSyncTx">טוען…</span></div>
+    <div class="fseg" id="fTabs">
+      <button type="button" data-t="add" aria-pressed="true">הוצאה</button>
+      <button type="button" data-t="bal" aria-pressed="false">מאזן</button>
+      <button type="button" data-t="tab" aria-pressed="false">טבלה</button>
+      <button type="button" data-t="bud" aria-pressed="false">תקציב</button>
+      <button type="button" data-t="set" aria-pressed="false">הגדרות</button>
+    </div>
+  </div>
+
+  <section data-p="add">
+    <div class="fcard">
+      <div class="frow"><span class="flbl">אני:</span><div class="fseg inl" id="fMe"></div></div>
+      <div class="famt"><input id="fAmt" type="number" inputmode="decimal" step="0.01" min="0" placeholder="0.00" aria-label="סכום"><div class="fseg inl" id="fCur"></div></div>
+      <div><span class="flbl">מי שילם</span><div class="fseg" id="fPay" style="margin-top:4px"></div></div>
+      <div><span class="flbl">קטגוריה</span><div class="fchips" id="fCats" style="margin-top:4px"></div></div>
+      <div><span class="flbl">איך מתחלקים</span><div class="fseg" id="fSplit" style="margin-top:4px"></div>
+        <div class="frow" id="fCustom" hidden style="margin-top:6px"><label class="fgrow"><span class="flbl" id="fCL1"></span><input id="fC1" type="number" min="0" max="100" step="1" inputmode="numeric"></label><label class="fgrow"><span class="flbl" id="fCL2"></span><input id="fC2" type="number" min="0" max="100" step="1" inputmode="numeric"></label></div></div>
+      <div class="frow"><input id="fNote" class="fgrow" type="text" placeholder="מה זה היה? (לא חובה)" maxlength="80"><input id="fDate" type="date" style="flex:0 1 160px" aria-label="תאריך"></div>
+      <div class="frow"><button class="fbtn pri fgrow" id="fSave" type="button">הוספת הוצאה</button><button class="fbtn" id="fCancel" type="button" hidden>ביטול</button><button class="fbtn dng" id="fDel" type="button" hidden>מחיקה</button></div>
+    </div>
+    <div class="fcard"><h3>הוצאות אחרונות</h3><div class="flist" id="fList"></div></div>
+  </section>
+
+  <section data-p="bal" hidden>
+    <div class="fcard"><h3>מי חייב למי</h3><div class="fowe" id="fOwe"></div><div class="ftiles" id="fTiles"></div>
+      <p class="fnote">החשבון כולל רק את מה שמשותף. הוצאה ״רק שלי״ נספרת בתקציב של מי שהיא שלו.</p></div>
+    <div class="fcard"><h3>לאן הולך הכסף</h3><div class="fdonut" id="fDonut"></div></div>
+    <div class="fcard"><h3>מי שילם בפועל</h3><div id="fWho"></div></div>
+    <div class="fcard"><h3>כל יום</h3><div class="ftip" id="fDayTip">לחצו על עמודה לפרטים</div><div class="fbars" id="fDays"></div></div>
+  </section>
+
+  <section data-p="tab" hidden>
+    <div class="fcard"><h3>לפי קטגוריה ומי</h3><div class="ftw" id="fSum"></div><p class="fnote">בכל עמודה: החלק של כל אחד בהוצאות (לא מי ששילם).</p></div>
+    <div class="fcard"><h3>כל ההוצאות</h3>
+      <div class="frow"><select id="fFCat" class="fgrow" aria-label="קטגוריה"></select><select id="fFPay" class="fgrow" aria-label="מי שילם"></select></div>
+      <div class="ftw" id="fAll"></div>
+      <div class="frow"><button class="fbtn sm" id="fCsv" type="button">ייצוא לאקסל (CSV)</button></div></div>
+  </section>
+
+  <section data-p="bud" hidden><div id="fBud" style="display:flex; flex-direction:column; gap:12px"></div>
+    <div class="fcard"><div class="frow"><button class="fbtn pri" id="fBudSave" type="button">שמירת התקציבים</button><span class="fnote" id="fBudNote"></span></div></div></section>
+
+  <section data-p="set" hidden>
+    <div class="fcard"><h3>סנכרון בין הטלפונים</h3><div id="fSyncBox"></div></div>
+    <div class="fcard"><h3>אנחנו</h3><div class="frow"><label class="fgrow"><span class="flbl">שם 1</span><input id="fN1" type="text" maxlength="24"></label><label class="fgrow"><span class="flbl">שם 2</span><input id="fN2" type="text" maxlength="24"></label></div></div>
+    <div class="fcard"><h3>מטבעות</h3>
+      <div class="frow"><label class="fgrow"><span class="flbl">₪ לדולר אחד</span><input id="fRILS" type="number" step="0.01" min="0" inputmode="decimal"></label><label class="fgrow"><span class="flbl">€ לדולר אחד</span><input id="fREUR" type="number" step="0.01" min="0" inputmode="decimal"></label></div>
+      <label><span class="flbl">להציג סכומים ב-</span><select id="fDisp"><option value="USD">דולר $</option><option value="ILS">שקל ₪</option><option value="EUR">אירו €</option></select></label>
+      <p class="fnote">עדכנו לשער שהבנק באמת גובה (כולל עמלה).</p></div>
+    <div class="fcard"><h3>תאריכי הטיול</h3><div class="frow"><label class="fgrow"><span class="flbl">התחלה</span><input id="fDS" type="date"></label><label class="fgrow"><span class="flbl">סיום</span><input id="fDE" type="date"></label></div><p class="fnote">עם תאריכים, התקציב מראה כמה נשאר לכל יום.</p></div>
+    <div class="fcard"><h3>קטגוריות</h3><p class="fnote">7 הראשונות מקבלות צבע בגרפים. סדרו עם החצים.</p><div class="fcats" id="fCatsEdit"></div><div class="frow"><input id="fNewCat" class="fgrow" type="text" placeholder="קטגוריה חדשה" maxlength="24"><button class="fbtn" id="fAddCat" type="button">הוספה</button></div></div>
+    <div class="fcard"><div class="frow"><button class="fbtn pri" id="fSetSave" type="button">שמירת ההגדרות</button><span class="fnote" id="fSetNote"></span></div></div>
+    <div class="fcard"><h3>העברת נתונים</h3><p class="fnote">להעביר את כל ההוצאות למכשיר או לאפליקציה אחרת: מעתיקים את הקוד כאן ומדביקים שם.</p>
+      <textarea id="fMoveTx" spellcheck="false" aria-label="קוד העברה"></textarea>
+      <div class="frow"><button class="fbtn sm" id="fMoveOut" type="button">יצירת קוד והעתקה</button><button class="fbtn sm" id="fMoveIn" type="button">ייבוא מהקוד שהודבק</button></div></div>
+  </section>
+</div>

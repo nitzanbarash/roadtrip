@@ -1,0 +1,1284 @@
+{
+ "events": [
+  {
+   "name_en": "Kansas Jayhawks Men's Basketball at Allen Fieldhouse",
+   "name_he": "כדורסל מכללות: קנזס ג'ייהוקס באלן פילדהאוס",
+   "state": "Kansas",
+   "city": "Lawrence",
+   "venue": "Allen Fieldhouse",
+   "start": "2027-01-02",
+   "end": "2027-01-30",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "kansas",
+   "why": "אחד האולמות המיתולוגיים של כדורסל המכללות: רעש מטורף, שירת Rock Chalk Chant וקהל שעומד כל המשחק. חוויה אמריקאית אמיתית.",
+   "tip": "משחקי בית בינואר: 2.1 מול West Virginia, 13.1 מול Colorado, 16.1 מול UCF, 30.1 מול Oklahoma State. כמעט תמיד סולד-אאוט, אז קונים בשוק המשני כמה שבועות מראש ומגיעים שעה לפני.",
+   "cost": "כרטיסים מ-~$40 (שוק משני)",
+   "url": "https://kuathletics.com/sports/mens-basketball/schedule/",
+   "coords": [
+    38.9543,
+    -95.2525
+   ]
+  },
+  {
+   "name_en": "Kaw Valley Eagles Day",
+   "name_he": "יום העיטים בלורנס (Kaw Valley Eagles Day)",
+   "state": "Kansas",
+   "city": "Lawrence",
+   "venue": "Lawrence – Kansas River and Clinton Lake area",
+   "start": "2027-01-16",
+   "end": "2027-01-30",
+   "confirmed": false,
+   "type": "festival",
+   "segment_id": "kansas",
+   "why": "יום חינמי שכולו עיטים לבני ראש שחורפים ליד נהר קנזס: הרצאות, עופות דורסים חיים וטלסקופים לצפייה בעיטים בטבע.",
+   "tip": "התאריך משוער לפי השנים הקודמות: בדרך כלל שבת אחת בסוף ינואר, צריך לבדוק באתר. להביא משקפת ובגדים חמים. הכי טוב לצפות בבוקר ליד הסכר במרכז העיר.",
+   "cost": "חינם",
+   "url": "https://www.lawrencebirdalliance.org/kaw-valley-eagles-day",
+   "coords": [
+    38.9724,
+    -95.2364
+   ]
+  },
+  {
+   "name_en": "Wichita Thunder Hockey (ECHL)",
+   "name_he": "הוקי קרח: ויצ'יטה ת'אנדר",
+   "state": "Kansas",
+   "city": "Wichita",
+   "venue": "INTRUST Bank Arena",
+   "start": "2027-01-01",
+   "end": "2027-01-16",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "kansas",
+   "why": "הוקי מקצועני בליגת המשנה ECHL: זול, משפחתי ומלא אווירה. טעימה טובה מהוקי אמריקאי בלי מחירי NHL.",
+   "tip": "משחקי בית: 1–2.1 מול Rapid City, 8–9.1 מול Kansas City, 15–16.1 מול New Mexico. ויצ'יטה כשעה וחצי דרומית ל-I-70 (מ-Salina). אפשר לקנות כרטיסים גם ביום המשחק.",
+   "cost": "כרטיסים מ-~$20",
+   "url": "https://www.wichitathunder.com/",
+   "coords": [
+    37.6839,
+    -97.3299
+   ]
+  },
+  {
+   "name_en": "Kansas Day",
+   "name_he": "יום קנזס (יום ההולדת של המדינה)",
+   "state": "Kansas",
+   "city": "Topeka",
+   "venue": "Kansas Museum of History",
+   "start": "2027-01-29",
+   "end": "2027-01-29",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "kansas",
+   "why": "קנזס חוגגת את היום שבו הפכה למדינה (29.1.1861). במוזיאון ההיסטוריה בטופיקה יש פעילויות, הדגמות ואווירה ביתית.",
+   "tip": "התאריך קבוע (29.1), אבל תוכנית האירועים מתפרסמת רק בינואר, צריך לבדוק באתר. לפי התוכנית תהיו כבר מערבה, אז זה רק אם אתם עדיין באזור.",
+   "cost": "חינם או סמלי",
+   "url": "https://www.kshs.org/",
+   "coords": [
+    39.0558,
+    -95.772
+   ]
+  },
+  {
+   "name_en": "National Western Stock Show",
+   "name_he": "תערוכת הבקר והרודיאו הגדולה של דנבר",
+   "state": "Colorado",
+   "city": "Denver",
+   "venue": "National Western Complex",
+   "start": "2027-01-09",
+   "end": "2027-01-24",
+   "confirmed": true,
+   "type": "rodeo",
+   "segment_id": "colorado",
+   "why": "16 ימים של עולם הקאובויים: רודיאו מקצועני, תחרויות בקר וסוסים, וירידים ענקיים של בגדי מערב ומגפיים. אחד האירועים הכי גדולים בדנבר, מ-1906.",
+   "tip": "לבחור ערב רודיאו או מופע סוסים ולקנות מראש באתר. סופי שבוע הכי עמוסים. ביום MLK (18.1) יש רודיאו מיוחד. החניה בתשלום, אז עדיף רכבת N Line לתחנת National Western Center.",
+   "cost": "כניסה ~$20–25, רודיאו מ-~$35",
+   "url": "https://nationalwestern.com/",
+   "coords": [
+    39.7836,
+    -104.9714
+   ]
+  },
+  {
+   "name_en": "National Western Stock Show Kick-off Parade",
+   "name_he": "מצעד הפתיחה של תערוכת הבקר במרכז דנבר",
+   "state": "Colorado",
+   "city": "Denver",
+   "venue": "17th Street, Union Station to Glenarm Place",
+   "start": "2027-01-07",
+   "end": "2027-01-07",
+   "confirmed": true,
+   "type": "parade",
+   "segment_id": "colorado",
+   "why": "עשרות פרות לונגהורן, סוסים וקאובויים צועדים ברחוב 17 במרכז דנבר. מחזה הזוי ומצחיק בין גורדי השחקים.",
+   "tip": "מתחיל בצהריים ליד Union Station. המצעד קצר (בערך שעה), אז מגיעים 20–30 דק׳ לפני ותופסים מקום ליד תחילת המסלול.",
+   "cost": "חינם",
+   "url": "https://nationalwestern.com/special-events/parade/",
+   "coords": [
+    39.7527,
+    -105.0002
+   ]
+  },
+  {
+   "name_en": "Sundance Film Festival",
+   "name_he": "פסטיבל הסרטים סאנדנס",
+   "state": "Colorado",
+   "city": "Boulder",
+   "venue": "Boulder Theater, Chautauqua Auditorium and venues across Boulder",
+   "start": "2027-01-21",
+   "end": "2027-01-31",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "colorado",
+   "why": "פסטיבל הסרטים העצמאיים הכי חשוב בארה״ב, והשנה לראשונה בבולדר אחרי 40 שנה בפארק סיטי שביוטה. כוכבים, בכורות ואווירה של אירוע היסטורי.",
+   "tip": "כרטיסים נמכרים באתר מראש, ולכל הקרנה יש רשימת המתנה (waitlist). הלינה בבולדר תתייקר מאוד, אז עדיף לישון בדנבר (30 דק׳). לפי התוכנית תהיו כבר ביוטה, אז זה דורש שינוי.",
+   "cost": "הקרנה ~$30+, חבילות יקרות",
+   "url": "https://www.sundance.org/",
+   "coords": [
+    40.0193,
+    -105.2789
+   ]
+  },
+  {
+   "name_en": "International Snow Sculpture Championships",
+   "name_he": "אליפות העולם בפיסול שלג בברקנרידג'",
+   "state": "Colorado",
+   "city": "Breckenridge",
+   "venue": "Riverwalk Center area, downtown Breckenridge",
+   "start": "2027-01-23",
+   "end": "2027-02-02",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "colorado",
+   "why": "צוותים מכל העולם מגלפים גושי שלג של 25 טון לפסלים ענקיים ומדהימים. אפשר לראות אותם עובדים, ואחר כך להסתובב בין הפסלים המוארים בלילה.",
+   "tip": "שבוע הפיסול 23–27.1, שבוע התצוגה 27.1–2.2. הכי יפה בערב עם התאורה. החניה בעיירה בתשלום, אז עדיף שאטל חינמי.",
+   "cost": "חינם",
+   "url": "https://gobreck.com/event/international-snow-sculpture-championships/",
+   "coords": [
+    39.4806,
+    -106.0481
+   ]
+  },
+  {
+   "name_en": "X Games Aspen 2027",
+   "name_he": "אקס גיימס אספן",
+   "state": "Colorado",
+   "city": "Aspen",
+   "venue": "Buttermilk Mountain",
+   "start": "2027-01-29",
+   "end": "2027-01-31",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "moab",
+   "why": "תחרויות הסקי והסנובורד האקסטרים הכי מפורסמות בעולם: קפיצות מטורפות ב-Superpipe וב-Big Air, ובערבים הופעות.",
+   "tip": "בשנים קודמות הצפייה הרגילה הייתה חינם (יש VIP בתשלום), כדאי לבדוק באתר. אין הרבה חניה, אז לוקחים שאטל מאספן. אספן כשעה מ-Glenwood Springs. הלינה שם יקרה מאוד, עדיף לישון ב-Glenwood או ב-Carbondale.",
+   "cost": "צפייה בד״כ חינם; VIP בתשלום",
+   "url": "https://www.xgames.com/events/aspen-2027/",
+   "coords": [
+    39.206,
+    -106.8607
+   ]
+  },
+  {
+   "name_en": "Ouray Ice Festival",
+   "name_he": "פסטיבל טיפוס הקרח באוריי",
+   "state": "Colorado",
+   "city": "Ouray",
+   "venue": "Ouray Ice Park (Uncompahgre Gorge)",
+   "start": "2027-01-28",
+   "end": "2027-01-31",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "moab",
+   "why": "פסטיבל טיפוס הקרח הגדול בצפון אמריקה, בקניון של מפלי קרח מעל אחת העיירות הכי יפות בקולורדו. רואים את התחרויות מגשר מעל הקניון.",
+   "tip": "הצפייה מהגשר ומהשבילים חינם. סדנאות, הדגמות ציוד ומסיבות ערב בתשלום. אוריי כשעתיים מ-Grand Junction. בחורף הכביש פתוח, אבל כדאי לבדוק תנאי שלג.",
+   "cost": "צפייה חינם, אירועי ערב בתשלום",
+   "url": "https://ourayicepark.com/events",
+   "coords": [
+    38.016,
+    -107.6735
+   ]
+  },
+  {
+   "name_en": "New Year's Eve Fireworks on 16th Street",
+   "name_he": "זיקוקי ליל השנה האזרחית החדשה במרכז דנבר",
+   "state": "Colorado",
+   "city": "Denver",
+   "venue": "16th Street, Downtown Denver",
+   "start": "2026-12-31",
+   "end": "2026-12-31",
+   "confirmed": true,
+   "type": "holiday",
+   "segment_id": "colorado",
+   "why": "שני מופעי זיקוקים חינמיים מגגות במרכז דנבר, ב-21:00 ובחצות, עם המון אנשים ברחוב.",
+   "tip": "מגיעים שעה לפני ומתלבשים חם מאוד. נוסעים ברכבת הקלה, כי בדאונטאון החניה יקרה והרחובות סגורים. לפי התוכנית תהיו אז ב-Missouri, אז זה רק אם אתם מקדימים.",
+   "cost": "חינם",
+   "url": "https://visitdenver.com/things-to-do/fall-winter/festivals-events/new-years-eve-weekend/",
+   "coords": [
+    39.7476,
+    -104.9944
+   ]
+  },
+  {
+   "name_en": "Denver Broncos vs. Los Angeles Chargers (NFL Week 18)",
+   "name_he": "פוטבול NFL: דנבר ברונקוס נגד לוס אנג'לס צ'ארג'רס",
+   "state": "Colorado",
+   "city": "Denver",
+   "venue": "Empower Field at Mile High",
+   "start": "2027-01-09",
+   "end": "2027-01-10",
+   "confirmed": false,
+   "type": "sports",
+   "segment_id": "colorado",
+   "why": "משחק העונה הסדירה האחרון של הברונקוס: אצטדיון של 76 אלף אוהדים בכתום, ולפעמים משחק שמכריע כרטיס לפלייאוף.",
+   "tip": "המשחק ייקבע לשבת 9.1 או לראשון 10.1. היום והשעה המדויקים נקבעים רק בסוף דצמבר. קונים כרטיסים בשוק המשני, ומתלבשים חם מאוד כי משחקים בחוץ בינואר.",
+   "cost": "כרטיסים מ-~$100+",
+   "url": "https://www.denverbroncos.com/schedule/",
+   "coords": [
+    39.7439,
+    -105.0201
+   ]
+  },
+  {
+   "name_en": "Steamboat Springs Winter Carnival",
+   "name_he": "קרנבל החורף של סטימבוט ספרינגס",
+   "state": "Colorado",
+   "city": "Steamboat Springs",
+   "venue": "Howelsen Hill and Lincoln Avenue",
+   "start": "2027-02-02",
+   "end": "2027-02-07",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "colorado",
+   "why": "קרנבל החורף הוותיק במערב: ילדים על סקי נגררים אחרי סוסים ברחוב הראשי, קפיצות סקי, ומופע לילה עם זיקוקים וגולש מואר (Lighted Man).",
+   "tip": "אירועי הרחוב בשבת–ראשון, 6–7.2. רוב האירועים חינם, ואפשר לקנות 'כפתור' קרנבל כתמיכה. סטימבוט כשלוש שעות מדנבר, ועד אז כנראה כבר תהיו בקליפורניה.",
+   "cost": "רוב האירועים חינם",
+   "url": "https://www.sswsc.org/event/winter-carnival-2026/",
+   "coords": [
+    40.485,
+    -106.8317
+   ]
+  },
+  {
+   "name_en": "Freestyle International – FIS Freestyle Ski World Cup",
+   "name_he": "גביע העולם בסקי פריסטייל בדיר ואלי",
+   "state": "Utah",
+   "city": "Park City",
+   "venue": "Deer Valley Resort (2002 Olympic courses)",
+   "start": "2027-01-28",
+   "end": "2027-01-30",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "utah_north",
+   "why": "גביע העולם במוגולס, מוגולס זוגי וקפיצות אקרובטיות על המסלולים של אולימפיאדת 2002. בערב התחרויות תחת אורות, עם קהל ענק ואווירת מסיבה.",
+   "tip": "הצפייה חינם, ותחרויות הערב הכי שוות. מגיעים בשאטל מפארק סיטי כי החניה בדיר ואלי מתמלאת. להתלבש חם מאוד.",
+   "cost": "חינם",
+   "url": "https://www.deervalley.com/things-to-do/events/world-cup-moguls",
+   "coords": [
+    40.6374,
+    -111.4783
+   ]
+  },
+  {
+   "name_en": "Utah Mammoth NHL Hockey",
+   "name_he": "הוקי NHL: יוטה מאמות'",
+   "state": "Utah",
+   "city": "Salt Lake City",
+   "venue": "Delta Center",
+   "start": "2027-01-13",
+   "end": "2027-01-31",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "utah_north",
+   "why": "קבוצת ה-NHL החדשה של יוטה: הוקי ברמה הכי גבוהה בעולם, קהל צעיר ונלהב ואולם במרכז סולט לייק סיטי.",
+   "tip": "משחקי בית: 13.1 Detroit, 15.1 LA Kings, 23.1 Boston, 25.1 Minnesota, 27.1 Buffalo, 29.1 Washington, 31.1 Nashville. כרטיסים באתר NHL או בשוק המשני, ובאמצע השבוע זה זול יותר.",
+   "cost": "כרטיסים מ-~$50+",
+   "url": "https://www.nhl.com/utah/schedule",
+   "coords": [
+    40.7683,
+    -111.9011
+   ]
+  },
+  {
+   "name_en": "Utah Jazz NBA Basketball",
+   "name_he": "כדורסל NBA: יוטה ג'אז",
+   "state": "Utah",
+   "city": "Salt Lake City",
+   "venue": "Delta Center",
+   "start": "2027-01-12",
+   "end": "2027-01-30",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "utah_north",
+   "why": "משחק NBA באולם של הג'אז: הפקה אמריקאית מלאה עם מופעי הפסקה, וקהל שנחשב מהרועשים בליגה.",
+   "tip": "משחקי בית: 12.1 Chicago, 14.1 Charlotte, 17.1 Sacramento, 20.1 Clippers, 26.1 Milwaukee, 28.1 Golden State, 30.1 Memphis. אפשר לשלב באותו שבוע גם הוקי באותו אולם.",
+   "cost": "כרטיסים מ-~$25+",
+   "url": "https://www.nba.com/jazz/schedule",
+   "coords": [
+    40.7683,
+    -111.9011
+   ]
+  },
+  {
+   "name_en": "Monster Jam Salt Lake City",
+   "name_he": "מונסטר ג'אם: משאיות המפלצת בסולט לייק סיטי",
+   "state": "Utah",
+   "city": "Salt Lake City",
+   "venue": "Delta Center",
+   "start": "2027-01-08",
+   "end": "2027-01-10",
+   "confirmed": true,
+   "type": "motorsport",
+   "segment_id": "utah_north",
+   "why": "משאיות ענק עם גלגלים בגובה 1.7 מטר עושות קפיצות, סלטות ודונאטס בתוך אולם. רועש, מטורף וכיף.",
+   "tip": "ארבעה מופעים: שישי 8.1 בערב, שבת 9.1 (צהריים וערב) וראשון 10.1. כדאי להגיע ל-Pit Party לפני המופע (כרטיס נפרד) כדי לראות את המשאיות מקרוב. לפי התוכנית תהיו עוד בקולורדו. להביא אטמי אוזניים.",
+   "cost": "כרטיסים מ-~$25+",
+   "url": "https://www.monsterjam.com/en-us/events/salt-lake-city-ut/jan-08-2027-jan-10-2027/",
+   "coords": [
+    40.7683,
+    -111.9011
+   ]
+  },
+  {
+   "name_en": "National Cowboy Poetry Gathering",
+   "name_he": "כנס שירת הקאובויים הלאומי באלקו",
+   "state": "Nevada",
+   "city": "Elko",
+   "venue": "Western Folklife Center and Elko Convention Center",
+   "start": "2027-01-25",
+   "end": "2027-01-30",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "nevada80",
+   "why": "שבוע שבו קאובויים אמיתיים מכל המערב מגיעים לאלקו לדקלם שירה, לשיר ולנגן, עם סדנאות, ריקודים ואוכל באסקי. אירוע אותנטי ומיוחד בדיוק על I-80.",
+   "tip": "המקורות חלוקים ביום אחד (25–30.1 או 26–31.1), אז כדאי לבדוק באתר. מופעי הערב נמכרים מראש, והרבה מופעי יום ותערוכות זולים או חינם. הלינה בעיר מתמלאת, אז מזמינים מוקדם.",
+   "cost": "מופעים ~$20–50, חלק חינם",
+   "url": "https://www.nationalcowboypoetrygathering.org/",
+   "coords": [
+    40.8327,
+    -115.7637
+   ]
+  },
+  {
+   "name_en": "Wrangler National Finals Rodeo (NFR)",
+   "name_he": "גמר הרודיאו הלאומי בלאס וגאס",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "Thomas & Mack Center",
+   "start": "2026-12-03",
+   "end": "2026-12-12",
+   "confirmed": true,
+   "type": "rodeo",
+   "segment_id": "vegas",
+   "why": "'הסופרבול של הרודיאו': עשרה ערבים של 15 הרוכבים הטובים בכל ענף, על פרסים של יותר מ-17.5 מיליון דולר. כל וגאס מתמלאת בקאובויים, ירידים ומסיבות קאנטרי.",
+   "tip": "זה בתחילת דצמבר, עוד לפני שתצאו ממיאמי, אז רק לידיעה. הכרטיסים נגמרים חודשים מראש, אבל כמה קזינו מקרינים בחינם על מסכים גדולים.",
+   "cost": "כרטיסים מ-~$100+",
+   "url": "https://www.nfrexperience.com/",
+   "coords": [
+    36.1047,
+    -115.1438
+   ]
+  },
+  {
+   "name_en": "America's Party – New Year's Eve on the Las Vegas Strip",
+   "name_he": "ליל השנה האזרחית החדשה על הסטריפ בלאס וגאס",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "Las Vegas Strip",
+   "start": "2026-12-31",
+   "end": "2026-12-31",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "vegas",
+   "why": "הסטריפ נסגר לרכבים ומאות אלפי אנשים חוגגים ברחוב, עם מופע זיקוקים ורחפנים שמשוגר בבת אחת מגגות של כעשרה מלונות.",
+   "tip": "התאריך קבוע, אבל הפרטים של 2026–27 יפורסמו רק בדצמבר. לפי התוכנית תהיו אז ב-Missouri, אז רק לידיעה. אם בכל זאת: מגיעים מוקדם, אסור להכניס זכוכית, והמלונות יקרים פי כמה.",
+   "cost": "חינם ברחוב; מסיבות במועדונים $100+",
+   "url": "https://www.visitlasvegas.com/",
+   "coords": [
+    36.127,
+    -115.17
+   ]
+  },
+  {
+   "name_en": "Las Vegas Bowl",
+   "name_he": "לאס וגאס בול (פוטבול מכללות)",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "Allegiant Stadium",
+   "start": "2026-12-31",
+   "end": "2026-12-31",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "vegas",
+   "why": "משחק בול של פוטבול מכללות, Big Ten מול Pac-12, באצטדיון החדש והמרשים של הריידרס. בערב ממשיכים לחגוג את השנה החדשה על הסטריפ.",
+   "tip": "המשחק ב-31.12 ב-12:45. בדרך כלל יש כרטיסים זמינים במחיר סביר. לפי התוכנית תהיו אז במזרח, אז רק לידיעה.",
+   "cost": "כרטיסים מ-~$30+",
+   "url": "https://lvbowl.com/",
+   "coords": [
+    36.0909,
+    -115.1833
+   ]
+  },
+  {
+   "name_en": "UFC 335",
+   "name_he": "UFC 335: ערב קרבות גדול",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "T-Mobile Arena",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "vegas",
+   "why": "ערב קרבות UFC ממוספר בטי-מובייל ארנה, הבית של ה-UFC. אחד האירועים הספורטיביים הכי חמים בווגאס.",
+   "tip": "12.12 זה לפני היציאה ממיאמי, אז רק לידיעה. הכרטיסים נמכרים באתר UFC, והמחירים קופצים ככל שמתקרבים לאירוע.",
+   "cost": "כרטיסים מ-~$150+",
+   "url": "https://www.ufc.com/event/ufc-335",
+   "coords": [
+    36.1029,
+    -115.1784
+   ]
+  },
+  {
+   "name_en": "Metallica: Life Burns Faster at Sphere",
+   "name_he": "מטאליקה בספרה בלאס וגאס",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "Sphere",
+   "start": "2027-02-04",
+   "end": "2027-02-20",
+   "confirmed": true,
+   "type": "concert",
+   "segment_id": "vegas",
+   "why": "מטאליקה בסדרת הופעות קבועה (רזידנסי) בתוך ה-Sphere, אולם עם מסך LED ענק שעוטף את כל הקהל. חוויה ויזואלית שאין כמוה.",
+   "tip": "ההופעות בפברואר: 4, 6, 18 ו-20.2 (ועוד 25 ו-27.2). בחמישי ובשבת יש רשימת שירים שונה. הכרטיסים יקרים ונגמרים, אז כדאי לקנות עכשיו. המושבים הכי מומלצים באמצע האולם (סקשנים 200).",
+   "cost": "כרטיסים מ-~$150+",
+   "url": "https://www.thespherevegas.com/",
+   "coords": [
+    36.1209,
+    -115.1622
+   ]
+  },
+  {
+   "name_en": "Vegas Golden Knights NHL Hockey",
+   "name_he": "הוקי NHL: וגאס גולדן נייטס",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "T-Mobile Arena",
+   "start": "2027-02-13",
+   "end": "2027-02-18",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "vegas",
+   "why": "ההוקי הכי מושקע בליגה: לפני כל משחק יש מופע פתיחה עם אבירים, לייזרים וחרבות, באולם על הסטריפ.",
+   "tip": "משחקי בית: 13.2 מול Calgary, 15.2 מול Detroit, 18.2 מול Columbus. מגיעים חצי שעה לפני כדי לראות את מופע הפתיחה. כרטיסים בשוק המשני.",
+   "cost": "כרטיסים מ-~$80+",
+   "url": "https://www.nhl.com/goldenknights/schedule",
+   "coords": [
+    36.1029,
+    -115.1784
+   ]
+  },
+  {
+   "name_en": "Bellagio Conservatory Lunar New Year Display",
+   "name_he": "תצוגת ראש השנה הסיני בגן של בלאג'יו",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "Bellagio Conservatory & Botanical Gardens",
+   "start": "2027-01-09",
+   "end": "2027-02-28",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "vegas",
+   "why": "הגן המקורה של בלאג'יו מתחלף לתצוגת ענק לשנת העז (ראש השנה הסיני ב-6.2.2027): אלפי פרחים, פנסים ופסלים ענקיים. חינם ופתוח 24/7.",
+   "tip": "התאריכים משוערים לפי השנים הקודמות (מאמצע ינואר עד סוף פברואר), ועוד לא פורסמו. הכי שקט מוקדם בבוקר או מאוחר בלילה.",
+   "cost": "חינם",
+   "url": "https://bellagio.mgmresorts.com/",
+   "coords": [
+    36.1126,
+    -115.1767
+   ]
+  },
+  {
+   "name_en": "Super Bowl LXI Sunday in Las Vegas",
+   "name_he": "יום הסופרבול בלאס וגאס",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "Sportsbooks and resorts on the Strip (e.g., Westgate SuperBook)",
+   "start": "2027-02-14",
+   "end": "2027-02-14",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "vegas",
+   "why": "וגאס היא בירת ההימורים על הסופרבול. המלונות ומשרדי ההימורים עורכים מסיבות צפייה ענקיות עם מסכי ענק, ואפשר להמר כמעט על כל דבר.",
+   "tip": "המסיבות (חלקן חינם, חלקן $100+ כולל אוכל ושתייה) מתפרסמות בינואר, וכדאי לשריין מקום מוקדם. משרד ההימורים הכי מפורסם הוא Westgate SuperBook. באותו יום גם ולנטיין, אז המלונות יקרים.",
+   "cost": "חינם עד $100+",
+   "url": "https://www.visitlasvegas.com/",
+   "coords": [
+    36.1358,
+    -115.1522
+   ]
+  },
+  {
+   "name_en": "Rose Parade (Tournament of Roses)",
+   "name_he": "מצעד הוורדים בפסדינה",
+   "state": "California",
+   "city": "Pasadena",
+   "venue": "Colorado Boulevard",
+   "start": "2027-01-01",
+   "end": "2027-01-01",
+   "confirmed": true,
+   "type": "parade",
+   "segment_id": "la",
+   "why": "המצעד הכי מפורסם בארה״ב, וזו השנה ה-138 שלו: רכבי ענק שמכוסים כולם בפרחים, תזמורות צועדות ופרשים. משודר לכל העולם.",
+   "tip": "הרבה ישנים ברחוב מהלילה הקודם כדי לתפוס מקום. מושבים ביציעים עולים ~$50–125 דרך אתר הטורניר. אחרי המצעד אפשר לראות את הרכבים מקרוב (בתשלום). לפי התוכנית תהיו אז במזרח, אז רק לידיעה.",
+   "cost": "חינם ברחוב; יציע מ-~$50",
+   "url": "https://tournamentofroses.com/",
+   "coords": [
+    34.1457,
+    -118.15
+   ]
+  },
+  {
+   "name_en": "Rose Bowl Game (CFP Quarterfinal)",
+   "name_he": "משחק הרוז בול: רבע גמר פלייאוף הפוטבול",
+   "state": "California",
+   "city": "Pasadena",
+   "venue": "Rose Bowl Stadium",
+   "start": "2027-01-01",
+   "end": "2027-01-01",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "la",
+   "why": "'סבא של כל הבולים', משחק פוטבול המכללות הוותיק בארה״ב. השנה זה רבע גמר הפלייאוף, באצטדיון היסטורי מול הרי סן גבריאל.",
+   "tip": "הקבוצות ייקבעו רק באמצע דצמבר, ואחרי ההכרזה המחירים קופצים. מגיעים מוקדם, כי בגלל המצעד יש בפסדינה פקקים ענקיים.",
+   "cost": "כרטיסים מ-~$150+",
+   "url": "https://rosebowlgame.com/",
+   "coords": [
+    34.1613,
+    -118.1676
+   ]
+  },
+  {
+   "name_en": "Super Bowl LXI",
+   "name_he": "סופרבול 61",
+   "state": "California",
+   "city": "Inglewood",
+   "venue": "SoFi Stadium",
+   "start": "2027-02-14",
+   "end": "2027-02-14",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "la",
+   "why": "המשחק הגדול של אמריקה: גמר ה-NFL ומופע המחצית, באצטדיון הכי מרשים בליגה. כל לוס אנג'לס חוגגת כל השבוע.",
+   "tip": "כרטיסים עולים אלפי דולרים. אפשר לצפות בבר או בווגאס במקום. בשבוע שלפני יש בעיר אירועי אוהדים (פריט נפרד). לפי התוכנית תהיו אז כבר באריזונה או בווגאס.",
+   "cost": "כרטיסים מ-~$4,000+",
+   "url": "https://www.nfl.com/super-bowl/",
+   "coords": [
+    33.9535,
+    -118.3392
+   ]
+  },
+  {
+   "name_en": "Super Bowl LXI Week Fan Events (Super Bowl Experience)",
+   "name_he": "שבוע הסופרבול בלוס אנג'לס: אירועי אוהדים",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "TBA (in 2022: Los Angeles Convention Center)",
+   "start": "2027-02-06",
+   "end": "2027-02-13",
+   "confirmed": false,
+   "type": "festival",
+   "segment_id": "la",
+   "why": "בשבוע שלפני הסופרבול לוס אנג'לס מתמלאת באירועי NFL: פארק אוהדים עם משחקי פוטבול, תמונות עם הגביע, הופעות ומסיבות של מותגים.",
+   "tip": "התאריכים והמיקומים עוד לא פורסמו. בדרך כלל זה בשבוע שלפני המשחק, אז כדאי לעקוב באתר ועדת האירוח. חלק מהאירועים חינם, ול-Super Bowl Experience צריך כרטיס.",
+   "cost": "חלק חינם, חלק בתשלום",
+   "url": "https://lasuperbowlhc.com/",
+   "coords": [
+    34.0403,
+    -118.2696
+   ]
+  },
+  {
+   "name_en": "Monster Energy AMA Supercross – Anaheim 1 (Season Opener)",
+   "name_he": "סופרקרוס אנהיים 1: פתיחת העונה",
+   "state": "California",
+   "city": "Anaheim",
+   "venue": "Angel Stadium",
+   "start": "2027-01-09",
+   "end": "2027-01-09",
+   "confirmed": true,
+   "type": "motorsport",
+   "segment_id": "la",
+   "why": "פתיחת עונת הסופרקרוס: אופנועי שטח קופצים ומתחרים על מסלול עפר שנבנה בתוך אצטדיון בייסבול. הערב הכי חגיגי בעונה.",
+   "tip": "כדאי לקנות כרטיס עם Pit Pass כדי להסתובב בין הצוותים לפני המרוץ. להביא אטמי אוזניים. לפי התוכנית תהיו אז בקנזס או בקולורדו, אז רק לידיעה.",
+   "cost": "כרטיסים מ-~$30+",
+   "url": "https://www.supercrosslive.com/",
+   "coords": [
+    33.8003,
+    -117.8827
+   ]
+  },
+  {
+   "name_en": "Monster Energy AMA Supercross – San Diego",
+   "name_he": "סופרקרוס סן דייגו",
+   "state": "California",
+   "city": "San Diego",
+   "venue": "Snapdragon Stadium",
+   "start": "2027-01-16",
+   "end": "2027-01-16",
+   "confirmed": true,
+   "type": "motorsport",
+   "segment_id": "la",
+   "why": "הסיבוב השני של אליפות הסופרקרוס, באצטדיון החדש של סן דייגו: קפיצות ענק וקרבות צמודים.",
+   "tip": "ה-Pit Pass עולה תוספת קטנה ושווה אותה. לפי התוכנית זה מוקדם בשבילכם, אבל אם תגיעו לקליפורניה מוקדם יותר זה שווה.",
+   "cost": "כרטיסים מ-~$30+",
+   "url": "https://www.supercrosslive.com/",
+   "coords": [
+    32.7838,
+    -117.1225
+   ]
+  },
+  {
+   "name_en": "Monster Energy AMA Supercross – Anaheim 2",
+   "name_he": "סופרקרוס אנהיים 2",
+   "state": "California",
+   "city": "Anaheim",
+   "venue": "Angel Stadium",
+   "start": "2027-01-23",
+   "end": "2027-01-23",
+   "confirmed": true,
+   "type": "motorsport",
+   "segment_id": "la",
+   "why": "הסיבוב השני באנהיים: אותה חוויה של אופנועים שעפים בתוך אצטדיון, ולרוב פחות עמוס מפתיחת העונה.",
+   "tip": "הכרטיסים בדרך כלל זולים יותר מאשר ל-A1. הזדמנות טובה אם אתם בדרום קליפורניה בסוף ינואר.",
+   "cost": "כרטיסים מ-~$30+",
+   "url": "https://www.supercrosslive.com/",
+   "coords": [
+    33.8003,
+    -117.8827
+   ]
+  },
+  {
+   "name_en": "Monster Jam Anaheim",
+   "name_he": "מונסטר ג'אם באנהיים: משאיות המפלצת באצטדיון",
+   "state": "California",
+   "city": "Anaheim",
+   "venue": "Angel Stadium",
+   "start": "2027-01-16",
+   "end": "2027-02-21",
+   "confirmed": true,
+   "type": "motorsport",
+   "segment_id": "la",
+   "why": "משאיות המפלצת בגרסת האצטדיון: קפיצות לגובה, סלטות לאחור ותחרויות פריסטייל על מסלול עפר ענק.",
+   "tip": "שלושה סופי שבוע: 16–17.1, 30–31.1 ו-20–21.2 (שבת 16:30, ראשון 14:30). 30–31.1 הכי מתאים לזמנים שלכם. ב-Pit Party בבוקר אפשר לראות ולצלם את המשאיות מקרוב.",
+   "cost": "כרטיסים מ-~$20+",
+   "url": "https://www.monsterjam.com/en-us/tickets/",
+   "coords": [
+    33.8003,
+    -117.8827
+   ]
+  },
+  {
+   "name_en": "Monster Jam Sacramento",
+   "name_he": "מונסטר ג'אם בסקרמנטו",
+   "state": "California",
+   "city": "Sacramento",
+   "venue": "Golden 1 Center",
+   "start": "2027-01-22",
+   "end": "2027-01-24",
+   "confirmed": true,
+   "type": "motorsport",
+   "segment_id": "tahoe_sac",
+   "why": "משאיות המפלצת באולם במרכז סקרמנטו: גרסה צפופה ורועשת, קרוב מאוד לקהל.",
+   "tip": "בדיוק בזמן שאתם אמורים לרדת מטאהו לסקרמנטו. קונים כרטיסים מראש באתר, ולוקחים אטמי אוזניים.",
+   "cost": "כרטיסים מ-~$25+",
+   "url": "https://www.monsterjam.com/en-us/tickets/",
+   "coords": [
+    38.5802,
+    -121.4997
+   ]
+  },
+  {
+   "name_en": "King of the Hammers",
+   "name_he": "קינג אוף דה האמרס: מרוץ השטח הקשה בעולם",
+   "state": "California",
+   "city": "Johnson Valley",
+   "venue": "Hammertown, Johnson Valley OHV Area",
+   "start": "2027-01-21",
+   "end": "2027-02-06",
+   "confirmed": true,
+   "type": "motorsport",
+   "segment_id": "la2lv",
+   "why": "מרוץ השטח הקשה בעולם: ג'יפים ובאגים מטפסים על סלעים ענקיים ודוהרים במדבר. Hammertown היא עיר אוהלים של עשרות אלפי חובבי שטח באמצע מדבר מוהאבי.",
+   "tip": "המרוץ המרכזי של המכוניות בסוף השבוע האחרון, כדאי לבדוק את לוח הזמנים באתר. הכניסה והחניה לצופים בתשלום, והגישה בדרך עפר. להביא מים, הגנה משמש ובגדים חמים ללילה. פחות משעה מ-Yucca Valley.",
+   "cost": "כרטיס צופים בתשלום (עשרות דולרים)",
+   "url": "https://kingofthehammers.com/",
+   "coords": [
+    34.38,
+    -116.55
+   ]
+  },
+  {
+   "name_en": "AT&T Pebble Beach Pro-Am",
+   "name_he": "טורניר הגולף של פבל ביץ'",
+   "state": "California",
+   "city": "Pebble Beach",
+   "venue": "Pebble Beach Golf Links",
+   "start": "2027-02-01",
+   "end": "2027-02-07",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "hwy1",
+   "why": "טורניר PGA יוקרתי באחד ממגרשי הגולף הכי יפים בעולם, צמוד לאוקיינוס. שחקני הצמרת משחקים לצד סלבריטאים.",
+   "tip": "הסיבובים העיקריים 4–7.2. ימי האימון בתחילת השבוע זולים ורגועים יותר. יש חניונים ושאטלים מסודרים. ממש על המסלול שלכם ב-Hwy 1.",
+   "cost": "כרטיס יומי מ-~$60",
+   "url": "https://www.attpbgolf.com/",
+   "coords": [
+    36.5686,
+    -121.9496
+   ]
+  },
+  {
+   "name_en": "The Sentry at Torrey Pines (formerly Farmers Insurance Open)",
+   "name_he": "טורניר הגולף בטורי פיינס בסן דייגו",
+   "state": "California",
+   "city": "San Diego",
+   "venue": "Torrey Pines Golf Course",
+   "start": "2027-01-27",
+   "end": "2027-01-30",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "la",
+   "why": "טורניר PGA על צוקי טורי פיינס מעל האוקיינוס, מהנופים הכי יפים בסבב. מ-2027 נקרא בשם חדש, The Sentry.",
+   "tip": "השנה הטורניר מסתיים בשבת (30.1). כרטיס יומי קונים באתר, ויש שאטלים מחניונים מרוחקים. סן דייגו כשעתיים דרומית ללוס אנג'לס, אז זה רק אם אתם שם.",
+   "cost": "כרטיס יומי מ-~$50",
+   "url": "https://www.farmersinsuranceopen.com/",
+   "coords": [
+    32.9005,
+    -117.244
+   ]
+  },
+  {
+   "name_en": "The Genesis Invitational",
+   "name_he": "טורניר הגולף ג'נסיס בלוס אנג'לס",
+   "state": "California",
+   "city": "Los Angeles (Pacific Palisades)",
+   "venue": "Riviera Country Club",
+   "start": "2027-02-18",
+   "end": "2027-02-21",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "la",
+   "why": "טורניר PGA ותיק בהנחיית טייגר וודס, במועדון ריביירה ההיסטורי של לוס אנג'לס.",
+   "tip": "לפי התוכנית תהיו כבר באריזונה, אז רק לידיעה. אין חניה במועדון, רק שאטלים מחניונים מרוחקים.",
+   "cost": "כרטיס יומי מ-~$60",
+   "url": "https://genesisinvitational.com/",
+   "coords": [
+    34.0489,
+    -118.5017
+   ]
+  },
+  {
+   "name_en": "Chinese New Year Festival & Parade",
+   "name_he": "מצעד ראש השנה הסיני בסן פרנסיסקו",
+   "state": "California",
+   "city": "San Francisco",
+   "venue": "Market St & 2nd St to Kearny St (Chinatown)",
+   "start": "2027-02-20",
+   "end": "2027-02-21",
+   "confirmed": true,
+   "type": "parade",
+   "segment_id": "sf",
+   "why": "מצעד ראש השנה הסיני הגדול מחוץ לאסיה, בלילה, עם דרקון זהב ענק באורך עשרות מטרים, זיקוקים ואלפי משתתפים. השנה זו שנת העז.",
+   "tip": "המצעד בשבת 20.2 ב-17:15, והיריד ברחוב Grant ב-20–21.2. הצפייה חינם, ויציעים בתשלום. לפי התוכנית תהיו אז באריזונה, אז רק לידיעה.",
+   "cost": "חינם; יציע בתשלום",
+   "url": "https://chineseparade.com/",
+   "coords": [
+    37.7887,
+    -122.401
+   ]
+  },
+  {
+   "name_en": "Golden Dragon Parade",
+   "name_he": "מצעד דרקון הזהב בצ'יינה טאון של לוס אנג'לס",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "Chinatown (N. Broadway & Hill St)",
+   "start": "2027-02-13",
+   "end": "2027-02-13",
+   "confirmed": true,
+   "type": "parade",
+   "segment_id": "la",
+   "why": "מצעד ראש השנה הסיני ה-128 של לוס אנג'לס: ריקודי אריות ודרקונים, תזמורות ופצפוצים, ואחריו פסטיבל רחוב עם אוכל.",
+   "tip": "שבת 13.2, 13:00–16:00. מגיעים במטרו לתחנת Chinatown כי אין חניה. זה יום לפני הסופרבול, אז העיר עמוסה.",
+   "cost": "חינם",
+   "url": "https://www.lachinesechamber.org/events/2027/parade",
+   "coords": [
+    34.0623,
+    -118.2383
+   ]
+  },
+  {
+   "name_en": "UVSA Tet Festival",
+   "name_he": "פסטיבל טט: ראש השנה הווייטנאמי",
+   "state": "California",
+   "city": "Huntington Beach",
+   "venue": "Golden West College",
+   "start": "2027-02-13",
+   "end": "2027-02-15",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "la",
+   "why": "פסטיבל ראש השנה הווייטנאמי הגדול מחוץ לווייטנאם, ליד Little Saigon: אוכל רחוב מעולה, הופעות, זיקוקים ומתקני לונה פארק.",
+   "tip": "כרטיסים זולים אונליין. הכי עמוס בערב. שווה לשלב ארוחת פו ב-Little Saigon (Westminster).",
+   "cost": "כניסה ~$10–15",
+   "url": "https://tetfestival.org/",
+   "coords": [
+    33.7335,
+    -118.005
+   ]
+  },
+  {
+   "name_en": "Lunar New Year Celebration at Disney California Adventure",
+   "name_he": "חגיגות ראש השנה הירחי בדיסני קליפורניה אדבנצ'ר",
+   "state": "California",
+   "city": "Anaheim",
+   "venue": "Disney California Adventure Park",
+   "start": "2027-01-22",
+   "end": "2027-02-21",
+   "confirmed": false,
+   "type": "festival",
+   "segment_id": "la",
+   "why": "הפארק מתקשט בפנסים אדומים, יש תהלוכה של מולאן, דוכני אוכל אסייתי מיוחדים, ומיקי ומיני מסתובבים בבגדים מסורתיים.",
+   "tip": "התאריכים משוערים לפי השנים הקודמות (מסוף ינואר עד אמצע או סוף פברואר), ודיסני מכריזה עליהם בדצמבר. צריך כרטיס לפארק והזמנה מראש.",
+   "cost": "כלול בכרטיס לפארק (מ-~$110)",
+   "url": "https://disneyland.disney.go.com/destinations/disney-california-adventure/",
+   "coords": [
+    33.8061,
+    -117.9192
+   ]
+  },
+  {
+   "name_en": "Grand National Roadster Show",
+   "name_he": "תערוכת מכוניות הרודסטר הגדולה בפומונה",
+   "state": "California",
+   "city": "Pomona",
+   "venue": "Fairplex",
+   "start": "2027-02-05",
+   "end": "2027-02-07",
+   "confirmed": true,
+   "type": "show",
+   "segment_id": "la",
+   "why": "תערוכת ההוט-רוד הוותיקה בעולם: יותר מ-500 מכוניות מפוארות באולמות, מאות קלאסיות בחוץ, ותחרות 'הרודסטר היפה באמריקה'.",
+   "tip": "פתוח 10:00–18:00 בכל יום. כרטיסים באתר. פומונה כשעה מזרחית למרכז לוס אנג'לס, בכיוון הכביש לווגאס, אז נוח לשלב.",
+   "cost": "כרטיס ~$30",
+   "url": "https://rodshows.com/grand-national/",
+   "coords": [
+    34.0849,
+    -117.7676
+   ]
+  },
+  {
+   "name_en": "Santa Barbara International Film Festival",
+   "name_he": "פסטיבל הסרטים הבינלאומי של סנטה ברברה",
+   "state": "California",
+   "city": "Santa Barbara",
+   "venue": "Arlington Theatre and downtown State Street venues",
+   "start": "2027-02-03",
+   "end": "2027-02-13",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "hwy1",
+   "why": "פסטיבל סרטים גדול באמצע עונת האוסקר: כוכבים מגיעים לקבל פרסים ולדבר על הסרטים שלהם, בעיר חוף יפהפייה.",
+   "tip": "יש גם הקרנות חינם לקהל הרחב. הכרטיסים לערבי הפרסים עם הכוכבים נגמרים מהר. התוכנית המלאה מתפרסמת בינואר.",
+   "cost": "יש הקרנות חינם; כרטיס ~$20+",
+   "url": "https://sbiff.org/",
+   "coords": [
+    34.4257,
+    -119.7068
+   ]
+  },
+  {
+   "name_en": "Morro Bay Winter Bird Festival",
+   "name_he": "פסטיבל ציפורי החורף במורו ביי",
+   "state": "California",
+   "city": "Morro Bay",
+   "venue": "Morro Bay Community Center and field trips around the bay",
+   "start": "2027-01-14",
+   "end": "2027-01-18",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "hwy1",
+   "why": "פסטיבל הצפרות ה-30, באחד המקומות העשירים בציפורים בארה״ב: סיורים מודרכים ברגל, בשיט ובקיאקים, והרצאות.",
+   "tip": "ההרשמה נפתחת ב-7.11.2026, והסיורים הטובים מתמלאים מהר. אולי תגיעו לחוף קצת אחרי הפסטיבל, או רק לסופו.",
+   "cost": "רישום + תשלום לכל סיור",
+   "url": "https://morrobaybirdfestival.org/",
+   "coords": [
+    35.371,
+    -120.853
+   ]
+  },
+  {
+   "name_en": "Palm Springs International Film Festival",
+   "name_he": "פסטיבל הסרטים הבינלאומי של פאלם ספרינגס",
+   "state": "California",
+   "city": "Palm Springs",
+   "venue": "Palm Springs Convention Center and local theaters",
+   "start": "2027-01-07",
+   "end": "2027-01-18",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "la2lv",
+   "why": "אחד מפסטיבלי הסרטים הגדולים בארה״ב, עם הרבה סרטים בינלאומיים שמתמודדים על האוסקר וערב פרסים נוצץ עם כוכבים.",
+   "tip": "כרטיסים להקרנות בודדות זולים יחסית ונמכרים באתר. לפי התוכנית זה מוקדם בשבילכם, אז רק לידיעה.",
+   "cost": "הקרנה ~$15–20",
+   "url": "https://www.psfilmfest.org/filmfest",
+   "coords": [
+    33.8247,
+    -116.5399
+   ]
+  },
+  {
+   "name_en": "Golden State Warriors NBA Basketball",
+   "name_he": "כדורסל NBA: גולדן סטייט ווריורס",
+   "state": "California",
+   "city": "San Francisco",
+   "venue": "Chase Center",
+   "start": "2027-01-25",
+   "end": "2027-02-05",
+   "confirmed": false,
+   "type": "sports",
+   "segment_id": "sf",
+   "why": "משחק NBA בצ'ייס סנטר המודרני על המפרץ, הבית של סטף קרי. אווירה חשמלית ואולם יפהפה.",
+   "tip": "התאריכים משוערים, אלה רק הימים שבהם כנראה תהיו בעיר. את משחקי הבית המדויקים בודקים בלוח המשחקים הרשמי. הכרטיסים יקרים, אז מחפשים בשוק המשני ובמשחקים של אמצע השבוע.",
+   "cost": "כרטיסים מ-~$80+",
+   "url": "https://www.nba.com/warriors/schedule",
+   "coords": [
+    37.768,
+    -122.3877
+   ]
+  },
+  {
+   "name_en": "Los Angeles Lakers NBA Basketball",
+   "name_he": "כדורסל NBA: לוס אנג'לס לייקרס",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "Crypto.com Arena",
+   "start": "2027-02-01",
+   "end": "2027-02-08",
+   "confirmed": false,
+   "type": "sports",
+   "segment_id": "la",
+   "why": "הקבוצה הכי זוהרת ב-NBA, עם סלבריטאים בשורה הראשונה, באולם המפורסם במרכז לוס אנג'לס.",
+   "tip": "התאריכים משוערים, צריך לבדוק בלוח המשחקים אילו משחקי בית יש כשאתם בעיר. כרטיסים בשוק המשני. משחקים מול קבוצות חלשות זולים בהרבה.",
+   "cost": "כרטיסים מ-~$60+",
+   "url": "https://www.nba.com/lakers/schedule",
+   "coords": [
+    34.043,
+    -118.2673
+   ]
+  },
+  {
+   "name_en": "WM Phoenix Open",
+   "name_he": "טורניר הגולף WM Phoenix Open",
+   "state": "Arizona",
+   "city": "Scottsdale",
+   "venue": "TPC Scottsdale (Stadium Course)",
+   "start": "2027-02-08",
+   "end": "2027-02-14",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "phoenix",
+   "why": "'המסיבה הכי גדולה בגולף': מאות אלפי צופים, והגומה ה-16 המפורסמת מוקפת יציעים שבהם הקהל צועק ושר כמו במשחק כדורגל.",
+   "tip": "הסיבובים 11–14.2. ימי האימון בתחילת השבוע זולים ורגועים, ושבת הכי עמוסה ופרועה. אין חניה במקום, רק שאטלים מחניונים מרוחקים.",
+   "cost": "כרטיס יומי מ-~$70",
+   "url": "https://wmphoenixopen.com/",
+   "coords": [
+    33.6417,
+    -111.9108
+   ]
+  },
+  {
+   "name_en": "Barrett-Jackson Scottsdale Auction",
+   "name_he": "מכירת המכוניות הפומבית Barrett-Jackson",
+   "state": "Arizona",
+   "city": "Scottsdale",
+   "venue": "WestWorld of Scottsdale",
+   "start": "2027-01-23",
+   "end": "2027-01-31",
+   "confirmed": true,
+   "type": "show",
+   "segment_id": "phoenix",
+   "why": "מכירת מכוניות האספנות הגדולה בעולם: יותר מ-2,000 מכוניות קלאסיות ונדירות, מכירות של מיליונים בשידור חי, וגם יריד ואוכל.",
+   "tip": "השנה תשעה ימים, 23–31.1. בימי חול פחות עמוס. לפי התוכנית תהיו עוד בקליפורניה, אז זה רק אם אתם מקדימים.",
+   "cost": "כרטיס יומי מ-~$30",
+   "url": "https://www.barrett-jackson.com/2027-scottsdale",
+   "coords": [
+    33.638,
+    -111.889
+   ]
+  },
+  {
+   "name_en": "Quartzsite Sports, Vacation & RV Show",
+   "name_he": "תערוכת הקרוואנים והשווקים הענקיים של קוורצסייט",
+   "state": "Arizona",
+   "city": "Quartzsite",
+   "venue": "The Big Tent",
+   "start": "2027-01-15",
+   "end": "2027-01-23",
+   "confirmed": true,
+   "type": "market",
+   "segment_id": "phoenix",
+   "why": "עיירה מדברית קטנה שמתמלאת בחורף במאות אלפי קרוואנים: תערוכת RV ענקית באוהל, ומסביב קילומטרים של שווקי פשפשים, אבנים ומינרלים.",
+   "tip": "באותה תקופה פועלים גם שווקי האבנים, כמו Tyson Wells ו-QIA Pow Wow. מסביב לעיירה יש שטחי BLM שבהם אפשר לישון בחינם. קוורצסייט נמצאת על I-10, כשעתיים מערבית לפיניקס.",
+   "cost": "כניסה זולה (כמה דולרים)",
+   "url": "https://xpopress.com/show/profile/59/quartzsite-rv-show",
+   "coords": [
+    33.665,
+    -114.225
+   ]
+  },
+  {
+   "name_en": "Tucson Gem, Mineral & Fossil Showcase",
+   "name_he": "שבועות האבנים והמינרלים של טוסון",
+   "state": "Arizona",
+   "city": "Tucson",
+   "venue": "Dozens of venues citywide (I-10 corridor and downtown)",
+   "start": "2027-01-27",
+   "end": "2027-02-14",
+   "confirmed": true,
+   "type": "market",
+   "segment_id": "phoenix",
+   "why": "כל העיר הופכת לשוק אבנים ענקי: יותר מ-40 תערוכות בבתי מלון, באוהלים ובחניונים, עם קריסטלים, מטאוריטים ומאובני דינוזאורים. הגדול בעולם מסוגו.",
+   "tip": "רוב התערוכות חינם ופתוחות לקהל, אבל חלקן רק לסוחרים, אז כדאי לבדוק. בשנים קודמות היה שאטל חינם בין האתרים. המלונות בטוסון מתייקרים, אז מזמינים מוקדם.",
+   "cost": "רוב התערוכות חינם",
+   "url": "https://www.visittucson.org/tucson-gem-mineral-fossil-showcase",
+   "coords": [
+    32.22,
+    -110.985
+   ]
+  },
+  {
+   "name_en": "Tucson Gem & Mineral Show (TGMS Main Show)",
+   "name_he": "תערוכת האבנים והמינרלים הראשית של טוסון",
+   "state": "Arizona",
+   "city": "Tucson",
+   "venue": "Tucson Convention Center",
+   "start": "2027-02-11",
+   "end": "2027-02-14",
+   "confirmed": true,
+   "type": "show",
+   "segment_id": "phoenix",
+   "why": "התערוכה המרכזית והוותיקה (השנה ה-72) של שבועות האבנים: תצוגות של מינרלים נדירים ממוזיאונים בכל העולם, לצד מאות דוכנים.",
+   "tip": "פתוח 10:00–17:00 (בראשון עד 16:00). ילדים עד גיל 14 נכנסים בחינם. זה בדיוק כשתהיו באזור פיניקס, כשעה ו-40 דק׳ נסיעה.",
+   "cost": "$15, ילדים עד 14 חינם",
+   "url": "https://www.tgms.org/show",
+   "coords": [
+    32.2185,
+    -110.9757
+   ]
+  },
+  {
+   "name_en": "Monster Energy AMA Supercross – Glendale",
+   "name_he": "סופרקרוס גלנדייל",
+   "state": "Arizona",
+   "city": "Glendale",
+   "venue": "State Farm Stadium",
+   "start": "2027-02-13",
+   "end": "2027-02-13",
+   "confirmed": true,
+   "type": "motorsport",
+   "segment_id": "phoenix",
+   "why": "הסיבוב השישי של אליפות הסופרקרוס, באצטדיון המקורה של הקרדינלס: אופנועי שטח שעפים באוויר, בלי לדאוג למזג האוויר.",
+   "tip": "באותו סוף שבוע יש גם את WM Phoenix Open ואת תערוכת האבנים בטוסון, אז כדאי לתכנן מראש. ה-Pit Pass שווה את התוספת.",
+   "cost": "כרטיסים מ-~$30+",
+   "url": "https://www.supercrosslive.com/",
+   "coords": [
+    33.5276,
+    -112.2626
+   ]
+  },
+  {
+   "name_en": "NBA All-Star 2027",
+   "name_he": "סוף שבוע האולסטאר של ה-NBA",
+   "state": "Arizona",
+   "city": "Phoenix",
+   "venue": "Phoenix Suns arena (Mortgage Matchup Center, formerly Footprint Center)",
+   "start": "2027-02-19",
+   "end": "2027-02-21",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "phoenix",
+   "why": "סוף שבוע הכוכבים של ה-NBA: משחק הכוכבים הצעירים בשישי, תחרויות ההטבעות והשלשות בשבת ומשחק האולסטאר בראשון. כל פיניקס חוגגת.",
+   "tip": "הכרטיסים לאולם יקרים מאוד. בדרך כלל יש גם אירועי אוהדים זולים יותר, אז כדאי לעקוב באתר. המלונות בפיניקס יתמלאו, אז מזמינים עכשיו.",
+   "cost": "כרטיסים מ-~$500+; אירועי אוהדים זולים יותר",
+   "url": "https://www.nba.com/allstar",
+   "coords": [
+    33.4457,
+    -112.0712
+   ]
+  },
+  {
+   "name_en": "Vrbo Fiesta Bowl (CFP Quarterfinal)",
+   "name_he": "פיאסטה בול: רבע גמר פלייאוף הפוטבול",
+   "state": "Arizona",
+   "city": "Glendale",
+   "venue": "State Farm Stadium",
+   "start": "2026-12-30",
+   "end": "2026-12-30",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "phoenix",
+   "why": "אחד מששת הבולים הגדולים של פוטבול המכללות. השנה זה רבע גמר הפלייאוף, עם כל האווירה של בול גדול.",
+   "tip": "רביעי 30.12 ב-17:30. הקבוצות ייקבעו באמצע דצמבר. לפי התוכנית תהיו אז ב-Missouri, אז רק לידיעה.",
+   "cost": "כרטיסים מ-~$100+",
+   "url": "https://fiestabowl.org/",
+   "coords": [
+    33.5276,
+    -112.2626
+   ]
+  },
+  {
+   "name_en": "Arizona Renaissance Festival",
+   "name_he": "פסטיבל הרנסנס של אריזונה",
+   "state": "Arizona",
+   "city": "Gold Canyon",
+   "venue": "Festival grounds on US-60, east of Gold Canyon",
+   "start": "2027-02-06",
+   "end": "2027-04-04",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "phoenix",
+   "why": "כפר ענק מימי הביניים באמצע המדבר: קרבות אבירים על סוסים, הרבה במות עם מופעים, רגלי הודו ענקיות ואנשים בתחפושות.",
+   "tip": "פתוח רק בסופי שבוע ובפרזידנטס דיי (15.2), 10:00–18:00. אונליין הכרטיסים זולים יותר. כ-45 דק׳ מזרחית לפיניקס.",
+   "cost": "~$35 למבוגר",
+   "url": "https://arizona.renfestinfo.com/",
+   "coords": [
+    33.297,
+    -111.379
+   ]
+  },
+  {
+   "name_en": "Gold Rush Days & Senior Pro Rodeo",
+   "name_he": "ימי הבהלה לזהב בוויקנבורג",
+   "state": "Arizona",
+   "city": "Wickenburg",
+   "venue": "Downtown Wickenburg and Everett Bowman Rodeo Grounds",
+   "start": "2027-02-11",
+   "end": "2027-02-14",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "phoenix",
+   "why": "פסטיבל מערב פרוע (השנה ה-78) בעיירה היסטורית ממש על US-93 שלכם: מצעד, רודיאו, חיפוש זהב בנפה, לונה פארק ותערוכת מכוניות קלאסיות.",
+   "tip": "רוב האירועים חינם, הרודיאו בתשלום. מושלם בדרך מקינגמן לפיניקס, אז כדאי לתכנן להגיע ב-11–14.2.",
+   "cost": "רוב האירועים חינם; רודיאו בתשלום",
+   "url": "https://www.wickenburgchamber.com/goldrushdays",
+   "coords": [
+    33.9686,
+    -112.7296
+   ]
+  },
+  {
+   "name_en": "Scottsdale Arabian Horse Show",
+   "name_he": "תערוכת הסוסים הערביים של סקוטסדייל",
+   "state": "Arizona",
+   "city": "Scottsdale",
+   "venue": "WestWorld of Scottsdale",
+   "start": "2027-02-11",
+   "end": "2027-02-21",
+   "confirmed": true,
+   "type": "show",
+   "segment_id": "phoenix",
+   "why": "תערוכת הסוסים הערביים הגדולה בעולם, מאז 1955: אלפי סוסים מרהיבים, תחרויות ויריד קניות ענק.",
+   "tip": "הכניסה זולה. תחרויות האליפות בערבים הכי מרשימות. זה באותו מתחם של Barrett-Jackson.",
+   "cost": "כניסה ~$15–20",
+   "url": "https://www.scottsdaleshow.com/",
+   "coords": [
+    33.638,
+    -111.889
+   ]
+  },
+  {
+   "name_en": "World Championship Hoop Dance Contest",
+   "name_he": "אליפות העולם בריקוד חישוקים במוזיאון הרד",
+   "state": "Arizona",
+   "city": "Phoenix",
+   "venue": "Heard Museum",
+   "start": "2027-02-06",
+   "end": "2027-02-07",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "phoenix",
+   "why": "רקדנים ילידים מכל צפון אמריקה מתחרים בריקוד עם עשרות חישוקים שיוצרים צורות של נשרים, פרפרים וכדורים. מרהיב ומיוחד.",
+   "tip": "הכרטיס כולל כניסה למוזיאון. התחרות בחצר בחוץ, אז להביא כובע ומים. זו השנה ה-37.",
+   "cost": "כרטיס כניסה למוזיאון (~$25)",
+   "url": "https://heard.org/event/world-championship-hoop-dance-contest/",
+   "coords": [
+    33.4723,
+    -112.0723
+   ]
+  },
+  {
+   "name_en": "Scottsdale Parada del Sol Historic Parade & Trail's End Festival",
+   "name_he": "מצעד פרדה דל סול בסקוטסדייל",
+   "state": "Arizona",
+   "city": "Scottsdale",
+   "venue": "Old Town Scottsdale",
+   "start": "2027-02-06",
+   "end": "2027-02-06",
+   "confirmed": true,
+   "type": "parade",
+   "segment_id": "phoenix",
+   "why": "המצעד ה-73 של סוסים ועגלות מערביות ברחובות אולד טאון סקוטסדייל, ואחריו פסטיבל מערבי עם מוזיקה ואוכל.",
+   "tip": "המצעד 9:30–12:00, והפסטיבל נמשך עד 16:00. מגיעים מוקדם וחונים בחניונים החינמיים של אולד טאון.",
+   "cost": "חינם",
+   "url": "https://charros.com/parada-del-sol-parade-trails-end-festival/",
+   "coords": [
+    33.4942,
+    -111.9261
+   ]
+  },
+  {
+   "name_en": "La Fiesta de los Vaqueros – Tucson Rodeo",
+   "name_he": "פיאסטה דה לוס ואקרוס: הרודיאו של טוסון",
+   "state": "Arizona",
+   "city": "Tucson",
+   "venue": "Tucson Rodeo Grounds",
+   "start": "2027-02-20",
+   "end": "2027-02-28",
+   "confirmed": true,
+   "type": "rodeo",
+   "segment_id": "phoenix",
+   "why": "אחד מהרודיאו המקצועניים הגדולים בצפון אמריקה, מאז 1925, עם מצעד מערבי ענק בלי מנועים. בטוסון אפילו נותנים לבתי הספר חופש בשבילו.",
+   "tip": "המצעד ביום חמישי 25.2 ב-9:00. קונים כרטיסים לרודיאו מראש, וסופי השבוע הכי מבוקשים. רלוונטי אם תישארו בדרום אריזונה אחרי 20.2.",
+   "cost": "כרטיסים מ-~$25+",
+   "url": "https://www.tucsonrodeo.com/",
+   "coords": [
+    32.1725,
+    -110.968
+   ]
+  },
+  {
+   "name_en": "Cactus League Spring Training – Opening Day",
+   "name_he": "פתיחת אימוני האביב של הבייסבול (Cactus League)",
+   "state": "Arizona",
+   "city": "Scottsdale (Phoenix area)",
+   "venue": "Ballparks across the Phoenix area (e.g., Salt River Fields at Talking Stick)",
+   "start": "2027-02-19",
+   "end": "2027-02-19",
+   "confirmed": true,
+   "type": "sports",
+   "segment_id": "phoenix",
+   "why": "15 קבוצות MLB מתאמנות ומשחקות סביב פיניקס: בייסבול בשמש, באצטדיונים קטנים ואינטימיים ובמחירים זולים. ביום הפתיחה יש 8 משחקים.",
+   "tip": "יום הפתיחה בשישי 19.2, ומשם יש משחקים כמעט כל יום עד סוף מרץ. כרטיסי הדשא הכי זולים. להביא קרם הגנה וכובע. בימים שלפני אפשר לצפות באימונים בחינם.",
+   "cost": "כרטיסים מ-~$20+",
+   "url": "https://cactusleague.com/",
+   "coords": [
+    33.5455,
+    -111.8846
+   ]
+  }
+ ]
+}

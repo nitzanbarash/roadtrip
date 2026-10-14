@@ -1,0 +1,1120 @@
+{
+ "attractions": [
+  {
+   "name_en": "Ponce de Leon Inlet Lighthouse & Museum",
+   "name_he": "מגדלור פונסה אינלט",
+   "segment_id": "fl_east",
+   "kind": "scenic",
+   "wow": 4,
+   "detour": "+25 דק׳",
+   "city_state": "Ponce Inlet, Florida",
+   "why": "המגדלור הגבוה בפלורידה (53 מ׳), 203 מדרגות ונוף של כל החוף והמפרץ. סביבו מוזיאון קטן ובתים ישנים של שומרי המגדלור.",
+   "tip": "ממש ליד יש מרכז ימי קטן (Marine Science Center) עם צבי ים בשיקום — שווה חצי שעה.",
+   "cost": "כ-$7",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה; בחורף נעים לטפס",
+   "coords": [
+    29.0807,
+    -80.9281
+   ]
+  },
+  {
+   "name_en": "Dunlawton Avenue Beach Ramp, Daytona Beach Shores",
+   "name_he": "נסיעה ברכב על החוף של דייטונה",
+   "segment_id": "fl_east",
+   "kind": "quirky",
+   "wow": 4,
+   "detour": "+15 דק׳",
+   "city_state": "Daytona Beach Shores, Florida",
+   "why": "החוף היחיד בערך בעולם שנוסעים עליו ברכב רגיל. יורדים ברמפה ונוסעים לאט על החול, עוצרים איפה שבא.",
+   "tip": "מגבלת מהירות 10 מייל, לא לרדת לחול הרך. בחורף הכניסה חינם.",
+   "cost": "חינם בדצמבר–ינואר (אחרת $20 לרכב)",
+   "time_needed": "חצי שעה-שעה",
+   "season": "פתוח כל השנה; בחורף חינם וריק יחסית",
+   "coords": [
+    29.1375,
+    -80.9705
+   ]
+  },
+  {
+   "name_en": "Flagler Avenue, New Smyrna Beach",
+   "name_he": "רחוב פלאגלר, ניו סמירנה ביץ׳",
+   "segment_id": "fl_east",
+   "kind": "city",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "New Smyrna Beach, Florida",
+   "why": "רחוב חוף קטן ונחמד עם ברים, חנויות גלישה וגלידריות שנגמר ישר על החול. עיירת גולשים אמיתית בלי המוניות של דייטונה.",
+   "tip": "חנו בחניון ליד החוף ולכו ברגל. בסוף שבוע צפוף — תבואו בבוקר.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה; חורף נעים ורגוע",
+   "coords": [
+    29.0337,
+    -80.91
+   ]
+  },
+  {
+   "name_en": "Smyrna Dunes Park",
+   "name_he": "פארק דיונות סמירנה",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 3,
+   "detour": "+20 דק׳",
+   "city_state": "New Smyrna Beach, Florida",
+   "why": "שביל עץ מוגבה של 3 ק״מ מעל דיונות עם נוף למגדלור פונסה ולמפרץ. לפעמים רואים דולפינים.",
+   "tip": "לכו את הלולאה נגד כיוון השעון ותסיימו על החוף. יש חוף כלבים אם זה מעניין.",
+   "cost": "$10 לרכב",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה; בחורף אין יתושים",
+   "coords": [
+    29.062,
+    -80.921
+   ]
+  },
+  {
+   "name_en": "Turtle Mound, Canaveral National Seashore (Apollo Beach)",
+   "name_he": "טרטל מאונד, חוף אפולו (קנוורל)",
+   "segment_id": "fl_east",
+   "kind": "national_park",
+   "wow": 3,
+   "detour": "+40 דק׳",
+   "city_state": "New Smyrna Beach, Florida",
+   "why": "הצד הצפוני של קנוורל — תל צדפות עתיק של 15 מ׳ עם נוף לאוקיינוס וללגונה, וחופים ריקים לגמרי.",
+   "tip": "אם כבר הייתם בפלאיאלינדה, זה הצד השני של אותו פארק. הכרטיס תקף לשניהם ל-7 ימים.",
+   "cost": "$25 לרכב",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה; בחורף שקט ונעים",
+   "coords": [
+    28.9305,
+    -80.8262
+   ]
+  },
+  {
+   "name_en": "Haulover Canal Manatee Observation Deck",
+   "name_he": "מרפסת התצפית לפרות ים בתעלת הולאובר",
+   "segment_id": "fl_east",
+   "kind": "scenic",
+   "wow": 3,
+   "detour": "+35 דק׳",
+   "city_state": "Titusville, Florida",
+   "why": "מרפסת עץ מעל תעלה צרה שבה מתקבצות פרות ים. בחורף זה המקום הכי קל לראות אותן בחינם.",
+   "tip": "בוקר שקט וקר = הכי הרבה פרות ים. אפשר לשלב עם בלאק פוינט דרייב באותו ביקור.",
+   "cost": "חינם",
+   "time_needed": "חצי שעה",
+   "season": "מצוין בחורף — עונת פרות הים",
+   "coords": [
+    28.736,
+    -80.754
+   ]
+  },
+  {
+   "name_en": "American Space Museum & Space Walk of Fame",
+   "name_he": "מוזיאון החלל האמריקאי, טיטוסוויל",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Titusville, Florida",
+   "why": "מוזיאון קטן ואמיתי במרכז טיטוסוויל, מלא בציוד מקורי מתוכניות אפולו והמעבורות, מנוהל ע״י מתנדבים ותיקים של נאס״א.",
+   "tip": "ממש ליד הנהר יש את Space View Park — נקודת צפייה מצוינת לשיגורים. בדקו לוח שיגורים לפני.",
+   "cost": "כ-$12",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    28.6118,
+    -80.809
+   ]
+  },
+  {
+   "name_en": "Valiant Air Command Warbird Museum",
+   "name_he": "מוזיאון מטוסי הקרב ואליאנט",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Titusville, Florida",
+   "why": "האנגרים מלאים במטוסי קרב ישנים שעדיין טסים, מהמלחמה העולמית ועד וייטנאם. ליד שדה התעופה של טיטוסוויל.",
+   "tip": "אם יש טייס מתנדב בסביבה הוא ייקח אתכם לסיור — פשוט תשאלו.",
+   "cost": "$20",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    28.521,
+    -80.7965
+   ]
+  },
+  {
+   "name_en": "Dixie Crossroads Seafood Restaurant",
+   "name_he": "דיקסי קרוסרודס — רוק שרימפ",
+   "segment_id": "fl_east",
+   "kind": "food",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Titusville, Florida",
+   "why": "המסעדה המפורסמת של החוף: rock shrimp (שרימפס סלעים קטנים ומתוקים) בגריל, מוגשים עם לחמניות תירס חינם.",
+   "tip": "ממש ליד היציאה מ-95. תזמינו לפי מספר יחידות ולא מנה — זה הקטע.",
+   "cost": "$20-40 לאדם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    28.6195,
+    -80.83
+   ]
+  },
+  {
+   "name_en": "Exploration Tower, Port Canaveral",
+   "name_he": "מגדל התצפית של פורט קנוורל",
+   "segment_id": "fl_east",
+   "kind": "scenic",
+   "wow": 2,
+   "detour": "+25 דק׳",
+   "city_state": "Port Canaveral, Florida",
+   "why": "מגדל 7 קומות על הנמל עם נוף לאוניות הקרוז העצומות ולכני השיגור.",
+   "tip": "הנמל סגר אותו לציבור ב-2023 — בדקו אם נפתח מחדש לפני שנוסעים. חלופה טובה: Jetty Park ממש ליד.",
+   "cost": "היה כ-$7",
+   "time_needed": "חצי שעה",
+   "season": "ייתכן שסגור — בדקו",
+   "coords": [
+    28.41,
+    -80.627
+   ]
+  },
+  {
+   "name_en": "Jetty Park Beach and Pier",
+   "name_he": "ג׳טי פארק — חוף ומזח הנמל",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 3,
+   "detour": "+25 דק׳",
+   "city_state": "Cape Canaveral, Florida",
+   "why": "חוף ומזח בפתח הנמל: אוניות קרוז ענקיות עוברות ממש לידכם, ובימי שיגור זה אחד המקומות הכי טובים לראות רקטה.",
+   "tip": "אוניות יוצאות בד״כ אחה״צ (16:00-18:00). ביום שיגור תגיעו שעתיים לפני — החניה מתמלאת.",
+   "cost": "כ-$15 לרכב",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    28.407,
+    -80.5945
+   ]
+  },
+  {
+   "name_en": "Westgate Cocoa Beach Pier",
+   "name_he": "המזח של קוקואה ביץ׳",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 4,
+   "detour": "+25 דק׳",
+   "city_state": "Cocoa Beach, Florida",
+   "why": "מזח עץ של 250 מ׳ עם ברים, מסעדות ומוזיקה חיה, גולשים מתחת ופליקנים מסביב. הלב של קוקואה ביץ׳.",
+   "tip": "לכו בשקיעה, שתו משהו בבר בקצה. חניה ליד המזח יקרה — חנו ברחוב כמה בלוקים צפונה.",
+   "cost": "חינם להסתובב (דיג בתשלום)",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה; בחורף 20-25 מעלות",
+   "coords": [
+    28.368,
+    -80.604
+   ]
+  },
+  {
+   "name_en": "Historic Cocoa Village",
+   "name_he": "קוקואה וילג׳ ההיסטורי",
+   "segment_id": "fl_east",
+   "kind": "city",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Cocoa, Florida",
+   "why": "כפר קטן ומטופח על הנהר עם סמטאות, בוטיקים, גלידה ובתי קפה. נחמד לערב רגוע אחרי יום של חלל.",
+   "tip": "חניה חינם ברחובות. ביום ראשון בבוקר יש שוק קטן.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    28.3535,
+    -80.725
+   ]
+  },
+  {
+   "name_en": "Brevard Zoo",
+   "name_he": "גן החיות ברוורד",
+   "segment_id": "fl_east",
+   "kind": "zoo_aquarium",
+   "wow": 4,
+   "detour": "+5 דק׳",
+   "city_state": "Melbourne, Florida",
+   "why": "גן חיות קטן ומצוין ממש ליד ה-95, עם קיאקים בין החיות, האכלת ג׳ירפות וזיפליין (Treetop Trek) מעל הקופים והתנינים.",
+   "tip": "הזיפליין צריך הזמנה מראש ועולה בנפרד. תגיעו בפתיחה — החיות פעילות בבוקר.",
+   "cost": "כ-$27 למבוגר; זיפליין בתוספת",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה; חורף מושלם",
+   "coords": [
+    28.1663,
+    -80.67
+   ]
+  },
+  {
+   "name_en": "Sebastian Inlet State Park",
+   "name_he": "פארק סבסטיאן אינלט",
+   "segment_id": "fl_east",
+   "kind": "state_park",
+   "wow": 5,
+   "detour": "+35 דק׳",
+   "city_state": "Melbourne Beach, Florida",
+   "why": "המפרץ הכי יפה בחוף המזרחי: שוברי גלים ארוכים, גולשים, דייגים, מים צלולים ודולפינים. חוף רחב ושקט בשני הצדדים.",
+   "tip": "לכו על שובר הגלים הצפוני בבוקר. יש כאן גם קמפינג טוב אם רוצים לישון על החוף.",
+   "cost": "$8 לרכב",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה; בחורף הגלים הכי טובים",
+   "coords": [
+    27.863,
+    -80.448
+   ]
+  },
+  {
+   "name_en": "McLarty Treasure Museum",
+   "name_he": "מוזיאון האוצרות מקלרטי",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+35 דק׳",
+   "city_state": "Vero Beach, Florida",
+   "why": "מוזיאון קטן על צי האוצרות הספרדי שטבע כאן ב-1715 — מכאן השם ״חוף האוצרות״. מטבעות זהב, סרט ומרפסת לאוקיינוס.",
+   "tip": "כניסה סמלית, שעה מספיקה. אחרי סערות עדיין מוצאים מטבעות על החוף.",
+   "cost": "$2",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    27.8386,
+    -80.4462
+   ]
+  },
+  {
+   "name_en": "Pelican Island National Wildlife Refuge — Centennial Trail",
+   "name_he": "שמורת פליקן איילנד — שביל המאה",
+   "segment_id": "fl_east",
+   "kind": "hike",
+   "wow": 3,
+   "detour": "+30 דק׳",
+   "city_state": "Vero Beach, Florida",
+   "why": "שמורת הטבע הראשונה בארה״ב (1903). שביל קצר למגדל תצפית מול אי הפליקנים, שבחורף מלא בציפורים מקננות.",
+   "tip": "קחו משקפת. דרך ג׳ונגל טרייל (דרך עפר) שלידו היא נסיעה יפה בין חורש ופרדסים.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "מצוין בחורף — שיא עונת הציפורים",
+   "coords": [
+    27.8033,
+    -80.427
+   ]
+  },
+  {
+   "name_en": "Mel Fisher's Treasure Museum Sebastian",
+   "name_he": "מוזיאון האוצרות של מל פישר, סבסטיאן",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Sebastian, Florida",
+   "why": "אוצרות אמיתיים מספינות שטבעו — מטבעות, שרשראות זהב ותכשיטים — של צייד האוצרות הכי מפורסם בפלורידה.",
+   "tip": "קטן, שעה מספיקה. יש חנות שבה אפשר לקנות מטבע אמיתי מספינה טבועה (יקר).",
+   "cost": "כ-$7",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    27.8158,
+    -80.47
+   ]
+  },
+  {
+   "name_en": "McKee Botanical Garden",
+   "name_he": "הגן הבוטני מקי",
+   "segment_id": "fl_east",
+   "kind": "scenic",
+   "wow": 4,
+   "detour": "+15 דק׳",
+   "city_state": "Vero Beach, Florida",
+   "why": "ג׳ונגל טרופי משנות ה-30 עם בריכות חבצלות ענק, מבנים ישנים מבמבוק ושבילים מוצלים. אחד הגנים הכי יפים בפלורידה.",
+   "tip": "סגור בימי שני. יש כאן בית קפה טוב לארוחת צהריים בגן.",
+   "cost": "$15",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה; חורף נעים בלי יתושים",
+   "coords": [
+    27.598,
+    -80.3713
+   ]
+  },
+  {
+   "name_en": "Vero Beach Museum of Art",
+   "name_he": "מוזיאון האמנות של וירו ביץ׳",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+20 דק׳",
+   "city_state": "Vero Beach, Florida",
+   "why": "מוזיאון קטן ואיכותי בפארק ריברסייד, עם תערוכות מתחלפות וגן פסלים. טוב ליום גשום.",
+   "tip": "שלבו עם הליכה ברחוב Ocean Drive ליד החוף — בוטיקים ובתי קפה.",
+   "cost": "כ-$12-15",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    27.646,
+    -80.3685
+   ]
+  },
+  {
+   "name_en": "Round Island Beach Park",
+   "name_he": "פארק ראונד איילנד",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 3,
+   "detour": "+25 דק׳",
+   "city_state": "Vero Beach, Florida",
+   "why": "פארק עם חוף מצד אחד ולגונה מצד שני, שבחורף מלאה בפרות ים. יש מגדל תצפית ושביל קצר.",
+   "tip": "פרות הים הן בצד הלגונה (מערב), לא בחוף. חצו את הכביש.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "מצוין בחורף — פרות ים",
+   "coords": [
+    27.5572,
+    -80.3305
+   ]
+  },
+  {
+   "name_en": "Manatee Observation and Education Center",
+   "name_he": "מרכז התצפית בפרות ים, פורט פירס",
+   "segment_id": "fl_east",
+   "kind": "zoo_aquarium",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Fort Pierce, Florida",
+   "why": "מרכז קטן על נחל שאליו מגיעות פרות ים בחורף. מרפסת תצפית ותצוגות קטנות על הלגונה.",
+   "tip": "יש לוח בכניסה עם מספר פרות הים שנצפו היום. לכו בבוקר בימים קרים.",
+   "cost": "תרומה (כ-$2)",
+   "time_needed": "חצי שעה-שעה",
+   "season": "מצוין בחורף — עונת פרות הים",
+   "coords": [
+    27.451,
+    -80.323
+   ]
+  },
+  {
+   "name_en": "National Navy UDT-SEAL Museum",
+   "name_he": "מוזיאון יחידת הסילס של הצי",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "+20 דק׳",
+   "city_state": "Fort Pierce, Florida",
+   "why": "המוזיאון הרשמי של הקומנדו הימי האמריקאי, במקום שבו הוא נולד. סירת הפיראטים מהסרט קפטן פיליפס, מסוק מהחיסול של בן לאדן ועוד.",
+   "tip": "ממש ליד יש חוף יפה (Pepper Park). שעתיים מספיקות.",
+   "cost": "כ-$20",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    27.4942,
+    -80.3005
+   ]
+  },
+  {
+   "name_en": "Downtown Fort Pierce Farmers' Market",
+   "name_he": "שוק האיכרים של פורט פירס",
+   "segment_id": "fl_east",
+   "kind": "food",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Fort Pierce, Florida",
+   "why": "אחד השווקים הכי טובים בפלורידה, כל שבת בבוקר על המרינה: אוכל רחוב, פירות, מוזיקה ואווירה מקומית.",
+   "tip": "רק בשבת 8:00-12:00. תבואו רעבים ותאכלו ארוחת בוקר שם.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פועל כל השנה",
+   "coords": [
+    27.4468,
+    -80.3222
+   ]
+  },
+  {
+   "name_en": "Bathtub Reef Beach",
+   "name_he": "חוף באת׳טאב ריף",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 4,
+   "detour": "+25 דק׳",
+   "city_state": "Stuart, Florida",
+   "why": "שונית מגינה על ״אמבטיה״ של מים רדודים ושקטים — שנורקל מהחוף עם דגים צבעוניים, בלי גלים.",
+   "tip": "השנורקל טוב רק בשפל. החוף נסגר לפעמים אחרי סערות — בדקו. ליד יש את House of Refuge, בית מציל ישן ויפה על הסלעים.",
+   "cost": "חינם",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה; בחורף המים כ-22 מעלות",
+   "coords": [
+    27.198,
+    -80.165
+   ]
+  },
+  {
+   "name_en": "Elliott Museum",
+   "name_he": "מוזיאון אליוט",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+20 דק׳",
+   "city_state": "Stuart, Florida",
+   "why": "מוזיאון מכוניות עתיקות עם רובוט שמביא את המכונית שבחרתם, פלוס אופנועים, סירות ודברי אספנות.",
+   "tip": "מול המוזיאון יש את Florida Oceanographic — מרכז ימי עם האכלת תריסניות, שווה לשלב.",
+   "cost": "כ-$14-18",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    27.2065,
+    -80.189
+   ]
+  },
+  {
+   "name_en": "DuBois Park",
+   "name_he": "פארק דובואה, ג׳ופיטר",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Jupiter, Florida",
+   "why": "לגונה שקטה וצלולה ליד פתח המפרץ, עם נוף למגדלור האדום של ג׳ופיטר. מושלם לשחייה רגועה ופיקניק.",
+   "tip": "בשפל רואים דגים בלי שנורקל. חניה חינם אבל מוגבלת — תגיעו מוקדם.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.9437,
+    -80.0752
+   ]
+  },
+  {
+   "name_en": "Guanabanas Restaurant",
+   "name_he": "גואנבנאס",
+   "segment_id": "fl_east",
+   "kind": "food",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Jupiter, Florida",
+   "why": "מסעדה פתוחה לגמרי על המים, מתחת לעצי בניאן ענקיים, עם מוזיקה חיה ואווירת איים. המקום של ג׳ופיטר.",
+   "tip": "אין הזמנות — תבואו לפני השקיעה ושבו בבר עד שיתפנה שולחן.",
+   "cost": "$20-35 לאדם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה; בחורף נעים לשבת בחוץ",
+   "coords": [
+    26.9415,
+    -80.079
+   ]
+  },
+  {
+   "name_en": "Loggerhead Marinelife Center",
+   "name_he": "מרכז צבי הים לוגרהד",
+   "segment_id": "fl_east",
+   "kind": "zoo_aquarium",
+   "wow": 4,
+   "detour": "+15 דק׳",
+   "city_state": "Juno Beach, Florida",
+   "why": "בית חולים לצבי ים שפתוח לקהל: רואים את הצבים בבריכות השיקום, עם שלט שמספר את הסיפור של כל אחד.",
+   "tip": "חינם, שעה מספיקה. יש סיורים מודרכים קצרים — תשאלו בכניסה.",
+   "cost": "חינם (תרומה)",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.8858,
+    -80.057
+   ]
+  },
+  {
+   "name_en": "Juno Beach Pier",
+   "name_he": "המזח של ג׳ונו ביץ׳",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Juno Beach, Florida",
+   "why": "מזח ארוך ושקט על חוף רחב וחולי, בלי המולה. טוב לזריחה ולראות צבים ודגים במים הצלולים.",
+   "tip": "שלבו עם מרכז הצבים שנמצא 5 דקות הליכה. דולר אחד לעלות למזח.",
+   "cost": "$1",
+   "time_needed": "חצי שעה-שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.889,
+    -80.0545
+   ]
+  },
+  {
+   "name_en": "Manatee Lagoon",
+   "name_he": "מנטי לגון — מרכז פרות הים של FPL",
+   "segment_id": "fl_east",
+   "kind": "zoo_aquarium",
+   "wow": 5,
+   "detour": "+10 דק׳",
+   "city_state": "West Palm Beach, Florida",
+   "why": "בחורף עשרות פרות ים מתקבצות במים החמים של תחנת הכוח, ורואים אותן ממרפסת ממש מעל. חינם לגמרי.",
+   "tip": "סגור בימי שני. הכי הרבה פרות ים אחרי כמה ימים קרים — תבדקו את ספירת היום באתר.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "מצוין בחורף — עונת פרות הים נובמבר-מרץ",
+   "coords": [
+    26.7668,
+    -80.0535
+   ]
+  },
+  {
+   "name_en": "Peanut Island",
+   "name_he": "פינאט איילנד",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 4,
+   "detour": "+15 דק׳",
+   "city_state": "Riviera Beach, Florida",
+   "why": "אי קטן באמצע הלגונה שמגיעים אליו במעבורת של 5 דקות: לגונת שנורקל צלולה, חוף, שביל סביב האי ובונקר של קנדי.",
+   "tip": "קחו ציוד שנורקל ואוכל — אין כלום על האי. המעבורת יוצאת ממרינת ריביירה ביץ׳.",
+   "cost": "מעבורת כ-$15-20",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה; בחורף המים צלולים",
+   "coords": [
+    26.7718,
+    -80.0449
+   ]
+  },
+  {
+   "name_en": "Palm Beach Outlets",
+   "name_he": "אאוטלט פאלם ביץ׳",
+   "segment_id": "fl_east",
+   "kind": "shopping",
+   "wow": 2,
+   "detour": "+5 דק׳",
+   "city_state": "West Palm Beach, Florida",
+   "why": "אאוטלט פתוח ונוח ממש ליד ה-95 עם נייקי, אדידס, פולו וכו׳. לא ענק, אבל מהיר ונוח.",
+   "tip": "אם אתם לא עוצרים בסוגראס מילס, זה התחליף הנוח. חניה חינם.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.716,
+    -80.076
+   ]
+  },
+  {
+   "name_en": "Norton Museum of Art",
+   "name_he": "מוזיאון נורטון לאמנות",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "West Palm Beach, Florida",
+   "why": "מוזיאון האמנות הכי טוב בדרום פלורידה: אימפרסיוניסטים, אמנות סינית וגן פסלים, בבניין מודרני יפה.",
+   "tip": "יש ימים עם כניסה חינם — בדקו באתר. שעתיים מספיקות.",
+   "cost": "$18",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.6978,
+    -80.0547
+   ]
+  },
+  {
+   "name_en": "Flagler Museum (Whitehall)",
+   "name_he": "מוזיאון פלאגלר — אחוזת ווייטהול",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 5,
+   "detour": "+15 דק׳",
+   "city_state": "Palm Beach, Florida",
+   "why": "ארמון של 75 חדרים משנת 1902 של האיש שבנה את פלורידה. שיש, זהב, קרון רכבת פרטי — הוורסאי של אמריקה.",
+   "tip": "סגור בימי שני. בחורף יש תה אחה״צ בפביליון עם נוף ללגונה — צריך להזמין.",
+   "cost": "$26",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה; בחורף שיא העונה",
+   "coords": [
+    26.7138,
+    -80.046
+   ]
+  },
+  {
+   "name_en": "The Breakers Palm Beach",
+   "name_he": "מלון הברייקרס",
+   "segment_id": "fl_east",
+   "kind": "scenic",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Palm Beach, Florida",
+   "why": "מלון מ-1896 בסגנון ארמון איטלקי, עם לובי מצויר ושדרת דקלים. אפשר להסתובב בלובי ובגנים בלי לישון שם.",
+   "tip": "תתלבשו קצת יפה ותיכנסו כאילו אתם אורחים. קפה בלובי זה הדרך הזולה ליהנות.",
+   "cost": "חינם (קפה $)",
+   "time_needed": "חצי שעה-שעה",
+   "season": "פתוח כל השנה; בחורף מלא",
+   "coords": [
+    26.7153,
+    -80.0352
+   ]
+  },
+  {
+   "name_en": "Worth Avenue",
+   "name_he": "שדרת וורת׳",
+   "segment_id": "fl_east",
+   "kind": "shopping",
+   "wow": 4,
+   "detour": "+15 דק׳",
+   "city_state": "Palm Beach, Florida",
+   "why": "הרחוב הכי יוקרתי בפלורידה: שאנל, גוצ׳י, חצרות סודיות עם מזרקות, רולס רויסים בחניה. בעיקר להסתכל.",
+   "tip": "היכנסו ל״ויאס״ — החצרות הפנימיות הקטנות עם גלריות ובתי קפה. חניה ברחוב חינם לשעתיים.",
+   "cost": "חינם (לא לקנות)",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה; דצמבר-ינואר שיא העונה",
+   "coords": [
+    26.7003,
+    -80.039
+   ]
+  },
+  {
+   "name_en": "Palm Beach Zoo & Conservation Society",
+   "name_he": "גן החיות של פאלם ביץ׳",
+   "segment_id": "fl_east",
+   "kind": "zoo_aquarium",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "West Palm Beach, Florida",
+   "why": "גן חיות קטן ומוצל עם יגוארים, קופים ופלמינגו, ממש ליד ה-95. נחמד לבוקר רגוע.",
+   "tip": "ליד יש את מוזיאון המדע (Cox Science Center) — שלבו אם מתחשק.",
+   "cost": "כ-$27",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.6702,
+    -80.0648
+   ]
+  },
+  {
+   "name_en": "Grassy Waters Preserve",
+   "name_he": "שמורת גראסי ווטרס",
+   "segment_id": "fl_east",
+   "kind": "hike",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "West Palm Beach, Florida",
+   "why": "ביצת הכל-אברגלידס המקורית, 10 דקות מהעיר: שביל עץ מעל המים עם תנינים, ציפורים ולפעמים צבאים.",
+   "tip": "השביל הקצר (Cypress Boardwalk) מספיק. חינם ושקט — ובחורף אין יתושים.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "מצוין בחורף",
+   "coords": [
+    26.8085,
+    -80.153
+   ]
+  },
+  {
+   "name_en": "Clematis Street & Rosemary Square",
+   "name_he": "רחוב קלמטיס ורוזמרי סקוור",
+   "segment_id": "fl_east",
+   "kind": "city",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "West Palm Beach, Florida",
+   "why": "הלב של ווסט פאלם ביץ׳: רחוב ברים ומסעדות שנגמר על המים, ולידו מתחם קניות פתוח עם מזרקות.",
+   "tip": "בשבת בבוקר יש שוק איכרים על הטיילת ליד הנהר. בערב בחורף נעים לשבת בחוץ.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.712,
+    -80.0525
+   ]
+  },
+  {
+   "name_en": "Lake Worth Beach Pier",
+   "name_he": "המזח של לייק וורת׳",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Lake Worth Beach, Florida",
+   "why": "חוף עירוני חביב עם מזח ארוך ובנין קזינו ישן עם מסעדות. פחות יוקרתי מפאלם ביץ׳, יותר כיף.",
+   "tip": "Benny's on the Beach על המזח — ארוחת בוקר מעל המים.",
+   "cost": "כ-$2 לעלות למזח",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.6137,
+    -80.0357
+   ]
+  },
+  {
+   "name_en": "Wakodahatchee Wetlands",
+   "name_he": "ביצות וואקודהאטצ׳י",
+   "segment_id": "fl_east",
+   "kind": "hike",
+   "wow": 5,
+   "detour": "+15 דק׳",
+   "city_state": "Delray Beach, Florida",
+   "why": "שביל עץ של 1.2 ק״מ מעל ביצה מלאה בציפורים ממרחק מטר: אנפות, חסידות, תנינים ואיגואנות. חינם ומדהים.",
+   "tip": "בוקר מוקדם או שעה לפני שקיעה. בחורף ובתחילת האביב הציפורים מקננות ממש ליד השביל.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "מצוין בחורף — שיא הציפורים",
+   "coords": [
+    26.4793,
+    -80.1457
+   ]
+  },
+  {
+   "name_en": "Morikami Museum and Japanese Gardens",
+   "name_he": "מוזיאון מוריקאמי והגנים היפניים",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 5,
+   "detour": "+15 דק׳",
+   "city_state": "Delray Beach, Florida",
+   "why": "גנים יפניים ענקיים ושקטים סביב אגם, עם בונסאי, גשרים ובית תה. אחד הגנים היפניים הכי יפים מחוץ ליפן.",
+   "tip": "סגור בימי שני. יש מסעדה יפנית טובה בפנים (Cornell Cafe) — תאכלו צהריים שם.",
+   "cost": "כ-$16-18",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה; חורף הכי נעים",
+   "coords": [
+    26.4252,
+    -80.1563
+   ]
+  },
+  {
+   "name_en": "Atlantic Avenue, Delray Beach",
+   "name_he": "שדרת אטלנטיק, דלריי ביץ׳",
+   "segment_id": "fl_east",
+   "kind": "city",
+   "wow": 4,
+   "detour": "+10 דק׳",
+   "city_state": "Delray Beach, Florida",
+   "why": "רחוב ראשי כיפי שנגמר על חוף יפה: מסעדות, ברים עם מוזיקה חיה, גלריות ואנשים. הכי ״כפר חוף״ בדרום פלורידה.",
+   "tip": "חנו בחניון עירוני ולכו ברגל עד החוף. בערב סוף שבוע זה פיצוץ — תזמינו מקום.",
+   "cost": "חינם",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה; בחורף שיא",
+   "coords": [
+    26.4614,
+    -80.0705
+   ]
+  },
+  {
+   "name_en": "Gumbo Limbo Nature Center",
+   "name_he": "מרכז הטבע גמבו לימבו",
+   "segment_id": "fl_east",
+   "kind": "zoo_aquarium",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Boca Raton, Florida",
+   "why": "מרכז טבע חינמי עם אקווריומים, בריכות צבי ים, שביל עץ ביער חוף ומגדל תצפית. ממול חוף Red Reef עם שנורקל מהחוף.",
+   "tip": "בריכות הצבים לא תמיד מלאות — בדקו. שנורקל ב-Red Reef הכי טוב בשפל.",
+   "cost": "תרומה ($5)",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.3715,
+    -80.0713
+   ]
+  },
+  {
+   "name_en": "Mizner Park",
+   "name_he": "מיזנר פארק",
+   "segment_id": "fl_east",
+   "kind": "shopping",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Boca Raton, Florida",
+   "why": "מתחם קניות ומסעדות פתוח בסגנון ים תיכוני, עם שדרה ומזרקות. מוזיאון האמנות של בוקה בקצה.",
+   "tip": "בעיקר לערב: ארוחה בחוץ וסיבוב. חניה חינם במבנים.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.3555,
+    -80.0862
+   ]
+  },
+  {
+   "name_en": "Butterfly World",
+   "name_he": "עולם הפרפרים",
+   "segment_id": "fl_east",
+   "kind": "zoo_aquarium",
+   "wow": 5,
+   "detour": "+15 דק׳",
+   "city_state": "Coconut Creek, Florida",
+   "why": "גן הפרפרים הכי גדול בעולם: אלפי פרפרים שנוחתים עליכם, קוליבריים, תוכים שאוכלים מהיד וגן פרחים.",
+   "tip": "לכו בבוקר ביום שמשי — אז הפרפרים הכי פעילים. חולצה בצבע בהיר = יותר פרפרים עליכם.",
+   "cost": "כ-$33",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.2735,
+    -80.171
+   ]
+  },
+  {
+   "name_en": "Ski Rixen USA at Quiet Waters Park",
+   "name_he": "סקי ריקסן — ווייקבורד בכבל",
+   "segment_id": "fl_east",
+   "kind": "adventure",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Deerfield Beach, Florida",
+   "why": "אגם עם כבל שגורר אתכם על ווייקבורד או מגלשי מים בלי סירה. גם למתחילים — יש מדריכים וציוד.",
+   "tip": "לובשים חליפה בחורף. יש בפארק גם חוף אגם ושכירת סירות פדלים.",
+   "cost": "$1.50 כניסה לפארק; כבל כ-$30-50",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה; בחורף המים צוננים",
+   "coords": [
+    26.3085,
+    -80.1498
+   ]
+  },
+  {
+   "name_en": "Anglin's Fishing Pier, Lauderdale-by-the-Sea",
+   "name_he": "מזח אנגלינס, לודרדייל ביי דה סי",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 3,
+   "detour": "+20 דק׳",
+   "city_state": "Lauderdale-by-the-Sea, Florida",
+   "why": "עיירת חוף קטנה בלי בניינים גבוהים, עם מזח ושונית ממש מול החוף — שנורקל מהחול בלי סירה.",
+   "tip": "השונית 100 מ׳ מהחוף, מסומנת במצופים. ביום עם ים שטוח בלבד.",
+   "cost": "חינם; חניה בתשלום",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.19,
+    -80.0938
+   ]
+  },
+  {
+   "name_en": "Hugh Taylor Birch State Park",
+   "name_he": "פארק יו טיילור בירץ׳",
+   "segment_id": "fl_east",
+   "kind": "state_park",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Fort Lauderdale, Florida",
+   "why": "פארק ירוק באמצע פורט לודרדייל, בין הלגונה לחוף: שביל עץ, קיאקים, ומנהרה מתחת ל-A1A ישר לחוף.",
+   "tip": "נוח להחנות כאן ולהגיע לחוף ברגל במקום לשלם על חניה ב-A1A.",
+   "cost": "$6 לרכב",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.1385,
+    -80.1055
+   ]
+  },
+  {
+   "name_en": "Bonnet House Museum & Gardens",
+   "name_he": "אחוזת בונה האוס",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Fort Lauderdale, Florida",
+   "why": "אחוזת אמנים משנות ה-20 עם גנים טרופיים, קופים חופשיים וברבורים — מוסתרת בין המלונות של החוף.",
+   "tip": "סיור מודרך של הבית הוא הקטע, לא רק הגנים. סגור בימי שני-שלישי.",
+   "cost": "$25",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.1343,
+    -80.1065
+   ]
+  },
+  {
+   "name_en": "Fort Lauderdale Beach & A1A Wave Wall",
+   "name_he": "חוף פורט לודרדייל וטיילת A1A",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 4,
+   "detour": "+15 דק׳",
+   "city_state": "Fort Lauderdale, Florida",
+   "why": "החוף הקלאסי של פלורידה: טיילת רחבה עם ״קיר הגלים״ הלבן, דקלים, ברים ומלונות. תמיד תוסס, תמיד שמש.",
+   "tip": "חניה יקרה — חנו בפארק בירץ׳ ($6) ולכו. השקיעה הכי יפה מהמזח של Las Olas.",
+   "cost": "חינם; חניה $",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה; בחורף 22-25 מעלות",
+   "coords": [
+    26.1207,
+    -80.1043
+   ]
+  },
+  {
+   "name_en": "Fort Lauderdale Water Taxi",
+   "name_he": "מונית המים של פורט לודרדייל",
+   "segment_id": "fl_east",
+   "kind": "city",
+   "wow": 5,
+   "detour": "+10 דק׳",
+   "city_state": "Fort Lauderdale, Florida",
+   "why": "סירה שעוברת בין התעלות של ״ונציה של אמריקה״ עם סיפורים על האחוזות והיאכטות. כרטיס יומי — עולים ויורדים בכל תחנה.",
+   "tip": "קנו כרטיס יומי, תעלו בתחנת Las Olas ותרדו בחוף. בדצמבר יש גם סיורי אורות חג בערב.",
+   "cost": "כ-$40 ליום",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה; בחורף שיא העונה",
+   "coords": [
+    26.1192,
+    -80.1332
+   ]
+  },
+  {
+   "name_en": "Museum of Discovery and Science",
+   "name_he": "מוזיאון המדע של פורט לודרדייל",
+   "segment_id": "fl_east",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Fort Lauderdale, Florida",
+   "why": "מוזיאון מדע גדול עם תנינים, מטוס להמריא בסימולטור וקולנוע IMAX. התחנה הטובה ליום גשום.",
+   "tip": "ליד הריברווק — אפשר לשלב עם הליכה על הנהר ומונית המים.",
+   "cost": "כ-$23",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.12,
+    -80.1483
+   ]
+  },
+  {
+   "name_en": "Mai-Kai Restaurant and Polynesian Show",
+   "name_he": "מאי-קאי — מסעדה ומופע פולינזי",
+   "segment_id": "fl_east",
+   "kind": "food",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Fort Lauderdale, Florida",
+   "why": "מסעדת טיקי אגדית מ-1956 עם מפלים, קוקטיילים ברום ומופע ריקודים פולינזי. נפתחה מחדש ב-2024 אחרי שיפוץ ענק.",
+   "tip": "הזמינו מקום למופע מראש. אם רק רוצים לטעום — הבר (Molokai) בלי מופע.",
+   "cost": "$40-80 לאדם",
+   "time_needed": "שעתיים-שלוש",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.1693,
+    -80.1212
+   ]
+  },
+  {
+   "name_en": "Flamingo Gardens",
+   "name_he": "פלמינגו גרדנס",
+   "segment_id": "fl_east",
+   "kind": "zoo_aquarium",
+   "wow": 4,
+   "detour": "+20 דק׳",
+   "city_state": "Davie, Florida",
+   "why": "גן בוטני ישן עם עצים ענקיים, ולידו מקלט לחיות פלורידה: פלמינגו, פנתרים, דובים ותנינים. רכבת קטנה בין העצים.",
+   "tip": "תגיעו לשעת האכלת החיות (בדקו באתר). שלבו עם קניות בסוגראס מילס שבדרך.",
+   "cost": "כ-$25",
+   "time_needed": "שעתיים-שלוש",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.0855,
+    -80.227
+   ]
+  },
+  {
+   "name_en": "Sawgrass Recreation Park Airboat Tours",
+   "name_he": "סירות אוויר בפארק סוגראס",
+   "segment_id": "fl_east",
+   "kind": "adventure",
+   "wow": 3,
+   "detour": "+40 דק׳",
+   "city_state": "Weston, Florida",
+   "why": "סיור סירת אוויר בשטח הפתוח של האברגלידס, עם תנינים במים ומקלט חיות קטן. אלטרנטיבה לפארק החגים הסמוך.",
+   "tip": "קחו אטמי אוזניים (נותנים) ומשקפי שמש. בחורף התנינים משתזפים על הגדות — רואים הרבה.",
+   "cost": "כ-$30 לסיור",
+   "time_needed": "שעה-שעתיים",
+   "season": "מצוין בחורף — פחות יתושים, יותר תנינים",
+   "coords": [
+    26.1545,
+    -80.4393
+   ]
+  },
+  {
+   "name_en": "Anne Kolb Nature Center",
+   "name_he": "מרכז הטבע אן קולב",
+   "segment_id": "fl_east",
+   "kind": "hike",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Hollywood, Florida",
+   "why": "שמורת מנגרובים על הלגונה עם מגדל תצפית 5 קומות, שבילי עץ וסירת סיור. 10 דקות מהוליווד ביץ׳.",
+   "tip": "עלו למגדל לנוף של כל החוף. אפשר לשכור קיאק ולשוט במנגרובים.",
+   "cost": "חינם (סופ״ש $1.50)",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.0343,
+    -80.1245
+   ]
+  },
+  {
+   "name_en": "Dania Beach Pier",
+   "name_he": "המזח של דניה ביץ׳",
+   "segment_id": "fl_east",
+   "kind": "beach",
+   "wow": 2,
+   "detour": "+15 דק׳",
+   "city_state": "Dania Beach, Florida",
+   "why": "חוף שקט ומזח עם מסעדה בקצה, ממש מתחת לנתיב הנחיתה של שדה התעופה — מטוסים מעל הראש.",
+   "tip": "צפונה יש פארק מדינה (Von D. Mizell-Eula Johnson) עם חוף ריק ומנגרובים לקיאק.",
+   "cost": "חינם; חניה בתשלום",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    26.0544,
+    -80.1123
+   ]
+  },
+  {
+   "name_en": "Yellow Green Farmers Market",
+   "name_he": "שוק האיכרים ילו גרין",
+   "segment_id": "fl_east",
+   "kind": "food",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Hollywood, Florida",
+   "why": "שוק ענק ומקורה בסוף שבוע עם מאות דוכנים: אוכל מכל העולם, מיצים, פירות טרופיים ומוזיקה. ממש ליד ה-95.",
+   "tip": "רק שבת-ראשון. תבואו רעבים לצהריים ותסתובבו. חניה חינם.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פועל כל השנה",
+   "coords": [
+    26.0337,
+    -80.1668
+   ]
+  },
+  {
+   "name_en": "Gulfstream Park Racing & Casino",
+   "name_he": "מסלול המרוצים גולפסטרים",
+   "segment_id": "fl_east",
+   "kind": "quirky",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Hallandale Beach, Florida",
+   "why": "מרוצי סוסים אמיתיים בחינם, עם קזינו ומתחם קניות. בסוף ינואר מתקיים כאן הפגאסוס — אחד המרוצים העשירים בעולם.",
+   "tip": "עונת המרוצים דצמבר-מרץ, בד״כ חמישי-ראשון מהצהריים. כניסה חינם, הימורים לפי רצון.",
+   "cost": "חינם",
+   "time_needed": "שעתיים",
+   "season": "מצוין בחורף — עונת המרוצים",
+   "coords": [
+    25.9805,
+    -80.1397
+   ]
+  },
+  {
+   "name_en": "Seminole Hard Rock Winterfest Boat Parade",
+   "name_he": "מצעד הסירות וינטרפסט",
+   "segment_id": "fl_east",
+   "kind": "quirky",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Fort Lauderdale, Florida",
+   "why": "מצעד של עשרות יאכטות מקושטות באורות חג לאורך הנהר והלגונה, עם סלבס ומוזיקה. אירוע חורף ענק של פורט לודרדייל.",
+   "tip": "רק בשבת אחת באמצע דצמבר — אם מגיעים אחרי, תפספסו. צפייה חינם מהריברווק או מגשרי Las Olas.",
+   "cost": "חינם",
+   "time_needed": "2-3 שעות",
+   "season": "רק באמצע דצמבר (שבת שנייה)",
+   "coords": [
+    26.12,
+    -80.143
+   ]
+  }
+ ]
+}

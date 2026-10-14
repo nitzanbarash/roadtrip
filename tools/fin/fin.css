@@ -1,0 +1,131 @@
+  /* ---------- trip money (shared by the app and the Claude page) ---------- */
+  .fin{
+    --facc:#136C7E; --fgold:#9C7314; --fpink:#BC2F5C; --fgreen:#2C5E3F; --fwarn:#B4541A;
+    --c1:#1A5FB4; --c2:#2C8A5E; --c3:#D4A017; --c4:#C2185B; --c5:#1C9BA8; --c6:#E07020; --c7:#7E57C2; --cx:#9AA09A;
+    --p1:#1A5FB4; --p2:#E07020;
+    display:flex; flex-direction:column; gap:12px; font-size:15.5px; line-height:1.45; color:var(--ink)
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) .fin{
+      --facc:#57C3D6; --fgold:#E3BC4E; --fpink:#FF7096; --fgreen:#6CC08C; --fwarn:#F09A5B;
+      --c1:#4A8BE0; --c2:#3B9A6A; --c3:#B8891A; --c4:#E0608F; --c5:#249AAA; --c6:#CF7236; --c7:#9C82D9; --cx:#6E756F;
+      --p1:#4A8BE0; --p2:#CF7236;
+    }
+  }
+  :root[data-theme="dark"] .fin{
+    --facc:#57C3D6; --fgold:#E3BC4E; --fpink:#FF7096; --fgreen:#6CC08C; --fwarn:#F09A5B;
+    --c1:#4A8BE0; --c2:#3B9A6A; --c3:#B8891A; --c4:#E0608F; --c5:#249AAA; --c6:#CF7236; --c7:#9C82D9; --cx:#6E756F;
+    --p1:#4A8BE0; --p2:#CF7236;
+  }
+  .fin [hidden]{display:none!important}
+  .fin .fnum{font-family:'Overpass','Segoe UI',system-ui,sans-serif; font-variant-numeric:tabular-nums; direction:ltr; unicode-bidi:isolate; font-weight:800}
+  .fin h3{font-family:'Suez One','Assistant',serif; font-weight:400; margin:0; font-size:18px; line-height:1.2; text-wrap:balance}
+  .fin h4{margin:0; font-size:14.5px; color:var(--ink2); font-weight:800}
+  .fin-top{display:flex; flex-direction:column; gap:8px; position:sticky; top:0; z-index:3; background:var(--bg); padding-bottom:6px}
+  .fsync{align-self:flex-start; font-size:12px; font-weight:700; border-radius:100px; padding:3px 10px; border:1px solid var(--line); background:var(--surface); display:inline-flex; gap:6px; align-items:center}
+  .fsync i{width:8px; height:8px; border-radius:50%; background:var(--ink3)}
+  .fsync[data-s="ok"] i{background:#27A148}
+  .fsync[data-s="off"] i{background:var(--fwarn)}
+  .fsync[data-s="local"] i{background:var(--fgold)}
+  .fseg{display:flex; border:1px solid var(--line2); border-radius:10px; overflow:hidden; background:var(--surface2)}
+  .fseg button{flex:1 1 0; min-width:0; border:0; background:transparent; padding:8px 6px; font-weight:700; font-size:14px; border-inline-start:1px solid var(--line2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .fseg button:first-child{border-inline-start:0}
+  .fseg button[aria-pressed="true"]{background:var(--facc); color:#fff}
+  .fseg.inl{display:inline-flex}
+  .fseg.inl button{flex:none; padding:8px 12px}
+  .fcard{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:13px; display:flex; flex-direction:column; gap:10px}
+  .flbl{font-size:12px; font-weight:800; letter-spacing:.03em; color:var(--ink3)}
+  .frow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .frow > *{min-width:0}
+  .fgrow{flex:1 1 120px}
+  .fin input[type=text], .fin input[type=number], .fin input[type=date], .fin select, .fin textarea{width:100%; border:1px solid var(--line2); background:var(--surface2); border-radius:10px; padding:9px 10px; font:inherit; font-size:16px; color:inherit}
+  .fin textarea{font:600 12.5px ui-monospace,Menlo,monospace; direction:ltr; min-height:64px; resize:vertical}
+  .fin input[type=number]{font-family:'Overpass',system-ui,sans-serif; font-weight:800; direction:ltr; text-align:left}
+  .famt{display:flex; gap:8px; align-items:stretch}
+  .famt input{flex:1; font-size:26px!important; padding:7px 12px!important}
+  .fchips{display:flex; gap:6px; flex-wrap:wrap}
+  .fchip{border:1px solid var(--line2); background:var(--surface2); border-radius:100px; padding:6px 11px; font-size:14px; font-weight:600; display:inline-flex; gap:6px; align-items:center}
+  .fchip i{width:9px; height:9px; border-radius:50%; background:var(--sw, var(--cx)); flex:none}
+  .fchip[aria-pressed="true"]{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+  .fbtn{border:1px solid var(--line2); background:var(--surface2); border-radius:10px; padding:9px 14px; font-weight:800; font-size:15px; color:inherit}
+  .fbtn.pri{background:var(--facc); border-color:var(--facc); color:#fff}
+  .fbtn.dng{color:var(--fpink); border-color:var(--fpink); background:transparent}
+  .fbtn.sm{padding:5px 10px; font-size:13px}
+  .fbtn:disabled{opacity:.5}
+  .fnote{font-size:13px; color:var(--ink3); line-height:1.45; margin:0}
+  .fnote a{color:var(--facc)}
+  .flist{display:flex; flex-direction:column}
+  .fday{font-size:12.5px; font-weight:800; color:var(--ink3); padding:10px 0 4px; border-bottom:1px solid var(--line); display:flex; justify-content:space-between}
+  .fex{display:flex; gap:10px; align-items:center; padding:8px 0; border:0; border-bottom:1px solid var(--line); width:100%; background:none; text-align:start; color:inherit}
+  .fex .ic{flex:none; width:10px; height:34px; border-radius:5px; background:var(--sw, var(--cx))}
+  .fex .tx{flex:1; min-width:0}
+  .fex .tx b{display:block; font-weight:700; line-height:1.25; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .fex .tx small{display:block; color:var(--ink3); font-size:12.5px; line-height:1.3}
+  .fex .am{flex:none; font-size:16px}
+  .fowe{border-radius:10px; padding:12px 14px; background:color-mix(in srgb, var(--fgold) 14%, var(--surface)); border:1px solid color-mix(in srgb, var(--fgold) 40%, var(--line)); font-size:17px; font-weight:700; line-height:1.4}
+  .fowe .fnum{font-size:25px}
+  .fowe.even{background:color-mix(in srgb, var(--fgreen) 12%, var(--surface)); border-color:color-mix(in srgb, var(--fgreen) 40%, var(--line))}
+  .ftiles{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:8px}
+  .ftile{background:var(--surface2); border-radius:10px; padding:9px 11px; min-width:0}
+  .ftile .flbl{display:block}
+  .ftile .fnum{font-size:21px; display:block; line-height:1.15}
+  .ftile small{color:var(--ink3); font-size:12px}
+  /* charts */
+  .fdonut{display:flex; gap:14px; align-items:center; flex-wrap:wrap}
+  .fdonut svg{flex:none; width:180px; height:180px; max-width:100%}
+  .fdonut svg path{cursor:pointer; transition:opacity .15s}
+  .fdonut svg text{fill:var(--ink); font-family:'Overpass',system-ui,sans-serif}
+  .fdonut svg text.s{fill:var(--ink3); font-family:'Assistant',system-ui,sans-serif; font-weight:700}
+  .flegend{flex:1 1 160px; min-width:0; display:flex; flex-direction:column; gap:3px}
+  .flegend button{display:flex; align-items:center; gap:8px; border:0; background:none; padding:4px 2px; text-align:start; color:inherit; border-radius:6px; font-size:14px}
+  .flegend button[aria-pressed="true"]{background:var(--surface2)}
+  .flegend i{flex:none; width:11px; height:11px; border-radius:3px; background:var(--sw)}
+  .flegend b{flex:1; min-width:0; font-weight:700; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .flegend .fnum{font-weight:700; font-size:13px; color:var(--ink2)}
+  .flegend .pc{font-weight:600; font-size:12px; color:var(--ink3); width:36px; text-align:left}
+  .fsplit{display:flex; height:16px; border-radius:5px; overflow:hidden; gap:2px; background:var(--surface)}
+  .fsplit i{display:block; height:100%; min-width:3px}
+  .fsplitl{display:flex; justify-content:space-between; gap:8px; font-size:13.5px}
+  .fsplitl span{display:inline-flex; gap:6px; align-items:center}
+  .fsplitl i{width:10px; height:10px; border-radius:3px; background:var(--sw)}
+  .fbars{overflow-x:auto; overscroll-behavior-x:contain}
+  .fbars svg{display:block}
+  .fbars svg text{fill:var(--ink3); font-family:'Overpass',system-ui,sans-serif; font-size:10px}
+  .fbars svg .gl{stroke:var(--line); stroke-width:1}
+  .fbars svg .bar{fill:var(--facc); cursor:pointer}
+  .fbars svg .bar.on{fill:var(--fgold)}
+  .fbars svg .hit{fill:transparent; cursor:pointer}
+  .ftip{font-size:13.5px; font-weight:700; color:var(--ink2); min-height:20px}
+  /* tables */
+  .ftw{overflow-x:auto; border:1px solid var(--line); border-radius:10px}
+  .ftable{border-collapse:collapse; width:100%; font-size:13.5px; font-variant-numeric:tabular-nums}
+  .ftable th,.ftable td{padding:7px 9px; border-bottom:1px solid var(--line); text-align:start; white-space:nowrap}
+  .ftable th{font-size:12px; color:var(--ink3); font-weight:800; background:var(--surface2); position:sticky; top:0}
+  .ftable th button{border:0; background:none; padding:0; font:inherit; color:inherit; cursor:pointer}
+  .ftable th button[data-sort]::after{content:" ↕"; opacity:.4}
+  .ftable th button.on::after{content:" ↓"; opacity:1}
+  .ftable th button.on.up::after{content:" ↑"}
+  .ftable td.n,.ftable th.n{text-align:left; direction:ltr; font-family:'Overpass',system-ui,sans-serif; font-weight:700}
+  .ftable tr.tot td{font-weight:800; background:var(--surface2); border-bottom:0}
+  .ftable tbody tr:hover td{background:var(--surface2)}
+  .ftable td.w{white-space:normal; min-width:120px}
+  .ftable .sw{display:inline-block; width:9px; height:9px; border-radius:2px; background:var(--sw); margin-inline-end:6px}
+  .fbar{display:flex; flex-direction:column; gap:3px}
+  .fbar .t{display:flex; justify-content:space-between; font-size:13.5px; gap:8px}
+  .fbar .t b{font-weight:700}
+  .fbar .g{height:9px; border-radius:5px; background:var(--line); overflow:hidden}
+  .fbar .g i{display:block; height:100%; background:var(--facc)}
+  .fbar.over .g i{background:var(--fpink)}
+  .fbar.warn .g i{background:var(--fgold)}
+  .fbud{display:grid; grid-template-columns:1fr auto; gap:6px 10px; align-items:center; font-size:14px}
+  .fbud input{width:110px!important; padding:6px 8px!important; font-size:15px!important}
+  .fcats{display:flex; flex-direction:column; gap:6px}
+  .fcats .frow{border-bottom:1px solid var(--line); padding-bottom:6px; flex-wrap:nowrap}
+  .fcats .frow input{flex:1}
+  .fcats i{flex:none; width:10px; height:24px; border-radius:4px; background:var(--sw)}
+  .fempty{text-align:center; color:var(--ink3); padding:20px 10px; border:1px dashed var(--line2); border-radius:10px; font-size:14.5px; line-height:1.5}
+  .fin details{border:1px solid var(--line); border-radius:10px; padding:8px 10px; background:var(--surface2)}
+  .fin details summary{font-weight:800; cursor:pointer}
+  .fin details ol{margin:6px 0 0; padding-inline-start:20px; font-size:13.5px; line-height:1.5}
+  .fin code{font:600 12px ui-monospace,Menlo,monospace; direction:ltr; unicode-bidi:isolate; background:var(--surface); padding:1px 4px; border-radius:4px}
+  .fin pre{font:600 11.5px ui-monospace,Menlo,monospace; direction:ltr; text-align:left; background:var(--surface); border:1px solid var(--line); padding:8px; border-radius:8px; overflow-x:auto; margin:6px 0 0}

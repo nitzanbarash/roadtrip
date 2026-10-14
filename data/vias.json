@@ -1,0 +1,328 @@
+[
+ {
+  "name": "New York",
+  "lat": 40.758,
+  "lon": -73.9855,
+  "stop": 1,
+  "he": "ניו יורק"
+ },
+ {
+  "name": "Philadelphia",
+  "lat": 39.9526,
+  "lon": -75.1652
+ },
+ {
+  "name": "Baltimore",
+  "lat": 39.2904,
+  "lon": -76.6122
+ },
+ {
+  "name": "Washington",
+  "lat": 38.8895,
+  "lon": -77.0353
+ },
+ {
+  "name": "Richmond",
+  "lat": 37.5407,
+  "lon": -77.436
+ },
+ {
+  "name": "Rocky Mount",
+  "lat": 35.9382,
+  "lon": -77.7905
+ },
+ {
+  "name": "Fayetteville",
+  "lat": 35.0527,
+  "lon": -78.8784
+ },
+ {
+  "name": "Florence",
+  "lat": 34.1954,
+  "lon": -79.7626
+ },
+ {
+  "name": "Santee",
+  "lat": 33.4849,
+  "lon": -80.4848
+ },
+ {
+  "name": "Savannah",
+  "lat": 32.0809,
+  "lon": -81.0912
+ },
+ {
+  "name": "Jacksonville",
+  "lat": 30.3322,
+  "lon": -81.6557
+ },
+ {
+  "name": "St. Augustine",
+  "lat": 29.8947,
+  "lon": -81.3145
+ },
+ {
+  "name": "Daytona Beach",
+  "lat": 29.2108,
+  "lon": -81.0228
+ },
+ {
+  "name": "Titusville",
+  "lat": 28.6122,
+  "lon": -80.8076
+ },
+ {
+  "name": "West Palm Beach",
+  "lat": 26.7153,
+  "lon": -80.0534
+ },
+ {
+  "name": "Fort Lauderdale",
+  "lat": 26.1224,
+  "lon": -80.1373
+ },
+ {
+  "name": "Miami",
+  "lat": 25.7743,
+  "lon": -80.1937,
+  "stop": 1,
+  "he": "מיאמי"
+ },
+ {
+  "name": "Fort Pierce",
+  "lat": 27.43,
+  "lon": -80.42
+ },
+ {
+  "name": "Orlando",
+  "lat": 28.47,
+  "lon": -81.47
+ },
+ {
+  "name": "Wildwood",
+  "lat": 28.86,
+  "lon": -82.08
+ },
+ {
+  "name": "Gainesville",
+  "lat": 29.65,
+  "lon": -82.4
+ },
+ {
+  "name": "Valdosta",
+  "lat": 30.85,
+  "lon": -83.32
+ },
+ {
+  "name": "Macon",
+  "lat": 32.84,
+  "lon": -83.68
+ },
+ {
+  "name": "Atlanta",
+  "lat": 33.76,
+  "lon": -84.39
+ },
+ {
+  "name": "Chattanooga",
+  "lat": 35.03,
+  "lon": -85.3
+ },
+ {
+  "name": "Nashville",
+  "lat": 36.16,
+  "lon": -86.78
+ },
+ {
+  "name": "Clarksville",
+  "lat": 36.6,
+  "lon": -87.3
+ },
+ {
+  "name": "Paducah",
+  "lat": 37.07,
+  "lon": -88.63
+ },
+ {
+  "name": "Mount Vernon",
+  "lat": 38.31,
+  "lon": -88.93
+ },
+ {
+  "name": "St. Louis",
+  "lat": 38.63,
+  "lon": -90.2
+ },
+ {
+  "name": "Columbia",
+  "lat": 38.95,
+  "lon": -92.33
+ },
+ {
+  "name": "Kansas City",
+  "lat": 39.1,
+  "lon": -94.58
+ },
+ {
+  "name": "Topeka",
+  "lat": 39.05,
+  "lon": -95.68
+ },
+ {
+  "name": "Salina",
+  "lat": 38.84,
+  "lon": -97.61
+ },
+ {
+  "name": "Hays",
+  "lat": 38.88,
+  "lon": -99.33
+ },
+ {
+  "name": "Limon",
+  "lat": 39.26,
+  "lon": -103.69
+ },
+ {
+  "name": "Denver",
+  "lat": 39.74,
+  "lon": -104.99
+ },
+ {
+  "name": "Loveland Ski Area",
+  "lat": 39.68,
+  "lon": -105.898,
+  "stop": 1,
+  "he": "לאבלנד"
+ },
+ {
+  "name": "Frisco",
+  "lat": 39.58,
+  "lon": -106.1
+ },
+ {
+  "name": "Vail",
+  "lat": 39.64,
+  "lon": -106.37
+ },
+ {
+  "name": "Glenwood Springs",
+  "lat": 39.55,
+  "lon": -107.32
+ },
+ {
+  "name": "Grand Junction",
+  "lat": 39.08,
+  "lon": -108.57
+ },
+ {
+  "name": "Green River",
+  "lat": 38.99,
+  "lon": -110.16
+ },
+ {
+  "name": "Price",
+  "lat": 39.6,
+  "lon": -110.81
+ },
+ {
+  "name": "Spanish Fork",
+  "lat": 40.11,
+  "lon": -111.65
+ },
+ {
+  "name": "Salt Lake City",
+  "lat": 40.76,
+  "lon": -111.89,
+  "stop": 1,
+  "he": "סולט לייק סיטי"
+ },
+ {
+  "name": "Wendover",
+  "lat": 40.74,
+  "lon": -114.04
+ },
+ {
+  "name": "Elko",
+  "lat": 40.83,
+  "lon": -115.76
+ },
+ {
+  "name": "Winnemucca",
+  "lat": 40.97,
+  "lon": -117.74
+ },
+ {
+  "name": "Reno",
+  "lat": 39.53,
+  "lon": -119.81
+ },
+ {
+  "name": "Truckee",
+  "lat": 39.33,
+  "lon": -120.18
+ },
+ {
+  "name": "Sacramento",
+  "lat": 38.58,
+  "lon": -121.49
+ },
+ {
+  "name": "San Francisco",
+  "lat": 37.7749,
+  "lon": -122.4194,
+  "stop": 1,
+  "he": "סן פרנסיסקו"
+ },
+ {
+  "name": "Tracy",
+  "lat": 37.74,
+  "lon": -121.43
+ },
+ {
+  "name": "Kettleman City",
+  "lat": 36.01,
+  "lon": -119.96
+ },
+ {
+  "name": "Los Angeles",
+  "lat": 34.0522,
+  "lon": -118.2437,
+  "stop": 1,
+  "he": "לוס אנג׳לס"
+ },
+ {
+  "name": "Barstow",
+  "lat": 34.9,
+  "lon": -117.02
+ },
+ {
+  "name": "Las Vegas",
+  "lat": 36.1699,
+  "lon": -115.1398,
+  "stop": 1,
+  "he": "לאס וגאס"
+ },
+ {
+  "name": "Hoover Dam",
+  "lat": 36.01,
+  "lon": -114.76
+ },
+ {
+  "name": "Kingman",
+  "lat": 35.19,
+  "lon": -114.05
+ },
+ {
+  "name": "Wickenburg",
+  "lat": 33.97,
+  "lon": -112.73
+ },
+ {
+  "name": "Phoenix",
+  "lat": 33.4484,
+  "lon": -112.074,
+  "stop": 1,
+  "he": "פיניקס"
+ }
+]

@@ -1,0 +1,12 @@
+[
+ {"name":"San Francisco","lat":37.7749,"lon":-122.4194},
+ {"name":"Half Moon Bay","lat":37.46,"lon":-122.43},
+ {"name":"Santa Cruz","lat":36.97,"lon":-122.03},
+ {"name":"Monterey","lat":36.60,"lon":-121.89},
+ {"name":"Big Sur","lat":36.27,"lon":-121.81},
+ {"name":"Ragged Point","lat":35.78,"lon":-121.33},
+ {"name":"San Luis Obispo","lat":35.28,"lon":-120.66},
+ {"name":"Santa Barbara","lat":34.42,"lon":-119.70},
+ {"name":"Malibu","lat":34.03,"lon":-118.78},
+ {"name":"Los Angeles","lat":34.0522,"lon":-118.2437}
+]

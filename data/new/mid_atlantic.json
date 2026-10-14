@@ -1,0 +1,1336 @@
+{
+ "attractions": [
+  {
+   "name_en": "Liberty Bell Center",
+   "name_he": "פעמון החירות",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "הפעמון הסדוק שהפך לסמל העצמאות האמריקאית, בביתן קטן מול אינדפנדנס הול. ביקור קצר אבל חובה.",
+   "tip": "אין צורך בכרטיס, רק בידוק ביטחוני. בואו ב-9:00 בפתיחה — אחר כך התור מתארך.",
+   "cost": "חינם",
+   "time_needed": "חצי שעה",
+   "season": "פתוח כל השנה 9:00–17:00, סגור ב-25.12",
+   "coords": [
+    39.9496,
+    -75.1503
+   ]
+  },
+  {
+   "name_en": "Independence Hall",
+   "name_he": "אינדפנדנס הול",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 5,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "הבניין שבו נחתמו הכרזת העצמאות והחוקה של ארה״ב. סיור קצר של ריינג׳ר בחדר שבו הכול קרה.",
+   "tip": "בדצמבר צריך כרטיס מתוזמן חינם (באתר recreation.gov, $1 דמי הזמנה). בינואר–פברואר נכנסים בלי כרטיס, לפי סדר הגעה.",
+   "cost": "חינם ($1 דמי הזמנה בדצמבר)",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה, סגור ב-25.12",
+   "coords": [
+    39.9489,
+    -75.15
+   ]
+  },
+  {
+   "name_en": "Reading Terminal Market",
+   "name_he": "שוק רידינג טרמינל",
+   "segment_id": "mid_atlantic",
+   "kind": "food",
+   "wow": 5,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "שוק מקורה מ-1893 עם מאות דוכנים: סנדוויץ׳ חזיר צלוי של DiNic's, דונאטס של Beiler's, אוכל אמיש, פרצלים וגלידה של Bassetts.",
+   "tip": "הדוכנים האמיש פתוחים רק רביעי–שבת. בואו רעבים לפני 12:00, בצהריים צפוף מאוד.",
+   "cost": "חינם; ארוחה $10-20",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה 8:00–18:00, סגור ב-25.12",
+   "coords": [
+    39.9533,
+    -75.1593
+   ]
+  },
+  {
+   "name_en": "Philadelphia Museum of Art & Rocky Steps",
+   "name_he": "מוזיאון האמנות של פילדלפיה ומדרגות רוקי",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "המדרגות המפורסמות מ\"רוקי\" עם פסל רוקי למטה ונוף על השדרה. בפנים אחד ממוזיאוני האמנות הגדולים בארה״ב.",
+   "tip": "הריצה במדרגות והפסל חינם 24/7. למוזיאון: שישי אחרי 17:00 ויום ראשון הראשון בחודש — משלמים כמה שרוצים.",
+   "cost": "$30 למבוגר (המדרגות חינם)",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה, סגור בימי שלישי ורביעי וב-25.12",
+   "coords": [
+    39.9656,
+    -75.181
+   ]
+  },
+  {
+   "name_en": "Eastern State Penitentiary",
+   "name_he": "בית הסוהר איסטרן סטייט",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "בית סוהר נטוש ומצמרר מ-1829 שבו ישב אל קפונה. סיור אודיו מעולה בין התאים המתפוררים.",
+   "tip": "סיור האודיו כלול (מקריין סטיב בושמי). קר בפנים כמו בחוץ — התלבשו טוב.",
+   "cost": "~$21 למבוגר",
+   "time_needed": "שעה וחצי",
+   "season": "פתוח כל השנה 10:00–17:00, בדקו סגירות בימי חג",
+   "coords": [
+    39.9683,
+    -75.1726
+   ]
+  },
+  {
+   "name_en": "The Franklin Institute",
+   "name_he": "מכון פרנקלין",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "מוזיאון מדע אינטראקטיבי ענק — הולכים בתוך לב ענק, פלנטריום, תערוכות מתחלפות. כיף גם למבוגרים.",
+   "tip": "תערוכות מיוחדות עולות תוספת — הכרטיס הבסיסי מספיק. מצוין ליום גשום או קפוא.",
+   "cost": "~$27 למבוגר",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה 9:30–17:00, סגור ב-25.12",
+   "coords": [
+    39.9582,
+    -75.173
+   ]
+  },
+  {
+   "name_en": "Barnes Foundation",
+   "name_he": "קרן בארנס",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "אוסף אימפרסיוניסטים פרטי מטורף: 181 רנואר, 69 סזאן, 59 מאטיס, תלויים צפוף על הקירות כמו בבית.",
+   "tip": "הזמינו כרטיס מתוזמן מראש. 5 דקות הליכה ממכון פרנקלין — שלבו.",
+   "cost": "$30 למבוגר",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה, סגור בימי שלישי וב-25.12",
+   "coords": [
+    39.9607,
+    -75.1727
+   ]
+  },
+  {
+   "name_en": "Philadelphia's Magic Gardens",
+   "name_he": "הגנים הקסומים של פילדלפיה",
+   "segment_id": "mid_atlantic",
+   "kind": "quirky",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "חצי בלוק מכוסה פסיפסים, בקבוקים, מראות וגלגלי אופניים — יצירה של אמן אחד, אייזק זגר. מוזר ויפה.",
+   "tip": "כרטיסים מתוזמנים נגמרים בסופ״ש — הזמינו באתר. גם הרחובות מסביב (South Street) מלאים בפסיפסים שלו, חינם.",
+   "cost": "$15 למבוגר",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה, סגור בימי שלישי; החלק החיצוני קר בחורף",
+   "coords": [
+    39.9426,
+    -75.1594
+   ]
+  },
+  {
+   "name_en": "Pat's King of Steaks & Geno's Steaks",
+   "name_he": "פאט׳ס וג׳ינו׳ס — צ׳יזסטייק",
+   "segment_id": "mid_atlantic",
+   "kind": "food",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "שתי אגדות הצ׳יזסטייק עומדות אחת מול השנייה 24 שעות ביממה. חובה לטעום את הסנדוויץ׳ של פילדלפיה.",
+   "tip": "מזמינים קצר: \"Whiz wit\" — עם גבינת צ׳יז וויז ובצל. בפאט׳ס מזומן בלבד. קחו אחד מכל צד והשוו.",
+   "cost": "~$14 לסנדוויץ׳",
+   "time_needed": "חצי שעה",
+   "season": "פתוח כל השנה 24/7",
+   "coords": [
+    39.9333,
+    -75.1591
+   ]
+  },
+  {
+   "name_en": "Elfreth's Alley",
+   "name_he": "סמטת אלפרת׳",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "הרחוב המיושב הוותיק בארה״ב (מ-1703) — סמטה קטנה של בתי לבנים צבעוניים. 10 דקות ואתם צילמתם.",
+   "tip": "בחורף הבתים מקושטים לחג — יפה במיוחד. ממש ליד פעמון החירות, שלבו.",
+   "cost": "חינם (המוזיאון הקטן $)",
+   "time_needed": "חצי שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    39.9527,
+    -75.1426
+   ]
+  },
+  {
+   "name_en": "Christmas Village in Philadelphia (LOVE Park & City Hall)",
+   "name_he": "כפר חג המולד בלאב פארק",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "שוק חג מולד גרמני אמיתי עם עשרות ביתני עץ, יין חם, ברטוורסט וגלגל ענק, מול בניין העירייה ופסל LOVE.",
+   "tip": "השוק נסגר ב-24.12! אם אתם מגיעים אחרי חג המולד — נשארים משטח ההחלקה וה-Wintergarden בדילוורת׳ פארק (עד פברואר).",
+   "cost": "חינם (אוכל ומתקנים $)",
+   "time_needed": "שעה-שעתיים",
+   "season": "מסוף נובמבר עד 24.12 בלבד; ההחלקה בדילוורת׳ פארק עד פברואר",
+   "coords": [
+    39.954,
+    -75.1655
+   ]
+  },
+  {
+   "name_en": "Wanamaker Building Christmas Light Show & Wanamaker Organ (former Macy's)",
+   "name_he": "מופע האורות ועוגב וונאמייקר (לשעבר מייסיז)",
+   "segment_id": "mid_atlantic",
+   "kind": "quirky",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "מופע אורות של חג המולד שרץ מאז 1956 בחלל הענק של בניין וונאמייקר, עם העוגב הגדול בעולם.",
+   "tip": "חנות מייסיז נסגרה במרץ 2025 — בדקו לפני שבאים אם המופע וקונצרטי העוגב מתקיימים השנה.",
+   "cost": "חינם",
+   "time_needed": "חצי שעה",
+   "season": "בדצמבר בלבד (אם מתקיים); העוגב — בדקו לוח קונצרטים",
+   "coords": [
+    39.9517,
+    -75.1623
+   ]
+  },
+  {
+   "name_en": "Blue Cross RiverRink Winterfest",
+   "name_he": "ריבר-רינק ווינטרפסט — החלקה על הקרח בנהר",
+   "segment_id": "mid_atlantic",
+   "kind": "adventure",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Philadelphia, Pennsylvania",
+   "why": "משטח החלקה גדול על גדת נהר הדלאוור עם בקתות מחוממות, מדורות, ביסטרו ואורות. אווירת חורף כיפית.",
+   "tip": "הכניסה למתחם חינם — משלמים רק על ההחלקה. בערב יפה יותר, עם האורות.",
+   "cost": "חינם; החלקה ~$15 כולל גלגיליים",
+   "time_needed": "שעה-שעתיים",
+   "season": "מסוף נובמבר עד תחילת מרץ — בדיוק בשבילכם",
+   "coords": [
+    39.9461,
+    -75.1403
+   ]
+  },
+  {
+   "name_en": "Longwood Gardens — A Longwood Christmas",
+   "name_he": "גני לונגווד — חג המולד בלונגווד",
+   "segment_id": "mid_atlantic",
+   "kind": "scenic",
+   "wow": 5,
+   "detour": "+45 דק׳",
+   "city_state": "Kennett Square, Pennsylvania",
+   "why": "אחד הגנים היפים בארה״ב, ובחג המולד הוא הופך לחלום: חממה ענקית מלאה עצים מקושטים, חצי מיליון נורות ומזרקות רוקדות.",
+   "tip": "הכרטיסים מתוזמנים ונגמרים שבועות מראש — הזמינו ברגע שיש תאריך. בואו ב-15:00 כדי לראות גם באור וגם בחושך.",
+   "cost": "~$40 למבוגר",
+   "time_needed": "3-4 שעות",
+   "season": "אירוע חג המולד מסוף נובמבר עד תחילת ינואר; סגור ב-25.12",
+   "coords": [
+    39.8711,
+    -75.6742
+   ]
+  },
+  {
+   "name_en": "Hersheypark Christmas Candylane & Hershey's Chocolate World",
+   "name_he": "הרשיפארק — קנדילֵיין וצ׳וקולט וורלד",
+   "segment_id": "mid_atlantic",
+   "kind": "theme_park",
+   "wow": 4,
+   "detour": "+1:40 שעות",
+   "city_state": "Hershey, Pennsylvania",
+   "why": "עיר השוקולד: סיור חינם במפעל (על רכבת קטנה), ובדצמבר פארק השעשועים נפתח בערבים עם מיליוני נורות ורכבות הרים.",
+   "tip": "צ׳וקולט וורלד חינם וכולל שוקולד בסוף. קנדילֵיין פועל רק בתאריכים נבחרים עד 1.1 — בדקו לוח. בינואר רק צ׳וקולט וורלד.",
+   "cost": "צ׳וקולט וורלד חינם; קנדילֵיין ~$35-45",
+   "time_needed": "חצי יום",
+   "season": "קנדילֵיין עד 1.1 (תאריכים נבחרים); צ׳וקולט וורלד פתוח כל השנה",
+   "coords": [
+    40.2881,
+    -76.6544
+   ]
+  },
+  {
+   "name_en": "King of Prussia Mall",
+   "name_he": "קניון קינג אוף פרוסיה",
+   "segment_id": "mid_atlantic",
+   "kind": "shopping",
+   "wow": 3,
+   "detour": "+30 דק׳",
+   "city_state": "King of Prussia, Pennsylvania",
+   "why": "אחד הקניונים הגדולים בארה״ב — 450 חנויות מכל הרמות, מטארגט ועד גוצ׳י, תחת גג אחד.",
+   "tip": "בימי חול ריק. בפנסילבניה אין מס מכירה על בגדים ונעליים — כדאי לקנות כאן.",
+   "cost": "חינם",
+   "time_needed": "2-4 שעות",
+   "season": "פתוח כל השנה; סגור ב-25.12",
+   "coords": [
+    40.0885,
+    -75.3935
+   ]
+  },
+  {
+   "name_en": "Six Flags Great Adventure — Holiday in the Park",
+   "name_he": "סיקס פלאגס גרייט אדבנצ׳ר — הולידיי אין דה פארק",
+   "segment_id": "mid_atlantic",
+   "kind": "theme_park",
+   "wow": 3,
+   "detour": "+20 דק׳",
+   "city_state": "Jackson, New Jersey",
+   "why": "פארק שעשועים ענק בניו ג׳רזי, ובחורף רק חלק ממנו פתוח — עם אורות חג, רכבות הרים נבחרות ושוקו חם.",
+   "tip": "רק בתאריכים נבחרים (בעיקר סופ״ש ו-26.12–1.1) ורק בערב. הספארי סגור בחורף. בקור מתחת לאפס חלק מהמתקנים לא עובדים.",
+   "cost": "~$40 למבוגר אונליין",
+   "time_needed": "3-4 שעות",
+   "season": "רק אירוע הולידיי אין דה פארק עד תחילת ינואר; אחר כך סגור עד האביב",
+   "coords": [
+    40.1384,
+    -74.4411
+   ]
+  },
+  {
+   "name_en": "Wilmington Riverfront",
+   "name_he": "ריברפרונט וילמינגטון",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Wilmington, Delaware",
+   "why": "טיילת מחודשת לאורך נהר הכריסטינה: מסעדות, שוק מקורה, ובחורף משטח החלקה על הקרח. עצירה נעימה מ-I-95.",
+   "tip": "בחורף יש Riverfront Rink ליד הנהר. Riverfront Market טוב לצהריים.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה; ההחלקה נובמבר–פברואר",
+   "coords": [
+    39.734,
+    -75.56
+   ]
+  },
+  {
+   "name_en": "Winterthur Museum, Garden & Library — Yuletide Tour",
+   "name_he": "וינטרתור — סיור חג המולד",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "+20 דק׳",
+   "city_state": "Winterthur, Delaware",
+   "why": "אחוזת דופונט עם 175 חדרים ואוסף עתיקות אמריקאיות ענק. בחג המולד כל האחוזה מקושטת — סיור חג המולד מפורסם.",
+   "tip": "הזמינו את סיור חג המולד מראש — אין כניסה חופשית לבית. סגור בימי שני.",
+   "cost": "~$25-30 למבוגר",
+   "time_needed": "שעתיים-שלוש",
+   "season": "סיור חג המולד מסוף נובמבר עד תחילת ינואר; סגור ב-25.12",
+   "coords": [
+    39.806,
+    -75.599
+   ]
+  },
+  {
+   "name_en": "Christiana Mall",
+   "name_he": "קניון כריסטיאנה",
+   "segment_id": "mid_atlantic",
+   "kind": "shopping",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Newark, Delaware",
+   "why": "קניון גדול ממש על I-95, ובדלאוור אין מס מכירה בכלל — על אלקטרוניקה, בגדים, הכול. אפל, נורדסטרום, טארגט, קאבלאס.",
+   "tip": "מקום מצוין לקנות אייפון, מחשב או ציוד — חוסכים 6-10% מס. בחגים צפוף מאוד.",
+   "cost": "חינם",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה; סגור ב-25.12",
+   "coords": [
+    39.6787,
+    -75.6525
+   ]
+  },
+  {
+   "name_en": "Brandywine Museum of Art — A Brandywine Christmas",
+   "name_he": "מוזיאון ברנדיוויין — חג המולד בברנדיוויין",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+30 דק׳",
+   "city_state": "Chadds Ford, Pennsylvania",
+   "why": "מוזיאון בטחנה ישנה על הנחל עם אמנות משפחת ווית׳. בחג המולד: רכבות מודל ענקיות ועצים מקושטים.",
+   "tip": "בואו בשביל רכבות המודל — נתקעים שם. 10 דקות מלונגווד, שלבו.",
+   "cost": "$20 למבוגר",
+   "time_needed": "שעה וחצי",
+   "season": "תצוגת חג המולד מסוף נובמבר עד תחילת ינואר; סגור ב-25.12",
+   "coords": [
+    39.8694,
+    -75.5919
+   ]
+  },
+  {
+   "name_en": "Brandywine Creek State Park",
+   "name_he": "פארק ברנדיוויין קריק",
+   "segment_id": "mid_atlantic",
+   "kind": "state_park",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Wilmington, Delaware",
+   "why": "נחל, כרי דשא ויער עם חומות אבן ישנות — שבילים קלים לשעה-שעתיים, אוויר צח אחרי הנסיעה.",
+   "tip": "בחורף (דצמבר–פברואר) אין דמי כניסה בפארקי דלאוור. שביל Hidden Pond קצר ונחמד.",
+   "cost": "חינם בחורף",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה; שבילים בוציים אחרי גשם",
+   "coords": [
+    39.8088,
+    -75.5767
+   ]
+  },
+  {
+   "name_en": "Baltimore Inner Harbor",
+   "name_he": "הנמל הפנימי של בולטימור",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Baltimore, Maryland",
+   "why": "הלב של בולטימור: טיילת סביב הנמל, ספינות היסטוריות, האקווריום, מוזיאון המדע ומסעדות סרטנים.",
+   "tip": "חנו פעם אחת וסיירו ברגל — האקווריום, הספינות ופלס פוינט בהליכה. בחורף הרוח מהמים חזקה.",
+   "cost": "חינם",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה; קר ורוחני בחורף",
+   "coords": [
+    39.2866,
+    -76.6118
+   ]
+  },
+  {
+   "name_en": "National Aquarium",
+   "name_he": "האקווריום הלאומי",
+   "segment_id": "mid_atlantic",
+   "kind": "zoo_aquarium",
+   "wow": 5,
+   "detour": "על המסלול",
+   "city_state": "Baltimore, Maryland",
+   "why": "מהאקווריומים הטובים בארה״ב: שונית אוסטרלית, יער גשם על הגג, כרישים, דולפינים ומנהרת מים.",
+   "tip": "הזמינו כרטיס מתוזמן אונליין — זול יותר ואין תור. אחה״צ בימי חול פחות צפוף.",
+   "cost": "~$50 למבוגר",
+   "time_needed": "3 שעות",
+   "season": "פתוח כל השנה; סגור ב-25.12",
+   "coords": [
+    39.2854,
+    -76.6083
+   ]
+  },
+  {
+   "name_en": "Fort McHenry National Monument",
+   "name_he": "מצודת מק׳הנרי",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Baltimore, Maryland",
+   "why": "המצודה שבה נכתב ההמנון האמריקאי אחרי הפגזה בריטית ב-1814. סרט קצר, דגל ענק ונוף על הנמל.",
+   "tip": "הסרט במרכז המבקרים נגמר בהרמת הדגל — חמוד. הפארק סביב המצודה חינם, רק המצודה עצמה בתשלום.",
+   "cost": "$15 למבוגר",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה, סגור ב-25.12 ו-1.1",
+   "coords": [
+    39.264,
+    -76.5805
+   ]
+  },
+  {
+   "name_en": "Fells Point",
+   "name_he": "פלס פוינט",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Baltimore, Maryland",
+   "why": "שכונת נמל היסטורית עם רחובות מרוצפים, פאבים ותיקים, חנויות קטנות ומסעדות על המים. הכי אווירתי בבולטימור.",
+   "tip": "בואו לארוחת ערב ובירה — Thames Street Oyster House לסרטנים. חניה ברחוב קשה, יש חניון ליד השוק.",
+   "cost": "חינם",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה",
+   "coords": [
+    39.2822,
+    -76.593
+   ]
+  },
+  {
+   "name_en": "American Visionary Art Museum",
+   "name_he": "מוזיאון האמנות החזונית",
+   "segment_id": "mid_atlantic",
+   "kind": "quirky",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Baltimore, Maryland",
+   "why": "מוזיאון מוזר ומקסים לאמנות של אנשים שלא למדו אמנות — אוטובוס מכוסה מראות, מכונות מוזרות, סיפורים משוגעים.",
+   "tip": "גבעת Federal Hill ממש ממול — עלו ל-5 דקות לנוף הכי טוב על הנמל, חינם.",
+   "cost": "~$16 למבוגר",
+   "time_needed": "שעה וחצי",
+   "season": "פתוח כל השנה, סגור בימי שני",
+   "coords": [
+    39.2802,
+    -76.6064
+   ]
+  },
+  {
+   "name_en": "B&O Railroad Museum",
+   "name_he": "מוזיאון רכבות B&O",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Baltimore, Maryland",
+   "why": "מקום הולדת הרכבת האמריקאית: אולם עגול ענק מ-1884 מלא בקטרים היסטוריים אמיתיים. ממוזיאוני הרכבת הטובים בעולם.",
+   "tip": "בדצמבר יש Magical Holiday Express — רכבות מודל ונסיעה ברכבת אמיתית בסופ״ש.",
+   "cost": "~$25 למבוגר",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה, סגור ב-25.12 ו-1.1",
+   "coords": [
+    39.2858,
+    -76.633
+   ]
+  },
+  {
+   "name_en": "Lexington Market",
+   "name_he": "שוק לקסינגטון",
+   "segment_id": "mid_atlantic",
+   "kind": "food",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Baltimore, Maryland",
+   "why": "שוק עירוני מ-1782 בבניין חדש. הסיבה לבוא: עוגיות הסרטנים של Faidley's — הכי מפורסמות במרילנד.",
+   "tip": "קחו crab cake ב-Faidley's ואכלו בעמידה כמו המקומיים. סגור בימי ראשון.",
+   "cost": "עוגיית סרטנים ~$20",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה, סגור בימי ראשון",
+   "coords": [
+    39.2912,
+    -76.6213
+   ]
+  },
+  {
+   "name_en": "Edgar Allan Poe's Grave — Westminster Hall & Burying Ground",
+   "name_he": "קבר אדגר אלן פו",
+   "segment_id": "mid_atlantic",
+   "kind": "quirky",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Baltimore, Maryland",
+   "why": "בית קברות קטן ואפל במרכז העיר עם מצבת הסופר הגותי. אווירה מושלמת ביום חורף אפור.",
+   "tip": "יש שני קברים — המקורי בחלק האחורי והמונומנט ליד הכניסה. 5 דקות הליכה משוק לקסינגטון.",
+   "cost": "חינם",
+   "time_needed": "חצי שעה",
+   "season": "פתוח כל השנה מהבוקר עד החשיכה",
+   "coords": [
+    39.2896,
+    -76.6232
+   ]
+  },
+  {
+   "name_en": "Miracle on 34th Street — Hampden Christmas Lights",
+   "name_he": "נס ברחוב 34 — אורות חג המולד בהמפדן",
+   "segment_id": "mid_atlantic",
+   "kind": "quirky",
+   "wow": 4,
+   "detour": "+15 דק׳",
+   "city_state": "Baltimore, Maryland",
+   "why": "רחוב שלם בשכונת המפדן שבו כל בית מתחרה בקישוטי חג מטורפים: עץ מחישוקי הולה-הופ, אורות, פינגווינים. חינם ומצחיק.",
+   "tip": "בואו אחרי החשיכה, חנו ברחובות הסמוכים ולכו ברגל. בסופ״ש לפני חג המולד עמוס.",
+   "cost": "חינם",
+   "time_needed": "חצי שעה-שעה",
+   "season": "מסוף נובמבר עד 1.1 בלבד, כל ערב",
+   "coords": [
+    39.3313,
+    -76.6337
+   ]
+  },
+  {
+   "name_en": "Annapolis Historic Downtown & US Naval Academy",
+   "name_he": "אנאפוליס — העיר העתיקה והאקדמיה הימית",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 4,
+   "detour": "+30 דק׳",
+   "city_state": "Annapolis, Maryland",
+   "why": "עיר נמל קולוניאלית מקסימה עם בית מחוקקים ישן, רחובות לבנים ומרינה. ליד: האקדמיה הימית של ארה״ב — קמפוס מרשים.",
+   "tip": "לכניסה לאקדמיה זרים צריכים דרכון! סיור מודרך ~$16. העיר העתיקה חינם — Main Street ו-City Dock.",
+   "cost": "חינם; סיור באקדמיה ~$16",
+   "time_needed": "3-4 שעות",
+   "season": "פתוח כל השנה; בדצמבר העיר מקושטת",
+   "coords": [
+    38.978,
+    -76.486
+   ]
+  },
+  {
+   "name_en": "National Mall",
+   "name_he": "הנשיונל מול",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 5,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "השדרה הירוקה הענקית מהקפיטול עד אנדרטת לינקולן, עם מוזיאוני סמית׳סוניאן משני הצדדים. פה נמצא הכול.",
+   "tip": "אל תנסו הכול ביום אחד — 3 ק״מ מקצה לקצה. חנו בחניון או השתמשו במטרו. בחורף הקור יבש, התלבשו טוב.",
+   "cost": "חינם",
+   "time_needed": "יום-יומיים",
+   "season": "פתוח כל השנה; המוזיאונים סגורים רק ב-25.12",
+   "coords": [
+    38.8895,
+    -77.023
+   ]
+  },
+  {
+   "name_en": "Lincoln Memorial",
+   "name_he": "אנדרטת לינקולן",
+   "segment_id": "mid_atlantic",
+   "kind": "scenic",
+   "wow": 5,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "הפסל הענק של לינקולן מול בריכת ההשתקפות ואנדרטת וושינגטון. הכי מרגש בשקיעה או בלילה.",
+   "tip": "בואו בערב — מואר, פחות אנשים, ונוף על כל המול. אנדרטאות וייטנאם וקוריאה ממש ליד.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה 24/7",
+   "coords": [
+    38.8893,
+    -77.0502
+   ]
+  },
+  {
+   "name_en": "Washington Monument",
+   "name_he": "אנדרטת וושינגטון",
+   "segment_id": "mid_atlantic",
+   "kind": "scenic",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "האובליסק של וושינגטון, 169 מטר. מעלית לפסגה עם נוף 360 על הבירה.",
+   "tip": "כרטיסים חינם ($1 הזמנה) באתר recreation.gov — נגמרים מהר. יש גם כרטיסי אותו יום בביתן למרגלות האנדרטה מ-8:45.",
+   "cost": "חינם ($1 דמי הזמנה)",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה, סגור ב-25.12; המעלית נסגרת ברוחות חזקות",
+   "coords": [
+    38.8895,
+    -77.0353
+   ]
+  },
+  {
+   "name_en": "United States Capitol — Visitor Center Tour",
+   "name_he": "הקפיטול — סיור במרכז המבקרים",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 5,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "סיור מודרך חינם בבניין הקונגרס: הרוטונדה המצוירת, אולם הפסלים והכיפה. הכי מרשים בוושינגטון.",
+   "tip": "הזמינו סיור מראש ב-visitthecapitol.gov. אפשר גם לקחת כרטיס לאותו יום במרכז המבקרים. אסור להכניס אוכל ומים.",
+   "cost": "חינם",
+   "time_needed": "שעה וחצי-שעתיים",
+   "season": "פתוח כל השנה, סגור ב-25.12 ו-1.1",
+   "coords": [
+    38.8899,
+    -77.0075
+   ]
+  },
+  {
+   "name_en": "The White House & National Christmas Tree",
+   "name_he": "הבית הלבן ועץ חג המולד הלאומי",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "מצלמים את הבית הלבן מכיכר לאפאייט (צפון) ומהאליפס (דרום). בדצמבר ליד האליפס עומד עץ חג המולד הלאומי עם עצים קטנים של כל המדינות.",
+   "tip": "סיור בפנים דורש בקשה דרך השגרירות — לא ריאלי לתיירים. העץ הלאומי מואר עד 1.1, חינם, יפה בערב.",
+   "cost": "חינם",
+   "time_needed": "חצי שעה-שעה",
+   "season": "פתוח כל השנה; העץ הלאומי מואר מתחילת דצמבר עד 1.1",
+   "coords": [
+    38.8977,
+    -77.0365
+   ]
+  },
+  {
+   "name_en": "National Air and Space Museum",
+   "name_he": "מוזיאון האוויר והחלל",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 5,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "המטוס של האחים רייט, המודול של אפולו 11, סלעי ירח — בניין המוזיאון במול אחרי שיפוץ ענק.",
+   "tip": "צריך כרטיס מתוזמן חינם מהאתר — משחררים 6 שבועות מראש, ובחופשת החגים נגמרים. בדקו שוב בבוקר, משחררים כרטיסים.",
+   "cost": "חינם",
+   "time_needed": "3 שעות",
+   "season": "פתוח כל השנה 10:00–17:30, סגור ב-25.12",
+   "coords": [
+    38.8882,
+    -77.0199
+   ]
+  },
+  {
+   "name_en": "National Museum of Natural History",
+   "name_he": "מוזיאון הטבע הלאומי",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 5,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "הפיל בכניסה, יהלום ההופ, אולם הדינוזאורים ואולם האוקיינוס. המוזיאון הכי פופולרי של סמית׳סוניאן.",
+   "tip": "בלי כרטיס, פשוט נכנסים. בחופשת החגים עמוס — בואו ב-10:00 בפתיחה. בחורף אולם הפרפרים הוא פינה חמה.",
+   "cost": "חינם (אולם הפרפרים $)",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה 10:00–17:30, סגור ב-25.12",
+   "coords": [
+    38.8913,
+    -77.0261
+   ]
+  },
+  {
+   "name_en": "National Museum of American History",
+   "name_he": "מוזיאון ההיסטוריה האמריקאית",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "הדגל המקורי של ההמנון, נעלי הרובי של דורותי, שמלות הנשיאות, מכוניות ורובוטים. אמריקנה טהורה.",
+   "tip": "אל תפספסו את הדגל (Star-Spangled Banner) בקומה השנייה. יש פה גם קפיטריה גדולה.",
+   "cost": "חינם",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה 10:00–17:30, סגור ב-25.12",
+   "coords": [
+    38.8913,
+    -77.03
+   ]
+  },
+  {
+   "name_en": "National Museum of African American History and Culture",
+   "name_he": "מוזיאון ההיסטוריה והתרבות האפרו-אמריקאית",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "המוזיאון החדש והחזק ביותר בוושינגטון: מהעבדות דרך זכויות האזרח ועד אובמה, בבניין ברונזה מרשים.",
+   "tip": "צריך כרטיס מתוזמן חינם — משחררים 30 יום מראש באתר, ויש כרטיסים לאותו יום ב-8:15 בבוקר. התחילו למטה (היסטוריה) ועלו.",
+   "cost": "חינם",
+   "time_needed": "3 שעות",
+   "season": "פתוח כל השנה 10:00–17:30, סגור ב-25.12",
+   "coords": [
+    38.891,
+    -77.0326
+   ]
+  },
+  {
+   "name_en": "National Gallery of Art & Sculpture Garden Ice Rink",
+   "name_he": "הגלריה הלאומית לאמנות ומשטח ההחלקה בגן הפסלים",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "מוזיאון אמנות ענק וחינמי (ליאונרדו, ורמיר, מונה), ובחורף גן הפסלים מולו הופך למשטח החלקה סביב המזרקה.",
+   "tip": "ההחלקה פתוחה מאמצע נובמבר עד מרץ, יפה בערב. במוזיאון קחו לפחות את הבניין המערבי — הציור היחיד של דה וינצ׳י באמריקה.",
+   "cost": "המוזיאון חינם; החלקה ~$12 + השכרה",
+   "time_needed": "שעתיים-שלוש",
+   "season": "פתוח כל השנה, סגור ב-25.12 ו-1.1; ההחלקה נובמבר–מרץ",
+   "coords": [
+    38.8913,
+    -77.02
+   ]
+  },
+  {
+   "name_en": "United States Holocaust Memorial Museum",
+   "name_he": "מוזיאון השואה של ארצות הברית",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 5,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "תערוכת הקבע מהחזקות בעולם — 3 קומות שמתחילות במעלית לקומה הרביעית ויורדות דרך גטאות, מחנות ושחרור. חוויה כבדה ומרגשת.",
+   "tip": "בחורף (ספטמבר–פברואר) לא צריך כרטיס מתוזמן — פשוט נכנסים. השאירו שעתיים לפחות ואל תתכננו משהו קשה אחריו.",
+   "cost": "חינם",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה 10:00–17:30, סגור ב-25.12 וביום כיפור",
+   "coords": [
+    38.8867,
+    -77.0326
+   ]
+  },
+  {
+   "name_en": "National Archives Museum",
+   "name_he": "הארכיון הלאומי",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "הכרזת העצמאות, החוקה ומגילת הזכויות המקוריות — תחת זכוכית ברוטונדה מעומעמת. ביקור קצר ומרגש.",
+   "tip": "אפשר לבוא בלי הזמנה, אבל כרטיס מתוזמן ($1) מדלג על התור. אסור לצלם.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה 10:00–17:30, סגור ב-25.12",
+   "coords": [
+    38.8926,
+    -77.0229
+   ]
+  },
+  {
+   "name_en": "Library of Congress — Thomas Jefferson Building",
+   "name_he": "ספריית הקונגרס",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "הספרייה הגדולה בעולם, ואולי הבניין הכי יפה בוושינגטון: אולם כניסה מצויר, פסיפסים ואולם הקריאה העגול. ליד הקפיטול.",
+   "tip": "צריך כרטיס מתוזמן חינם מהאתר; יש גם כרטיסי אותו יום. עלו למרפסת של אולם הקריאה — הנוף הכי טוב.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה, סגור בימי ראשון וב-25.12 ו-1.1",
+   "coords": [
+    38.8887,
+    -77.0047
+   ]
+  },
+  {
+   "name_en": "International Spy Museum",
+   "name_he": "מוזיאון הריגול הבינלאומי",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "מוזיאון כיפי ואינטראקטיבי על ריגול אמיתי: מקבלים זהות סמויה, זוחלים בתעלות, גאדג׳טים של הקג״ב וה-CIA. מצוין ליום קר.",
+   "tip": "מהמוזיאונים היחידים בוושינגטון שבתשלום — קנו אונליין, זול יותר.",
+   "cost": "~$32-38 למבוגר",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.884,
+    -77.0254
+   ]
+  },
+  {
+   "name_en": "Smithsonian National Zoo & ZooLights",
+   "name_he": "גן החיות הלאומי וזו-לייטס",
+   "segment_id": "mid_atlantic",
+   "kind": "zoo_aquarium",
+   "wow": 4,
+   "detour": "+15 דק׳",
+   "city_state": "Washington, District of Columbia",
+   "why": "גן חיות חינם עם הפנדות שחזרו ב-2025, אריות, גורילות ואזור אסיה. בדצמבר בערבים: ZooLights עם מיליוני נורות.",
+   "tip": "צריך כרטיס כניסה חינם מהאתר. הפנדות הכי פעילות בבוקר. ZooLights בערבים נבחרים עד תחילת ינואר — בדקו אם צריך כרטיס.",
+   "cost": "חינם (חניה $30)",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה, סגור ב-25.12; ZooLights מסוף נובמבר עד תחילת ינואר",
+   "coords": [
+    38.9296,
+    -77.0498
+   ]
+  },
+  {
+   "name_en": "Georgetown",
+   "name_he": "ג׳ורג׳טאון",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 4,
+   "detour": "+10 דק׳",
+   "city_state": "Washington, District of Columbia",
+   "why": "השכונה היפה של וושינגטון: בתי לבנים מהמאה ה-18, חנויות ברחוב M, הקאפקייקס של ג׳ורג׳טאון, הטיילת על הפוטומק ומדרגות \"מגרש השדים\".",
+   "tip": "בדצמבר–תחילת ינואר יש Georgetown GLOW — מיצבי אור חינם ברחובות. חניה קשה, בואו באובר.",
+   "cost": "חינם",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה; GLOW מתחילת דצמבר עד תחילת ינואר",
+   "coords": [
+    38.905,
+    -77.063
+   ]
+  },
+  {
+   "name_en": "Arlington National Cemetery",
+   "name_he": "בית הקברות הלאומי ארלינגטון",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 5,
+   "detour": "+10 דק׳",
+   "city_state": "Arlington, Virginia",
+   "why": "400 אלף מצבות לבנות על גבעות מול וושינגטון, קבר קנדי, וטקס החלפת המשמר בקבר החייל האלמוני — מרגש גם למי שלא אמריקאי.",
+   "tip": "בחורף החלפת המשמר כל שעה עגולה. באמצע דצמבר מניחים זר על כל קבר (Wreaths Across America) — מראה מדהים שנשאר עד סוף ינואר. 25 דק׳ הליכה לקבר האלמוני, או שאטל $.",
+   "cost": "חינם; שאטל ~$20",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה 8:00–17:00, גם ב-25.12",
+   "coords": [
+    38.8795,
+    -77.0685
+   ]
+  },
+  {
+   "name_en": "National 9/11 Pentagon Memorial",
+   "name_he": "אנדרטת 11 בספטמבר בפנטגון",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Arlington, Virginia",
+   "why": "184 ספסלים מעל בריכות מים, אחד לכל נרצח במטוס שנפל על הפנטגון. שקט, פשוט ומרגש, ליד הבניין עצמו.",
+   "tip": "פתוח 24/7, 10 דקות מארלינגטון. חנו בחניון Pentagon City Mall ולכו ברגל.",
+   "cost": "חינם",
+   "time_needed": "חצי שעה",
+   "season": "פתוח כל השנה 24/7",
+   "coords": [
+    38.87,
+    -77.0533
+   ]
+  },
+  {
+   "name_en": "Marine Corps War Memorial (Iwo Jima Memorial)",
+   "name_he": "אנדרטת חיל הנחתים — איוו ג׳ימה",
+   "segment_id": "mid_atlantic",
+   "kind": "scenic",
+   "wow": 4,
+   "detour": "+10 דק׳",
+   "city_state": "Arlington, Virginia",
+   "why": "הפסל הענק של הנחתים מניפים את הדגל באיוו ג׳ימה, עם הנוף הקלאסי על וושינגטון מאחור. חובה בשקיעה.",
+   "tip": "חנו ממש ליד — בחינם. 5 דקות מארלינגטון, שלבו. בערב הכי יפה כשהקפיטול והאנדרטאות מוארים.",
+   "cost": "חינם",
+   "time_needed": "חצי שעה",
+   "season": "פתוח כל השנה 24/7",
+   "coords": [
+    38.8902,
+    -77.0696
+   ]
+  },
+  {
+   "name_en": "Thomas Jefferson Memorial & Tidal Basin",
+   "name_he": "אנדרטת ג׳פרסון והאגן הגאי",
+   "segment_id": "mid_atlantic",
+   "kind": "scenic",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "רוטונדה לבנה על המים, מול אנדרטת וושינגטון. סיבוב סביב האגן עובר גם באנדרטאות רוזוולט ומרטין לותר קינג.",
+   "tip": "ההליכה סביב האגן (3 ק״מ) היא הדרך הכי יפה לראות את וושינגטון. בחורף אין פריחת דובדבן — אבל גם אין המונים.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה 24/7",
+   "coords": [
+    38.8814,
+    -77.0365
+   ]
+  },
+  {
+   "name_en": "Union Station",
+   "name_he": "תחנת יוניון",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "תחנת רכבת מפוארת מ-1907 עם אולם כניסה מקומר ופסלי לגיונרים. בדצמבר עץ ענק ורכבת מודל נורבגית.",
+   "tip": "עצירה קצרה — 5 דקות מהקפיטול. יש שם אוכל, שירותים ופרצלים טובים.",
+   "cost": "חינם",
+   "time_needed": "חצי שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.8973,
+    -77.0063
+   ]
+  },
+  {
+   "name_en": "Eastern Market",
+   "name_he": "שוק איסטרן",
+   "segment_id": "mid_atlantic",
+   "kind": "food",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Washington, District of Columbia",
+   "why": "שוק מקורה מ-1873 בשכונת קפיטול היל, עם קצבים, גבינות ודוכני ארוחת בוקר. בסופ״ש שוק פשפשים ואמנים בחוץ.",
+   "tip": "בואו בסופ״ש בבוקר לפנקייקס של Market Lunch (תור, שווה). בימי שני סגור.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה, סגור בימי שני",
+   "coords": [
+    38.8865,
+    -76.9962
+   ]
+  },
+  {
+   "name_en": "Ben's Chili Bowl",
+   "name_he": "בן׳ס צ׳ילי בול",
+   "segment_id": "mid_atlantic",
+   "kind": "food",
+   "wow": 4,
+   "detour": "+10 דק׳",
+   "city_state": "Washington, District of Columbia",
+   "why": "המוסד של רחוב U מ-1958 — נקניקיית half-smoke עם צ׳ילי, שאובמה אכל ושכל וושינגטון מכירה. ציורי קיר של מפורסמים בחוץ.",
+   "tip": "הזמינו half-smoke עם צ׳ילי וצ׳יפס. פתוח עד מאוחר. שכונת U Street נחמדה לערב.",
+   "cost": "~$10-15",
+   "time_needed": "חצי שעה-שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.917,
+    -77.0286
+   ]
+  },
+  {
+   "name_en": "George Washington's Mount Vernon",
+   "name_he": "מאונט ורנון — אחוזת ג׳ורג׳ וושינגטון",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "+30 דק׳",
+   "city_state": "Mount Vernon, Virginia",
+   "why": "האחוזה והחווה של הנשיא הראשון על הפוטומק, עם הבית המקורי, הקבר, מוזיאון מצוין ונוף על הנהר.",
+   "tip": "בדצמבר האחוזה מקושטת לחג (Christmas at Mount Vernon) עם גמל בחווה — כן, גמל. פתוח 365 יום, גם ב-25.12.",
+   "cost": "~$28 למבוגר",
+   "time_needed": "3-4 שעות",
+   "season": "פתוח כל השנה כולל 25.12; חג המולד באחוזה עד 6.1",
+   "coords": [
+    38.7085,
+    -77.0865
+   ]
+  },
+  {
+   "name_en": "Old Town Alexandria",
+   "name_he": "העיר העתיקה של אלכסנדריה",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 4,
+   "detour": "+15 דק׳",
+   "city_state": "Alexandria, Virginia",
+   "why": "עיירת נמל קולוניאלית מושלמת: רחוב קינג עם בתי לבנים, חנויות ומסעדות עד המים. בחורף מקושטת כמו גלויה.",
+   "tip": "חנו ועלו על החשמלית החינמית לאורך King Street. מפעל הטורפדו על המים — סטודיו של אמנים, חינם.",
+   "cost": "חינם",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה; בדצמבר מקושט לחג",
+   "coords": [
+    38.8046,
+    -77.045
+   ]
+  },
+  {
+   "name_en": "Steven F. Udvar-Hazy Center",
+   "name_he": "מרכז אודבר-האזי — מוזיאון האוויר והחלל ליד דאלס",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 5,
+   "detour": "+45 דק׳",
+   "city_state": "Chantilly, Virginia",
+   "why": "ההאנגר הענק של מוזיאון האוויר והחלל: מעבורת החלל דיסקברי, SR-71 בלקבירד, קונקורד, אנולה גיי ומאות מטוסים. יותר טוב מהבניין במול.",
+   "tip": "בלי כרטיסים ובלי תורים — חינם, רק חניה $15 (חינם אחרי 16:00). מגדל פיקוח עם נוף על שדה דאלס.",
+   "cost": "חינם (חניה $15)",
+   "time_needed": "3 שעות",
+   "season": "פתוח כל השנה 10:00–17:30, סגור ב-25.12",
+   "coords": [
+    38.9112,
+    -77.4443
+   ]
+  },
+  {
+   "name_en": "Great Falls Park",
+   "name_he": "פארק גרייט פולס",
+   "segment_id": "mid_atlantic",
+   "kind": "national_park",
+   "wow": 4,
+   "detour": "+40 דק׳",
+   "city_state": "McLean, Virginia",
+   "why": "הפוטומק קופץ בסדרת מפלים סוערים דרך קניון סלעי — 20 דקות מהבירה. שלוש תצפיות קרובות למרכז המבקרים.",
+   "tip": "התצפיות במרחק 5 דקות הליכה מהחניה. אחרי גשם הנהר שואג. בסופ״ש החניון מתמלא עד 11:00.",
+   "cost": "$20 לרכב",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה, סגור ב-25.12; שבילים חלקים אחרי קרח",
+   "coords": [
+    38.9983,
+    -77.254
+   ]
+  },
+  {
+   "name_en": "ICE! at Gaylord National Resort",
+   "name_he": "ICE! במלון גיילורד נשיונל הארבור",
+   "segment_id": "mid_atlantic",
+   "kind": "quirky",
+   "wow": 4,
+   "detour": "+20 דק׳",
+   "city_state": "National Harbor, Maryland",
+   "why": "תערוכת פסלי קרח ענקית ב-9 מעלות מתחת לאפס, עם מגלשות קרח — אמנים סינים מגלפים את הכול. בנוסף אטריום המלון המקושט לחג.",
+   "tip": "נותנים פרקה בכניסה אבל קחו כפפות וכובע. קנו כרטיסים אונליין, בחגים נגמרים. האטריום של המלון חינם.",
+   "cost": "~$30-45 למבוגר",
+   "time_needed": "שעה-שעתיים",
+   "season": "מאמצע נובמבר עד 1.1 בלבד",
+   "coords": [
+    38.7826,
+    -77.0168
+   ]
+  },
+  {
+   "name_en": "The Capital Wheel at National Harbor",
+   "name_he": "הגלגל הענק של נשיונל הארבור",
+   "segment_id": "mid_atlantic",
+   "kind": "scenic",
+   "wow": 3,
+   "detour": "+20 דק׳",
+   "city_state": "National Harbor, Maryland",
+   "why": "גלגל ענק של 55 מטר על מזח בפוטומק, עם קבינות מחוממות ונוף על וושינגטון ואלכסנדריה. ליד: טיילת, חנויות ואאוטלט Tanger.",
+   "tip": "שלבו עם ICE! בגיילורד ועם אאוטלט Tanger National Harbor ממש ליד. בערב הנוף יפה יותר.",
+   "cost": "~$18 למבוגר",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה (סגור ברוחות חזקות)",
+   "coords": [
+    38.7823,
+    -77.0188
+   ]
+  },
+  {
+   "name_en": "Potomac Mills",
+   "name_he": "אאוטלט פוטומק מילס",
+   "segment_id": "mid_atlantic",
+   "kind": "shopping",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Woodbridge, Virginia",
+   "why": "אאוטלט ענק ממש על I-95: נורדסטרום ראק, נייקי, קוסטקו, ו-IKEA ממול. עצירת קניות נוחה בדרך דרומה.",
+   "tip": "יוצאים ביציאה 156 וחוזרים לכביש — 5 דקות. בימי חול ריק.",
+   "cost": "חינם",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה; סגור ב-25.12",
+   "coords": [
+    38.6436,
+    -77.2919
+   ]
+  },
+  {
+   "name_en": "National Museum of the Marine Corps",
+   "name_he": "המוזיאון הלאומי של חיל הנחתים",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "+5 דק׳",
+   "city_state": "Triangle, Virginia",
+   "why": "מוזיאון חינם ומרשים ממש ליד I-95, בבניין שמחקה את תמונת הדגל באיוו ג׳ימה. מטוסים, טנקים ותצוגות עם קול וקור אמיתי.",
+   "tip": "עצירה מושלמת של שעתיים בדרך לפרדריקסבורג. יש פאב בפנים.",
+   "cost": "חינם",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה, סגור ב-25.12",
+   "coords": [
+    38.5553,
+    -77.3493
+   ]
+  },
+  {
+   "name_en": "Fredericksburg Historic Downtown",
+   "name_he": "המרכז ההיסטורי של פרדריקסבורג",
+   "segment_id": "mid_atlantic",
+   "kind": "city",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Fredericksburg, Virginia",
+   "why": "עיירה קולוניאלית שבה ג׳ורג׳ וושינגטון גדל — רחוב קרוליין עם חנויות עתיקות, בתי קפה ובתים מהמאה ה-18.",
+   "tip": "עצירת צהריים נחמדה בדרך לריצ׳מונד. חניה ברחוב חינם לשעתיים.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה; בדצמבר מקושט",
+   "coords": [
+    38.302,
+    -77.46
+   ]
+  },
+  {
+   "name_en": "Fredericksburg Battlefield — Sunken Road & Marye's Heights",
+   "name_he": "שדה הקרב של פרדריקסבורג",
+   "segment_id": "mid_atlantic",
+   "kind": "national_park",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Fredericksburg, Virginia",
+   "why": "שדה קרב ממלחמת האזרחים (1862) עם חומת אבן, בית קברות לאומי ומרכז מבקרים טוב. 10 דקות הליכה מסבירות הרבה.",
+   "tip": "הסרט במרכז המבקרים (22 דק׳) שווה. סיור Sunken Road קצר ושטוח.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה, סגור ב-25.12 ו-1.1",
+   "coords": [
+    38.294,
+    -77.468
+   ]
+  },
+  {
+   "name_en": "Virginia Museum of Fine Arts",
+   "name_he": "מוזיאון וירג׳יניה לאמנות",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Richmond, Virginia",
+   "why": "מוזיאון אמנות גדול וחינמי — ביצי פברז׳ה, אימפרסיוניסטים, אמנות אפריקאית ומודרנית. מהטובים בדרום, 365 יום בשנה.",
+   "tip": "פתוח גם ב-25.12 וב-1.1 — נדיר. אוסף הפברז׳ה הוא הגדול מחוץ לרוסיה. חניה $ בחניון.",
+   "cost": "חינם (תערוכות מיוחדות $)",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה, 365 יום",
+   "coords": [
+    37.556,
+    -77.4745
+   ]
+  },
+  {
+   "name_en": "Lewis Ginter Botanical Garden — GardenFest of Lights",
+   "name_he": "גן בוטני לואיס גינטר — פסטיבל האורות",
+   "segment_id": "mid_atlantic",
+   "kind": "scenic",
+   "wow": 4,
+   "detour": "+10 דק׳",
+   "city_state": "Richmond, Virginia",
+   "why": "גן בוטני יפה עם חממה ויקטוריאנית, ובחורף מיליון נורות, מדורות ומארשמלו. פסטיבל האורות הכי טוב בווירג׳יניה.",
+   "tip": "הזמינו כרטיס מתוזמן לערב. בואו בחושך (מ-17:00). סגור ב-24-25.12.",
+   "cost": "~$20-25 למבוגר",
+   "time_needed": "שעה-שעתיים",
+   "season": "פסטיבל האורות מסוף נובמבר עד תחילת ינואר; הגן פתוח כל השנה",
+   "coords": [
+    37.6215,
+    -77.4715
+   ]
+  },
+  {
+   "name_en": "Maymont",
+   "name_he": "מיימונט",
+   "segment_id": "mid_atlantic",
+   "kind": "scenic",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Richmond, Virginia",
+   "why": "אחוזה ויקטוריאנית על 400 דונם עם גן יפני, גן איטלקי, חוות חיות ודובים — והכול חינם. הפארק האהוב של ריצ׳מונד.",
+   "tip": "הכניסה לפארק ולחווה חינם (תרומה). הבית עצמו בסיור $, בדצמבר מקושט לחג. חנו בכניסת Hampton Street.",
+   "cost": "חינם (סיור בבית ~$8)",
+   "time_needed": "שעתיים",
+   "season": "פתוח כל השנה 10:00–17:00; בחורף הגן היפני יפה גם בלי עלים",
+   "coords": [
+    37.533,
+    -77.475
+   ]
+  },
+  {
+   "name_en": "Belle Isle & James River Park",
+   "name_he": "בל אייל ופארק נהר הג׳יימס",
+   "segment_id": "mid_atlantic",
+   "kind": "hike",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Richmond, Virginia",
+   "why": "אי בנהר הג׳יימס במרכז ריצ׳מונד, אליו מגיעים בגשר להולכי רגל שתלוי מתחת לגשר כביש. סלעים, מים לבנים ונוף על העיר.",
+   "tip": "חנו ב-Tredegar Street ולכו על הגשר התלוי (5 דק׳). סיבוב סביב האי כ-3 ק״מ, שטוח. בחורף הסלעים חלקים.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    37.53,
+    -77.451
+   ]
+  },
+  {
+   "name_en": "Hollywood Cemetery",
+   "name_he": "בית הקברות הוליווד",
+   "segment_id": "mid_atlantic",
+   "kind": "quirky",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Richmond, Virginia",
+   "why": "בית קברות ויקטוריאני על צוק מעל נהר הג׳יימס, עם שני נשיאים (מונרו וטיילר) ופירמידת אבן. מהנופים הכי יפים בריצ׳מונד.",
+   "tip": "אפשר לנסוע בתוך בית הקברות ברכב — קחו מפה בכניסה. סעו עד הפירמידה ולתצפית על הנהר.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה 8:00–17:00",
+   "coords": [
+    37.5385,
+    -77.4535
+   ]
+  },
+  {
+   "name_en": "Carytown",
+   "name_he": "קריטאון",
+   "segment_id": "mid_atlantic",
+   "kind": "shopping",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Richmond, Virginia",
+   "why": "רחוב הקניות הכי נחמד בריצ׳מונד: 9 בלוקים של חנויות עצמאיות, בתי קפה, מסעדות וקולנוע Byrd מ-1928.",
+   "tip": "בקולנוע Byrd מקרינים סרטים ב-$5. חניה ברחוב או מאחורי החנויות.",
+   "cost": "חינם",
+   "time_needed": "שעה-שעתיים",
+   "season": "פתוח כל השנה",
+   "coords": [
+    37.5538,
+    -77.487
+   ]
+  },
+  {
+   "name_en": "Virginia State Capitol",
+   "name_he": "הקפיטול של וירג׳יניה",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Richmond, Virginia",
+   "why": "בית המחוקקים שתכנן תומס ג׳פרסון ב-1788 כמקדש רומי, עם הפסל היחיד של וושינגטון שנעשה בחייו. סיור חינם.",
+   "tip": "סיורים מודרכים חינם, הכניסה מרחוב Bank Street. 5 דקות ממוזיאון פו. בדקו שעות בסופ״ש.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה, סגור בחגים",
+   "coords": [
+    37.5388,
+    -77.4339
+   ]
+  },
+  {
+   "name_en": "Edgar Allan Poe Museum",
+   "name_he": "מוזיאון אדגר אלן פו",
+   "segment_id": "mid_atlantic",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Richmond, Virginia",
+   "why": "הבית הישן ביותר בריצ׳מונד, עם חפציו של פו, כתבי יד וגן זיכרון. שני חתולים שחורים גרים במוזיאון.",
+   "tip": "סגור בימי שני. ביקור של שעה, לחובבי פו ולאווירה.",
+   "cost": "$16 למבוגר",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה, סגור בימי שני וב-25.12",
+   "coords": [
+    37.5316,
+    -77.4266
+   ]
+  },
+  {
+   "name_en": "Kings Dominion — WinterFest",
+   "name_he": "קינגס דומיניון — ווינטרפסט",
+   "segment_id": "mid_atlantic",
+   "kind": "theme_park",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Doswell, Virginia",
+   "why": "פארק השעשועים הגדול של וירג׳יניה, ממש על I-95. בחורף פתוח בערבים נבחרים עם מיליוני אורות, החלקה על קרח וכמה רכבות הרים.",
+   "tip": "רק בתאריכים נבחרים, בעיקר סופ״ש ו-26.12–1.1 בערב — בדקו לוח. בקור קיצוני רכבות ההרים נסגרות. אחרי 1.1 הפארק סגור עד מרץ.",
+   "cost": "~$35 למבוגר אונליין",
+   "time_needed": "3-4 שעות",
+   "season": "רק ווינטרפסט עד 1.1 (תאריכים נבחרים); אחר כך סגור עד האביב",
+   "coords": [
+    37.84,
+    -77.4445
+   ]
+  }
+ ]
+}

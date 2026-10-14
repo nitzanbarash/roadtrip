@@ -1,0 +1,92 @@
+  /* ---------- photos, reviews ---------- */
+  .ph{display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; margin:2px -16px 0; padding:0 16px; scroll-snap-type:x mandatory}
+  .ph::-webkit-scrollbar{display:none}
+  .ph a{flex:none; width:168px; height:118px; border-radius:8px; overflow:hidden; background:var(--surface2); scroll-snap-align:start; display:block}
+  .ph a:first-child{width:236px}
+  .ph img{width:100%; height:100%; object-fit:cover; display:block}
+  .phload,.phnone{font-size:12.5px; color:var(--ink3)}
+  .phcred{font-size:11px; color:var(--ink3); display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+  .phcred a{color:var(--ink3)}
+  .wp{font-size:13.5px; color:var(--ink2); line-height:1.45; direction:ltr; text-align:left; unicode-bidi:plaintext; border-inline-start:2px solid var(--line2); padding-inline-start:9px}
+  .wp a{font-weight:700; color:var(--route); text-decoration:none; white-space:nowrap}
+  .rev{display:flex; flex-wrap:wrap; gap:6px; align-items:center}
+  .rev .k{font-size:12px; font-weight:800; color:var(--ink3); flex:1 1 100%}
+  .rev a{flex:1 1 auto; text-align:center; text-decoration:none; font-weight:800; font-size:13px; border-radius:8px; padding:7px 9px; border:1px solid var(--line2); background:var(--surface2); white-space:nowrap}
+  .rev a .lat{font-weight:800}
+  .qadd{border:1px solid var(--neon); color:var(--neon); background:transparent; border-radius:10px; padding:10px 12px; font-weight:800; font-size:15px; flex:1 1 0; min-width:120px}
+  .qadd[aria-pressed="true"]{background:var(--neon); color:#fff}
+  .maplink.q{color:var(--neon); border-bottom-color:var(--neon)}
+
+  /* ---------- nearby (internet) ---------- */
+  .fab .badge{position:absolute; top:-5px; right:-5px; min-width:20px; height:20px; border-radius:10px; background:var(--neon); color:#fff; font:800 12px 'Overpass',system-ui,sans-serif; display:grid; place-items:center; padding:0 5px; box-shadow:0 0 0 2px var(--surface)}
+  .fab{position:relative}
+  .nearbar{position:absolute; z-index:18; left:66px; right:12px; top:calc(env(safe-area-inset-top,0px) + 66px); border-radius:var(--r); padding:8px 10px; display:flex; flex-direction:column; gap:7px; max-width:600px}
+  .nearbar .prow{align-items:center}
+  .nearbar .chip{display:inline-flex; gap:6px; align-items:center}
+  .nearbar .chip img{width:22px; height:22px; margin:-3px -4px -3px 0; display:block}
+  .nearbar .chip[aria-pressed="true"]{background:var(--c); border-color:var(--c); color:#fff}
+  .nearnote{font-size:12.5px; color:var(--ink3); display:flex; justify-content:space-between; gap:8px; align-items:center}
+  .nearnote button{border:0; background:none; padding:0; color:var(--go); font-weight:800; font-size:12.5px; text-decoration:underline; text-underline-offset:2px}
+  .nlist{display:flex; flex-direction:column}
+  .nlist button{display:flex; gap:10px; align-items:center; width:100%; text-align:start; border:0; border-bottom:1px solid var(--line); background:transparent; padding:9px 0}
+  .nlist button:last-child{border-bottom:0}
+  .nlist i{flex:none; width:11px; height:11px; border-radius:50%; background:var(--c)}
+  .nlist b{display:block; font-weight:700; line-height:1.2; unicode-bidi:plaintext}
+  .nlist small{display:block; color:var(--ink3); font-size:12px; line-height:1.25}
+  .nlist .lat{flex:none; font-weight:700; color:var(--ink3); font-size:12.5px}
+  .tagrow{display:flex; flex-wrap:wrap; gap:4px 12px; font-size:13px; color:var(--ink2); direction:ltr; text-align:left; unicode-bidi:plaintext}
+  .tagrow a{color:var(--route)}
+
+  /* ---------- the stop queue ---------- */
+  .qpanel{position:absolute; z-index:26; right:12px; bottom:calc(env(safe-area-inset-bottom,0px) + 16px); width:min(420px, calc(100% - 24px)); max-height:min(70%, 600px); display:flex; flex-direction:column; border-radius:var(--r); overflow:hidden}
+  .qhead{display:flex; align-items:center; justify-content:space-between; gap:8px; padding:12px 14px 8px}
+  .qhead h3{font-size:19px}
+  .qhead small{display:block; font-family:'Assistant',sans-serif; font-size:12.5px; color:var(--ink3); font-weight:400}
+  .qtools{display:flex; gap:6px; flex-wrap:wrap; padding:0 14px 10px}
+  .qtools .btn{font-size:12.5px; padding:6px 10px}
+  .qlist{flex:1; overflow:auto; overscroll-behavior:contain; padding:0 10px 10px; display:flex; flex-direction:column; gap:6px}
+  .qs{display:flex; align-items:center; gap:8px; background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:7px 8px 7px 6px}
+  .qs.next{border-color:var(--neon); box-shadow:0 0 0 1px var(--neon)}
+  .qs.done{opacity:.55}
+  .qs.done .qn{text-decoration:line-through}
+  .qs b.num{flex:none; width:26px; height:26px; border-radius:50%; background:var(--neon); color:#fff; font:800 13px 'Overpass',system-ui,sans-serif; display:grid; place-items:center}
+  .qs.done b.num{background:var(--ink3)}
+  .qs .qt{flex:1; min-width:0}
+  .qs .qn{font-weight:700; line-height:1.2; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; unicode-bidi:plaintext}
+  .qs .qm{font-size:12px; color:var(--ink3); line-height:1.25; display:flex; gap:8px; flex-wrap:wrap}
+  .qs .qb{display:flex; gap:2px; flex:none}
+  .qs .qb button{width:30px; height:30px; border-radius:8px; border:1px solid var(--line); background:var(--surface2); padding:0; font-size:15px; line-height:1; display:grid; place-items:center}
+  .qs .qb button:disabled{opacity:.3}
+  .qs .qb button.ok[aria-pressed="true"]{background:var(--park); color:#fff; border-color:var(--park)}
+  .qempty{padding:8px 14px 18px; color:var(--ink3); font-size:14px; line-height:1.45}
+  .qshare{display:none; flex-direction:column; gap:6px; padding:0 14px 12px}
+  .qshare[data-open="1"]{display:flex}
+  .qshare textarea{width:100%; min-height:54px; font:600 12px ui-monospace,monospace; direction:ltr; border:1px solid var(--line2); border-radius:8px; padding:6px; background:var(--surface); color:inherit; resize:vertical}
+  .qshare .row{display:flex; gap:6px; flex-wrap:wrap}
+  .qmk{display:flex; align-items:center; gap:4px; white-space:nowrap; pointer-events:none}
+  .qmk b{display:grid; place-items:center; width:24px; height:24px; border-radius:50%; background:#BC2F5C; color:#fff; font:800 12.5px 'Overpass',system-ui,sans-serif; box-shadow:0 0 0 2.5px #fff, 0 2px 6px rgba(0,0,0,.35)}
+  .qmk.done b{background:#8a8f96}
+  .qmk span{font:700 13px 'Assistant',system-ui,sans-serif; color:#5a1230; text-shadow:0 0 2px #fff,0 0 3px #fff,0 0 4px #fff; max-width:160px; overflow:hidden; text-overflow:ellipsis}
+  .sat .qmk span{color:#fff; text-shadow:0 0 2px #000,0 0 3px #000,0 0 5px #000}
+  .pinmk{width:18px; height:18px; border-radius:50%; background:var(--go); border:3px solid #fff; box-shadow:0 1px 6px rgba(0,0,0,.4)}
+
+  /* ---------- hosting / install ---------- */
+  .maprow{display:flex; flex-direction:column; gap:6px; border-top:1px solid var(--line); padding-top:8px}
+  .maprow:first-child{border-top:0; padding-top:0}
+  .maprow .t{display:flex; justify-content:space-between; gap:8px; align-items:center; font-size:13.5px; font-weight:700}
+  .maprow .t small{font-weight:600; color:var(--ink3); font-size:12px}
+  .maprow .ok{color:var(--park)}
+  .install{position:absolute; z-index:45; left:12px; right:12px; bottom:calc(env(safe-area-inset-bottom,0px) + 90px); border-radius:var(--r); padding:12px 14px; display:flex; gap:10px; align-items:flex-start; max-width:520px; margin-inline-start:auto}
+  .install p{margin:0; font-size:14px; line-height:1.45; flex:1}
+  .install b{font-weight:800}
+  .install button{flex:none; border:0; background:none; font-size:20px; padding:0 2px; line-height:1}
+  @media (max-width:560px){
+    .qpanel{right:0; left:0; bottom:0; width:auto; border-radius:18px 18px 0 0; max-height:66%; padding-bottom:env(safe-area-inset-bottom,0px)}
+    .nearbar{left:66px; right:10px}
+  }
+  .nlist img.ni{flex:none; width:26px; height:26px}
+  .legend{display:flex; flex-direction:column; gap:6px}
+  .lgk{font-size:12px; font-weight:800; color:var(--ink3)}
+  .lg{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:4px 8px}
+  .lg span{display:flex; align-items:center; gap:6px; font-size:13px; line-height:1.2; min-width:0}
+  .lg img{flex:none; width:24px; height:24px}

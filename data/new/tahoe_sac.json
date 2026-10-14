@@ -1,0 +1,958 @@
+{
+ "attractions": [
+  {
+   "name_en": "Donner Memorial State Park",
+   "name_he": "פארק דונר ממוריאל",
+   "segment_id": "tahoe_sac",
+   "kind": "state_park",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Truckee, California",
+   "why": "אגם דונר ומוזיאון על משלחת דונר — חלוצים שנתקעו כאן בשלג בחורף 1846. מסלולי הליכה סביב האגם.",
+   "tip": "מרכז המבקרים ממש ליד כביש 80. בחורף הולכים על השבילים עם נעלי שלג.",
+   "cost": "כ-$10 לרכב",
+   "time_needed": "1-2 שעות",
+   "season": "פתוח בחורף ומושלג. כביש 80 במעבר דונר: בסערות יש חובת שרשראות ולפעמים סגירה — בדקו ב-Caltrans QuickMap",
+   "coords": [
+    39.3236,
+    -120.2327
+   ]
+  },
+  {
+   "name_en": "Rainbow Bridge (Donner Summit Bridge), Old Highway 40",
+   "name_he": "גשר הקשת במעבר דונר",
+   "segment_id": "tahoe_sac",
+   "kind": "scenic",
+   "wow": 3,
+   "detour": "+15 דק׳",
+   "city_state": "Truckee, California",
+   "why": "גשר קשת מ-1926 על כביש 40 הישן, עם תצפית מטורפת על אגם דונר מלמעלה. ליד יש חריטות סלע עתיקות.",
+   "tip": "צאו מכביש 80 ביציאה של Soda Springs/Norden וסעו מזרחה ב-Donner Pass Road עד מפרץ התצפית.",
+   "cost": "חינם",
+   "time_needed": "30 דק׳",
+   "season": "הכביש מפונה בחורף, אבל מפרצי התצפית לפעמים קבורים בשלג. בסערה — שרשראות",
+   "coords": [
+    39.3169,
+    -120.3236
+   ]
+  },
+  {
+   "name_en": "Historic Downtown Truckee",
+   "name_he": "מרכז טראקי ההיסטורי",
+   "segment_id": "tahoe_sac",
+   "kind": "city",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Truckee, California",
+   "why": "רחוב מערבי ישן לאורך מסילת הרכבת, עם מסעדות, חנויות סקי ובתי קפה. העיירה הכי כיפית בצפון טאהו.",
+   "tip": "חניה בתשלום ב-Commercial Row. בערב יש אווירה של עיירת סקי אמיתית.",
+   "cost": "חינם",
+   "time_needed": "1-2 שעות",
+   "season": "מצוין בחורף — עיירה מושלגת, הרחובות מפונים",
+   "coords": [
+    39.3276,
+    -120.185
+   ]
+  },
+  {
+   "name_en": "Squeeze In Truckee",
+   "name_he": "סקוויז אין",
+   "segment_id": "tahoe_sac",
+   "kind": "food",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Truckee, California",
+   "why": "מקום ארוחות בוקר מיתולוגי עם עשרות סוגי חביתות ענקיות וקירות מכוסים בכתובות של אורחים.",
+   "tip": "בסופ״ש יש תור — בואו לפני 9:00, או הירשמו ברשימה ותסתובבו ברחוב.",
+   "cost": "כ-$20 לאדם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה (בוקר וצהריים)",
+   "coords": [
+    39.3281,
+    -120.1838
+   ]
+  },
+  {
+   "name_en": "Palisades Tahoe",
+   "name_he": "פאליסיידס טאהו (לשעבר סקוואו ואלי)",
+   "segment_id": "tahoe_sac",
+   "kind": "ski",
+   "wow": 5,
+   "detour": "+15 דק׳",
+   "city_state": "Olympic Valley, California",
+   "why": "אתר הסקי המפורסם של טאהו, שאירח את אולימפיאדת 1960. שני הרים מחוברים בגונדולה, שטח ענק ונוף לאגם.",
+   "tip": "קנו כרטיס אונליין מראש (בקופה יקר מאוד) או השתמשו ב-Ikon. בסופ״ש תגיעו לפני 8:00 — החניה מתמלאת.",
+   "cost": "כרטיס יומי $200+ בקופה, זול יותר מראש",
+   "time_needed": "יום שלם",
+   "season": "עונת סקי — שיא בינואר. בסערות יש שרשראות בכביש 89",
+   "coords": [
+    39.197,
+    -120.2355
+   ]
+  },
+  {
+   "name_en": "Northstar California Resort",
+   "name_he": "נורת׳סטאר",
+   "segment_id": "tahoe_sac",
+   "kind": "ski",
+   "wow": 4,
+   "detour": "+10 דק׳",
+   "city_state": "Truckee, California",
+   "why": "אתר סקי מפנק עם כפר מקסים, מסלולים רחבים ונוחים לרמה בינונית, ורחבת החלקה על קרח באמצע הכפר.",
+   "tip": "גם בלי סקי — הכפר ורחבת הקרח שווים ערב. שייך ל-Epic Pass.",
+   "cost": "כרטיס יומי $200+ (זול יותר עם Epic)",
+   "time_needed": "יום שלם",
+   "season": "עונת סקי מלאה, דצמבר–אפריל",
+   "coords": [
+    39.2745,
+    -120.1215
+   ]
+  },
+  {
+   "name_en": "Sugar Bowl Resort",
+   "name_he": "שוגר בול",
+   "segment_id": "tahoe_sac",
+   "kind": "ski",
+   "wow": 4,
+   "detour": "+5 דק׳",
+   "city_state": "Norden, California",
+   "why": "אתר סקי ותיק ממש על מעבר דונר, עם הרבה שלג ושטח מאתגר. הכי קרוב לכביש 80 ולאזור המפרץ.",
+   "tip": "הסערות פה חזקות — אם כביש 80 נסגר, גם הגישה נתקעת. בדקו תחזית ומצב כבישים בבוקר.",
+   "cost": "כ-$150-200 ליום",
+   "time_needed": "יום שלם",
+   "season": "עונת סקי מלאה; מהשלג הכבד בקליפורניה — שרשראות או 4X4 עם צמיגי שלג בסערה",
+   "coords": [
+    39.3004,
+    -120.3345
+   ]
+  },
+  {
+   "name_en": "Boreal Mountain and Woodward Tahoe",
+   "name_he": "בוריאל ו-וודוורד טאהו",
+   "segment_id": "tahoe_sac",
+   "kind": "ski",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Soda Springs, California",
+   "why": "אתר סקי קטן וזול צמוד לכביש 80, עם סקי לילה ופארקי קפיצות. ב'בונקר' המקורה יש טרמפולינות ובורות ספוג.",
+   "tip": "סקי לילה הוא הדיל הזול כאן. ביום סוער — סשן בבונקר המקורה. בדקו שעות באתר.",
+   "cost": "סקי כ-$80-120; בונקר כ-$40-50 לסשן",
+   "time_needed": "2-4 שעות",
+   "season": "עונת סקי דצמבר–מרץ; הבונקר המקורה פתוח כל השנה",
+   "coords": [
+    39.3363,
+    -120.3497
+   ]
+  },
+  {
+   "name_en": "Soda Springs Mountain Resort",
+   "name_he": "סודה ספרינגס — מגלשות שלג",
+   "segment_id": "tahoe_sac",
+   "kind": "ski",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Soda Springs, California",
+   "why": "אתר שלג קטן שמתמחה בגלישה על צמיגים (טיובינג) ומשחקי שלג — כיף גדול גם למי שלא גולש.",
+   "tip": "הכרטיסים נמכרים לפי חלונות זמן — הזמינו מראש לסופ״ש וחגים.",
+   "cost": "טיובינג כ-$50",
+   "time_needed": "2 שעות",
+   "season": "רק בעונת השלג (בערך דצמבר–מרץ), בעיקר סופ״ש וחגים",
+   "coords": [
+    39.3212,
+    -120.3818
+   ]
+  },
+  {
+   "name_en": "Heavenly Mountain Resort and Heavenly Gondola",
+   "name_he": "הבנלי — אתר סקי וגונדולה",
+   "segment_id": "tahoe_sac",
+   "kind": "ski",
+   "wow": 5,
+   "detour": "+1:15 שעות",
+   "city_state": "South Lake Tahoe, California",
+   "why": "אתר הסקי עם הנוף הכי יפה לאגם טאהו, על הגבול בין קליפורניה לנבדה. הגונדולה עולה מהכפר למרפסת תצפית מדהימה.",
+   "tip": "לא גולשים? קנו כרטיס לגונדולה בלבד. בערב — הכפר והקזינו של סטייטליין צמודים.",
+   "cost": "סקי $200+; גונדולה לתצפית כ-$80",
+   "time_needed": "חצי יום עד יום",
+   "season": "עונת סקי מלאה; בכבישים 50 ו-89 יש שרשראות בסערות",
+   "coords": [
+    38.9564,
+    -119.9412
+   ]
+  },
+  {
+   "name_en": "Kirkwood Mountain Resort",
+   "name_he": "קירקווד",
+   "segment_id": "tahoe_sac",
+   "kind": "ski",
+   "wow": 4,
+   "detour": "+1:45 שעות",
+   "city_state": "Kirkwood, California",
+   "why": "אתר מבודד עם השלג הכי עמוק באזור טאהו ושטח קשה לגולשים טובים. בלי המונים, אווירה של פעם.",
+   "tip": "כביש 88 דרך Carson Pass נסגר בסערות — בדקו לפני. אין הרבה שירותים, קחו אוכל ודלק.",
+   "cost": "כ-$150-200 ליום (Epic Pass)",
+   "time_needed": "יום שלם",
+   "season": "עונת סקי מלאה; שלג כבד — שרשראות או 4X4 כמעט חובה",
+   "coords": [
+    38.685,
+    -120.0655
+   ]
+  },
+  {
+   "name_en": "Diamond Peak Ski Resort",
+   "name_he": "דיימונד פיק",
+   "segment_id": "tahoe_sac",
+   "kind": "ski",
+   "wow": 3,
+   "detour": "+40 דק׳",
+   "city_state": "Incline Village, Nevada",
+   "why": "אתר סקי קטן ומשפחתי מעל אינקליין וילג׳, עם נוף ישיר לאגם כמעט מכל מסלול. זול יותר מהגדולים.",
+   "tip": "עלו ברכבל Crystal Express לפסגה בשביל התמונה הכי טובה של האגם.",
+   "cost": "כ-$120-150 ליום",
+   "time_needed": "חצי יום",
+   "season": "עונת סקי דצמבר–אפריל",
+   "coords": [
+    39.2545,
+    -119.924
+   ]
+  },
+  {
+   "name_en": "Mt. Rose Ski Tahoe",
+   "name_he": "הר רוז",
+   "segment_id": "tahoe_sac",
+   "kind": "ski",
+   "wow": 4,
+   "detour": "+30 דק׳",
+   "city_state": "Reno, Nevada",
+   "why": "אתר הסקי הכי קרוב לרינו, עם הבסיס הכי גבוה בטאהו — שלג יבש ואיכותי ונוף לאגם ולמדבר.",
+   "tip": "טוב ליום סקי ישר מרינו בלי לרדת לאגם. בדקו את מצב כביש 431 (Mt. Rose Highway).",
+   "cost": "כ-$150-200 ליום",
+   "time_needed": "יום שלם",
+   "season": "עונת סקי מלאה; בכביש 431 יש שרשראות בסערות",
+   "coords": [
+    39.3289,
+    -119.8855
+   ]
+  },
+  {
+   "name_en": "Tahoe Meadows, Mount Rose Highway",
+   "name_he": "טאהו מדוז — אחו השלג בכביש הר רוז",
+   "segment_id": "tahoe_sac",
+   "kind": "scenic",
+   "wow": 3,
+   "detour": "+35 דק׳",
+   "city_state": "Incline Village, Nevada",
+   "why": "אחו ענק ומושלג בגובה 2,700 מ׳ ליד פסגת הכביש, אהוב על הולכי נעלי שלג ומזחלות. בירידה יש תצפית מטורפת לאגם.",
+   "tip": "עצרו גם ב-Mt. Rose Scenic Overlook בדרך לאגם. החניה בצד הכביש מתמלאת בסופ״ש.",
+   "cost": "חינם",
+   "time_needed": "1-2 שעות",
+   "season": "מצוין בחורף — שלג עמוק. בגדים חמים, ולפעמים צריך שרשראות",
+   "coords": [
+    39.3035,
+    -119.9105
+   ]
+  },
+  {
+   "name_en": "Kings Beach State Recreation Area",
+   "name_he": "חוף קינגס ביץ׳",
+   "segment_id": "tahoe_sac",
+   "kind": "beach",
+   "wow": 3,
+   "detour": "+20 דק׳",
+   "city_state": "Kings Beach, California",
+   "why": "חוף חול רחב בצפון האגם, מים צלולים והרים מושלגים מסביב. בחורף שקט ויפה, לפעמים עם שלג על החול.",
+   "tip": "יש בתי קפה ומסעדות ממש מול החוף — עצירה טובה לקפה ותמונות.",
+   "cost": "חינם (חניה בתשלום)",
+   "time_needed": "30-60 דק׳",
+   "season": "פתוח בחורף — יפה ושקט, קר",
+   "coords": [
+    39.2371,
+    -120.0266
+   ]
+  },
+  {
+   "name_en": "Tahoe City and Fanny Bridge",
+   "name_he": "טאהו סיטי וגשר פאני",
+   "segment_id": "tahoe_sac",
+   "kind": "city",
+   "wow": 3,
+   "detour": "+20 דק׳",
+   "city_state": "Tahoe City, California",
+   "why": "עיירת החוף המרכזית בצפון טאהו, בדיוק איפה שנהר טראקי יוצא מהאגם. מסעדות, חנויות ושביל לאורך המים.",
+   "tip": "מהגשר רואים טרוטות ענקיות במים. חנו בחניון הציבורי ליד Commons Beach.",
+   "cost": "חינם",
+   "time_needed": "1-2 שעות",
+   "season": "פתוח כל השנה; בחורף שקט ומושלג",
+   "coords": [
+    39.1667,
+    -120.1447
+   ]
+  },
+  {
+   "name_en": "Sugar Pine Point State Park",
+   "name_he": "פארק שוגר פיין פוינט",
+   "segment_id": "tahoe_sac",
+   "kind": "state_park",
+   "wow": 3,
+   "detour": "+45 דק׳",
+   "city_state": "Tahoma, California",
+   "why": "יער אורנים על חוף האגם עם מסלולי סקי קרוס-קאנטרי מאולימפיאדת 1960. מהמקומות היחידים בטאהו עם קמפינג בחורף.",
+   "tip": "כביש 89 דרומה לאמרלד ביי נסגר הרבה בחורף — אל תתכננו לעבור שם בסערה.",
+   "cost": "כ-$10 לרכב",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח בחורף — סקי קרוס-קאנטרי ונעלי שלג; האחוזה ההיסטורית סגורה עד הקיץ",
+   "coords": [
+    39.0575,
+    -120.121
+   ]
+  },
+  {
+   "name_en": "Tahoe East Shore Trail",
+   "name_he": "שביל החוף המזרחי של טאהו",
+   "segment_id": "tahoe_sac",
+   "kind": "hike",
+   "wow": 4,
+   "detour": "+45 דק׳",
+   "city_state": "Incline Village, Nevada",
+   "why": "שביל סלול של 5 ק״מ צמוד למים, מאינקליין עד סנד הרבור, עם מפרצונים טורקיז וסלעי גרניט.",
+   "tip": "חנו בחניון הצפוני בתשלום (ליד Tunnel Creek) והגיעו מוקדם — מתמלא מהר.",
+   "cost": "חניה כ-$10",
+   "time_needed": "2 שעות",
+   "season": "פתוח כל השנה, אבל לא מפנים ממנו שלג — בחורף יכול להיות קרח, נעליים טובות",
+   "coords": [
+    39.2284,
+    -119.9285
+   ]
+  },
+  {
+   "name_en": "Zephyr Cove Resort (M.S. Dixie II Paddlewheeler)",
+   "name_he": "זפיר קוב — שייט בספינת גלגל",
+   "segment_id": "tahoe_sac",
+   "kind": "lake_river",
+   "wow": 3,
+   "detour": "+1:10 שעות",
+   "city_state": "Zephyr Cove, Nevada",
+   "why": "ספינת גלגל בסגנון מיסיסיפי שמפליגה לאמרלד ביי. מאותו אזור יוצאים גם טיולי אופנועי שלג עם תצפית לאגם.",
+   "tip": "בחורף יש פחות הפלגות ולפעמים ביטולים בגלל מזג האוויר — הזמינו ובדקו יום לפני.",
+   "cost": "שייט כ-$70-90; אופנועי שלג מ-$150",
+   "time_needed": "2-3 שעות",
+   "season": "פועל בחורף בלוח מצומצם; אופנועי שלג רק כשיש שלג",
+   "coords": [
+    38.999,
+    -119.948
+   ]
+  },
+  {
+   "name_en": "Spooner Lake, Lake Tahoe Nevada State Park",
+   "name_he": "אגם ספונר",
+   "segment_id": "tahoe_sac",
+   "kind": "state_park",
+   "wow": 3,
+   "detour": "+50 דק׳",
+   "city_state": "Glenbrook, Nevada",
+   "why": "אגם קטן בין צפצפות ואורנים מעל טאהו, עם שביל הליכה מסביב. בחורף — נעלי שלג וסקי קרוס-קאנטרי.",
+   "tip": "מכאן יוצא גם שביל Flume Trail המפורסם לאופניים (רק בקיץ).",
+   "cost": "כ-$10 לרכב",
+   "time_needed": "1-2 שעות",
+   "season": "פתוח בחורף — מושלג, מתאים לנעלי שלג",
+   "coords": [
+    39.1063,
+    -119.9167
+   ]
+  },
+  {
+   "name_en": "Gar Woods Grill & Pier",
+   "name_he": "גאר וודס — מסעדה על המזח",
+   "segment_id": "tahoe_sac",
+   "kind": "food",
+   "wow": 3,
+   "detour": "+25 דק׳",
+   "city_state": "Carnelian Bay, California",
+   "why": "מסעדה על שפת האגם עם מרפסת מול המים, מפורסמת בקוקטייל Wet Woody. שקיעה פה היא חוויה.",
+   "tip": "הזמינו שולחן ליד החלון לשעת השקיעה.",
+   "cost": "$30-50 לאדם",
+   "time_needed": "1-2 שעות",
+   "season": "פתוח כל השנה",
+   "coords": [
+    39.2279,
+    -120.0806
+   ]
+  },
+  {
+   "name_en": "Auburn State Recreation Area - Confluence and Foresthill Bridge",
+   "name_he": "המפגש של נהר אמריקן וגשר פורסטהיל",
+   "segment_id": "tahoe_sac",
+   "kind": "hike",
+   "wow": 4,
+   "detour": "+10 דק׳",
+   "city_state": "Auburn, California",
+   "why": "קניון שבו נפגשים שני פלגי נהר אמריקן, מתחת לגשר הכי גבוה בקליפורניה (כ-220 מ׳). שבילים קצרים לאורך הנהר.",
+   "tip": "חנו ליד המפגש בכביש 49 ולכו ב-Quarry Trail. אפשר גם ללכת על המדרכה של הגשר עצמו.",
+   "cost": "חינם–$10 חניה",
+   "time_needed": "1-2 שעות",
+   "season": "מצוין בחורף — ירוק, נעים ובלי החום של הקיץ",
+   "coords": [
+    38.9153,
+    -121.0383
+   ]
+  },
+  {
+   "name_en": "Old Town Auburn",
+   "name_he": "העיר העתיקה של אובורן",
+   "segment_id": "tahoe_sac",
+   "kind": "city",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Auburn, California",
+   "why": "עיירת בהלת זהב עם בית משפט עם כיפה, תחנת כיבוי אש ישנה ופסל ענק של כורה זהב. עצירה נחמדה צמוד לכביש 80.",
+   "tip": "ארוחת בוקר ב-Awful Annie's, מקום מקומי מפורסם בעיר העתיקה.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.8964,
+    -121.077
+   ]
+  },
+  {
+   "name_en": "Hidden Falls Regional Park",
+   "name_he": "פארק המפלים הנסתרים",
+   "segment_id": "tahoe_sac",
+   "kind": "waterfall",
+   "wow": 3,
+   "detour": "+20 דק׳",
+   "city_state": "Auburn, California",
+   "why": "רשת שבילים בין גבעות אלונים, עם מפל של כ-10 מ׳ ובריכות. בחורף המפל במיטבו.",
+   "tip": "בסופ״ש ובחגים חובה להזמין חניה מראש באתר של מחוז פלייסר.",
+   "cost": "חניה כ-$8-10",
+   "time_needed": "2-3 שעות",
+   "season": "הכי טוב בחורף–אביב, כשיש מים; השבילים יכולים להיות בוציים",
+   "coords": [
+    38.9582,
+    -121.164
+   ]
+  },
+  {
+   "name_en": "Ikeda's California Country Market",
+   "name_he": "איקדה׳ס",
+   "segment_id": "tahoe_sac",
+   "kind": "food",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Auburn, California",
+   "why": "עצירת דרכים אגדית על כביש 80 מאז 1951 — המבורגרים, פאי ביתי ופירות מהאזור.",
+   "tip": "קחו פאי שלם לדרך — פקאן או תפוחים.",
+   "cost": "$15-20",
+   "time_needed": "45 דק׳",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.9197,
+    -121.0567
+   ]
+  },
+  {
+   "name_en": "Empire Mine State Historic Park",
+   "name_he": "מכרה הזהב אמפייר",
+   "segment_id": "tahoe_sac",
+   "kind": "state_park",
+   "wow": 4,
+   "detour": "+25 דק׳",
+   "city_state": "Grass Valley, California",
+   "why": "אחד ממכרות הזהב העשירים בקליפורניה, עם פתח המכרה, מכונות, אחוזה וגנים. רואים איך עבדו במנהרות.",
+   "tip": "הצטרפו לסיור המודרך (כלול בכניסה) והציצו לתוך פיר המכרה.",
+   "cost": "כ-$8 למבוגר",
+   "time_needed": "1-2 שעות",
+   "season": "פתוח כל השנה (חוץ מחגים)",
+   "coords": [
+    39.2066,
+    -121.0456
+   ]
+  },
+  {
+   "name_en": "Nevada City Historic District",
+   "name_he": "נבדה סיטי",
+   "segment_id": "tahoe_sac",
+   "kind": "city",
+   "wow": 4,
+   "detour": "+35 דק׳",
+   "city_state": "Nevada City, California",
+   "why": "העיירה הכי יפה מתקופת בהלת הזהב — רחובות ויקטוריאניים, מנורות גז ובתי קפה. בדצמבר יש ערבי חג מולד ויקטוריאניים.",
+   "tip": "שלבו עם מכרה אמפייר בגראס ואלי, 10 דק׳ נסיעה.",
+   "cost": "חינם",
+   "time_needed": "1-2 שעות",
+   "season": "יפה בחורף; אירועי חג המולד רק בדצמבר",
+   "coords": [
+    39.2623,
+    -121.0164
+   ]
+  },
+  {
+   "name_en": "Marshall Gold Discovery State Historic Park",
+   "name_he": "אתר גילוי הזהב של מרשל",
+   "segment_id": "tahoe_sac",
+   "kind": "state_park",
+   "wow": 4,
+   "detour": "+40 דק׳",
+   "city_state": "Coloma, California",
+   "why": "המקום שבו נמצא הזהב ב-1848 ומשם התחילה בהלת הזהב. טחנה משוחזרת, מוזיאון ונהר יפה.",
+   "tip": "בחלק מהימים יש הדגמה של שטיפת זהב בנהר — אפשר לנסות בעצמכם.",
+   "cost": "כ-$10 לרכב",
+   "time_needed": "1-2 שעות",
+   "season": "פתוח כל השנה; בחורף שקט, המוזיאון בשעות מצומצמות",
+   "coords": [
+    38.8012,
+    -120.8912
+   ]
+  },
+  {
+   "name_en": "Historic Folsom - Sutter Street and Folsom Powerhouse State Historic Park",
+   "name_he": "פולסום ההיסטורית ותחנת הכוח",
+   "segment_id": "tahoe_sac",
+   "kind": "city",
+   "wow": 3,
+   "detour": "+25 דק׳",
+   "city_state": "Folsom, California",
+   "why": "רחוב מערבי משוחזר עם חנויות ומסעדות, ולידו תחנת כוח מ-1895, מהראשונות בעולם ששלחו חשמל למרחק.",
+   "tip": "הכניסה לתחנת הכוח חינם; ממנה מתחיל שביל אופניים יפה לאורך אגם נטומה.",
+   "cost": "חינם",
+   "time_needed": "1-2 שעות",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.678,
+    -121.176
+   ]
+  },
+  {
+   "name_en": "Folsom Prison Museum",
+   "name_he": "מוזיאון כלא פולסום",
+   "segment_id": "tahoe_sac",
+   "kind": "quirky",
+   "wow": 3,
+   "detour": "+25 דק׳",
+   "city_state": "Folsom, California",
+   "why": "מוזיאון קטן בשער הכלא מהשיר של ג׳וני קאש, עם כלי נשק מאולתרים של אסירים וסיפורי בריחה.",
+   "tip": "זה כלא פעיל — מקשיבים לשלטים ולשומרים. שלבו עם שביל ג׳וני קאש הסמוך.",
+   "cost": "כ-$5",
+   "time_needed": "45 דק׳",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.6905,
+    -121.1625
+   ]
+  },
+  {
+   "name_en": "Folsom Premium Outlets",
+   "name_he": "אאוטלט פולסום",
+   "segment_id": "tahoe_sac",
+   "kind": "shopping",
+   "wow": 3,
+   "detour": "+25 דק׳",
+   "city_state": "Folsom, California",
+   "why": "כ-80 חנויות מותגים בהנחה, צמוד לכביש 50.",
+   "tip": "הירשמו אונליין למועדון של Simon לקופונים נוספים.",
+   "cost": "חינם",
+   "time_needed": "2 שעות",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.6441,
+    -121.1864
+   ]
+  },
+  {
+   "name_en": "Nimbus Fish Hatchery",
+   "name_he": "מדגרת הדגים נימבוס",
+   "segment_id": "tahoe_sac",
+   "kind": "zoo_aquarium",
+   "wow": 3,
+   "detour": "+20 דק׳",
+   "city_state": "Rancho Cordova, California",
+   "why": "מדגרה שבה רואים סלמונים וטרוטות ענקיים מטפסים במדרגות דגים ישר מהנהר. מפתיע, וחינם.",
+   "tip": "בואו בבוקר של יום חול — אז רואים את העבודה עם הדגים. יש מרכז מבקרים קטן.",
+   "cost": "חינם",
+   "time_needed": "45 דק׳",
+   "season": "הכי טוב בחורף — הסלמונים עד דצמבר, הטרוטות בינואר–מרץ",
+   "coords": [
+    38.6356,
+    -121.2226
+   ]
+  },
+  {
+   "name_en": "Westfield Galleria at Roseville",
+   "name_he": "קניון גלריה רוזוויל",
+   "segment_id": "tahoe_sac",
+   "kind": "shopping",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Roseville, California",
+   "why": "הקניון הגדול באזור סקרמנטו, מקורה ונוח, עם כל הרשתות הגדולות ומסעדות.",
+   "tip": "5 דק׳ מכביש 80 דרך כביש 65. טוב ליום גשום.",
+   "cost": "חינם",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.7734,
+    -121.2692
+   ]
+  },
+  {
+   "name_en": "Sutter's Fort State Historic Park",
+   "name_he": "מבצר סאטר",
+   "segment_id": "tahoe_sac",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Sacramento, California",
+   "why": "המבצר המשוחזר שממנו התחילה סקרמנטו ב-1839, עם חדרים מקוריים, נפחייה וסיפורי החלוצים.",
+   "tip": "קחו את המדריך הקולי — הוא הופך את הביקור להרבה יותר מעניין.",
+   "cost": "כ-$7-10",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.5724,
+    -121.471
+   ]
+  },
+  {
+   "name_en": "California State Capitol Museum",
+   "name_he": "הקפיטול של קליפורניה",
+   "segment_id": "tahoe_sac",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Sacramento, California",
+   "why": "בניין הקפיטול עם הכיפה הלבנה, חדרים היסטוריים משוחזרים ופארק ענק עם עצים מכל העולם.",
+   "tip": "יש סיורים מודרכים חינם כמעט כל שעה. יש בדיקה ביטחונית בכניסה.",
+   "cost": "חינם",
+   "time_needed": "1-1.5 שעות",
+   "season": "פתוח כל השנה (סגור בחגים)",
+   "coords": [
+    38.5765,
+    -121.4935
+   ]
+  },
+  {
+   "name_en": "Sacramento Zoo",
+   "name_he": "גן החיות של סקרמנטו",
+   "segment_id": "tahoe_sac",
+   "kind": "zoo_aquarium",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Sacramento, California",
+   "why": "גן חיות קטן ונעים בפארק לנד פארק, עם ג׳ירפות, אריות ושימפנזים. טוב לביקור קצר.",
+   "tip": "בחורף פחות צפוף — בואו בבוקר, כשהחיות פעילות.",
+   "cost": "כ-$25",
+   "time_needed": "2 שעות",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.5398,
+    -121.504
+   ]
+  },
+  {
+   "name_en": "Crocker Art Museum",
+   "name_he": "מוזיאון קרוקר לאמנות",
+   "segment_id": "tahoe_sac",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Sacramento, California",
+   "why": "מוזיאון האמנות הוותיק במערב ארה״ב, באחוזה ויקטוריאנית מפוארת עם אגף מודרני.",
+   "tip": "סגור בימי שני. 5 דק׳ הליכה מאולד סקרמנטו.",
+   "cost": "כ-$15-20",
+   "time_needed": "1-2 שעות",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.5774,
+    -121.507
+   ]
+  },
+  {
+   "name_en": "SMUD Museum of Science and Curiosity (MOSAC)",
+   "name_he": "מוזיאון המדע של סקרמנטו (מוסאק)",
+   "segment_id": "tahoe_sac",
+   "kind": "museum",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Sacramento, California",
+   "why": "מוזיאון מדע חדש בתחנת כוח ישנה על הנהר, עם פלנטריום ותערוכות שאפשר לגעת בהן.",
+   "tip": "הזמינו מראש מקום בפלנטריום — הוא הדבר הכי שווה כאן.",
+   "cost": "כ-$20-25",
+   "time_needed": "2 שעות",
+   "season": "פתוח כל השנה — טוב ליום גשום",
+   "coords": [
+    38.5962,
+    -121.5062
+   ]
+  },
+  {
+   "name_en": "Sacramento Kings game at Golden 1 Center",
+   "name_he": "משחק NBA של סקרמנטו קינגס",
+   "segment_id": "tahoe_sac",
+   "kind": "city",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Sacramento, California",
+   "why": "אולם NBA מודרני בלב העיר. משחק של הקינגס הוא חוויה אמריקאית קלאסית, והמתחם מסביב מלא מסעדות.",
+   "tip": "כרטיסים זולים יותר באפליקציות יד שנייה ביום המשחק. אחרי ניצחון מדליקים קרן לייזר סגולה מעל האולם.",
+   "cost": "כרטיסים מ-$30",
+   "time_needed": "3 שעות",
+   "season": "עונת NBA — מצוין בחורף",
+   "coords": [
+    38.5802,
+    -121.4997
+   ]
+  },
+  {
+   "name_en": "Gunther's Quality Ice Cream",
+   "name_he": "גלידת גנתר׳ס",
+   "segment_id": "tahoe_sac",
+   "kind": "food",
+   "wow": 3,
+   "detour": "+10 דק׳",
+   "city_state": "Sacramento, California",
+   "why": "גלידריה משפחתית מ-1940 עם שלט ניאון מפורסם, גלידה ביתית ומילקשייקים ענקיים.",
+   "tip": "נסו סאנדיי עם גלידה ביתית. יש גם המבורגרים.",
+   "cost": "$5-10",
+   "time_needed": "30 דק׳",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.553,
+    -121.4812
+   ]
+  },
+  {
+   "name_en": "Cosumnes River Preserve (Sandhill Crane viewing)",
+   "name_he": "שמורת נהר קוסומנס — צפייה בעגורים",
+   "segment_id": "tahoe_sac",
+   "kind": "scenic",
+   "wow": 4,
+   "detour": "+35 דק׳",
+   "city_state": "Galt, California",
+   "why": "שמורת ביצות שבה חורפים אלפי עגורים אפורים. בשקיעה הם נוחתים בלהקות ענק עם קולות מטורפים.",
+   "tip": "לשקיעה סעו ל-Staten Island Road או ל-Woodbridge Road — שם רואים את הנחיתה הכי טוב.",
+   "cost": "חינם",
+   "time_needed": "1-2 שעות",
+   "season": "הכי טוב בחורף — העגורים כאן בערך מאוקטובר עד פברואר",
+   "coords": [
+    38.2657,
+    -121.4395
+   ]
+  },
+  {
+   "name_en": "Yolo Bypass Wildlife Area",
+   "name_he": "שמורת יולו בייפס",
+   "segment_id": "tahoe_sac",
+   "kind": "scenic",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Davis, California",
+   "why": "שטחי הצפה ענקיים צמוד לכביש 80, שבחורף מתמלאים באווזים, ברווזים ועופות מים. יש מסלול נסיעה ברכב בין הביצות.",
+   "tip": "בעונת הציד (אוקטובר–ינואר) מסלול הרכב סגור בחלק מהימים — בדקו באתר לפני.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "מצוין בחורף — שיא נדידת העופות",
+   "coords": [
+    38.5469,
+    -121.6138
+   ]
+  },
+  {
+   "name_en": "Locke Historic District",
+   "name_he": "לוק — העיירה הסינית בדלתא",
+   "segment_id": "tahoe_sac",
+   "kind": "quirky",
+   "wow": 3,
+   "detour": "+40 דק׳",
+   "city_state": "Locke, California",
+   "why": "עיירה שבנו חקלאים סינים ב-1915, עם בתי עץ עקומים על סוללת הנהר. נראית כמו תפאורה של מערבון.",
+   "tip": "סעו בכביש 160 לאורך נהר סקרמנטו — הנסיעה עצמה יפה. היכנסו לבר Al's Place עם שטרות דולר על התקרה.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה (העסקים בשעות מצומצמות בחורף)",
+   "coords": [
+    38.2507,
+    -121.5075
+   ]
+  },
+  {
+   "name_en": "Jelly Belly Visitor Center",
+   "name_he": "מפעל ג׳לי בלי",
+   "segment_id": "tahoe_sac",
+   "kind": "quirky",
+   "wow": 4,
+   "detour": "+5 דק׳",
+   "city_state": "Fairfield, California",
+   "why": "מפעל סוכריות הג׳לי המפורסם, עם טעימות חינם של טעמים מוזרים ומסעדה עם פיצה והמבורגר בצורת סוכריה.",
+   "tip": "אפשרויות הסיור במפעל השתנו בשנים האחרונות — בדקו באתר לפני. קנו שקית Belly Flops (סוכריות פגומות) בזול.",
+   "cost": "חינם",
+   "time_needed": "שעה",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.246,
+    -122.0736
+   ]
+  },
+  {
+   "name_en": "Vacaville Premium Outlets",
+   "name_he": "אאוטלט ואקוויל",
+   "segment_id": "tahoe_sac",
+   "kind": "shopping",
+   "wow": 3,
+   "detour": "על המסלול",
+   "city_state": "Vacaville, California",
+   "why": "כ-100 חנויות מותגים ממש על כביש 80, באמצע הדרך בין סקרמנטו לסן פרנסיסקו.",
+   "tip": "בואו בבוקר של יום חול. ממול יש את מתחם Nut Tree עם מסעדות.",
+   "cost": "חינם",
+   "time_needed": "2-3 שעות",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.3656,
+    -121.9662
+   ]
+  },
+  {
+   "name_en": "Great Wolf Lodge Northern California",
+   "name_he": "גרייט וולף לודג׳ — פארק מים מקורה",
+   "segment_id": "tahoe_sac",
+   "kind": "water_park",
+   "wow": 3,
+   "detour": "+1:10 שעות",
+   "city_state": "Manteca, California",
+   "why": "פארק מים מקורה וחמים עם מגלשות, בריכת גלים ונהר עצל — שחייה באמצע החורף.",
+   "tip": "הכניסה בעיקר לאורחי המלון; לפעמים מוכרים כרטיסי יום — בדקו מראש.",
+   "cost": "כרטיס יום (כשיש) כ-$60-100; לילה מ-$300",
+   "time_needed": "חצי יום",
+   "season": "מצוין בחורף — מקורה וחמים",
+   "coords": [
+    37.7865,
+    -121.2466
+   ]
+  },
+  {
+   "name_en": "Napa Valley Wine Train",
+   "name_he": "רכבת היין של נאפה",
+   "segment_id": "tahoe_sac",
+   "kind": "adventure",
+   "wow": 4,
+   "detour": "+25 דק׳",
+   "city_state": "Napa, California",
+   "why": "רכבת פולמן משוחזרת שנוסעת לאורך עמק נאפה עם ארוחה מפנקת ועצירות ביקבים.",
+   "tip": "הזמינו מראש; ארוחת צהריים בקרון הכיפה שווה את התוספת.",
+   "cost": "מ-$200 לאדם",
+   "time_needed": "3-6 שעות",
+   "season": "פועלת כל השנה; בחורף העמק ירוק ובלי המון תיירים",
+   "coords": [
+    38.3016,
+    -122.2805
+   ]
+  },
+  {
+   "name_en": "Oxbow Public Market",
+   "name_he": "שוק אוקסבו",
+   "segment_id": "tahoe_sac",
+   "kind": "food",
+   "wow": 3,
+   "detour": "+25 דק׳",
+   "city_state": "Napa, California",
+   "why": "שוק אוכל מקורה עם דוכנים מקומיים — צדפות, גבינות, קפה וסניף של Gott's Roadside המפורסם.",
+   "tip": "המבורגר ב-Gott's, ומשם הליכה קצרה למרכז של נאפה.",
+   "cost": "$15-30",
+   "time_needed": "1-1.5 שעות",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.3016,
+    -122.2828
+   ]
+  },
+  {
+   "name_en": "Castello di Amorosa",
+   "name_he": "קסטלו די אמורוזה",
+   "segment_id": "tahoe_sac",
+   "kind": "quirky",
+   "wow": 4,
+   "detour": "+55 דק׳",
+   "city_state": "Calistoga, California",
+   "why": "טירה בסגנון ימי הביניים שנבנתה בעמק נאפה — חפיר, גשר מתרומם, מרתפים ואפילו חדר עינויים. ויש טעימות יין.",
+   "tip": "הסיור המודרך מראה את כל הטירה; הכניסה הבסיסית רק חלק. הזמינו מראש.",
+   "cost": "כ-$45-60 (כולל טעימות)",
+   "time_needed": "1.5-2 שעות",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.5585,
+    -122.5427
+   ]
+  },
+  {
+   "name_en": "Old Faithful Geyser of California",
+   "name_he": "הגייזר של קליסטוגה",
+   "segment_id": "tahoe_sac",
+   "kind": "quirky",
+   "wow": 3,
+   "detour": "+1:05 שעות",
+   "city_state": "Calistoga, California",
+   "why": "גייזר שמתפרץ בערך כל חצי שעה לגובה של עשרות מטרים, ולידו עיזים 'מתעלפות'. קצת קיטשי, מאוד כיפי.",
+   "tip": "שלבו עם קסטלו די אמורוזה, 10 דק׳ משם.",
+   "cost": "כ-$18-20",
+   "time_needed": "45 דק׳",
+   "season": "פתוח כל השנה",
+   "coords": [
+    38.5937,
+    -122.599
+   ]
+  },
+  {
+   "name_en": "Sonoma Plaza and Mission San Francisco Solano",
+   "name_he": "כיכר סונומה והמיסיון",
+   "segment_id": "tahoe_sac",
+   "kind": "city",
+   "wow": 3,
+   "detour": "+40 דק׳",
+   "city_state": "Sonoma, California",
+   "why": "הכיכר ההיסטורית הגדולה בקליפורניה, מוקפת חדרי טעימות ומסעדות, עם מיסיון ספרדי מ-1823.",
+   "tip": "כרטיס אחד של הפארק ההיסטורי נותן כניסה למיסיון ולצריפי הצבא — זול מאוד.",
+   "cost": "חינם; המיסיון כ-$3-5",
+   "time_needed": "2 שעות",
+   "season": "פתוח כל השנה; בדצמבר יש קישוטי חג",
+   "coords": [
+    38.2943,
+    -122.4553
+   ]
+  },
+  {
+   "name_en": "Jack London State Historic Park",
+   "name_he": "פארק ג׳ק לונדון",
+   "segment_id": "tahoe_sac",
+   "kind": "state_park",
+   "wow": 3,
+   "detour": "+50 דק׳",
+   "city_state": "Glen Ellen, California",
+   "why": "החווה של הסופר ג׳ק לונדון, עם ההריסות המסתוריות של 'בית הזאב', מוזיאון ושבילים בין כרמים ויערות אלונים.",
+   "tip": "השביל הקצר להריסות בית הזאב (כ-2 ק״מ הלוך-חזור) הוא החלק הכי יפה.",
+   "cost": "כ-$10 לרכב",
+   "time_needed": "2 שעות",
+   "season": "פתוח כל השנה; בחורף ירוק ובוצי",
+   "coords": [
+    38.3562,
+    -122.5425
+   ]
+  },
+  {
+   "name_en": "San Francisco Bay Ferry - Vallejo Ferry Terminal",
+   "name_he": "מעבורת ואייחו–סן פרנסיסקו",
+   "segment_id": "tahoe_sac",
+   "kind": "scenic",
+   "wow": 3,
+   "detour": "+5 דק׳",
+   "city_state": "Vallejo, California",
+   "why": "שייט של כשעה לאורך המפרץ עד בניין המעבורות בסן פרנסיסקו — בלי פקקים ובלי לחפש חניה בעיר.",
+   "tip": "חנו בחניון ליד המסוף בוואייחו. שבו בחוץ על הסיפון בשביל הגשרים ואלקטרז.",
+   "cost": "כ-$15 לכיוון",
+   "time_needed": "חצי יום עם הביקור",
+   "season": "פועלת כל השנה; קר ורוחני על הסיפון",
+   "coords": [
+    38.1005,
+    -122.2622
+   ]
+  }
+ ]
+}

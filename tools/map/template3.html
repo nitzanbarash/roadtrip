@@ -1,0 +1,1362 @@
+<title>מסלול ניו יורק → פיניקס</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#123A6E">
+__HEAD_EXTRA__
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&family=Overpass:wght@600;800&display=swap">
+<style>
+__MAPLIBRE_CSS__
+</style>
+<style>
+  :root{
+    --bg:#EEF0EC; --surface:#FFFFFF; --surface2:#F3F5F1; --glass:rgba(255,255,255,.92);
+    --line:#D3D7CE; --line2:#B9BFB2;
+    --ink:#161A17; --ink2:#4A504A; --ink3:#7A807A;
+    --route:#123A6E; --park:#2C5E3F; --mile:#9C7314; --neon:#BC2F5C; --water:#136C7E; --odd:#6B4A93;
+    --go:#1A8CFF; --gold:#F2B01E; --warn:#B4541A; --sleepc:#7A3E9D;
+    --shadow:0 1px 2px rgba(18,26,20,.10), 0 10px 28px -14px rgba(18,26,20,.45);
+    --r:14px;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#111418; --surface:#1B1F25; --surface2:#242A32; --glass:rgba(27,31,37,.93);
+      --line:#323942; --line2:#48505A;
+      --ink:#E9ECE7; --ink2:#AAB1AB; --ink3:#7F8782;
+      --route:#8DB4F2; --park:#6CC08C; --mile:#E3BC4E; --neon:#FF7096; --water:#57C3D6; --odd:#BB96E8;
+      --go:#33B5FF; --warn:#F09A5B; --sleepc:#C08BE0;
+      --shadow:0 1px 2px rgba(0,0,0,.5), 0 12px 30px -14px rgba(0,0,0,.9);
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#111418; --surface:#1B1F25; --surface2:#242A32; --glass:rgba(27,31,37,.93);
+    --line:#323942; --line2:#48505A;
+    --ink:#E9ECE7; --ink2:#AAB1AB; --ink3:#7F8782;
+    --route:#8DB4F2; --park:#6CC08C; --mile:#E3BC4E; --neon:#FF7096; --water:#57C3D6; --odd:#BB96E8;
+    --go:#33B5FF; --warn:#F09A5B; --sleepc:#C08BE0;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 12px 30px -14px rgba(0,0,0,.9);
+    color-scheme:dark;
+  }
+  [hidden]{display:none!important}
+  html,body{height:100%}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:'Assistant','Segoe UI',system-ui,sans-serif; font-size:16px; line-height:1.5; -webkit-text-size-adjust:100%; overflow:hidden; overscroll-behavior:none}
+  *{box-sizing:border-box}
+  button{font:inherit; color:inherit; cursor:pointer}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--go); outline-offset:2px}
+  .lat{font-family:'Overpass','Segoe UI',system-ui,sans-serif; direction:ltr; unicode-bidi:isolate}
+  h2,h3{font-family:'Suez One','Assistant',serif; font-weight:400; margin:0; text-wrap:balance}
+
+  #app{position:fixed; inset:0}
+  #map{position:absolute; inset:0; background:#9ebdff}
+  .maplibregl-ctrl-attrib{font-size:10px}
+  .maplibregl-ctrl-bottom-left{bottom:calc(env(safe-area-inset-bottom,0px) + 2px)}
+
+  /* ---------- floating chrome ---------- */
+  .glass{background:var(--glass); -webkit-backdrop-filter:blur(14px) saturate(1.2); backdrop-filter:blur(14px) saturate(1.2); border:1px solid var(--line); box-shadow:var(--shadow)}
+  .top{position:absolute; top:calc(env(safe-area-inset-top,0px) + 10px); right:12px; left:12px; z-index:20; display:flex; gap:8px; align-items:flex-start; pointer-events:none}
+  .top > *{pointer-events:auto}
+  .srch{flex:1 1 auto; min-width:0; max-width:560px; border-radius:var(--r); position:relative}
+  .srch label{display:flex; align-items:center; gap:8px; padding:0 12px; height:46px}
+  .srch input{flex:1; min-width:0; border:0; background:transparent; font:inherit; font-size:16px; color:inherit; outline:none; height:100%}
+  .srch svg{flex:none; opacity:.55}
+  .res{border-top:1px solid var(--line); max-height:min(60vh,420px); overflow:auto}
+  .res button{display:flex; width:100%; gap:10px; align-items:center; text-align:start; border:0; background:transparent; padding:9px 12px; border-bottom:1px solid var(--line)}
+  .res button:hover,.res button:focus-visible{background:var(--surface2)}
+  .res i{flex:none; width:10px; height:10px; border-radius:50%; background:var(--g,#888)}
+  .res b{font-weight:700; display:block; line-height:1.25}
+  .res small{display:block; color:var(--ink3); font-size:12.5px; line-height:1.25}
+  .res .none{padding:12px; color:var(--ink3); font-size:14px}
+  .tbtn{flex:none; height:46px; border-radius:var(--r); padding:0 14px; display:flex; align-items:center; gap:7px; font-weight:700; font-size:15px}
+  .tbtn svg{width:19px; height:19px}
+  .status{position:absolute; top:calc(env(safe-area-inset-top,0px) + 64px); right:12px; z-index:15; font-size:12.5px; font-weight:700; border-radius:100px; padding:4px 11px 4px 12px; display:flex; align-items:center; gap:7px; max-width:calc(100% - 90px)}
+  .status i{width:8px; height:8px; border-radius:50%; background:var(--ink3); flex:none}
+  .status[data-s="online"] i{background:#27A148}
+  .status[data-s="arch"] i{background:var(--go)}
+  .status[data-s="offline"] i{background:var(--warn)}
+  .status button{border:0; background:none; padding:0; font-size:12.5px; font-weight:800; color:var(--go); text-decoration:underline; text-underline-offset:2px}
+
+  .fabs{position:absolute; left:12px; top:calc(env(safe-area-inset-top,0px) + 66px); z-index:15; display:flex; flex-direction:column; gap:8px}
+  .fab{width:46px; height:46px; border-radius:var(--r); display:grid; place-items:center; padding:0}
+  .fab svg{width:22px; height:22px}
+  .fab[aria-pressed="true"]{background:var(--go); color:#fff; border-color:var(--go)}
+  .fab .txt{font:800 13px 'Overpass',system-ui,sans-serif; letter-spacing:.02em}
+  #bCompass{transition:opacity .2s}
+  #bCompass[hidden]{display:none}
+  .zoom{display:none}
+  @media (pointer:fine){ .zoom{display:grid} }
+  .locbtn{position:absolute; left:12px; bottom:calc(env(safe-area-inset-bottom,0px) + 26px); z-index:16; width:54px; height:54px; border-radius:50%}
+  .locbtn svg{width:24px; height:24px}
+  .locbtn[data-m="2"],.locbtn[data-m="3"]{color:var(--go)}
+
+  /* ---------- layers popover ---------- */
+  .pop{position:absolute; left:66px; top:calc(env(safe-area-inset-top,0px) + 66px); z-index:30; width:min(330px, calc(100% - 80px)); border-radius:var(--r); padding:14px; display:flex; flex-direction:column; gap:12px; max-height:calc(100% - 100px); overflow:auto}
+  .pop h4{margin:0; font-size:12px; letter-spacing:.08em; color:var(--ink3); font-weight:800}
+  .seg3{display:grid; grid-template-columns:repeat(3,1fr); gap:6px}
+  .seg3 button{border:1.5px solid var(--line2); background:var(--surface); border-radius:10px; padding:0 0 7px; font-weight:700; font-size:13.5px; overflow:hidden; display:flex; flex-direction:column; gap:6px; align-items:stretch}
+  .seg3 button span{display:block; height:42px}
+  .seg3 button[aria-pressed="true"]{border-color:var(--go); box-shadow:0 0 0 2px color-mix(in srgb, var(--go) 35%, transparent)}
+  .sw-map{background:linear-gradient(135deg,#f8f4f0 0 40%,#fc8 40% 46%,#f8f4f0 46% 70%,#9ebdff 70%)}
+  .sw-sat{background:linear-gradient(160deg,#4b5a3a,#7b7250 40%,#39485a 75%,#6b7f94)}
+  .sw-hyb{background:linear-gradient(160deg,#4b5a3a,#7b7250 40%,#39485a 75%,#6b7f94); position:relative}
+  .sw-hyb::after{content:""; position:absolute; inset:0; background:linear-gradient(135deg,transparent 42%,#fc8 42% 47%,transparent 47%)}
+  .tg{display:flex; align-items:center; justify-content:space-between; gap:10px; font-weight:600; font-size:14.5px}
+  .tg small{display:block; color:var(--ink3); font-weight:400; font-size:12.5px; line-height:1.3}
+  .sw{flex:none; width:44px; height:26px; border-radius:100px; border:0; background:var(--line2); position:relative; padding:0}
+  .sw::after{content:""; position:absolute; top:3px; right:3px; width:20px; height:20px; border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.3); transition:transform .15s}
+  .sw[aria-pressed="true"]{background:var(--go)}
+  .sw[aria-pressed="true"]::after{transform:translateX(-18px)}
+  .offbox{border:1px solid var(--line); border-radius:10px; padding:10px 11px; display:flex; flex-direction:column; gap:8px; background:var(--surface2)}
+  .offbox p{margin:0; font-size:13px; color:var(--ink2); line-height:1.4}
+  .offbox .row{display:flex; gap:8px; flex-wrap:wrap}
+  .btn{border:1px solid var(--line2); background:var(--surface); border-radius:9px; padding:7px 12px; font-weight:700; font-size:13.5px}
+  .btn.pri{background:var(--go); border-color:var(--go); color:#fff}
+  .btn[hidden]{display:none}
+  .prog{height:5px; border-radius:3px; background:var(--line); overflow:hidden}
+  .prog i{display:block; height:100%; width:0; background:var(--go)}
+  .credit{font-size:11.5px; color:var(--ink3); line-height:1.4}
+
+  /* ---------- nav panel (GPS) ---------- */
+  .nav{position:absolute; right:12px; left:78px; bottom:calc(env(safe-area-inset-bottom,0px) + 22px); z-index:14; border-radius:var(--r); padding:10px 12px; display:flex; gap:12px; align-items:center; max-width:560px}
+  .spd{flex:none; width:58px; height:58px; border-radius:50%; border:3px solid var(--ink); display:grid; place-items:center; text-align:center; line-height:1}
+  .spd b{font:800 21px 'Overpass',system-ui,sans-serif; display:block}
+  .spd small{font:800 9px 'Overpass',system-ui,sans-serif; letter-spacing:.08em; color:var(--ink3)}
+  .navtx{flex:1; min-width:0; display:flex; flex-direction:column; gap:4px}
+  .navtx .nx{font-weight:800; font-size:15px; line-height:1.25; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .navtx .nx .lat{font-weight:800}
+  .navtx .sub{font-size:12.5px; color:var(--ink3); line-height:1.2}
+  .navtx .off{color:var(--warn); font-weight:700}
+  .ahead{display:flex; gap:6px; overflow-x:auto; scrollbar-width:none}
+  .ahead::-webkit-scrollbar{display:none}
+  .ahead button{flex:none; border:1px solid var(--line2); background:var(--surface); border-radius:100px; padding:3px 10px; font-size:12.5px; font-weight:700; display:flex; gap:6px; align-items:center; white-space:nowrap}
+  .ahead button i{width:8px; height:8px; border-radius:50%; background:var(--g)}
+  .ahead button .lat{font-weight:600; color:var(--ink3); font-size:11.5px}
+
+  /* ---------- sheet (selected place) ---------- */
+  .sheet{position:absolute; z-index:25; right:12px; bottom:calc(env(safe-area-inset-bottom,0px) + 16px); width:min(400px, calc(100% - 24px)); max-height:min(64%, 560px); overflow:auto; border-radius:var(--r); background:var(--surface); border:1px solid var(--line); box-shadow:var(--shadow); overscroll-behavior:contain}
+  .sheet .grab{display:none}
+  .sheetx{position:sticky; top:8px; float:left; margin:8px; z-index:2; width:32px; height:32px; border-radius:50%; border:1px solid var(--line2); background:var(--surface); display:grid; place-items:center; padding:0; font-size:19px; line-height:1}
+  .navbtns{display:flex; gap:8px; flex-wrap:wrap}
+  .navbtns a{flex:1 1 0; min-width:120px; text-align:center; text-decoration:none; font-weight:800; font-size:15px; border-radius:10px; padding:10px 12px; border:1px solid var(--line2); background:var(--surface2)}
+  .navbtns a.wz{background:var(--go); border-color:var(--go); color:#fff}
+  .mini{padding:14px 16px 16px; display:flex; flex-direction:column; gap:8px}
+  .mini .k{font-size:12px; font-weight:800; letter-spacing:.04em; color:var(--ink3)}
+  .mini h3{font-size:21px; line-height:1.2; direction:ltr; text-align:right; unicode-bidi:plaintext}
+  .mini .cen{margin-top:-2px}
+
+  /* ---------- list panel ---------- */
+  .panel{position:absolute; z-index:40; top:0; bottom:0; right:0; width:min(460px,100%); background:var(--bg); border-left:1px solid var(--line); box-shadow:var(--shadow); display:flex; flex-direction:column; transform:translateX(0); transition:transform .22s ease}
+  .panel[hidden]{display:flex!important; transform:translateX(105%); visibility:hidden; transition:transform .22s ease, visibility 0s .22s}
+  .phead{padding:calc(env(safe-area-inset-top,0px) + 12px) 16px 10px; border-bottom:1px solid var(--line); background:var(--surface); display:flex; flex-direction:column; gap:9px}
+  .ptitle{display:flex; align-items:center; gap:10px; justify-content:space-between}
+  .ptitle h2{font-size:22px; line-height:1.1}
+  .ptitle h2 span{color:var(--route)}
+  .pclose{width:38px; height:38px; border-radius:50%; border:1px solid var(--line2); background:var(--surface); display:grid; place-items:center; padding:0; font-size:20px}
+  .psearch{display:flex; align-items:center; gap:8px; background:var(--surface2); border:1px solid var(--line2); border-radius:10px; padding:0 10px}
+  .psearch input{flex:1; min-width:0; border:0; background:transparent; padding:9px 0; font:inherit; color:inherit; outline:none}
+  .prow{display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; padding-bottom:1px}
+  .prow::-webkit-scrollbar{display:none}
+  .prow > *{flex:none}
+  select.sel{background:var(--surface); border:1px solid var(--line2); border-radius:100px; padding:5px 10px; font:inherit; font-size:13.5px; font-weight:600; color:inherit}
+  .chip{border:1px solid var(--line2); background:var(--surface); border-radius:100px; padding:5px 12px; font-size:13.5px; font-weight:600; white-space:nowrap; display:inline-flex; align-items:center; gap:6px}
+  .chip .ct{font-family:'Overpass',sans-serif; font-size:11px; font-weight:800; color:var(--ink3)}
+  .chip[aria-pressed="true"]{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+  .chip[aria-pressed="true"] .ct{color:var(--bg); opacity:.7}
+  .chip.gold[aria-pressed="true"]{background:var(--mile); border-color:var(--mile); color:#fff}
+  .chip.pink[aria-pressed="true"]{background:var(--neon); border-color:var(--neon); color:#fff}
+  .chip .dot{width:9px; height:9px; border-radius:50%; background:var(--g)}
+  .resline{font-size:12.5px; color:var(--ink3); display:flex; gap:12px; flex-wrap:wrap; align-items:center}
+  .resline button{border:0; background:none; padding:0; font-size:12.5px; color:var(--go); text-decoration:underline; text-underline-offset:2px; font-weight:700}
+  .pbody{flex:1; overflow:auto; padding:0 16px 40px; overscroll-behavior:contain}
+  .seg{padding-top:22px; content-visibility:auto; contain-intrinsic-size:auto 1600px}
+  .seghead{display:flex; gap:12px; align-items:flex-start; padding-bottom:10px; border-bottom:2px solid var(--ink); margin-bottom:12px}
+  .seg.old .seghead{border-bottom-style:dashed; border-bottom-color:var(--ink3)}
+  .seg.old .card{opacity:.86}
+  .shield{flex:none; width:44px; height:42px; position:relative; display:grid; place-items:center; color:#fff; font-family:'Overpass',sans-serif; font-weight:800; line-height:1}
+  .shield svg{position:absolute; inset:0; width:100%; height:100%}
+  .shield em{position:relative; font-style:normal; font-size:12px; padding-top:5px}
+  .seghead .st{flex:1; min-width:0}
+  .seghead h3{font-size:19px; line-height:1.2}
+  .segmeta{font-family:'Overpass',sans-serif; font-size:10.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--ink3); display:flex; gap:9px; flex-wrap:wrap; margin-top:3px; align-items:center}
+  .segmeta b{color:var(--ink2); font-weight:800}
+  .segmeta button{font-family:'Assistant',sans-serif; letter-spacing:0; text-transform:none; font-size:12px; font-weight:800; border:1px solid var(--line2); background:var(--surface); border-radius:100px; padding:0 9px; color:var(--go)}
+  .oldnote{font-size:12.5px; color:var(--mile); font-weight:700; margin-top:3px}
+  .grid{display:grid; gap:10px}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:13px 14px 11px; display:flex; flex-direction:column; gap:7px; border-inline-start:3px solid var(--g, var(--line2))}
+  .card.must{border-color:color-mix(in srgb, var(--mile) 50%, var(--line)); border-inline-start-color:var(--g)}
+  .card.picked{background:var(--surface2); border-color:var(--go)}
+  .sheet .card{border:0; border-radius:0; border-inline-start:4px solid var(--g); padding:14px 16px 16px}
+  .ctop{display:flex; gap:8px; align-items:flex-start; justify-content:space-between}
+  .kind{font-size:11px; font-weight:700; color:var(--g, var(--ink2)); border:1px solid color-mix(in srgb, var(--g, var(--line2)) 40%, transparent); background:color-mix(in srgb, var(--g, var(--line2)) 10%, transparent); padding:2px 8px; border-radius:100px; white-space:nowrap}
+  .kind.nw{color:#fff; background:var(--go); border-color:var(--go); margin-inline-start:4px}
+  .kind.gold{color:#fff; background:var(--mile); border-color:var(--mile); margin-inline-start:4px}
+  .star{flex:none; border:0; background:transparent; padding:2px; line-height:0; color:var(--ink3); border-radius:4px}
+  .star svg{width:21px; height:21px}
+  .card.picked .star{color:var(--go)}
+  .cname{font-family:'Suez One',serif; font-size:19px; line-height:1.22; margin:0}
+  .cen{font-family:'Overpass',sans-serif; font-size:11px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--ink3); direction:ltr; text-align:end; unicode-bidi:isolate; word-break:break-word}
+  .cwhy{font-size:14.5px; color:var(--ink2); margin:0}
+  .ctip{font-size:13px; color:var(--ink2); background:var(--surface2); border-radius:6px; padding:7px 9px; border-inline-start:2px solid var(--line2)}
+  .ctip b{color:var(--ink)}
+  .crow{display:flex; flex-wrap:wrap; gap:3px 10px; font-size:12.5px; color:var(--ink3); font-variant-numeric:tabular-nums}
+  .crow span{display:inline-flex; gap:4px}
+  .crow .k{opacity:.75}
+  .cbot{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:6px 10px; border-top:1px solid var(--line); padding-top:8px}
+  .detour{flex:1 1 100%; font-size:12.5px; font-weight:700; color:var(--route)}
+  .detour.off{color:var(--mile)}
+  .links{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+  .maplink{font-size:12.5px; font-weight:800; text-decoration:none; color:var(--ink3); border:0; border-bottom:1px solid var(--line2); background:none; padding:0 0 1px}
+  .maplink.wz{color:var(--go); border-bottom-color:var(--go)}
+  .maplink.onmap{color:var(--route); border-bottom-color:var(--route)}
+  .wow{display:flex; gap:2.5px}
+  .wow i{width:5px; height:5px; border-radius:50%; background:var(--line2); display:block}
+  .wow i.on{background:var(--mile)}
+  .empty{text-align:center; padding:50px 16px; color:var(--ink3); border:1px dashed var(--line2); border-radius:10px; margin-top:24px}
+
+  .toast{position:absolute; z-index:60; left:50%; top:calc(env(safe-area-inset-top,0px) + 70px); transform:translateX(-50%); background:var(--ink); color:var(--bg); font-size:14px; font-weight:600; padding:8px 16px; border-radius:100px; box-shadow:var(--shadow); max-width:calc(100% - 32px); text-align:center}
+
+  /* map markers */
+  .stopmk{display:flex; align-items:center; gap:5px; transform:translateX(0); white-space:nowrap; pointer-events:none}
+  .stopmk b{display:grid; place-items:center; width:24px; height:24px; border-radius:50%; background:#1A8CFF; color:#fff; font:800 12.5px 'Overpass',system-ui,sans-serif; box-shadow:0 0 0 2.5px #fff, 0 2px 6px rgba(0,0,0,.35)}
+  .stopmk span{font:800 14px 'Assistant',system-ui,sans-serif; color:#1c2230; text-shadow:0 0 2px #fff,0 0 3px #fff,0 0 4px #fff}
+  .sat .stopmk span{color:#fff; text-shadow:0 0 2px #000,0 0 3px #000,0 0 5px #000}
+  .me{width:22px; height:22px; position:relative; pointer-events:none}
+  .me .dot{position:absolute; inset:0; border-radius:50%; background:#1A8CFF; border:3px solid #fff; box-shadow:0 1px 6px rgba(0,0,0,.4)}
+  .me .cone{position:absolute; left:50%; top:50%; width:0; height:0; transform-origin:0 0}
+  .me .cone::before{content:""; position:absolute; left:-18px; top:-44px; width:36px; height:44px; background:linear-gradient(to top, rgba(26,140,255,.55), rgba(26,140,255,0)); clip-path:polygon(50% 100%, 0 0, 100% 0)}
+  .me.nohead .cone{display:none}
+
+  @media (min-width:980px){
+    body.split .panel{box-shadow:none}
+    body.split #map, body.split .chrome{right:460px}
+    .chrome{position:absolute; inset:0; pointer-events:none}
+    .chrome > *{pointer-events:auto}
+  }
+  @media (max-width:979px){ .chrome{position:absolute; inset:0; pointer-events:none} .chrome > *{pointer-events:auto} }
+  @media (max-width:560px){
+    .sheet{right:0; left:0; bottom:0; width:auto; border-radius:18px 18px 0 0; max-height:62%; padding-bottom:env(safe-area-inset-bottom,0px)}
+    .sheet .grab{display:block; width:38px; height:5px; border-radius:3px; background:var(--line2); margin:8px auto 0}
+    .tbtn .lbl{display:none}
+    .nav{left:78px; right:10px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+__EXT_CSS__
+__FIN_CSS__
+__APP_CSS__
+</style>
+
+<div id="app" dir="rtl" lang="he">
+  <div id="map" dir="ltr" aria-label="מפה"></div>
+  <div class="chrome" id="chrome">
+    <div class="top">
+      <button class="tbtn glass" id="bList" type="button" aria-label="רשימת האטרקציות"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="lbl">רשימה</span></button>
+      <div class="srch glass" id="srch">
+        <label><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+          <input id="q" type="search" placeholder="חיפוש אטרקציה, עיר או קטע" autocomplete="off" enterkeyhint="search"></label>
+        <div class="res" id="res" hidden></div>
+      </div>
+    </div>
+    <div class="status glass" id="status" data-s="offline"><i></i><span id="statusTx">טוען…</span></div>
+
+    <div class="fabs">
+      <button class="fab glass" id="bLayers" type="button" aria-label="שכבות וסוג מפה" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></button>
+      <button class="fab glass" id="b3d" type="button" aria-label="תלת-ממד" aria-pressed="false"><span class="txt">3D</span></button>
+      <button class="fab glass" id="bCompass" type="button" aria-label="צפון למעלה" hidden><svg viewBox="0 0 24 24" id="compassSvg"><path d="M12 2l4 10h-8z" fill="#E0413A"/><path d="M12 22l-4-10h8z" fill="currentColor" opacity=".55"/></svg></button>
+      <button class="fab glass zoom" id="bZin" type="button" aria-label="התקרב"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg></button>
+      <button class="fab glass zoom" id="bZout" type="button" aria-label="התרחק"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"/></svg></button>
+      <button class="fab glass" id="bFit" type="button" aria-label="כל המסלול"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="6" r="2.2"/><path d="M7 17c5-1 2-6 6-8s4-1 4-1"/></svg></button>
+      <button class="fab glass" id="bNear" type="button" aria-label="מה יש בסביבה" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V7a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v13"/><path d="M4 20h11M6 10h7M15 11h2a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0V9l-3-3"/></svg></button>
+      <button class="fab glass" id="bQueue" type="button" aria-label="התור שלנו" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 7h2M11 7h8M5 12h2M11 12h8M5 17h2M11 17h8"/></svg><span class="badge" id="qBadge" hidden>0</span></button>
+    </div>
+
+    <div class="pop glass" id="pop" hidden>
+      <h4>סוג מפה</h4>
+      <div class="seg3" id="baseSeg">
+        <button type="button" data-b="map" aria-pressed="true"><span class="sw-map"></span>מפה</button>
+        <button type="button" data-b="hyb" aria-pressed="false"><span class="sw-hyb"></span>לוויין + שמות</button>
+        <button type="button" data-b="sat" aria-pressed="false"><span class="sw-sat"></span>לוויין</button>
+      </div>
+      <div class="tg"><div>תלת-ממד והרים<small>גובה פני השטח ובניינים. צריך אינטרנט.</small></div><button class="sw" id="t3d" type="button" aria-pressed="false" aria-label="תלת-ממד"></button></div>
+      <div class="tg"><div>אטרקציות מהרשימה</div><button class="sw" id="tPoi" type="button" aria-pressed="true" aria-label="אטרקציות"></button></div>
+      <div class="tg"><div>רק חובה ★</div><button class="sw" id="tMust" type="button" aria-pressed="false" aria-label="רק חובה"></button></div>
+      <p class="offbox" id="frameNote" hidden style="font-size:13px; margin:0">בתצוגה הזו (דף Claude) אין אינטרנט ואין מיקום. לוויין, GPS, תמונות ומקומות בסביבה עובדים באתר האפליקציה ובקובץ <b class="lat">roadtrip-map.html</b>.</p>
+      <h4>מפה מפורטת בלי אינטרנט</h4>
+      <div class="offbox">
+        <p id="offTx">כדי לראות כל רחוב, בניין, תחנת דלק ומלון לאורך המסלול בלי אינטרנט, בחרו את שני קבצי המפה ששמרתם במכשיר: <b class="lat">roadtrip-map-east.zip</b> (ניו יורק → מיאמי) ו-<b class="lat">roadtrip-map-west.zip</b> (מיאמי → פיניקס). אפשר לבחור את שניהם יחד.</p>
+        <div class="prog" id="offProg" hidden><i></i></div>
+        <div class="row" id="hostRow" hidden></div>
+        <div class="row">
+          <button class="btn" id="bLoad" type="button">בחירת קובץ מפה</button>
+          <button class="btn" id="bRemember" type="button" hidden>לזכור במכשיר הזה</button>
+          <button class="btn" id="bForget" type="button" hidden>מחיקה מהמכשיר</button>
+        </div>
+        <input id="fileIn" type="file" multiple hidden>
+      </div>
+      <h4>מקרא</h4>
+      <div class="legend" id="legend"></div>
+      <div class="credit">סמלים: Material Symbols (Google). נתוני מפה: © OpenStreetMap, Overture Maps, OpenFreeMap, Natural Earth. לוויין: Esri, Maxar, Earthstar Geographics. גובה: Mapzen Terrain Tiles (AWS).</div>
+    </div>
+
+    <div class="nearbar glass" id="nearbar" hidden>
+      <div class="prow" id="nearChips"></div>
+      <div class="nearnote" id="nearNote">בחרו סוג מקום. התוצאות מ-OpenStreetMap לאזור שרואים במפה.</div>
+    </div>
+    <div class="qpanel glass" id="qpanel" hidden>
+      <div class="qhead"><div><h3>התור שלנו</h3><small id="qSub"></small><small id="qRoadTx"></small></div><button class="pclose" id="qclose" type="button" aria-label="סגירה">×</button></div>
+      <div class="qdet" id="qDet"></div>
+      <div class="qtools"><button class="btn pri" id="qNav" type="button">נווט לבא (וויז)</button><button class="btn" id="qSort" type="button">סדר לפי המסלול</button><button class="btn" id="qRoad" type="button">הקו הכחול דרך התור</button><button class="btn" id="qShare" type="button">שיתוף לטלפון השני</button></div>
+      <div class="qshare" id="qshare" data-open="0"><textarea id="qShareTx" aria-label="קוד התור" spellcheck="false"></textarea><div class="row"><button class="btn" id="qCopy" type="button">העתקת הקוד</button><button class="btn" id="qImport" type="button">ייבוא מקוד שהודבק</button><button class="btn" id="qClear" type="button">ניקוי התור</button></div></div>
+      <div class="qlist" id="qlist"></div>
+    </div>
+    <button class="glass ioscomp" id="iosComp" type="button" aria-label="מצפן. לחיצה: צפון למעלה או מצפן מלא"></button>
+    <div class="install glass" id="install" hidden><p>כדי שהמפה תעבוד בלי אינטרנט ובמסך מלא: לחצו על <b>שיתוף</b> (הריבוע עם החץ למעלה) ואז <b>הוספה למסך הבית</b>. מעכשיו פותחים מהאייקון.</p><button type="button" id="installx" aria-label="סגירה">×</button></div>
+    <button class="fab glass locbtn" id="bLoc" type="button" aria-label="המיקום שלי" data-m="0"><svg viewBox="0 0 24 24" fill="currentColor" id="locSvg"><path d="M21 3L3 10.5l7.2 2.3L12.5 20z"/></svg></button>
+
+    <div class="nav glass" id="nav" hidden>
+      <div class="spd"><div><b class="lat" id="spd">0</b><small>MPH</small></div></div>
+      <div class="navtx">
+        <div class="nx" id="navNext"></div>
+        <div class="sub" id="navSub"></div>
+        <div class="ahead" id="ahead"></div>
+      </div>
+    </div>
+
+    <div class="sheet" id="sheet" hidden>
+      <div class="grab"></div>
+      <button class="sheetx" id="sheetx" type="button" aria-label="סגירה">×</button>
+      <div id="sheetBody"></div>
+    </div>
+  </div>
+
+  <nav class="tabbar" id="tabbar" aria-label="מסכים">
+    <button type="button" data-tab="map" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13M15 6.5v13"/></svg><span>מפה</span></button>
+    <button type="button" data-tab="list" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.6 9.7l5.8-.8z" stroke-linejoin="round"/></svg><span>אטרקציות</span></button>
+    <button type="button" data-tab="events" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M12 12.6l1 2 2.2.3-1.6 1.5.4 2.2-2-1-2 1 .4-2.2-1.6-1.5 2.2-.3z" fill="currentColor" stroke="none"/></svg><span>אירועים</span></button>
+    <button type="button" data-tab="queue" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 7h2M11 7h8M5 12h2M11 12h8M5 17h2M11 17h8"/></svg><span>התור</span><b class="tbadge" id="tbQ" hidden>0</b></button>
+    <button type="button" data-tab="money" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2.5" y="6" width="19" height="12.5" rx="2.5"/><circle cx="12" cy="12.2" r="2.8"/><path d="M6 9.5v5.4M18 9.5v5.4"/></svg><span>כסף</span></button>
+  </nav>
+  <aside class="panel fpanel" id="fpanel" hidden aria-label="הכסף של הטיול">
+    <div class="phead"><div class="ptitle"><h2>הכסף <span>של הטיול</span></h2><button class="pclose" id="fclose" type="button" aria-label="סגירה">×</button></div></div>
+    <div class="pbody">__FIN_HTML__</div>
+  </aside>
+  <aside class="panel epanel" id="epanel" hidden aria-label="אירועים בדרך">
+    <div class="phead"><div class="ptitle"><h2>אירועים <span>בדרך</span></h2><button class="pclose" id="eclose" type="button" aria-label="סגירה">×</button></div>
+      <div class="evtools"><select class="sel" id="evState" aria-label="מדינה"></select>
+        <div class="prow"><span class="fseg inl" id="evSort" style="display:inline-flex;border:1px solid var(--line2);border-radius:100px;overflow:hidden"><button class="chip" type="button" data-v="route" aria-pressed="true" style="border:0;border-radius:0">לפי הדרך</button><button class="chip" type="button" data-v="date" aria-pressed="false" style="border:0;border-radius:0">לפי תאריך</button></span><button class="chip" id="evFit" type="button" aria-pressed="false">רק כשאנחנו שם</button></div>
+        <div class="resline">התאריך ״אנחנו שם״ מחושב מתאריכי הטיול (בכסף ← הגדרות) ומהמקום במסלול. אפשר להוסיף כל אירוע לתור.</div></div></div>
+    <div class="pbody"><div class="evlist" id="evList"></div></div>
+  </aside>
+  <div class="compdlg" id="compDlg" hidden role="dialog" aria-label="מצפן">
+    <div class="deg" id="compDeg">—</div><div class="dir" id="compDir"></div>
+    <div id="compDial"></div>
+    <div class="ll" id="compLL"></div>
+    <div class="msg" id="compMsg"></div>
+    <div class="row"><button class="pri" id="compGo" type="button" hidden>הפעלת המצפן</button><button id="compClose" type="button">סגירה</button></div>
+  </div>
+  <aside class="panel" id="panel" hidden aria-label="רשימת אטרקציות">
+    <div class="phead">
+      <div class="ptitle">
+        <h2>ניו יורק <span>→ פיניקס</span></h2>
+        <button class="pclose" id="pclose" type="button" aria-label="סגירת הרשימה">×</button>
+      </div>
+      <label class="psearch"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" style="opacity:.5"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg><input id="pq" type="search" placeholder="חיפוש: שם, עיר, מדינה…" autocomplete="off"></label>
+      <div class="prow">
+        <select class="sel" id="detour" aria-label="מרחק מהמסלול">
+          <option value="99">כל מרחק</option>
+          <option value="0.1">רק על המסלול</option>
+          <option value="1">עד שעה סטייה</option>
+          <option value="2">עד שעתיים</option>
+          <option value="3">עד 3 שעות</option>
+        </select>
+        <button class="chip gold" id="mustOnly" type="button" aria-pressed="false">רק חובה ★</button>
+        <button class="chip pink" id="pickOnly" type="button" aria-pressed="false">המסלול שלי <span class="ct" id="pickCt">0</span></button>
+        <button class="chip" id="reset" type="button">נקה</button>
+      </div>
+      <div class="prow" id="groupChips"></div>
+      <div class="prow" id="segChips"></div>
+      <div class="resline"><span id="resline"></span><button id="expAll" type="button">ייצוא CSV</button><button id="expPick" type="button">ייצוא הסימונים שלי</button></div>
+    </div>
+    <div class="pbody" id="pbody"></div>
+  </aside>
+</div>
+
+<script>
+__MAPLIBRE_JS__
+</script>
+<script>
+__PMTILES_JS__
+</script>
+<script>
+(function(){
+  'use strict';
+  try{ document.documentElement.setAttribute('lang','he'); document.documentElement.setAttribute('dir','rtl'); }catch(e){}
+
+  var DATA=__DATA__, BASE=__BASE__, BZ=__BASEZ__, STYLE=__STYLE__, FONTS=__FONTS__, SPRITE=__SPRITE__, NAV=__NAV__;
+  var RTL_SRC=__RTL__;
+  var MAPPARTS=__MAPPARTS__, HOST=__HOST__;
+  var SEGMENTS=DATA.segments, ITEMS=DATA.items, KINDS=DATA.kinds, GROUPS=DATA.groups;
+  var SEGBY={}; SEGMENTS.forEach(function(s,i){ SEGBY[s.id]={s:s,i:i}; });
+  var ITEMBY={}; ITEMS.forEach(function(it){ ITEMBY[it.id]=it; });
+  var GHEX={nature:'#2C5E3F', water:'#136C7E', action:'#BC2F5C', culture:'#123A6E', shop:'#9C7314', odd:'#6B4A93', sleep:'#7A3E9D'};
+  var OFM='https://tiles.openfreemap.org';
+  var SAT_URL='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+  var DEM_URL='https://elevation-tiles-prod.s3.amazonaws.com/terrarium/{z}/{x}/{y}.png';
+
+  var LS='rt_picks_v1';
+  var picks=(function(){ try{ return JSON.parse(localStorage.getItem(LS)||'{}')||{}; }catch(e){ return {}; } })();
+  function savePicks(){ try{ localStorage.setItem(LS, JSON.stringify(picks)); }catch(e){} }
+  function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function lsSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+
+  var state={ q:'', groups:new Set(), detour:99, must:false, pickOnly:false, base:lsGet('rt_base')||'map', t3d:false, poi:true };
+  var NET={mode:'unknown', tpl:null, fails:0, v:0};
+  var IN_FRAME=(function(){ try{ return window.self!==window.top; }catch(e){ return true; } })() && /^https:$/.test(location.protocol);
+  var ARCHS=[];
+
+  function $(id){ return document.getElementById(id); }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(m){return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[m];}); }
+  function gOf(it){ return KINDS[it.k] || {he:it.k, color:'var(--ink2)', g:'odd'}; }
+  function mapsUrl(it){ return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(it.e+' '+it.l); }
+  function photoUrl(it){ return 'https://www.google.com/search?tbm=isch&q='+encodeURIComponent(it.e+' '+it.l); }
+  function wazeUrl(it){
+    if(it.g!=null && it.cf!=='town') return 'https://waze.com/ul?ll='+it.g+','+it.n+'&navigate=yes';
+    return 'https://waze.com/ul?q='+encodeURIComponent(it.e+' '+it.l)+'&navigate=yes';
+  }
+  function wazeLL(lat,lng){ return 'https://waze.com/ul?ll='+lat.toFixed(6)+','+lng.toFixed(6)+'&navigate=yes'; }
+  function gmapsLL(lat,lng){ return 'https://www.google.com/maps/dir/?api=1&destination='+lat.toFixed(6)+','+lng.toFixed(6); }
+  function fmtMile(m){ return m==null ? '' : Math.round(m).toLocaleString('en-US'); }
+  function b64(s){ var bin=atob(s), n=bin.length, u=new Uint8Array(n); for(var i=0;i<n;i++) u[i]=bin.charCodeAt(i); return u.buffer; }
+  function dec(str){ return decP(str, 1e4); }
+  function decP(str, prec){
+    var i=0, lat=0, lng=0, out=[], len=str.length;
+    while(i<len){
+      var b, s=0, r=0;
+      do{ b=str.charCodeAt(i++)-63; r|=(b&31)<<s; s+=5; }while(b>=32);
+      lat += (r&1) ? ~(r>>1) : (r>>1);
+      s=0; r=0;
+      do{ b=str.charCodeAt(i++)-63; r|=(b&31)<<s; s+=5; }while(b>=32);
+      lng += (r&1) ? ~(r>>1) : (r>>1);
+      out.push([lng/prec, lat/prec]);
+    }
+    return out;
+  }
+  var toastT=null;
+  function toast(msg, ms){
+    var t=document.querySelector('.toast');
+    if(!t){ t=document.createElement('div'); t.className='toast'; t.setAttribute('role','status'); $('app').appendChild(t); }
+    t.textContent=msg; t.hidden=false;
+    clearTimeout(toastT); toastT=setTimeout(function(){ t.hidden=true; }, ms||3200);
+  }
+
+  /* ================================================================
+     protocols: tiles (offline file first, then internet), fonts, sprite
+     ================================================================ */
+  function EMPTYB(){ return new ArrayBuffer(0); }  // a fresh one each time: buffers are handed over to the map workers
+  function tileLat(y,n){ var t=Math.PI-2*Math.PI*y/n; return 180/Math.PI*Math.atan(0.5*(Math.exp(t)-Math.exp(-t))); }
+  maplibregl.addProtocol('arch', function(params, ac){
+    var m=/arch:\/\/(\d+)\/(\d+)\/(\d+)/.exec(params.url);
+    var z=+m[1], x=+m[2], y=+m[3], n=Math.pow(2,z);
+    var w=x/n*360-180, e=(x+1)/n*360-180, nn=tileLat(y,n), s=tileLat(y+1,n);
+    var cands=ARCHS.filter(function(r){ var h=r.h; return !(h.maxLon<w || h.minLon>e || h.maxLat<s || h.minLat>nn); });
+    if(!cands.length) return Promise.resolve({data:EMPTYB()});
+    var i=0;
+    function next(){
+      if(i>=cands.length) return {data:EMPTYB()};
+      return cands[i++].a.getZxy(z,x,y,ac.signal).then(function(r){ return r && r.data ? {data:r.data} : next(); }, function(e){ if(e && e.name==='AbortError') throw e; return next(); });
+    }
+    return Promise.resolve().then(next);
+  });
+  maplibregl.addProtocol('omt', function(params, ac){
+    var m=/omt:\/\/(\d+)\/(\d+)\/(\d+)/.exec(params.url);
+    var z=+m[1], x=+m[2], y=+m[3];
+    return Promise.resolve(null).then(function(){
+      if(NET.mode!=='online' || !NET.tpl) return {data:EMPTYB()};
+      var url=NET.tpl.replace('{z}',z).replace('{x}',x).replace('{y}',y);
+      return fetch(url, {signal:ac.signal}).then(function(res){
+        if(res.ok){ NET.fails=0; return res.arrayBuffer().then(function(b){ return {data:b}; }); }
+        return {data:EMPTYB()};
+      }, function(err){
+        if(err && err.name==='AbortError') throw err;
+        if(++NET.fails>=6) setNet('offline');
+        return {data:EMPTYB()};
+      });
+    });
+  });
+  maplibregl.addProtocol('embed', function(params){
+    var u=params.url;
+    var sm=/sprite\/liberty(@2x)?\.(json|png)/.exec(u);
+    if(sm){
+      var two=!!sm[1];
+      if(sm[2]==='json') return Promise.resolve({data: two ? SPRITE.j2 : SPRITE.j1});
+      return Promise.resolve({data: b64(two ? SPRITE.p2 : SPRITE.p1)});
+    }
+    var fm=/fonts\/([^/]+)\/(\d+-\d+)\.pbf/.exec(u);
+    if(fm){
+      var stack=decodeURIComponent(fm[1]).split(',')[0].trim(), range=fm[2];
+      var key=stack.replace('Bold','Medium')+'/'+range;
+      if(FONTS[key]) return Promise.resolve({data:b64(FONTS[key])});
+      if(NET.mode==='online'){
+        return fetch(OFM+'/fonts/'+encodeURIComponent(stack)+'/'+range+'.pbf').then(function(r){ return r.ok ? r.arrayBuffer() : EMPTYB(); }, function(){ return EMPTYB(); }).then(function(b){ return {data:b}; });
+      }
+      return Promise.resolve({data:EMPTYB()});
+    }
+    return Promise.resolve({data:EMPTYB()});
+  });
+  var rtlOK=false;
+  try{
+    // a data: URL loads in the map workers from a saved file too (file:// blocks blob: imports there)
+    var rtlUrl = !/^https?:$/.test(location.protocol) ? 'data:text/javascript;base64,'+btoa(unescape(encodeURIComponent(RTL_SRC))) : URL.createObjectURL(new Blob([RTL_SRC], {type:'text/javascript'}));
+    var pr=maplibregl.setRTLTextPlugin(rtlUrl, false);
+    if(pr && pr.then) pr.then(function(){ rtlOK=true; refreshPoiLabels(); }, function(){ rtlOK=false; refreshPoiLabels(); });
+  }catch(e){}
+
+  /* ================================================================
+     map
+     ================================================================ */
+  var ROUTE=NAV.r?decP(NAV.r,1e5):dec(BASE.route), PCH=NAV.p?decP(NAV.p,1e5):dec(BASE.pch);
+  function bboxOf(pts){ var w=180,s=90,e=-180,n=-90; pts.forEach(function(p){ if(p[0]<w)w=p[0]; if(p[0]>e)e=p[0]; if(p[1]<s)s=p[1]; if(p[1]>n)n=p[1]; }); return [[w,s],[e,n]]; }
+  var ROUTE_BB=bboxOf(ROUTE.concat(PCH));
+  if(typeof ARCHS==='undefined') var ARCHS=[];
+  var map=new maplibregl.Map({
+    container:'map', style:STYLE, bounds:ROUTE_BB, fitBoundsOptions:{padding:{top:120,bottom:60,left:70,right:64}},
+    maxPitch:72, minZoom:2, maxZoom:19.5, attributionControl:{compact:true}, dragRotate:true, touchPitch:true,
+    pitchWithRotate:true, fadeDuration:150, cancelPendingTileRequestsWhileZooming:true, maxTileCacheZoomLevels:4
+  });
+  window.__map=map;
+  window.__state=function(){ return {mode:NET.mode, archs:ARCHS.map(function(r){ return r.label; }), styleReady:styleReady, styleLoaded:map.isStyleLoaded(), status:$('status').getAttribute('data-s')}; };
+
+  /* ---------- generated icons: US road shields, dots, mile pills ---------- */
+  function canvasImg(w,h,draw){
+    var pr=2, c=document.createElement('canvas'); c.width=w*pr; c.height=h*pr;
+    var x=c.getContext('2d'); x.scale(pr,pr); draw(x,w,h);
+    return {img:x.getImageData(0,0,w*pr,h*pr), pr:pr};
+  }
+  function rr(x,a,b,w,h,r){ x.beginPath(); x.moveTo(a+r,b); x.arcTo(a+w,b,a+w,b+h,r); x.arcTo(a+w,b+h,a,b+h,r); x.arcTo(a,b+h,a,b,r); x.arcTo(a,b,a+w,b,r); x.closePath(); }
+  function shieldPath(x,w,h){
+    x.beginPath(); x.moveTo(1,2); x.quadraticCurveTo(w/2,-1,w-1,2); x.lineTo(w-1,h*.52);
+    x.quadraticCurveTo(w-2,h*.86,w/2,h-1); x.quadraticCurveTo(2,h*.86,1,h*.52); x.closePath();
+  }
+  function makeIcon(id){
+    var m=/^(us-interstate|us-highway|us-state|road)_(\d)$/.exec(id);
+    if(m){
+      var n=+m[2], w=Math.max(20, 9+n*7), h=20, r;
+      if(m[1]==='us-interstate') r=canvasImg(w,h,function(x){
+        shieldPath(x,w,h); x.fillStyle='#fff'; x.fill();
+        x.save(); x.translate(1.3,1.3); x.scale((w-2.6)/w,(h-2.6)/h); shieldPath(x,w,h); x.clip();
+        x.fillStyle='#1D4FA3'; x.fillRect(0,0,w,h); x.fillStyle='#C8102E'; x.fillRect(0,0,w,5.4); x.restore();
+      });
+      else if(m[1]==='us-highway') r=canvasImg(w,h,function(x){
+        shieldPath(x,w,h); x.fillStyle='#fff'; x.fill(); x.lineWidth=1.5; x.strokeStyle='#1b1b1b'; x.stroke();
+      });
+      else if(m[1]==='us-state') r=canvasImg(w+2,h-2,function(x,ww,hh){
+        x.beginPath(); x.ellipse(ww/2,hh/2,ww/2-1,hh/2-1,0,0,Math.PI*2); x.fillStyle='#fff'; x.fill(); x.lineWidth=1.3; x.strokeStyle='#333'; x.stroke();
+      });
+      else r=canvasImg(w,h-3,function(x,ww,hh){ rr(x,.8,.8,ww-1.6,hh-1.6,3); x.fillStyle='#fff'; x.fill(); x.lineWidth=1.2; x.strokeStyle='#777'; x.stroke(); });
+      return r;
+    }
+    if(id==='milepill') return null;
+    if(/^circle_11_black$/.test(id)) return canvasImg(12,12,function(x){ x.beginPath(); x.arc(6,6,4.4,0,7); x.fillStyle='#fff'; x.fill(); x.beginPath(); x.arc(6,6,3.2,0,7); x.fillStyle='#222'; x.fill(); });
+    return canvasImg(10,10,function(x){ x.beginPath(); x.arc(5,5,3.2,0,7); x.fillStyle='#8a8f96'; x.fill(); x.lineWidth=1.2; x.strokeStyle='#fff'; x.stroke(); });
+  }
+  map.on('styleimagemissing', function(e){
+    if(map.hasImage(e.id)) return;
+    var mk=markerImage(e.id); if(mk){ map.addImage(e.id, mk.img, {pixelRatio:mk.pr}); return; }
+    if(e.id==='milepill' || e.id==='exitpill'){ addPill(); return; }
+    var r=makeIcon(e.id); if(!r) return;
+    map.addImage(e.id, r.img, {pixelRatio:r.pr});
+  });
+  function addPill(){
+    if(map.hasImage('milepill')) return;
+    var w=30, h=18, r=canvasImg(w,h,function(x){ rr(x,1,1,w-2,h-2,8); x.fillStyle='#1A8CFF'; x.fill(); x.lineWidth=1.6; x.strokeStyle='#fff'; x.stroke(); });
+    map.addImage('milepill', r.img, {pixelRatio:2, stretchX:[[18,42]], stretchY:[[16,20]], content:[12,6,48,30]});
+    var e=canvasImg(w,h,function(x){ rr(x,1,1,w-2,h-2,4); x.fillStyle='#1B6E3A'; x.fill(); x.lineWidth=1.4; x.strokeStyle='#fff'; x.stroke(); });
+    map.addImage('exitpill', e.img, {pixelRatio:2, stretchX:[[12,48]], stretchY:[[12,24]], content:[8,6,52,30]});
+  }
+
+  /* ---------- Natural Earth base (always offline) ---------- */
+  var NE_FILL=['ne-water','ne-land','ne-park','ne-lake'], NE_ROADS=[], NE_SYM=['ne-city','ne-parkname','ne-shield'];
+  function featColl(f){ return {type:'FeatureCollection', features:f}; }
+  function buildNE(){
+    var poly=[];
+    BASE.land.forEach(function(p){ poly.push({type:'Feature', properties:{k:'land'}, geometry:{type:'Polygon', coordinates:p.map(dec)}}); });
+    BASE.parks.forEach(function(pk){ pk.r.forEach(function(p){ poly.push({type:'Feature', properties:{k:'park'}, geometry:{type:'Polygon', coordinates:p.map(dec)}}); }); });
+    BASE.lakes.forEach(function(p){ poly.push({type:'Feature', properties:{k:'lake'}, geometry:{type:'Polygon', coordinates:p.map(dec)}}); });
+    var lines=[];
+    BASE.states.forEach(function(s){ lines.push({type:'Feature', properties:{k:'state'}, geometry:{type:'LineString', coordinates:dec(s)}}); });
+    BASE.borders.forEach(function(s){ lines.push({type:'Feature', properties:{k:'border'}, geometry:{type:'LineString', coordinates:dec(s)}}); });
+    var roads=[];
+    BASE.roads.forEach(function(ch){ ch.c.forEach(function(s){ roads.push({type:'Feature', properties:{lv:ch.lv}, geometry:{type:'LineString', coordinates:dec(s)}}); }); });
+    var cities=BASE.cities.map(function(c,i){ return {type:'Feature', properties:{n:c[2], z:c[3], big:c[3]<=5?1:c[3]<=7?2:3, zin:BZ.c[i]||0, lon:c[1], lat:c[0]}, geometry:{type:'Point', coordinates:[c[1],c[0]]}}; });
+    var parks=[]; BASE.parks.forEach(function(pk,i){ if(pk.t==='National Park' || /National (Park|Monument|Recreation)/.test(pk.n)) parks.push({type:'Feature', properties:{n:pk.n, np:pk.t==='National Park'?1:0, zin:BZ.p[i]||0, lon:pk.at[1], lat:pk.at[0]}, geometry:{type:'Point', coordinates:[pk.at[1],pk.at[0]]}}); });
+    var sh=[], si=0;
+    for(var k in BASE.shields){
+      var p=k.split('|'), a=BASE.shields[k], net=p[0]==='i'?'us-interstate':p[0]==='u'?'us-highway':'us-state';
+      for(var i=0;i<a.length;i+=3){ sh.push({type:'Feature', properties:{net:net, ref:p[1], rl:Math.min(6,p[1].length), z:a[i+2], zin:BZ.s[si]||0, lon:a[i+1]/1000, lat:a[i]/1000}, geometry:{type:'Point', coordinates:[a[i+1]/1000, a[i]/1000]}}); si++; }
+    }
+    var marks=BASE.marks.map(function(m){ return {type:'Feature', properties:{t:m[2].toLocaleString('en-US')+' mi', big:m[2]%500===0?1:0}, geometry:{type:'Point', coordinates:[m[1],m[0]]}}; });
+    return {poly:featColl(poly), lines:featColl(lines), roads:featColl(roads), cities:featColl(cities), parks:featColl(parks), shields:featColl(sh), marks:featColl(marks)};
+  }
+  function firstOf(ids){ for(var i=0;i<ids.length;i++){ if(map.getLayer(ids[i])) return ids[i]; } return undefined; }
+
+  var OMT={fill:[], line:[], sym:[], orig:{}, src:{}};
+  function classifyOMT(){
+    map.getStyle().layers.forEach(function(l){
+      if(l.source!=='omt' && l.source!=='arch') return;
+      OMT.src[l.id]=l.source;
+      if(l.id==='coverage@a') return;
+      if(l.type==='fill' || l.type==='fill-extrusion') OMT.fill.push(l.id);
+      else if(l.type==='line') OMT.line.push(l.id);
+      else if(l.type==='symbol') OMT.sym.push(l.id);
+      var o={};
+      if(l.type==='symbol'){ o.tc=map.getPaintProperty(l.id,'text-color'); o.hc=map.getPaintProperty(l.id,'text-halo-color'); o.hw=map.getPaintProperty(l.id,'text-halo-width'); }
+      if(l.type==='line'){ o.lo=map.getPaintProperty(l.id,'line-opacity'); }
+      OMT.orig[l.id]=o;
+    });
+  }
+
+  function addLayers(){
+    var NE=buildNE();
+    addPill();
+    var beforeCov=firstOf(['coverage@a','park']);
+    map.addSource('ne-poly', {type:'geojson', data:NE.poly, tolerance:.6});
+    map.addSource('ne-lines', {type:'geojson', data:NE.lines});
+    map.addSource('ne-roads', {type:'geojson', data:NE.roads, tolerance:.5});
+    map.addSource('ne-cities', {type:'geojson', data:NE.cities});
+    map.addSource('ne-parks', {type:'geojson', data:NE.parks});
+    map.addSource('ne-shields', {type:'geojson', data:NE.shields});
+    map.addSource('marks', {type:'geojson', data:NE.marks});
+    map.addLayer({id:'ne-water', type:'background', paint:{'background-color':'#9ebdff'}}, beforeCov);
+    map.addLayer({id:'ne-land', type:'fill', source:'ne-poly', filter:['==',['get','k'],'land'], paint:{'fill-color':'#f8f4f0'}}, beforeCov);
+    map.addLayer({id:'ne-park', type:'fill', source:'ne-poly', filter:['==',['get','k'],'park'], paint:{'fill-color':'#d8e8c8','fill-opacity':.8}}, beforeCov);
+    map.addLayer({id:'ne-lake', type:'fill', source:'ne-poly', filter:['==',['get','k'],'lake'], paint:{'fill-color':'#9ebdff'}}, beforeCov);
+    var RW={1:[3,.6,6,1.6,9,3.2,12,6], 2:[6,.5,8,1.2,10,2.6,12,4.2], 3:[7,.4,9,1,11,2.2,12,3.2], 4:[9,.4,11,1.4,12,2.4]};
+    var RC={1:['#F59E1B','#C27606'], 2:['#FFD660','#C9A43A'], 3:['#FFFFFF','#BDB5A3'], 4:['#FFFFFF','#D3CCBD']};
+    var MINZ={1:3,2:6,3:7,4:9};
+    [4,3,2,1].forEach(function(lv){
+      var w=['interpolate',['linear'],['zoom']].concat(RW[lv]);
+      var wc=['interpolate',['linear'],['zoom']].concat(RW[lv].map(function(v,i){ return i%2 ? v*1.7+.6 : v; }));
+      map.addLayer({id:'ne-rc'+lv, type:'line', source:'ne-roads', minzoom:Math.max(MINZ[lv],5), filter:['==',['get','lv'],lv], layout:{'line-cap':'round','line-join':'round'}, paint:{'line-color':RC[lv][1], 'line-width':wc}}, beforeCov);
+      NE_ROADS.push('ne-rc'+lv);
+    });
+    [4,3,2,1].forEach(function(lv){
+      var w=['interpolate',['linear'],['zoom']].concat(RW[lv]);
+      map.addLayer({id:'ne-r'+lv, type:'line', source:'ne-roads', minzoom:MINZ[lv], filter:['==',['get','lv'],lv], layout:{'line-cap':'round','line-join':'round'}, paint:{'line-color':RC[lv][0], 'line-width':w}}, beforeCov);
+      NE_ROADS.push('ne-r'+lv);
+    });
+    // satellite and terrain
+    map.addSource('sat', {type:'raster', tiles:[SAT_URL], tileSize:256, maxzoom:19, attribution:'Esri, Maxar, Earthstar Geographics'});
+    map.addLayer({id:'sat', type:'raster', source:'sat', layout:{visibility:'none'}, paint:{'raster-fade-duration':120}}, beforeCov);
+    map.addSource('dem', {type:'raster-dem', tiles:[DEM_URL], tileSize:256, maxzoom:14, encoding:'terrarium', attribution:'Mapzen Terrain Tiles'});
+    map.addLayer({id:'hillshade', type:'hillshade', source:'dem', layout:{visibility:'none'}, paint:{'hillshade-exaggeration':.35, 'hillshade-shadow-color':'#6a6252', 'hillshade-highlight-color':'#ffffff'}}, firstOf(['tunnel_motorway_link_casing','road_area_pattern']));
+    var beforeBound=firstOf(['boundary_3','waterway_line_label']);
+    map.addLayer({id:'ne-state', type:'line', source:'ne-lines', filter:['==',['get','k'],'state'], paint:{'line-color':'#9C8FB3','line-width':['interpolate',['linear'],['zoom'],4,.8,10,1.6],'line-dasharray':[3,2]}}, beforeBound);
+    map.addLayer({id:'ne-border', type:'line', source:'ne-lines', filter:['==',['get','k'],'border'], paint:{'line-color':'#8C7AA3','line-width':1.8}}, beforeBound);
+    // the trip route
+    map.addSource('route', {type:'geojson', data:{type:'Feature', properties:{}, geometry:{type:'LineString', coordinates:ROUTE}}});
+    map.addSource('pch', {type:'geojson', data:{type:'Feature', properties:{}, geometry:{type:'LineString', coordinates:PCH}}});
+    map.addLayer({id:'route-case', type:'line', source:'route', layout:{'line-cap':'round','line-join':'round'}, paint:{'line-color':'#0B4FA8','line-opacity':.85,'line-width':['interpolate',['linear'],['zoom'],3,4,8,8,12,11,16,16]}}, beforeBound);
+    map.addLayer({id:'route', type:'line', source:'route', layout:{'line-cap':'round','line-join':'round'}, paint:{'line-color':'#1A8CFF','line-width':['interpolate',['linear'],['zoom'],3,2.4,8,5,12,7,16,10]}}, beforeBound);
+    map.addLayer({id:'pch', type:'line', source:'pch', layout:{'line-cap':'round','line-join':'round'}, paint:{'line-color':'#1A8CFF','line-opacity':.85,'line-width':['interpolate',['linear'],['zoom'],3,2,8,3.6,12,5,16,7],'line-dasharray':[.6,2]}}, beforeBound);
+    // Natural Earth labels (hidden where the detailed map has its own)
+    map.addLayer({id:'ne-parkname', type:'symbol', source:'ne-parks', minzoom:6, filter:['any',['==',['get','np'],1],['>=',['zoom'],8]],
+      layout:{'text-field':['get','n'], 'text-font':['Noto Sans Italic'], 'text-size':11.5, 'text-max-width':8},
+      paint:{'text-color':'#2F6B35','text-halo-color':'#fff','text-halo-width':1.3}});
+    map.addLayer({id:'ne-shield', type:'symbol', source:'ne-shields', filter:['>=',['zoom'],['get','z']],
+      layout:{'icon-image':['concat',['get','net'],'_',['to-string',['get','rl']]], 'text-field':['get','ref'], 'text-font':['Noto Sans Medium'], 'text-size':10.5,
+        'icon-rotation-alignment':'viewport','text-rotation-alignment':'viewport','symbol-sort-key':['match',['get','net'],'us-interstate',0,'us-highway',1,2], 'icon-padding':6},
+      paint:{'text-color':['match',['get','net'],'us-interstate','#fff','#111']}});
+    map.addLayer({id:'ne-city', type:'symbol', source:'ne-cities', filter:['>=',['zoom'],['get','z']],
+      layout:{'text-field':['get','n'], 'text-font':['match',['get','big'],1,['literal',['Noto Sans Medium']],['literal',['Noto Sans Regular']]], 'text-size':['match',['get','big'],1,14,2,12.5,11], 'symbol-sort-key':['get','z'], 'text-padding':3},
+      paint:{'text-color':'#2d2b27','text-halo-color':'#fff','text-halo-width':1.5}});
+    map.addLayer({id:'marks', type:'symbol', source:'marks', minzoom:6, filter:['any',['==',['get','big'],1],['>=',['zoom'],8]],
+      layout:{'icon-image':'milepill','icon-text-fit':'both','icon-text-fit-padding':[1,5,0,5],'text-field':['get','t'],'text-font':['Noto Sans Medium'],'text-size':10,'icon-allow-overlap':false,'symbol-sort-key':1},
+      paint:{'text-color':'#fff'}});
+    // attractions
+    map.addSource('items', {type:'geojson', data:itemsGeo()});
+    map.addLayer({id:'poi-dot', type:'symbol', source:'items', layout:{
+      'icon-image':['concat','a-',['get','k'],['case',['==',['get','m'],1],'-m','']],
+      'icon-size':['interpolate',['linear'],['zoom'],3,['case',['==',['get','m'],1],.5,.4],7,['case',['==',['get','m'],1],.72,.58],10,['case',['==',['get','m'],1],.95,.82],13,1],
+      'icon-allow-overlap':true, 'icon-ignore-placement':true, 'symbol-sort-key':['get','w']},
+      paint:{'icon-opacity':['case',['==',['get','o'],1],.55,1]}});
+    map.addLayer({id:'poi-sel', type:'circle', source:'items', filter:['==',['get','id'],''], paint:{'circle-color':'rgba(0,0,0,0)','circle-radius':['interpolate',['linear'],['zoom'],3,9,10,15,13,18],'circle-stroke-color':'#111','circle-stroke-width':3}});
+    map.addLayer({id:'poi-label', type:'symbol', source:'items', filter:['>=',['zoom'],['case',['==',['get','m'],1],9,11]],
+      layout:{'text-field':['get','h'], 'text-font':['Noto Sans Medium'], 'text-size':12.5, 'text-anchor':'top', 'text-offset':[0,1.3], 'text-max-width':9, 'symbol-sort-key':['-',10,['get','w']], 'text-optional':true},
+      paint:{'text-color':'#1f2328','text-halo-color':'#fff','text-halo-width':1.6}});
+    // my position
+    map.addSource('me-acc', {type:'geojson', data:featColl([])});
+    map.addLayer({id:'me-acc', type:'fill', source:'me-acc', paint:{'fill-color':'#1A8CFF','fill-opacity':.12}});
+    classifyOMT();
+  }
+  function itemsGeo(){
+    var f=[];
+    lastVisible.forEach(function(v){
+      var it=v.it; if(it.g==null) return;
+      if(!state.poi) return;
+      if(state.must && !isMust(it)) return;
+      f.push({type:'Feature', properties:{id:it.id, k:it.k, c:GHEX[v.g.g]||'#777', m:isMust(it)?1:0, w:it.w, o:(SEGBY[it.s]&&SEGBY[it.s].s.old)?1:0, h: rtlOK ? it.h : it.e}, geometry:{type:'Point', coordinates:[it.n,it.g]}});
+    });
+    f.sort(function(a,b){ return a.properties.w-b.properties.w; });
+    return featColl(f);
+  }
+  function refreshPoiLabels(){ if(map.getSource('items')) map.getSource('items').setData(itemsGeo()); }
+
+  /* ---------- stops ---------- */
+  function addStops(){
+    BASE.stops.forEach(function(s,i){
+      var el=document.createElement('div'); el.className='stopmk';
+      el.innerHTML='<b>'+(i+1)+'</b><span>'+esc(s[2])+'</span>';
+      new maplibregl.Marker({element:el, anchor:'left', offset:[-12,0]}).setLngLat([s[1],s[0]]).addTo(map);
+    });
+  }
+
+  /* ================================================================
+     modes: map / hybrid / satellite, online / offline file
+     ================================================================ */
+  function vis(id,on){ if(map.getLayer(id)) map.setLayoutProperty(id,'visibility',on?'visible':'none'); }
+  function applyMode(){
+    if(!map.isStyleLoaded() && !styleReady) return;
+    var b=state.base, online=NET.mode==='online';
+    var satOK = b!=='map' && online;
+    var showNE = !online && !satOK;
+    NE_FILL.forEach(function(id){ vis(id, showNE); });
+    NE_ROADS.forEach(function(id){ vis(id, showNE); if(map.getLayer(id)) map.setLayerZoomRange(id, map.getLayer(id).minzoom||0, (ARCHS.length && !online) ? 13 : 24); });
+    vis('ne-state', !online); vis('ne-border', !online);
+    NE_SYM.forEach(function(id){ vis(id, !online && b!=='sat'); });
+    var zf = ARCHS.length ? ['any', ['==',['get','zin'],0], ['!', ['any'].concat(ARCHS.map(function(r){ var h=r.h; return ['all', ['>=',['get','lon'],h.minLon], ['<=',['get','lon'],h.maxLon], ['>=',['get','lat'],h.minLat], ['<=',['get','lat'],h.maxLat]]; }))]] : null;
+    if(map.getLayer('ne-city')) map.setFilter('ne-city', zf ? ['all',['>=',['zoom'],['get','z']],zf] : ['>=',['zoom'],['get','z']]);
+    if(map.getLayer('ne-shield')) map.setFilter('ne-shield', zf ? ['all',['>=',['zoom'],['get','z']],zf] : ['>=',['zoom'],['get','z']]);
+    if(map.getLayer('ne-parkname')) map.setFilter('ne-parkname', zf ? ['all',['any',['==',['get','np'],1],['>=',['zoom'],8]],zf] : ['any',['==',['get','np'],1],['>=',['zoom'],8]]);
+    vis('sat', satOK);
+    // the detailed map comes from the internet when online, otherwise from the loaded file
+    var act = online ? 'omt' : (ARCHS.length ? 'arch' : 'none');
+    function on(id){ return OMT.src[id]===act; }
+    vis('coverage@a', act==='arch' && !satOK);
+    vis('background', !satOK);
+    OMT.fill.forEach(function(id){ vis(id, on(id) && !satOK); });
+    OMT.line.forEach(function(id){
+      vis(id, on(id) && (!satOK || b==='hyb'));
+      var o=OMT.orig[id]||{};
+      map.setPaintProperty(id,'line-opacity', satOK && b==='hyb' ? .62 : (o.lo===undefined ? 1 : o.lo));
+    });
+    OMT.sym.forEach(function(id){
+      vis(id, on(id) && (!satOK || b==='hyb'));
+      if(/shield/.test(id)) return;
+      var o=OMT.orig[id]||{};
+      if(satOK){
+        map.setPaintProperty(id,'text-color','#ffffff'); map.setPaintProperty(id,'text-halo-color','rgba(0,0,0,.82)'); map.setPaintProperty(id,'text-halo-width',1.4);
+      } else {
+        map.setPaintProperty(id,'text-color',o.tc===undefined?'#000':o.tc); map.setPaintProperty(id,'text-halo-color',o.hc===undefined?'rgba(0,0,0,0)':o.hc); map.setPaintProperty(id,'text-halo-width',o.hw===undefined?0:o.hw);
+      }
+    });
+    if(map.getLayer('poi-label')){
+      map.setPaintProperty('poi-label','text-color', satOK?'#fff':'#1f2328');
+      map.setPaintProperty('poi-label','text-halo-color', satOK?'rgba(0,0,0,.85)':'#fff');
+    }
+    $('app').classList.toggle('sat', satOK);
+    Array.prototype.forEach.call(document.querySelectorAll('#baseSeg button'), function(bt){ bt.setAttribute('aria-pressed', bt.getAttribute('data-b')===b?'true':'false'); });
+    updateStatus();
+  }
+  function updateStatus(){
+    var el=$('status'), tx=$('statusTx'), s, t;
+    var satWant = state.base!=='map';
+    if(NET.mode==='online'){ s='online'; t = ARCHS.length ? 'מחובר · גם קובץ המפה טעון' : 'מחובר לאינטרנט · מפה מלאה'; }
+    else if(ARCHS.length){ s='arch'; t= ARCHS.length<2 ? 'בלי אינטרנט · קובץ מפה: חצי אחד' : 'בלי אינטרנט · מפה מפורטת מהקובץ'; }
+    else if(NET.mode==='unknown'){ s='offline'; t='בודק חיבור…'; }
+    else { s='offline'; t= IN_FRAME ? 'מפה בסיסית · בלי חיבור בתצוגה הזו' : 'בלי אינטרנט · מפה בסיסית'; }
+    if(satWant && NET.mode!=='online') t+=' · לוויין לא זמין';
+    el.setAttribute('data-s', s);
+    tx.textContent=t;
+    if(s==='offline' && NET.mode!=='unknown' && !ARCHS.length){
+      var b=el.querySelector('button');
+      if(!b){ b=document.createElement('button'); b.type='button'; b.textContent='לטעון קובץ מפה'; b.addEventListener('click', function(){ $('fileIn').click(); }); el.appendChild(b); }
+    } else { var ob=el.querySelector('button'); if(ob) ob.remove(); }
+  }
+  function reloadTiles(){
+    NET.v++;
+    var src=map.getSource('omt');
+    if(src && src.setTiles) src.setTiles(['omt://{z}/{x}/{y}?v='+NET.v]);
+    var sa=map.getSource('arch');
+    if(sa && sa.setTiles) sa.setTiles(['arch://{z}/{x}/{y}?v='+NET.v]);
+  }
+  var probeT=null;
+  function setNet(m){
+    if(NET.mode===m) return;
+    NET.mode=m; NET.fails=0;
+    reloadTiles(); applyMode();
+    clearTimeout(probeT);
+    if(m==='offline') probeT=setTimeout(probe, 45000);
+    if(m==='online' && state.t3d) setTerrain(true);
+  }
+  function probe(){
+    var ctl=('AbortController' in window) ? new AbortController() : null;
+    var to=setTimeout(function(){ if(ctl) ctl.abort(); }, 6500);
+    fetch(OFM+'/planet', ctl?{signal:ctl.signal}:{}).then(function(r){ if(!r.ok) throw new Error('http'); return r.json(); }).then(function(tj){
+      clearTimeout(to);
+      if(!tj || !tj.tiles || !tj.tiles[0]) throw new Error('tj');
+      NET.tpl=tj.tiles[0]; setNet('online');
+    }).catch(function(){ clearTimeout(to); setNet('offline'); if(NET.mode==='offline'){ clearTimeout(probeT); probeT=setTimeout(probe, 45000); } });
+  }
+  window.addEventListener('online', function(){ probe(); });
+  window.addEventListener('offline', function(){ setNet('offline'); });
+
+  /* ---------- offline map files (PMTiles, one per half of the trip; plain or in an uncompressed .zip) ---------- */
+  function archKey(h){ return [h.minLon,h.minLat,h.maxLon,h.maxLat].map(function(v){ return Math.round(v*10); }).join('_'); }
+  function openArchive(blob, name, silent){
+    try{
+      var file = (blob instanceof File) ? blob : new File([blob], name||'roadtrip.pmtiles');
+      var a=new pmtiles.PMTiles(new pmtiles.FileSource(file));
+      return a.getHeader().then(function(h){
+        if(!h || h.maxZoom<10) throw new Error('bad');
+        return a.getMetadata().catch(function(){ return {}; }).then(function(md){
+          var rec={a:a, h:h, key:archKey(h), name:name||file.name, label:(md && md.description) || (name||file.name), blob:blob, saved:false};
+          var i=ARCHS.map(function(x){ return x.key; }).indexOf(rec.key);
+          if(i>=0){ rec.saved=ARCHS[i].saved; ARCHS[i]=rec; } else ARCHS.push(rec);
+          if(styleReady){ reloadTiles(); applyMode(); }
+          offUI();
+          if(!silent) toast('נטען: '+rec.label+'. אפשר להתקרב לכל רחוב גם בלי אינטרנט.', 4200);
+          return rec;
+        });
+      });
+    }catch(e){ return Promise.reject(e); }
+  }
+  function openAny(blob, name, silent){
+    return blob.slice(0, 64).arrayBuffer().then(function(ab){
+      var u=new Uint8Array(ab);
+      if(u[0]===0x50 && u[1]===0x4b && u[2]===3 && u[3]===4){
+        var dv=new DataView(ab);
+        if(dv.getUint16(8,true)!==0) throw new Error('compressed');
+        var off=30+dv.getUint16(26,true)+dv.getUint16(28,true);
+        return openArchive(blob.slice(off), name, silent);
+      }
+      return openArchive(blob, name, silent);
+    });
+  }
+  function openFiles(fl){
+    var arr=Array.prototype.slice.call(fl).sort(function(a,b){ return a.name<b.name?-1:a.name>b.name?1:0; });
+    var bad=[], chain=Promise.resolve();
+    arr.forEach(function(f){ chain=chain.then(function(){ return openAny(f, f.name, true).catch(function(){ bad.push(f.name); }); }); });
+    return chain.then(function(){
+      if(bad.length===arr.length) toast('זה לא קובץ המפה. צריך את roadtrip-map-east.zip ו/או roadtrip-map-west.zip.', 5200);
+      else if(bad.length) toast('חלק מהקבצים לא נקראו: '+bad.join(', '), 5000);
+      else toast(arr.length>1 ? 'שני חלקי המפה נטענו.' : 'נטען: '+ARCHS[ARCHS.length-1].label, 3500);
+      offUI();
+    });
+  }
+  $('bLoad').addEventListener('click', function(){ $('fileIn').click(); });
+  $('fileIn').addEventListener('change', function(e){ var fl=e.target.files; if(fl && fl.length) openFiles(fl); e.target.value=''; });
+  document.addEventListener('dragover', function(e){ if(e.dataTransfer && Array.prototype.indexOf.call(e.dataTransfer.types||[], 'Files')>=0){ e.preventDefault(); } });
+  document.addEventListener('drop', function(e){ var fl=e.dataTransfer && e.dataTransfer.files; if(!fl || !fl.length) return; e.preventDefault(); openFiles(fl); });
+  // keep the chosen files in this browser (IndexedDB) so they don't need picking again
+  var idbOK=false;
+  function idb(){ return new Promise(function(res,rej){ try{ var r=indexedDB.open('rt_map',1); r.onupgradeneeded=function(){ r.result.createObjectStore('f'); }; r.onsuccess=function(){ res(r.result); }; r.onerror=function(){ rej(r.error); }; }catch(e){ rej(e); } }); }
+  function idbDo(mode, fn){ return idb().then(function(db){ return new Promise(function(res,rej){ var tx=db.transaction('f',mode), st=tx.objectStore('f'), q=fn(st); tx.oncomplete=function(){ res(q && q.result); }; tx.onerror=function(){ rej(tx.error); }; tx.onabort=function(){ rej(tx.error); }; }); }); }
+  function unsaved(){ return ARCHS.filter(function(r){ return r.blob && !r.saved; }); }
+  function offUI(){
+    var t=$('offTx');
+    if(ARCHS.length){
+      var labels=ARCHS.map(function(r){ return r.label; }).join(' + ');
+      var miss = ARCHS.length<2 ? ' חסר עדיין החלק השני של המפה.' : '';
+      t.textContent='טעון: '+labels+'.'+miss+' המסלול, הערים והאטרקציות מופיעים בפירוט מלא גם בלי אינטרנט.';
+      $('bLoad').textContent='הוספת קובץ מפה';
+    }
+    $('bRemember').hidden = !(unsaved().length && idbOK);
+    $('bForget').hidden = !(ARCHS.length && idbOK && !unsaved().length && ARCHS.some(function(r){ return r.saved; }));
+  }
+  $('bRemember').addEventListener('click', function(){
+    var todo=unsaved(); if(!todo.length) return;
+    var b=$('bRemember'); b.disabled=true; b.textContent='שומר…';
+    var need=todo.reduce(function(s,r){ return s+r.blob.size; }, 0);
+    var est = (navigator.storage && navigator.storage.estimate) ? navigator.storage.estimate() : Promise.resolve(null);
+    est.then(function(q){
+      if(q && q.quota && q.usage!=null && q.quota-q.usage < need*1.05) throw new Error('quota');
+      try{ if(navigator.storage && navigator.storage.persist) navigator.storage.persist(); }catch(e){}
+      return idbDo('readwrite', function(st){ var list=ARCHS.filter(function(r){ return r.blob; }).map(function(r){ return {blob:r.blob, name:r.name, t:Date.now()}; }); return st.put({list:list}, 'maps'); });
+    }).then(function(){
+      ARCHS.forEach(function(r){ if(r.blob) r.saved=true; });
+      toast('נשמר. בפעם הבאה המפה תיטען לבד.'); b.disabled=false; b.textContent='לזכור במכשיר הזה'; offUI();
+    }).catch(function(){ b.disabled=false; b.textContent='לזכור במכשיר הזה'; toast('אין מספיק מקום בדפדפן. אפשר פשוט לבחור את הקבצים בכל פעם.', 5000); });
+  });
+  $('bForget').addEventListener('click', function(){
+    idbDo('readwrite', function(st){ st.delete('map'); return st.delete('maps'); }).then(function(){ ARCHS.forEach(function(r){ r.saved=false; }); toast('הקבצים נמחקו מהדפדפן.'); offUI(); }).catch(function(){});
+  });
+  function restoreArchive(){
+    try{ if(!window.indexedDB) return; }catch(e){ return; }
+    idbDo('readonly', function(st){ return st.get('maps'); }).then(function(v){
+      idbOK=true;
+      var list=(v && v.list) || [];
+      var chain=Promise.resolve();
+      list.forEach(function(it){ chain=chain.then(function(){ return openAny(it.blob, it.name, true).then(function(r){ r.saved=true; }).catch(function(){}); }); });
+      return chain.then(offUI);
+    }).catch(function(){ idbOK=false; offUI(); });
+  }
+
+  /* ---------- this page may carry one half of the map as base64 text parts ---------- */
+  function unb64(txt){
+    txt=txt.replace(/\s+/g,'');
+    var out=[], CH=4*262144;
+    for(var i=0;i<txt.length;i+=CH){
+      var bin=atob(txt.slice(i,i+CH)), n=bin.length, u=new Uint8Array(n);
+      for(var j=0;j<n;j++) u[j]=bin.charCodeAt(j);
+      out.push(u);
+    }
+    return new Blob(out);
+  }
+  /* ---------- 3D ---------- */
+  function setTerrain(on){
+    try{
+      if(on && NET.mode==='online'){ map.setTerrain({source:'dem', exaggeration:1.35}); vis('hillshade', state.base==='map'); }
+      else { map.setTerrain(null); vis('hillshade', false); }
+    }catch(e){}
+  }
+  function set3d(on){
+    state.t3d=on;
+    $('b3d').setAttribute('aria-pressed', on?'true':'false'); $('t3d').setAttribute('aria-pressed', on?'true':'false');
+    setTerrain(on);
+    if(on){ if(NET.mode!=='online') toast('ההרים בתלת-ממד צריכים אינטרנט. הבניינים מוצגים גם בלי.'); map.easeTo({pitch:58, duration:700}); }
+    else map.easeTo({pitch:0, duration:600});
+  }
+  $('b3d').addEventListener('click', function(){ set3d(!state.t3d); });
+  $('t3d').addEventListener('click', function(){ set3d(!state.t3d); });
+
+  /* ---------- controls ---------- */
+  var pop=$('pop');
+  function togglePop(on){ pop.hidden=!on; $('bLayers').setAttribute('aria-expanded', on?'true':'false'); }
+  $('bLayers').addEventListener('click', function(){ togglePop(pop.hidden); });
+  Array.prototype.forEach.call(document.querySelectorAll('#baseSeg button'), function(bt){
+    bt.addEventListener('click', function(){
+      state.base=bt.getAttribute('data-b'); lsSet('rt_base', state.base);
+      if(state.base!=='map' && NET.mode!=='online') toast('הלוויין צריך אינטרנט. בלי חיבור נשארת המפה.', 3800);
+      applyMode(); if(state.t3d) setTerrain(true);
+    });
+  });
+  $('tPoi').addEventListener('click', function(){ state.poi=!state.poi; this.setAttribute('aria-pressed', state.poi?'true':'false'); refreshPoiLabels(); });
+  $('tMust').addEventListener('click', function(){ state.must=!state.must; syncMust(); render(); });
+  function syncMust(){ $('tMust').setAttribute('aria-pressed', state.must?'true':'false'); $('mustOnly').setAttribute('aria-pressed', state.must?'true':'false'); }
+  $('bZin').addEventListener('click', function(){ map.zoomIn(); });
+  $('bZout').addEventListener('click', function(){ map.zoomOut(); });
+  $('bFit').addEventListener('click', function(){ setFollow(geo.pos?1:0); map.fitBounds(ROUTE_BB, {padding:{top:120,bottom:60,left:70,right:64}, pitch:0, bearing:0}); });
+  $('bCompass').addEventListener('click', function(){ if(geo.mode===3) setFollow(2); map.easeTo({bearing:0, pitch: state.t3d?map.getPitch():0}); });
+  map.on('rotate', function(){ var b=map.getBearing(); $('bCompass').hidden = Math.abs(b)<1 && geo.mode!==3; $('compassSvg').style.transform='rotate('+(-b)+'deg)'; });
+
+  /* ================================================================
+     selection sheet
+     ================================================================ */
+  var sheet=$('sheet'), sheetBody=$('sheetBody'), selected=null;
+  function shield(num, color){
+    return '<span class="shield"><svg viewBox="0 0 54 52" aria-hidden="true"><path d="M27 1 C14 1 4 4 2 6 c0 18 3 32 25 45 C49 38 52 24 52 6 C50 4 40 1 27 1 Z" fill="'+color+'"/></svg><em>'+num+'</em></span>';
+  }
+  function cardHTML(it,g,inSheet){
+    var dots=''; for(var d=1;d<=5;d++) dots+='<i class="'+(d<=it.w?'on':'')+'"></i>';
+    var meta='';
+    if(it.c) meta+='<span><span class="k">מחיר</span>'+esc(it.c)+'</span>';
+    if(it.t) meta+='<span><span class="k">זמן</span>'+esc(it.t)+'</span>';
+    if(it.se) meta+='<span><span class="k">עונה</span>'+esc(it.se)+'</span>';
+    if(it.mi!=null) meta+='<span><span class="k">מייל</span><span class="lat">'+fmtMile(it.mi)+'</span></span>';
+    if(it.cf==='town') meta+='<span><span class="k">מיקום</span>משוער (לפי העיר)</span>';
+    return '<div class="ctop"><span><span class="kind">'+esc(g.he)+'</span>'+(isMust(it)?'<span class="kind gold">חובה</span>':'')+(it.nw?'<span class="kind nw">חדש</span>':'')+'</span>'+
+      '<button class="star" type="button" aria-label="הוספה למסלול שלי" aria-pressed="'+(picks[it.id]?'true':'false')+'"><svg viewBox="0 0 24 24" fill="'+(picks[it.id]?'currentColor':'none')+'" stroke="currentColor" stroke-width="1.8"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.6 9.7l5.8-.8z"/></svg></button></div>'+
+      '<h3 class="cname">'+esc(it.h)+'</h3>'+
+      '<div class="cen">'+esc(it.e)+' · '+esc(it.l)+'</div>'+
+      (inSheet ? '<div class="navbtns"><a class="wz" target="_blank" rel="noopener" href="'+wazeUrl(it)+'">נווט בוויז</a><a target="_blank" rel="noopener" href="'+mapsUrl(it)+'">Google Maps</a>'+'</div><div class="navbtns">'+(it.g!=null?qBtn(qStopOf(it)):'')+mustBtn(it)+'</div><div class="ph" id="ph"></div>' : '')+
+      '<p class="cwhy">'+esc(it.y)+'</p>'+
+      (it.p ? '<div class="ctip"><b>טיפ:</b> '+esc(it.p)+'</div>' : '')+
+      '<div class="crow">'+meta+'</div>'+
+      (inSheet ? extCardExtra(it) : '')+
+      '<div class="cbot"><span class="detour'+(it.dh>0?' off':'')+'">'+esc(it.d)+'</span><span class="wow" title="'+it.w+'/5">'+dots+'</span>'+
+      '<span class="links">'+
+        (inSheet||it.g==null ? '' : '<button class="maplink onmap" type="button">במפה</button>')+
+        (inSheet ? '' : '<a class="maplink wz" target="_blank" rel="noopener" href="'+wazeUrl(it)+'">וייז ↗</a><a class="maplink" target="_blank" rel="noopener" href="'+mapsUrl(it)+'">Maps ↗</a>')+
+        (inSheet||it.g==null ? '' : '<button class="maplink q" type="button" data-q="'+attr(qStopOf(it))+'">לתור +</button>')+
+        (inSheet ? '' : '<button class="maplink must" type="button" data-must="'+esc(it.id)+'" aria-pressed="'+(isMust(it)?'true':'false')+'">'+(isMust(it)?'חובה ★':'חובה ☆')+'</button>')+
+        (inSheet ? '' : '<a class="maplink" target="_blank" rel="noopener" href="'+photoUrl(it)+'">תמונות ↗</a>')+
+      '</span></div>';
+  }
+  function selectItem(it, fly){
+    selected=it;
+    var g=gOf(it);
+    sheetBody.innerHTML='<article class="card'+(isMust(it)?' must':'')+(mustMap()[it.id]===1?' mymust':'')+(picks[it.id]?' picked':'')+'" data-pid="'+esc(it.id)+'" style="--g:'+g.color+'">'+cardHTML(it,g,true)+'</article>';
+    sheet.hidden=false; sheet.scrollTop=0; $('nav').hidden=true; extAfterSelect(it);
+    if(map.getLayer('poi-sel')) map.setFilter('poi-sel', ['==',['get','id'],it.id]);
+    if(fly && it.g!=null){
+      if(geo.mode>=2) setFollow(1);
+      var small=window.innerWidth<=560;
+      map.flyTo({center:[it.n,it.g], zoom:Math.max(map.getZoom(),14), padding:small?{bottom:Math.round(window.innerHeight*.45),top:60,left:0,right:0}:{top:0,bottom:0,left:0,right:0}, duration:1200, essential:true});
+    }
+  }
+  var OMT_KIND={fuel:'תחנת דלק', lodging:'מלון / מוטל', restaurant:'מסעדה', fast_food:'אוכל מהיר', cafe:'בית קפה', grocery:'סופרמרקט', shop:'חנות', pharmacy:'בית מרקחת', hospital:'בית חולים', parking:'חניה', parking_garage:'חניון', museum:'מוזיאון', attraction:'אטרקציה', park:'פארק', campsite:'קמפינג', information:'מרכז מבקרים', highway_rest_area:'תחנת מנוחה', charging_station:'עמדת טעינה', toilets:'שירותים', viewpoint:'תצפית', beach:'חוף', zoo:'גן חיות', aquarium:'אקווריום', amusement_park:'פארק שעשועים', casino:'קזינו', cinema:'קולנוע', theatre:'תיאטרון', monument:'אתר היסטורי', bar:'בר', beer:'מבשלת בירה', bank:'בנק', car_rental:'השכרת רכב', skiing:'אתר סקי', hot_spring:'מעיין חם', waterfall:'מפל', lighthouse:'מגדלור', stadium:'אצטדיון', airport:'שדה תעופה', ice_cream:'גלידה', bakery:'מאפייה', golf:'גולף', library:'ספרייה', post:'דואר', police:'משטרה', doctors:'מרפאה', garden:'גן'};
+  function selectMapFeature(f, lngLat){
+    selected=null;
+    var p=f.properties||{}, nm=p.name_en||p.name||'', cls=p.class||'';
+    var kind = OMT_KIND[cls] || (f.sourceLayer==='mountain_peak' ? 'פסגה' : f.sourceLayer==='place' ? 'יישוב' : f.sourceLayer==='park_label' ? 'פארק' : 'מקום');
+    var ll = f.geometry && f.geometry.type==='Point' ? {lng:f.geometry.coordinates[0], lat:f.geometry.coordinates[1]} : lngLat;
+    var extra = p.ele_ft ? '<div class="crow"><span><span class="k">גובה</span><span class="lat">'+Number(p.ele_ft).toLocaleString('en-US')+' ft</span></span></div>' : '';
+    sheetBody.innerHTML='<div class="mini"><div class="k">'+esc(kind)+'</div><h3>'+esc(nm)+'</h3>'+extra+
+      '<div class="navbtns"><a class="wz" target="_blank" rel="noopener" href="'+wazeLL(ll.lat,ll.lng)+'">נווט בוויז</a><a target="_blank" rel="noopener" href="'+gmapsLL(ll.lat,ll.lng)+'">Google Maps</a></div>'+extFeatureButtons(nm||kind, kind, ll)+
+      '<div class="cen">'+ll.lat.toFixed(5)+', '+ll.lng.toFixed(5)+'</div></div>';
+    sheet.hidden=false; sheet.scrollTop=0; $('nav').hidden=true;
+    if(map.getLayer('poi-sel')) map.setFilter('poi-sel', ['==',['get','id'],'']);
+  }
+  function closeSheet(){ sheet.hidden=true; selected=null; if(map.getLayer('poi-sel')) map.setFilter('poi-sel', ['==',['get','id'],'']); updateNav(); }
+  $('sheetx').addEventListener('click', closeSheet);
+  sheet.addEventListener('click', function(e){
+    var st=e.target.closest ? e.target.closest('.star') : null;
+    if(st && selected){ togglePick(selected.id); }
+  });
+
+  /* ================================================================
+     GPS: follow, heading-up, progress along the route
+     ================================================================ */
+  var geo={watch:null, pos:null, mode:0, marker:null, el:null, course:null, last:null, lock:null};
+  function meMarker(){
+    if(geo.marker) return;
+    var el=document.createElement('div'); el.className='me nohead'; el.innerHTML='<div class="cone"></div><div class="dot"></div>';
+    geo.el=el; geo.marker=new maplibregl.Marker({element:el, rotationAlignment:'map', pitchAlignment:'map'}).setLngLat([geo.pos.lng, geo.pos.lat]).addTo(map);
+  }
+  function circlePoly(lng,lat,r){
+    var pts=[], n=40, dy=r/111320, dx=dy/Math.cos(lat*Math.PI/180);
+    for(var i=0;i<=n;i++){ var a=i/n*2*Math.PI; pts.push([lng+dx*Math.cos(a), lat+dy*Math.sin(a)]); }
+    return {type:'Feature', properties:{}, geometry:{type:'Polygon', coordinates:[pts]}};
+  }
+  function wake(on){
+    try{
+      if(on && !geo.lock && navigator.wakeLock) navigator.wakeLock.request('screen').then(function(l){ geo.lock=l; l.addEventListener('release', function(){ geo.lock=null; }); }, function(){});
+      if(!on && geo.lock){ geo.lock.release(); geo.lock=null; }
+    }catch(e){}
+  }
+  document.addEventListener('visibilitychange', function(){ if(document.visibilityState==='visible' && geo.mode>=2) wake(true); });
+  var LOC_ICONS={0:'<path d="M21 3L3 10.5l7.2 2.3L12.5 20z"/>', 1:'<path d="M21 3L3 10.5l7.2 2.3L12.5 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>', 2:'<path d="M21 3L3 10.5l7.2 2.3L12.5 20z"/>', 3:'<path d="M12 2l7 19-7-4-7 4z"/>'};
+  function setFollow(m){
+    geo.mode=m;
+    var b=$('bLoc'); b.setAttribute('data-m', String(m));
+    $('locSvg').innerHTML = LOC_ICONS[m===1&&!geo.pos?0:m];
+    b.setAttribute('aria-label', m===3?'מצב נסיעה: המפה מסתובבת':m===2?'עוקב אחרי המיקום':'המיקום שלי');
+    wake(m>=2);
+    if(m<3 && map.getPitch()>0 && !state.t3d && m!==0) map.easeTo({pitch:0, duration:500});
+    if(m===0){ if(geo.watch!=null){ navigator.geolocation.clearWatch(geo.watch); geo.watch=null; } }
+    $('bCompass').hidden = Math.abs(map.getBearing())<1 && m!==3;
+    updateNav();
+  }
+  function startGeo(){
+    if(!navigator.geolocation){ toast('אין מיקום בדפדפן הזה'); return false; }
+    if(geo.watch!=null) return true;
+    try{
+      geo.watch=navigator.geolocation.watchPosition(onPos, onPosErr, {enableHighAccuracy:true, maximumAge:1500, timeout:25000});
+    }catch(e){ onPosErr({code:1}); return false; }
+    toast('מחפש מיקום…', 2000);
+    return true;
+  }
+  $('bLoc').addEventListener('click', function(){
+    if(geo.mode===0){ if(startGeo()) setFollow(2); return; }
+    if(geo.mode===1){ setFollow(2); if(geo.pos) follow(true); return; }
+    if(geo.mode===2){ setFollow(3); if(geo.pos) follow(true); return; }
+    setFollow(2); map.easeTo({bearing:0, pitch:state.t3d?map.getPitch():0});
+  });
+  function onPosErr(e){
+    if(e && e.code===1){
+      toast(IN_FRAME ? 'בתצוגה הזו אין גישה למיקום. פתחו את הקובץ roadtrip-map.html בטלפון.' : 'אין הרשאה למיקום. אשרו גישה למיקום בהגדרות הדפדפן ונסו שוב.', 5200);
+      setFollow(0);
+    } else if(!geo.pos) toast('עדיין אין קליטת GPS. נסו שוב בחוץ.', 3500);
+  }
+  function hav(a,b){ var p=Math.PI/180, x=Math.sin((b[1]-a[1])*p/2), y=Math.sin((b[0]-a[0])*p/2); return 12742000*Math.asin(Math.sqrt(x*x+Math.cos(a[1]*p)*Math.cos(b[1]*p)*y*y)); }
+  function bearingOf(a,b){ var p=Math.PI/180, y=Math.sin((b[0]-a[0])*p)*Math.cos(b[1]*p), x=Math.cos(a[1]*p)*Math.sin(b[1]*p)-Math.sin(a[1]*p)*Math.cos(b[1]*p)*Math.cos((b[0]-a[0])*p); return (Math.atan2(y,x)/p+360)%360; }
+  function onPos(p){
+    var c=p.coords, now=[c.longitude,c.latitude];
+    var first=!geo.pos;
+    var hd = (c.heading!=null && !isNaN(c.heading) && (c.speed||0)>1) ? c.heading : null;
+    if(hd==null && geo.last && hav(geo.last, now)>12) hd=bearingOf(geo.last, now);
+    if(hd!=null){ geo.course=hd; }
+    if(!geo.last || hav(geo.last, now)>12) geo.last=now;
+    geo.pos={lng:now[0], lat:now[1], acc:c.accuracy||30, speed:c.speed, alt:c.altitude, t:p.timestamp};
+    meMarker();
+    geo.marker.setLngLat(now);
+    if(geo.course!=null){ geo.el.classList.remove('nohead'); geo.marker.setRotation(geo.course); }
+    if(map.getSource('me-acc')) map.getSource('me-acc').setData(circlePoly(now[0],now[1],Math.min(geo.pos.acc,2000)));
+    $('locSvg').innerHTML = LOC_ICONS[geo.mode];
+    if(geo.mode>=2) follow(first);
+    updateNav();
+  }
+  function follow(jump){
+    if(!geo.pos) return;
+    var o={center:[geo.pos.lng,geo.pos.lat], duration:jump?1000:900, essential:true};
+    if(jump && map.getZoom()<13) o.zoom=15;
+    if(geo.mode===3){ if(geo.course!=null) o.bearing=geo.course; o.pitch=Math.max(map.getPitch(),50); o.padding={top:Math.round(window.innerHeight*.35),bottom:0,left:0,right:0}; }
+    else o.padding={top:0,bottom:0,left:0,right:0};
+    map.easeTo(o);
+  }
+  map.on('dragstart', function(e){ if(e.originalEvent && geo.mode>=2) setFollow(1); });
+
+  // progress along the route: nearest point on the simplified route with its mile
+  var NP=NAV.pts;
+  function project(lng,lat){
+    var best=1e18, bm=0, cosl=Math.cos(lat*Math.PI/180);
+    for(var i=0;i<NP.length-1;i++){
+      var ax=NP[i][1]*cosl, ay=NP[i][0], bx=NP[i+1][1]*cosl, by=NP[i+1][0], px=lng*cosl, py=lat;
+      var dx=bx-ax, dy=by-ay, L=dx*dx+dy*dy, t=L?((px-ax)*dx+(py-ay)*dy)/L:0;
+      t=t<0?0:t>1?1:t;
+      var qx=ax+t*dx, qy=ay+t*dy, d=(px-qx)*(px-qx)+(py-qy)*(py-qy);
+      if(d<best){ best=d; bm=NP[i][2]+t*(NP[i+1][2]-NP[i][2]); }
+    }
+    return {mile:bm, km:Math.sqrt(best)*111.32};
+  }
+  function fmtDur(mi){ var h=mi/58; if(h<1) return Math.max(5,Math.round(h*60/5)*5)+' דק׳'; var hh=Math.floor(h), mm=Math.round((h-hh)*60/10)*10; if(mm===60){hh++;mm=0;} return hh+':'+(mm<10?'0':'')+mm+' ש׳'; }
+  function updateNav(){
+    var nav=$('nav');
+    if(!geo.pos || geo.mode===0 || !sheet.hidden){ nav.hidden=true; return; }
+    nav.hidden=false;
+    var sp=geo.pos.speed; $('spd').textContent = (sp!=null && !isNaN(sp)) ? Math.round(sp*2.23694) : '–';
+    var pr=project(geo.pos.lng, geo.pos.lat), nx=$('navNext'), sub=$('navSub');
+    if(pr.km>3){
+      nx.innerHTML='<span class="off">מחוץ למסלול</span> · <span class="lat">'+(pr.km/1.609).toFixed(pr.km<16?1:0)+' mi</span> מהקו הכחול';
+      sub.textContent='הכפתור ״כל המסלול״ מראה איפה הוא עובר';
+    } else {
+      var next=null;
+      for(var i=0;i<NAV.stops.length;i++){ if(NAV.stops[i][1]>pr.mile+1){ next=NAV.stops[i]; break; } }
+      if(next){
+        var left=next[1]-pr.mile;
+        nx.innerHTML='הבא: '+esc(next[0])+' · <span class="lat">'+fmtMile(left)+' mi</span> · '+fmtDur(left);
+      } else nx.textContent='הגעתם לסוף המסלול';
+      sub.innerHTML='מייל <span class="lat">'+fmtMile(pr.mile)+'</span> מתוך <span class="lat">'+fmtMile(NAV.total)+'</span>';
+    }
+    var ah=[];
+    if(pr.km<=3) ITEMS.forEach(function(it){ if(it.mi!=null && it.mi>pr.mile+.5 && it.mi<pr.mile+150 && it.dh<=1 && it.g!=null) ah.push(it); });
+    ah.sort(function(a,b){ return (a.mi-(b.w>=5?20:0))-(b.mi-(a.w>=5?20:0)); });
+    ah=ah.slice(0,6);
+    var ahEl=$('ahead');
+    ahEl.innerHTML = ah.map(function(it){ return '<button type="button" data-id="'+esc(it.id)+'" style="--g:'+(GHEX[gOf(it).g]||'#777')+'"><i></i>'+esc(it.h)+' <span class="lat">'+fmtMile(it.mi-pr.mile)+' mi</span></button>'; }).join('');
+  }
+  $('ahead').addEventListener('click', function(e){ var b=e.target.closest('button'); if(b && ITEMBY[b.getAttribute('data-id')]) selectItem(ITEMBY[b.getAttribute('data-id')], true); });
+
+  /* ================================================================
+     list panel (same content as the trip page)
+     ================================================================ */
+  var panel=$('panel'), pbody=$('pbody');
+  function isSplit(){ return window.innerWidth>=980; }
+  function openPanel(on){
+    panel.hidden=!on;
+    document.body.classList.toggle('split', on && isSplit());
+    $('bList').setAttribute('aria-expanded', on?'true':'false');
+    setTimeout(function(){ map.resize(); }, 240);
+    lsSet('rt_panel', on?'1':'0');
+    syncTabs();
+  }
+  $('bList').addEventListener('click', function(){ openPanel(panel.hidden); });
+  $('pclose').addEventListener('click', function(){ openPanel(false); });
+  window.addEventListener('resize', function(){ document.body.classList.toggle('split', !panel.hidden && isSplit()); });
+
+  var chipWrap=$('groupChips');
+  GROUPS.forEach(function(g){
+    var b=document.createElement('button'); b.className='chip'; b.type='button'; b.setAttribute('aria-pressed','false'); b.style.setProperty('--g', g.color);
+    b.innerHTML='<span class="dot"></span>'+g.he+' <span class="ct">'+g.count+'</span>';
+    b.addEventListener('click', function(){
+      if(state.groups.has(g.id)){ state.groups.delete(g.id); b.setAttribute('aria-pressed','false'); } else { state.groups.add(g.id); b.setAttribute('aria-pressed','true'); }
+      render();
+    });
+    chipWrap.appendChild(b);
+  });
+  var segChips=$('segChips');
+  SEGMENTS.forEach(function(s,i){
+    var b=document.createElement('button'); b.className='chip'; b.type='button';
+    b.innerHTML='<span class="ct">'+String(i+1).padStart(2,'0')+'</span>'+esc(s.he.split(':')[0]);
+    b.addEventListener('click', function(){ var el=$('seg-'+s.id); if(el) el.scrollIntoView({behavior:'smooth', block:'start'}); });
+    segChips.appendChild(b);
+  });
+
+  var segNodes=[];
+  SEGMENTS.forEach(function(s,i){
+    var sec=document.createElement('section'); sec.className='seg'+(s.old?' old':''); sec.id='seg-'+s.id;
+    var html='<div class="seghead">'+shield(s.road, s.color)+
+      '<div class="st"><h3>'+esc(s.he)+'</h3>'+
+      '<div class="segmeta"><span>'+String(i+1).padStart(2,'0')+'</span>'+(s.mile?'<span>mi <b>'+s.mile+'</b></span>':'')+'<span class="cnt"></span><button type="button" class="segmap" data-seg="'+s.id+'">במפה</button></div>'+
+      (s.note?'<div class="oldnote">'+esc(s.note)+'</div>':'')+'</div></div><div class="grid">';
+    var list=[];
+    ITEMS.forEach(function(it){
+      if(it.s!==s.id) return;
+      var g=gOf(it); list.push({it:it, g:g});
+      html+='<article class="card'+(isMust(it)?' must':'')+(mustMap()[it.id]===1?' mymust':'')+(picks[it.id]?' picked':'')+'" style="--g:'+g.color+'" data-pid="'+esc(it.id)+'">'+cardHTML(it,g,false)+'</article>';
+    });
+    html+='</div>';
+    sec.innerHTML=html; pbody.appendChild(sec);
+    var arts=sec.querySelectorAll('article.card'), cards=[];
+    for(var j=0;j<arts.length;j++) cards.push({el:arts[j], it:list[j].it, g:list[j].g});
+    segNodes.push({sec:sec, cards:cards, cnt:sec.querySelector('.cnt')});
+  });
+  var empty=document.createElement('div'); empty.className='empty'; empty.hidden=true; empty.textContent='אין תוצאות לסינון הזה. נסו לנקות את הסינון.'; pbody.appendChild(empty);
+
+  function segBounds(id){
+    var sg=SEGBY[id] && SEGBY[id].s;
+    if(sg && sg.bb) return [[sg.bb[0][1],sg.bb[0][0]],[sg.bb[1][1],sg.bb[1][0]]];
+    var pts=[]; ITEMS.forEach(function(it){ if(it.s===id && it.g!=null) pts.push([it.n,it.g]); });
+    return pts.length ? bboxOf(pts) : null;
+  }
+  pbody.addEventListener('click', function(e){
+    var t=e.target.closest ? e.target.closest('.star, .onmap, .segmap') : null;
+    if(!t) return;
+    if(t.classList.contains('segmap')){
+      var bb=segBounds(t.getAttribute('data-seg')); if(!bb) return;
+      if(!isSplit()) openPanel(false);
+      setFollow(geo.pos?1:0); map.fitBounds(bb, {padding:{top:120,bottom:60,left:70,right:64}, maxZoom:11, pitch:0, bearing:0});
+      return;
+    }
+    var card=t.closest('[data-pid]'); if(!card) return;
+    var it=ITEMBY[card.getAttribute('data-pid')]; if(!it) return;
+    if(t.classList.contains('star')) togglePick(it.id);
+    else { if(!isSplit()) openPanel(false); selectItem(it, true); }
+  });
+  function syncPickEl(el,id){
+    var on=!!picks[id]; el.classList.toggle('picked', on);
+    var st=el.querySelector('.star'); if(!st) return;
+    st.setAttribute('aria-pressed', on?'true':'false'); st.querySelector('svg').setAttribute('fill', on?'currentColor':'none');
+  }
+  function updatePickCount(){ var n=0; for(var k in picks) if(picks[k]) n++; $('pickCt').textContent=n; }
+  function togglePick(id){
+    if(picks[id]) delete picks[id]; else picks[id]=1;
+    savePicks(); updatePickCount();
+    Array.prototype.forEach.call(document.querySelectorAll('[data-pid="'+id+'"]'), function(el){ syncPickEl(el,id); });
+    if(state.pickOnly) render();
+  }
+
+  function match(it,g){
+    if(state.must && !isMust(it)) return false;
+    if(state.pickOnly && !picks[it.id]) return false;
+    if(state.groups.size && !state.groups.has(g.g)) return false;
+    if(it.dh>state.detour) return false;
+    if(state.q){
+      var hay=(it.h+' '+it.e+' '+it.l+' '+it.y+' '+(it.p||'')+' '+g.he).toLowerCase(), terms=state.q.toLowerCase().split(/\s+/);
+      for(var i=0;i<terms.length;i++){ if(terms[i] && hay.indexOf(terms[i])<0) return false; }
+    }
+    return true;
+  }
+  var lastVisible=[];
+  function render(){
+    var total=0; lastVisible=[];
+    segNodes.forEach(function(seg){
+      var n=0;
+      seg.cards.forEach(function(c){ var ok=match(c.it,c.g); c.el.hidden=!ok; if(ok){ n++; lastVisible.push(c); } });
+      seg.sec.hidden = n===0; seg.cnt.innerHTML='<b>'+n+'</b>&nbsp;עצירות'; total+=n;
+    });
+    empty.hidden = total>0;
+    $('resline').textContent = total+' מתוך '+ITEMS.length+' אטרקציות';
+    refreshPoiLabels();
+  }
+  var pq=$('pq'), tid=null;
+  pq.addEventListener('input', function(){ clearTimeout(tid); tid=setTimeout(function(){ state.q=pq.value.trim(); render(); }, 150); });
+  $('detour').addEventListener('change', function(e){ state.detour=parseFloat(e.target.value); render(); });
+  $('mustOnly').addEventListener('click', function(){ state.must=!state.must; syncMust(); render(); });
+  $('pickOnly').addEventListener('click', function(){ state.pickOnly=!state.pickOnly; this.setAttribute('aria-pressed', state.pickOnly?'true':'false'); render(); });
+  $('reset').addEventListener('click', function(){
+    state.q=''; state.groups=new Set(); state.detour=99; state.must=false; state.pickOnly=false;
+    pq.value=''; $('detour').value='99'; syncMust(); $('pickOnly').setAttribute('aria-pressed','false');
+    Array.prototype.forEach.call(chipWrap.querySelectorAll('.chip'), function(b){ b.setAttribute('aria-pressed','false'); });
+    render();
+  });
+
+  /* ---------- quick search on the map ---------- */
+  var qEl=$('q'), res=$('res'), qT=null;
+  var CITY_IDX=BASE.cities.filter(function(c){ return c[3]<=8; });
+  function doSearch(){
+    var q=qEl.value.trim().toLowerCase();
+    if(!q){ res.hidden=true; res.innerHTML=''; return; }
+    var terms=q.split(/\s+/), out=[];
+    ITEMS.forEach(function(it){
+      if(it.g==null) return;
+      var hay=(it.h+' '+it.e+' '+it.l).toLowerCase(), ok=true;
+      for(var i=0;i<terms.length;i++){ if(hay.indexOf(terms[i])<0){ ok=false; break; } }
+      if(ok) out.push({t:'i', it:it, s:(it.h.toLowerCase().indexOf(q)===0||it.e.toLowerCase().indexOf(q)===0?0:1) - it.w/10 + (it.dh>3?1:0)});
+    });
+    SEGMENTS.forEach(function(s){ if((s.he+' '+s.en).toLowerCase().indexOf(q)>=0) out.push({t:'s', s:s, sc:-1}); });
+    CITY_IDX.forEach(function(c){ if(c[2].toLowerCase().indexOf(q)===0) out.push({t:'c', c:c, s:.5}); });
+    out.sort(function(a,b){ return (a.sc!=null?a.sc:a.s)-(b.sc!=null?b.sc:b.s); });
+    out=out.slice(0,9);
+    if(!out.length){ res.innerHTML='<div class="none">לא נמצא. אפשר לחפש בעברית או באנגלית.</div>'; res.hidden=false; return; }
+    res.innerHTML=out.map(function(o,k){
+      if(o.t==='i'){ var g=gOf(o.it); return '<button type="button" data-k="'+k+'" style="--g:'+(GHEX[g.g]||'#777')+'"><i></i><span><b>'+esc(o.it.h)+'</b><small>'+esc(o.it.e)+' · '+esc(o.it.l)+'</small></span></button>'; }
+      if(o.t==='s') return '<button type="button" data-k="'+k+'" style="--g:#1A8CFF"><i></i><span><b>'+esc(o.s.he)+'</b><small>קטע במסלול</small></span></button>';
+      return '<button type="button" data-k="'+k+'" style="--g:#555"><i></i><span><b class="lat" style="text-align:right">'+esc(o.c[2])+'</b><small>עיר</small></span></button>';
+    }).join('');
+    res.hidden=false; res._out=out;
+  }
+  qEl.addEventListener('input', function(){ clearTimeout(qT); qT=setTimeout(doSearch, 120); });
+  qEl.addEventListener('focus', function(){ togglePop(false); if(qEl.value) doSearch(); });
+  qEl.addEventListener('keydown', function(e){ if(e.key==='Enter'){ var b=res.querySelector('button'); if(b) b.click(); } if(e.key==='Escape'){ res.hidden=true; qEl.blur(); } });
+  res.addEventListener('click', function(e){
+    var b=e.target.closest('button'); if(!b || !res._out) return;
+    var o=res._out[+b.getAttribute('data-k')]; res.hidden=true; qEl.blur();
+    if(o.t==='i') selectItem(o.it, true);
+    else if(o.t==='s'){ var bb=segBounds(o.s.id); if(bb){ setFollow(geo.pos?1:0); map.fitBounds(bb, {padding:{top:120,bottom:60,left:70,right:64}, maxZoom:11}); } }
+    else { setFollow(geo.pos?1:0); map.flyTo({center:[o.c[1],o.c[0]], zoom:12}); }
+  });
+  document.addEventListener('click', function(e){
+    if(!res.hidden && !e.target.closest('#srch')) res.hidden=true;
+    if(!pop.hidden && !e.target.closest('#pop') && !e.target.closest('#bLayers')) togglePop(false);
+  });
+
+  /* ---------- CSV export ---------- */
+  function toCsv(rows){ return '﻿'+rows.map(function(r){ return r.map(function(v){ v=(v==null)?'':String(v); return /[",\n\r]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v; }).join(','); }).join('\r\n'); }
+  function buildCsv(onlyPicked){
+    var rows=[['Name','Address','LatLng','Name_HE','Category','Leg','Detour','Why','Tip','Cost','Time','Season','Must','GoogleMaps','Waze']];
+    ITEMS.forEach(function(it){
+      if(onlyPicked && !picks[it.id]) return;
+      var g=gOf(it), seg=SEGBY[it.s] ? (String(SEGBY[it.s].i+1)+'. '+SEGBY[it.s].s.he) : it.s;
+      rows.push([it.e, it.e+', '+it.l, it.g!=null?it.g+','+it.n:'', it.h, g.he, seg, it.d, it.y, it.p, it.c, it.t, it.se, it.w+'/5', mapsUrl(it), wazeUrl(it)]);
+    });
+    return {text:toCsv(rows), n:rows.length-1};
+  }
+  function doExport(onlyPicked){
+    var out=buildCsv(onlyPicked);
+    if(!out.n){ toast('עוד לא סימנתם מקומות. לחצו על הכוכב בכרטיס.'); return; }
+    var name=onlyPicked?'my-roadtrip-picks.csv':'roadtrip-all-stops.csv';
+    var p=(window.claude && window.claude.use) ? window.claude.use('downloads') : Promise.resolve(null);
+    Promise.resolve(p).catch(function(){ return null; }).then(function(dl){
+      if(dl && dl.save) return dl.save({filename:name, data:out.text}).then(function(){ return true; }, function(e){ return !!(e && e.code==='declined'); });
+      return false;
+    }).then(function(done){
+      if(done) return;
+      try{ var blob=new Blob([out.text],{type:'text/csv'}), a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click(); a.remove(); return; }catch(e){}
+      if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(out.text).then(function(){ toast('הטבלה הועתקה ('+out.n+' שורות)'); }, function(){ toast('לא הצלחתי לייצא בדפדפן הזה'); });
+    });
+  }
+  $('expAll').addEventListener('click', function(){ doExport(false); });
+  $('expPick').addEventListener('click', function(){ doExport(true); });
+
+__EXT_JS__
+__FIN_JS__
+__APP_JS__
+
+  /* ================================================================
+     boot
+     ================================================================ */
+  var styleReady=false;
+  updatePickCount(); syncMust(); render();
+  // 'load' can stay unfired when the last render ran before everything finished (seen on mobile); poll as a fallback
+  var loadPoll=setInterval(function(){ if(styleReady){ clearInterval(loadPoll); return; } try{ if(map.isStyleLoaded()) map.triggerRepaint(); if(map.loaded()) onLoad(); }catch(e){} }, 300);
+  map.on('load', onLoad);
+  function onLoad(){
+    if(styleReady) return;
+    styleReady=true;
+    addLayers(); addStops();
+    if(ARCHS.length) reloadTiles();
+    map.on('click', function(e){
+      if(appMapClick(e) || extMapClick(e)) return;
+      var hit=map.queryRenderedFeatures(e.point, {layers:['poi-dot']});
+      if(hit.length){ var it=ITEMBY[hit[0].properties.id]; if(it){ selectItem(it,false); return; } }
+      var box=[[e.point.x-10,e.point.y-10],[e.point.x+10,e.point.y+10]];
+      var lays=OMT.sym.filter(function(id){ return map.getLayer(id) && map.getLayoutProperty(id,'visibility')!=='none' && /poi|peak|park_label|airport/.test(id); });
+      var f=lays.length ? map.queryRenderedFeatures(box, {layers:lays}) : [];
+      if(f.length && (f[0].properties.name || f[0].properties.name_en)){ selectMapFeature(f[0], e.lngLat); return; }
+      if(!sheet.hidden) closeSheet();
+    });
+    map.on('mouseenter','poi-dot', function(){ map.getCanvas().style.cursor='pointer'; });
+    map.on('mouseleave','poi-dot', function(){ map.getCanvas().style.cursor=''; });
+    applyMode();
+    probe();
+    restoreArchive();
+    var at=document.querySelector('.maplibregl-ctrl-attrib'); if(at) at.classList.remove('maplibregl-compact-show');
+    if(IN_FRAME) $('frameNote').hidden=false;
+    hostUI(); extOnLoad(); appOnLoad();
+    if(lsGet('rt_panel')==='1' && isSplit()) openPanel(true);
+  }
+  map.on('error', function(e){ if(e && e.sourceId==='sat' && state.base!=='map' && NET.mode==='online'){ /* single missing tiles are normal at the edge of coverage */ } });
+  updateStatus();
+})();
+</script>

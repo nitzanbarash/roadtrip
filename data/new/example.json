@@ -1,0 +1,40 @@
+{
+ "attractions": [
+  {
+   "name_en": "Presidio Tunnel Tops and Golden Gate Bridge Walk",
+   "name_he": "פרזידיו טאנל טופס והליכה על גשר שער הזהב",
+   "segment_id": "sf",
+   "kind": "scenic",
+   "wow": 5,
+   "detour": "על המסלול",
+   "city_state": "San Francisco, California",
+   "why": "פארק חדש על גג מנהרה, עם מדשאות מול הגשר ומגרש משחקים טבעי מעולה לילדים. משם הליכה על הגשר עצמו.",
+   "tip": "חנו ב-Battery Bluff, ולכו רק עד העמוד הראשון של הגשר וחזרה — זה כל הנוף.",
+   "cost": "חינם (חניה $ בתשלום)",
+   "time_needed": "שעתיים",
+   "season": "כל השנה, קר ורוחני תמיד — קחו שכבה",
+   "coords": [
+    37.8024,
+    -122.4662
+   ]
+  },
+  {
+   "name_en": "Vail Village",
+   "name_he": "הכפר של וייל",
+   "segment_id": "moab",
+   "kind": "shopping",
+   "wow": 4,
+   "detour": "על המסלול",
+   "city_state": "Vail, Colorado",
+   "why": "כפר בסגנון בוואריה עם רחובות מרוצפים, חנויות, גלידריות ונחל שזורם באמצע. מושלם לערב.",
+   "tip": "בקיץ החניה במבנה Vail Village חינם, ויש הופעות חינם באמפיתאטרון.",
+   "cost": "חינם; חניה $0-30",
+   "time_needed": "2-3 שעות",
+   "season": "כל השנה",
+   "coords": [
+    39.6403,
+    -106.3742
+   ]
+  }
+ ]
+}
