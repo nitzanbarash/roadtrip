@@ -17,16 +17,18 @@ function liveSync(o){
   db.del=db.del||{}; db.docs=db.docs||{};
 
   // ---- merge: newest change of each item wins (u = when it was changed, on the phone that changed it) ----
+  // x newer than y? Same time: the larger text wins, so every phone picks the same one (no endless back-and-forth)
+  function newer(x, y, k){ if(!y) return true; var a=+x[k]||0, b=+y[k]||0; return a!==b ? a>b : canon(x)>canon(y); }
   function merge(a, b){   // returns {db, changed:{exp,set,docs:{}}} with b folded into a
     var out={v:1, exp:{}, del:{}, set:a.set, docs:{}}, ch={exp:false, set:false, docs:{}}, k;
     for(k in a.del) out.del[k]=a.del[k];
     for(k in (b.del||{})) if(!(out.del[k]>=b.del[k])) out.del[k]=b.del[k];
     for(k in a.exp) out.exp[k]=a.exp[k];
-    for(k in (b.exp||{})){ var x=b.exp[k]; if(x && (!out.exp[k] || (+x.u||0)>(+out.exp[k].u||0))){ if(!out.exp[k] || JSON.stringify(out.exp[k])!==JSON.stringify(x)) ch.exp=true; out.exp[k]=x; } }
+    for(k in (b.exp||{})){ var x=b.exp[k]; if(x && newer(x, out.exp[k], 'u')){ out.exp[k]=x; ch.exp=true; } }
     for(k in out.del) if(out.exp[k] && (+out.exp[k].u||0)<=out.del[k]){ if(a.exp[k]) ch.exp=true; delete out.exp[k]; }
-    if(b.set && (!a.set || (+b.set.u||0)>(+a.set.u||0))){ out.set=b.set; ch.set=true; }
+    if(b.set && newer(b.set, a.set, 'u')){ out.set=b.set; ch.set=true; }
     for(k in a.docs) out.docs[k]=a.docs[k];
-    for(k in (b.docs||{})){ var d=b.docs[k]; if(d && (!out.docs[k] || (+d.t||0)>(+out.docs[k].t||0))){ out.docs[k]=d; ch.docs[k]=true; } }
+    for(k in (b.docs||{})){ var d=b.docs[k]; if(d && newer(d, out.docs[k], 't')){ out.docs[k]=d; ch.docs[k]=true; } }
     return {db:out, changed:ch};
   }
   // the same data always gives the same text, so two phones can tell when they agree
