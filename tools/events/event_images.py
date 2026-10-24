@@ -5,7 +5,7 @@ Runs in GitHub Actions (needs the internet). Writes data/new2/event_images.json:
     {event_id: {"img": url, "from": "event"|"venue"|"city", "title": wikipedia title}}
 Events that already carry an "img" keep it. patch_site.py puts the pictures into the app.
 """
-import glob, json, os, re, sys, time, urllib.parse, urllib.request
+import glob, json, math, os, re, sys, time, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT = os.path.join(ROOT, "data", "new2", "event_images.json")
@@ -36,34 +36,56 @@ def words(s):
     return {w for w in re.findall(r"[a-z0-9]+", (s or "").lower()) if w not in STOP and len(w) > 1}
 
 
-def search(q, need):
-    """best page for q with a picture whose title shares enough words with `need`"""
+def km(a, b):
+    p = math.pi / 180
+    x = math.sin((b[0] - a[0]) * p / 2) ** 2 + math.cos(a[0] * p) * math.cos(b[0] * p) * math.sin((b[1] - a[1]) * p / 2) ** 2
+    return 12742 * math.asin(math.sqrt(x))
+
+
+def near(p, at, lim):
+    """True/False when the page has a place on the map, None when it doesn't"""
+    c = (p.get("coordinates") or [None])[0]
+    if not c or not at:
+        return None
+    return km((c["lat"], c["lon"]), at) <= lim
+
+
+def pic(p):
+    t = p.get("thumbnail", {}).get("source")
+    return t if t and not re.search(r"(logo|flag|seal|map|icon|\.svg)", t, re.I) else None
+
+
+def search(q, need, at):
+    """best page for q with a picture, a title sharing enough words with `need`, and (if it has a place) near the event"""
     if not q.strip():
         return None
-    j = get({"action": "query", "generator": "search", "gsrsearch": q, "gsrlimit": 5, "prop": "pageimages", "piprop": "thumbnail", "pithumbsize": 800})
+    j = get({"action": "query", "generator": "search", "gsrsearch": q, "gsrlimit": 5, "prop": "pageimages|coordinates", "piprop": "thumbnail", "pithumbsize": 800})
     pages = sorted(j.get("query", {}).get("pages", []), key=lambda p: p.get("index", 99))
     nw = words(need)
     for p in pages:
-        t = p.get("thumbnail", {}).get("source")
-        if not t or re.search(r"(logo|flag|seal|map|icon|\.svg)", t, re.I):
+        t = pic(p)
+        if not t or not nw:
             continue
         tw = words(p["title"])
-        if nw and len(nw & tw) / len(nw) >= .6 and len(tw - nw) <= 3:
-            return {"img": t, "title": p["title"]}
+        if len(nw & tw) / len(nw) < .6 or len(tw - nw) > 3:
+            continue
+        ok = near(p, at, 60)
+        if ok is False or (ok is None and not nw <= tw):   # far away, or no place and not all the words
+            continue
+        return {"img": t, "title": p["title"]}
     return None
 
 
-def exact(title):
-    j = get({"action": "query", "titles": title, "redirects": 1, "prop": "pageimages", "piprop": "thumbnail", "pithumbsize": 800})
+def exact(title, at):
+    j = get({"action": "query", "titles": title, "redirects": 1, "prop": "pageimages|coordinates", "piprop": "thumbnail", "pithumbsize": 800})
     for p in j.get("query", {}).get("pages", []):
-        t = p.get("thumbnail", {}).get("source")
-        if t and not re.search(r"(logo|flag|seal|map|icon|\.svg)", t, re.I):
+        t = pic(p)
+        if t and near(p, at, 60) is not False:
             return {"img": t, "title": p["title"]}
     return None
 
 
 def main():
-    have = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
     evs = []
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "new2", "events_*.json"))):
         evs += [e for e in json.load(open(f, encoding="utf-8")).get("events", []) if e.get("start")]
@@ -72,21 +94,20 @@ def main():
         k = eid(e)
         if e.get("img"):
             n["own"] += 1; continue
-        if k in have and have[k].get("img"):
-            out[k] = have[k]; n[have[k]["from"]] += 1; continue
         hit, src = None, None
+        at = tuple(e["coords"]) if len(e.get("coords") or []) == 2 else None
         name, venue = e.get("name_en", ""), re.split(r",", e.get("venue", ""))[0].strip()
         if e.get("type") not in ("bar", "comedy"):
-            hit = search(name, name); src = "event"
+            hit = search(name, name, at); src = "event"
         if not hit and venue and len(words(venue)) >= 1:
-            hit = search(venue + " " + e.get("city", ""), venue); src = "venue"
+            hit = search(venue + " " + e.get("city", ""), venue, at); src = "venue"
         if not hit:
             city, st = e.get("city", "").split(",")[0].strip(), e.get("state", "")
             key = city + "|" + st
             if key not in city_cache:
-                city_cache[key] = exact(city + ", " + st) if st in STATES else None
+                city_cache[key] = exact(city + ", " + st, at) if st in STATES else None
                 if not city_cache[key]:
-                    city_cache[key] = exact(city)
+                    city_cache[key] = exact(city, at)
             hit = city_cache[key]; src = "city"
         if hit:
             out[k] = dict(hit, **{"from": src}); n[src] += 1

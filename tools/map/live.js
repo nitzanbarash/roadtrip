@@ -217,14 +217,16 @@
   })();
 
   /* ---------- events: small and local too (bars, farmers, town festivals), and what's on tonight ---------- */
-  var EV_KINDS=[['all','הכול'],['small','קטן ומקומי'],['music','הופעות ובר'],['farm','חקלאים ושווקים'],['big','גדולים']];
+  var EV_KINDS=[['all','הכול'],['small','קטן ומקומי'],['music','הופעות, בר וסטנדאפ'],['young','פסטיבלים לצעירים'],['farm','חקלאים ושווקים'],['food','אוכל ובירה'],['big','גדולים']];
   function evTags(e){ return e.tags||[]; }
   function evKindOK(e){
     var k=evState.kind||'all', t=e.type, tg=evTags(e);
-    if(k==='music') return t==='bar' || t==='concert' || tg.indexOf('bar')>=0;
+    if(k==='music') return /^(bar|concert|comedy)$/.test(t) || tg.indexOf('bar')>=0 || tg.indexOf('music')>=0 || tg.indexOf('comedy')>=0;
+    if(k==='young') return tg.indexOf('young')>=0 || (t==='festival' && tg.indexOf('music')>=0);
     if(k==='farm') return t==='farm' || t==='market' || tg.indexOf('farm')>=0;
-    if(k==='small') return /^(bar|farm|market|local)$/.test(t) || tg.indexOf('local')>=0 || tg.indexOf('young')>=0;
-    if(k==='big') return !/^(bar|farm|market|local)$/.test(t) && tg.indexOf('local')<0;
+    if(k==='food') return t==='food' || tg.indexOf('food')>=0;
+    if(k==='small') return /^(bar|farm|market|local|comedy|food|art)$/.test(t) || tg.indexOf('local')>=0 || tg.indexOf('young')>=0;
+    if(k==='big') return !/^(bar|farm|market|local|comedy|food|art)$/.test(t) && tg.indexOf('local')<0;
     return true;
   }
   (function(){

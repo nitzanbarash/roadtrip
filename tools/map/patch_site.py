@@ -34,6 +34,8 @@ def js(obj):
 def events_json():
     """events along the way, from data/new2/events_*.json (same rules as build3.events)"""
     out, seen = [], set()
+    ip = os.path.join(ROOT, "data", "new2", "event_images.json")
+    imgs = json.load(open(ip, encoding="utf-8")) if os.path.exists(ip) else {}
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "new2", "events_*.json"))):
         for e in json.load(open(f, encoding="utf-8")).get("events", []):
             c = e.get("coords") or []
@@ -51,6 +53,10 @@ def events_json():
                 o["weekly"] = e["weekly"]
             if e.get("tags"):
                 o["tags"] = e["tags"]
+            im = e.get("img") or (imgs.get(k) or {}).get("img")
+            if im and im.startswith("https://"):
+                o["img"] = im
+                o["imgFrom"] = "event" if e.get("img") else imgs[k].get("from", "")
             out.append(o)
     return js(out)
 

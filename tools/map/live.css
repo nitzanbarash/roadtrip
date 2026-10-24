@@ -87,3 +87,12 @@
   .blogo img{width:22px; height:22px; display:block}
   .gstn .pz.est{color:var(--ink2)}
   .gstn.best .pz.est{color:var(--park)}
+  /* event pictures */
+  .evpic{position:relative; margin:-11px -13px 2px; margin-inline-start:-13px; height:150px; border-radius:9px 9px 0 0; overflow:hidden; background:linear-gradient(135deg, color-mix(in srgb, var(--ec) 70%, #000), var(--ec)); display:flex; align-items:center; justify-content:center}
+  .evpic.noimg{height:64px}
+  .evpic .evart img{width:46px; height:46px; display:block; filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
+  .evpic.noimg .evart img{width:40px; height:40px}
+  .evpic .ph{position:absolute; top:0; left:0; margin:0; width:100%; height:100%; object-fit:cover}
+  .evpic small{position:absolute; bottom:5px; inset-inline-start:8px; font-size:11px; font-weight:700; color:#fff; background:rgba(0,0,0,.45); border-radius:100px; padding:1px 8px}
+  .evpic.big{margin:0 0 10px; height:180px; border-radius:12px}
+  .evpic.big.noimg{height:80px}

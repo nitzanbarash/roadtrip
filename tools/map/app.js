@@ -231,8 +231,17 @@
   }
 
   /* ---------- events along the way ---------- */
-  var EV_TYPE={concert:['music_note','#7E57C2','הופעה'], sports:['stadium','#1A5FB4','ספורט'], motorsport:['sports_score','#C2185B','מרוץ'], festival:['festival','#E07020','פסטיבל'], market:['storefront','#0B7FAB','שוק'], fair:['attractions','#D4A017','יריד'], rodeo:['rodeo','#8B5E34','רודאו'], parade:['celebration','#C2185B','מצעד'], holiday:['celebration','#2C8A5E','חג ואורות'], show:['theater_comedy','#12828F','מופע'], bar:['local_bar','#8E24AA','הופעה בבר'], farm:['agriculture','#558B2F','חקלאים'], local:['celebration','#00897B','אירוע מקומי'], other:['event','#5F6368','אירוע']};
+  var EV_TYPE={concert:['music_note','#7E57C2','הופעה'], sports:['stadium','#1A5FB4','ספורט'], motorsport:['sports_score','#C2185B','מרוץ'], festival:['festival','#E07020','פסטיבל'], market:['storefront','#0B7FAB','שוק'], fair:['attractions','#D4A017','יריד'], rodeo:['rodeo','#8B5E34','רודאו'], parade:['celebration','#C2185B','מצעד'], holiday:['celebration','#2C8A5E','חג ואורות'], show:['theater_comedy','#12828F','מופע'], bar:['local_bar','#8E24AA','הופעה בבר'], farm:['agriculture','#558B2F','חקלאים'], local:['celebration','#00897B','אירוע מקומי'], comedy:['theater_comedy','#D81B60','סטנדאפ ומופע קטן'], food:['restaurant','#E8710A','אוכל ובירה'], art:['palette','#6D4C41','אמנות ושוק לילה'], other:['event','#5F6368','אירוע']};
   function evType(e){ return EV_TYPE[e.type]||EV_TYPE.other; }
+  // a picture for every event: its photo (the event, its venue or its town), else a drawing of its kind
+  var EV_ART={};
+  function evArt(t){ var k=t[0]+t[1]; if(!EV_ART[k]) EV_ART[k]=badgeCanvas(t[0], t[1], 64, null, 2).toDataURL(); return EV_ART[k]; }
+  function evPic(e, t, big){
+    var art='<span class="evart"><img alt="" src="'+evArt(t)+'"></span>';
+    if(!e.img) return '<div class="evpic noimg'+(big?' big':'')+'" style="--ec:'+t[1]+'">'+art+'</div>';
+    var cap= e.imgFrom==='city' ? 'תמונה של '+esc(e.city) : e.imgFrom==='venue' ? 'המקום: '+esc(e.venue||'') : '';
+    return '<div class="evpic'+(big?' big':'')+'" style="--ec:'+t[1]+'">'+art+'<img class="ph" alt="" loading="lazy" referrerpolicy="no-referrer" src="'+esc(e.img)+'"'+(/^https:\/\/upload\.wikimedia\.org\//.test(e.img)?' crossorigin="anonymous"':'')+' onerror="this.parentNode.classList.add(\'noimg\');this.remove()">'+(cap?'<small>'+cap+'</small>':'')+'</div>';
+  }
   function tripDates(){
     var s=null; try{ s=JSON.parse(lsGet('fin_s')||'null'); }catch(e){}
     return {start:(s&&s.start)||'2026-12-14', end:(s&&s.end)||'2027-02-15'};
@@ -270,7 +279,7 @@
         html+='<div class="evstate"><span>'+esc(evState.sort==='date' ? ['ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'][e.sd.getMonth()]+' '+e.sd.getFullYear() : e.state)+'</span><small>'+n+' אירועים</small></div>'; }
       var t=evType(e), same=e.start===(e.end||e.start);
       var fit = e.gap===0 ? '<span class="est ok">אנחנו שם בערך בזמן ✓</span>' : e.gap<=6 ? '<span class="est">פער של ~'+e.gap+' ימים מהתכנון</span>' : '<span class="est no">לפי התכנון: באזור ~'+dFmt(e.eta)+'</span>';
-      html+='<article class="evc'+(e.gap===0?' fit':'')+'" style="--ec:'+t[1]+'"><div class="evtop"><img alt="" src="'+badgeCanvas(t[0], t[1], 26, null, 2).toDataURL()+'"><div class="t"><b>'+esc(e.name_he)+'</b><small>'+esc(e.name_en)+' · '+esc(e.city)+'</small></div></div>'+
+      html+='<article class="evc'+(e.gap===0?' fit':'')+'" style="--ec:'+t[1]+'">'+evPic(e, t)+'<div class="evtop"><img alt="" src="'+badgeCanvas(t[0], t[1], 26, null, 2).toDataURL()+'"><div class="t"><b>'+esc(e.name_he)+'</b><small>'+esc(e.name_en)+' · '+esc(e.city)+'</small></div></div>'+
         '<div class="evdate">'+dFmt(e.sd,1)+(same?'':' – '+dFmt(e.ed,1))+(e.confirmed?'':' <span class="unc">תאריך משוער</span>')+fit+'</div>'+
         (e.weekly?'<div class="evwk"><b>מתי:</b> '+esc(e.weekly)+'</div>':'')+'<p>'+esc(e.why)+'</p>'+(e.tip?'<div class="tip"><b>טיפ:</b> '+esc(e.tip)+'</div>':'')+
         '<div class="links"><span>'+esc(t[2])+(e.cost?' · '+esc(e.cost):'')+(e.venue?' · '+esc(e.venue):'')+'</span>'+
@@ -290,7 +299,7 @@
   });
   function selectEvent(ev){
     var t=evType(ev); selected=null;
-    sheetBody.innerHTML='<div class="mini"><div class="k">'+esc(t[2])+' · '+dFmt(ev.sd,1)+(ev.start===(ev.end||ev.start)?'':' – '+dFmt(ev.ed,1))+'</div><h3 style="direction:rtl;text-align:right;font-family:\'Suez One\',serif;font-weight:400">'+esc(ev.name_he)+'</h3><div class="cen">'+esc(ev.name_en)+' · '+esc(ev.city)+', '+esc(ev.state)+'</div>'+
+    sheetBody.innerHTML=evPic(ev, t, true)+'<div class="mini"><div class="k">'+esc(t[2])+' · '+dFmt(ev.sd,1)+(ev.start===(ev.end||ev.start)?'':' – '+dFmt(ev.ed,1))+'</div><h3 style="direction:rtl;text-align:right;font-family:\'Suez One\',serif;font-weight:400">'+esc(ev.name_he)+'</h3><div class="cen">'+esc(ev.name_en)+' · '+esc(ev.city)+', '+esc(ev.state)+'</div>'+
       '<p class="cwhy" style="margin:0">'+esc(ev.why)+'</p>'+(ev.tip?'<div class="ctip"><b>טיפ:</b> '+esc(ev.tip)+'</div>':'')+
       '<div class="navbtns"><a class="wz" target="_blank" rel="noopener" href="'+wazeLL(ev.g,ev.n)+'">נווט בוויז</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent((ev.venue||ev.name_en)+', '+ev.city+', '+ev.state)+'">בגוגל מפות</a>'+(ev.url?'<a target="_blank" rel="noopener" href="'+esc(ev.url)+'">אתר האירוע</a>':'')+'</div><div class="navbtns">'+qBtn({n:ev.name_he, lat:ev.g, lng:ev.n, k:t[2]})+'</div></div>';
     hideQ(); sheet.hidden=false; sheet.scrollTop=0; $('nav').hidden=true; syncQButtons();
