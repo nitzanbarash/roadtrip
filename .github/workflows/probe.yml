@@ -1,14 +1,19 @@
 name: probe
-# One-off checks of outside services (sync storage, logos, gas prices). Safe to delete.
+# One-off checks of outside services (sync servers). Safe to delete.
 on:
   workflow_dispatch:
   push:
-    paths: [tools/probe/**, .github/workflows/probe.yml]
+    paths: [tools/probe/**, tools/fin/live_sync.js, .github/workflows/probe.yml]
 jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          sparse-checkout: tools/probe
-      - run: bash tools/probe/probe.sh
+          sparse-checkout: |
+            tools/probe
+            tools/fin
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: LATE=120000 timeout 300 node tools/probe/sync_test.js wss://broker.emqx.io:8084/mqtt wss://broker.hivemq.com:8884/mqtt wss://test.mosquitto.org:8081/mqtt wss://public.mqtthq.com:8084/mqtt wss://mqtt.eclipseprojects.io:443/mqtt
