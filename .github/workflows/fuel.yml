@@ -1,0 +1,27 @@
+name: fuel prices
+# Once a day: AAA state averages -> docs/fuel.json (the app's fuel tab reads it).
+on:
+  schedule:
+    - cron: "23 11 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: fuel
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            tools/fuel
+            docs/fuel.json
+          sparse-checkout-cone-mode: false
+      - run: python3 tools/fuel/fetch_fuel.py docs/fuel.json
+      - name: commit if changed
+        run: |
+          git add docs/fuel.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Fuel prices $(date -u +%F)"
+          git push
