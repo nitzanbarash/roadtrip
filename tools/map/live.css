@@ -1,0 +1,77 @@
+  /* live: 7 tabs, fuel, where to sleep, map download card, Google-style chips */
+  .tabbar.t7{padding-left:2px; padding-right:2px}
+  .tabbar.t7 button{font-size:10.5px; letter-spacing:-.1px}
+  .tabbar.t7 button svg{width:23px; height:23px}
+  @media (max-width:360px){ .tabbar.t7 button{font-size:9.5px} .tabbar.t7 button svg{width:21px; height:21px} }
+  .lpanel .pbody{padding-top:10px}
+  .lseg{display:inline-flex; border:1px solid var(--line2); border-radius:100px; overflow:hidden; flex:none}
+  .lseg .chip{border:0; border-radius:0}
+  .lwhere{display:flex; gap:8px}
+  .lwhere input{flex:1 1 auto; min-width:0; background:var(--surface2); border:1px solid var(--line2); border-radius:10px; padding:8px 11px; font:inherit; font-size:15px; color:inherit}
+  .ldate{display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; color:var(--ink2); white-space:nowrap}
+  .ldate input{background:var(--surface); border:1px solid var(--line2); border-radius:8px; padding:4px 6px; font:inherit; font-size:13.5px; color:inherit; max-width:150px}
+  #gMpg{width:64px}
+  .lsec{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:12px 13px; margin-bottom:12px; display:flex; flex-direction:column; gap:9px}
+  .lsec h3{margin:0; font-size:16px}
+  .lrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .lrow .btn{text-decoration:none; color:inherit}
+  .lrow input[type="text"]{flex:1 1 180px; min-width:0; background:var(--surface2); border:1px solid var(--line2); border-radius:9px; padding:7px 10px; font:inherit; color:inherit; direction:ltr}
+  .lnote{font-size:13px; color:var(--ink3); margin:0}
+  ol.lnote{padding-inline-start:20px; display:flex; flex-direction:column; gap:3px}
+  .ltip{font-size:14px; font-weight:700; color:var(--ink2)}
+  .ltip:empty{display:none}
+  .lsrc{font-size:11.5px; color:var(--ink3)}
+  .lkey summary{font-size:13.5px; font-weight:800; color:var(--go); cursor:pointer}
+  .lkey[open]{display:flex; flex-direction:column; gap:8px}
+  .lst{display:flex; flex-direction:column}
+  .gst{display:grid; grid-template-columns:minmax(92px, 1.1fr) 1fr auto 44px; align-items:center; gap:9px; padding:6px 0; border-bottom:1px solid var(--line); font-size:14px}
+  .gst:last-child{border-bottom:0}
+  .gst .n{font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .gst .n em{font-style:normal; font-size:11px; font-weight:800; color:#fff; background:var(--go); border-radius:100px; padding:1px 6px; margin-inline-start:4px}
+  .gst .bar{height:7px; border-radius:4px; background:var(--surface2); overflow:hidden; display:block}
+  .gst .bar i{display:block; height:100%; border-radius:4px; background:var(--ink3); margin-inline-start:auto}
+  .gst.lo .bar i{background:var(--park)} .gst.hi .bar i{background:var(--neon)}
+  .gst b{font-size:14.5px}
+  .gst.lo b{color:var(--park)} .gst.hi b{color:var(--neon)}
+  .gst.here{background:color-mix(in srgb, var(--go) 9%, transparent); border-radius:8px; padding-inline:6px; margin-inline:-6px}
+  .gst .ch{font-size:11.5px; color:var(--ink3); text-align:left}
+  .gst .ch.up{color:var(--neon)} .gst .ch.dn{color:var(--park)}
+  .gstn{display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:1px solid var(--line)}
+  .gstn:last-child{border-bottom:0}
+  .gstn img{width:26px; height:26px; flex:none}
+  .gstn .t{flex:1 1 auto; min-width:0; display:flex; flex-direction:column}
+  .gstn .t b{font-size:14.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .gstn .t small{font-size:12px; color:var(--ink3)}
+  .gstn .pz{font-size:16px}
+  .gstn.best .pz{color:var(--park)}
+  .scard .evtop{align-items:flex-start}
+  .scard .evtop .t{flex:1 1 auto; min-width:0}
+  .lp{flex:none; font:800 13px 'Overpass',system-ui,sans-serif; border-radius:100px; padding:3px 9px; background:var(--surface2); color:var(--ink); white-space:nowrap; direction:ltr}
+  .lp.free{background:color-mix(in srgb, var(--park) 16%, transparent); color:var(--park); font-family:inherit}
+  .lp.unk{font:700 12px inherit; color:var(--ink3); font-family:inherit}
+  .lmeta{font-size:12.5px; color:var(--ink3); font-weight:600}
+  .bkbox .book{display:flex; flex-wrap:wrap; gap:7px; padding-top:4px}
+  .bkbox .book .btn{text-decoration:none; color:inherit; font-size:13px}
+  .bkbox .book p{flex:1 1 100%; margin:2px 0 0; font-size:13px; color:var(--ink2); background:var(--surface2); border-radius:7px; padding:7px 9px}
+  .scard.flash{box-shadow:0 0 0 2.5px var(--go)}
+  #sMore{align-self:center}
+  /* map download */
+  .dlcard{position:absolute; z-index:30; left:12px; right:12px; bottom:calc(var(--tb) + 12px); max-width:520px; margin:0 auto; border-radius:16px; padding:12px 14px; display:flex; flex-wrap:wrap; align-items:center; gap:10px 12px; box-shadow:var(--shadow)}
+  .dlcard .dlt{flex:1 1 220px; display:flex; flex-direction:column; gap:2px}
+  .dlcard .dlt b{font-size:15.5px}
+  .dlcard .dlt span{font-size:13px; color:var(--ink2)}
+  .dlcard .dlt i{font-style:normal; font-weight:800; direction:ltr; unicode-bidi:isolate}
+  .dlcard .dlb{display:flex; gap:8px}
+  .dlcard .dlp{flex:1 1 100%; display:flex; align-items:center; gap:10px}
+  .dlcard .dlp .prog{flex:1 1 auto; height:8px; border-radius:4px; background:var(--surface2); overflow:hidden}
+  .dlcard .dlp .prog i{display:block; height:100%; width:0; background:var(--go); transition:width .3s}
+  .dlcard .dlp small{font:700 12px 'Overpass',system-ui,sans-serif; color:var(--ink2); white-space:nowrap}
+  /* Google-style chips under the search bar */
+  .gchips{position:absolute; z-index:16; top:calc(env(safe-area-inset-top,0px) + 66px); right:0; left:70px; display:flex; gap:7px; overflow-x:auto; scrollbar-width:none; padding:2px 12px 6px 4px; -webkit-overflow-scrolling:touch}
+  .gchips::-webkit-scrollbar{display:none}
+  .gchip{flex:none; display:inline-flex; align-items:center; gap:6px; border:0; background:var(--surface); color:var(--ink); border-radius:100px; padding:6px 12px 6px 10px; font-size:13.5px; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,.18), 0 1px 1px rgba(0,0,0,.08); white-space:nowrap}
+  .gchip img{width:20px; height:20px; display:block; margin:-2px 0}
+  .gchip[aria-pressed="true"]{background:var(--c); color:#fff}
+  body:has(#gchips:not([hidden])) .status{top:calc(env(safe-area-inset-top,0px) + 108px)}
+  body:has(#gchips:not([hidden])) .nearbar{top:calc(env(safe-area-inset-top,0px) + 110px)}
+  body:has(#gchips:not([hidden])) .ioscomp{top:calc(env(safe-area-inset-top,0px) + 150px)}

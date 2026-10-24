@@ -328,18 +328,23 @@ function finInit(root, env){
   /* ---------- sync between the phones ---------- */
   var RULES="rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    match /trips/{trip}/{rest=**} {\n      allow read, write: if trip.size() >= 16;\n    }\n  }\n}";
   function renderSyncBox(){
-    var el=$f('fSyncBox'), sc=lj('fin_sync');
+    var el=$f('fSyncBox'), sc=syncCfg();
     if(store && store.kind==='claude'){
       el.innerHTML='<p class="fnote">הנתונים שמורים בדף הזה ומסתנכרנים לכל מי שהדף משותף איתו. כדי ש'+fe(S.people[1].name)+' יוכל/תוכל להוסיף: בתפריט <b>שיתוף</b> מזמינים אותו/ה <b>במייל, כעורך/ת</b>. קישור ציבורי לא מאפשר כתיבה.</p>';
       return;
     }
     if(!env.fire){ el.innerHTML='<p class="fnote">בתצוגה הזו אין סנכרון: ההוצאות נשמרות רק בטלפון הזה. אפשר להעביר אותן עם ״העברת נתונים״ למטה, או להשתמש באפליקציה (שם יש סנכרון).</p>'; return; }
     if(sc && sc.c && sc.t){
-      el.innerHTML='<p class="fnote">מחובר. כל הוצאה, התור והנקודות שסימנתם כחובה מתעדכנים בשני הטלפונים, וגם בלי קליטה (מסתנכרן כשחוזרת).</p>'+
-        '<span class="flbl">קוד לטלפון של '+fe(S.people[1].name)+' (מדביקים אותו שם בהגדרות → סנכרון)</span><textarea readonly id="fJoinOut">RTSYNC1:'+b64e(JSON.stringify(sc))+'</textarea>'+
-        '<div class="frow"><button class="fbtn sm" id="fJoinCopy" type="button">העתקת הקוד</button><button class="fbtn sm dng" id="fUnsync" type="button">ניתוק</button></div>';
-      $f('fJoinCopy').onclick=function(){ var t=$f('fJoinOut'); var p=(navigator.clipboard&&navigator.clipboard.writeText)?navigator.clipboard.writeText(t.value):Promise.reject(); p.then(function(){ toast('הועתק. שלחו בוואטסאפ.'); }, function(){ t.focus(); t.select(); }); };
-      $f('fUnsync').onclick=function(){ try{ localStorage.removeItem('fin_sync'); }catch(e){} toast('נותק. ההוצאות נשארות בטלפון.'); setTimeout(function(){ location.reload(); }, 800); };
+      var link=location.href.split('#')[0]+'#join=RTSYNC1:'+b64u(JSON.stringify({c:sc.c, t:sc.t}));
+      el.innerHTML='<p class="fnote">מחובר. כל שינוי מתעדכן אצל כולם מיד: הוצאות, התור, החובה והמסלול שלי. גם בלי קליטה (נשלח כשחוזרת).</p>'+
+        (sc.builtin ? '<p class="fnote">זה הטיול המשותף: כל מי שפותח את הקישור של האפליקציה רואה ועורך אותו.</p>' : '<span class="flbl">קישור הצטרפות: שולחים ל'+fe(S.people[1].name)+', פותחים אותו בטלפון ומחוברים</span><textarea readonly id="fJoinOut">'+fe(link)+'</textarea>'+
+        '<div class="frow"><button class="fbtn sm" id="fJoinCopy" type="button">העתקת הקישור</button>'+(navigator.share?'<button class="fbtn sm" id="fJoinShare" type="button">שיתוף…</button>':'')+'<button class="fbtn sm dng" id="fUnsync" type="button">ניתוק</button></div>'+
+        '<p class="fnote">באפליקציה שעל מסך הבית: מדביקים את הקישור כאן למטה בהגדרות ← סנכרון (פעם אחת).</p>');
+      if(!sc.builtin){
+        $f('fJoinCopy').onclick=function(){ var t=$f('fJoinOut'); var p=(navigator.clipboard&&navigator.clipboard.writeText)?navigator.clipboard.writeText(t.value):Promise.reject(); p.then(function(){ toast('הועתק. שלחו בוואטסאפ.'); }, function(){ t.focus(); t.select(); }); };
+        if($f('fJoinShare')) $f('fJoinShare').onclick=function(){ navigator.share({title:'הטיול', text:'הצטרפות לטיול המשותף', url:link}).catch(function(){}); };
+        $f('fUnsync').onclick=function(){ ls('fin_sync', JSON.stringify({off:1})); toast('נותק. ההוצאות נשארות בטלפון.'); setTimeout(function(){ location.reload(); }, 800); };
+      }
       return;
     }
     el.innerHTML='<p class="fnote">כדי ששני הטלפונים יראו את אותן הוצאות (ואת התור), מחברים פעם אחת שירות חינמי של גוגל (Firebase). אחד מכם עושה את ההקמה; השני רק מדביק קוד.</p>'+
@@ -349,7 +354,7 @@ function finInit(root, env){
       '<li>בלשונית <b>Rules</b> מוחקים הכול, מדביקים את הכללים מתחת, ולוחצים <b>Publish</b>.</li>'+
       '<li>גלגל השיניים ← <b>Project settings</b> ← למטה <b>Your apps</b> ← הסמל <code>&lt;/&gt;</code> ← שם כלשהו ← <b>Register app</b>.</li>'+
       '<li>מעתיקים את כל הקטע <code>firebaseConfig</code> ומדביקים כאן למטה ← <b>חיבור</b>.</li></ol><pre>'+fe(RULES)+'</pre></details>'+
-      '<span class="flbl">הדביקו כאן את firebaseConfig, או קוד שקיבלתם מהטלפון השני</span><textarea id="fSyncIn" spellcheck="false" placeholder="RTSYNC1:… או const firebaseConfig = {…}"></textarea>'+
+      '<span class="flbl">הדביקו כאן את הקישור או הקוד שקיבלתם מהטלפון השני, או את firebaseConfig</span><textarea id="fSyncIn" spellcheck="false" placeholder="https://…#join=RTSYNC1:… או const firebaseConfig = {…}"></textarea>'+
       '<div class="frow"><button class="fbtn pri" id="fSyncGo" type="button">חיבור</button></div>';
     $f('fSyncGo').onclick=function(){
       var o=parseCfg($f('fSyncIn').value);
@@ -361,11 +366,19 @@ function finInit(root, env){
   function parseCfg(txt){
     txt=String(txt||'').trim();
     var m=/RTSYNC1:([A-Za-z0-9+/=_-]+)/.exec(txt);
-    if(m){ try{ var o=JSON.parse(b64d(m[1])); if(o && o.c && o.c.apiKey && o.t) return o; }catch(e){} return null; }
+    if(m){ try{ var o=JSON.parse(b64d(m[1].replace(/-/g,'+').replace(/_/g,'/'))); if(o && o.c && o.c.apiKey && o.t) return {c:o.c, t:o.t}; }catch(e){} return null; }
     var c={}, re=/(apiKey|authDomain|projectId|storageBucket|messagingSenderId|appId)\s*["']?\s*:\s*["']([^"']+)["']/g, x;
     while((x=re.exec(txt))) c[x[1]]=x[2];
     return (c.apiKey && c.projectId && c.appId) ? {c:c, t:null} : null;
   }
+  // this phone's own choice wins; otherwise the shared trip built into the app (if any)
+  function syncCfg(){
+    var s=lj('fin_sync');
+    if(s && s.off) return null;
+    if(s && s.c && s.t) return s;
+    var b=env.builtin; return (b && b.c && b.c.apiKey && b.t) ? {c:b.c, t:b.t, builtin:true} : null;
+  }
+  function b64u(s){ return b64e(s).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,''); }
   function tripCode(){ var a='abcdefghjkmnpqrstuvwxyz23456789', u=new Uint8Array(20), s=''; try{ crypto.getRandomValues(u); }catch(e){ for(var i=0;i<20;i++) u[i]=Math.random()*256; } for(var j=0;j<20;j++) s+=a[u[j]%a.length]; return s; }
 
   /* ---------- stores ---------- */
@@ -456,7 +469,15 @@ function finInit(root, env){
     },
     status:function(s,t){ $f('fSync').setAttribute('data-s', s); $f('fSyncTx').textContent=t; }
   };
-  var sc=lj('fin_sync');
+  // a join link (…#join=RTSYNC1:…) connects this phone to the same trip
+  (function(){
+    var m=/[#&]join=([^&]+)/.exec(location.hash||''); if(!m) return;
+    var o=parseCfg(decodeURIComponent(m[1]));
+    try{ history.replaceState(null, '', location.href.split('#')[0]); }catch(e){}
+    if(!o){ toast('קישור ההצטרפות לא שלם. בקשו אותו שוב.', 4500); return; }
+    ls('fin_sync', JSON.stringify(o)); setTimeout(function(){ toast('מחוברים לטיול המשותף. כל שינוי מתעדכן אצל כולם.', 4500); }, 1200);
+  })();
+  var sc=syncCfg();
   store = env.claude ? claudeStore() : (env.fire && sc && sc.c && sc.t ? fireStore(sc.c, sc.t) : localStore());
   showTab(['add','bal','tab','bud','set'].indexOf(tab)>=0 ? tab : 'add');
   store.start(H);

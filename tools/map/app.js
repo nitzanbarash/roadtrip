@@ -5,18 +5,23 @@
 
   /* ---------- tabs ---------- */
   function syncTabs(){
-    var t = !$('fpanel').hidden ? 'money' : !$('epanel').hidden ? 'events' : !panel.hidden ? 'list' : !$('qpanel').hidden ? 'queue' : 'map';
+    var t = !$('fpanel').hidden ? 'money' : !$('epanel').hidden ? 'events' : !$('spanel').hidden ? 'sleep' : !$('gpanel').hidden ? 'fuel' : !panel.hidden ? 'list' : !$('qpanel').hidden ? 'queue' : 'map';
     Array.prototype.forEach.call($('tabbar').children, function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-tab')===t?'true':'false'); });
     $('iosComp').hidden = t!=='map';
+    $('gchips').hidden = t!=='map';
   }
   function setTab(t){
     if(t!=='list' && !panel.hidden) openPanel(false);
     if(t!=='queue' && !$('qpanel').hidden) toggleQueue(false);
     $('fpanel').hidden = t!=='money';
     $('epanel').hidden = t!=='events';
+    $('spanel').hidden = t!=='sleep';
+    $('gpanel').hidden = t!=='fuel';
     if(t==='list' && panel.hidden) openPanel(true);
     if(t==='queue' && $('qpanel').hidden) toggleQueue(true);
     if(t==='events') renderEvents();
+    if(t==='sleep') sleepOpen();
+    if(t==='fuel') fuelOpen();
     if(t==='money' && FIN) FIN.refresh();
     if(t!=='map'){ togglePop(false); if(!sheet.hidden && t!=='queue') closeSheet(); }
     syncTabs();
@@ -38,20 +43,21 @@
   }
   function finStart(){
     try{
-      FIN=finInit($('fin'), {toast:toast, download:saveText, loadScript:loadScript, claude:false, fire:!!(HOST && HOST.sw) && !IN_FRAME, docs:['queue','must'], onDoc:onRemoteDoc});
+      FIN=finInit($('fin'), {toast:toast, download:saveText, loadScript:loadScript, claude:false, fire:!!(HOST && HOST.sw) && !IN_FRAME, docs:['queue','must','picks'], onDoc:onRemoteDoc, builtin:FB_BUILTIN});
     }catch(e){ FIN=null; }
   }
-  // the queue and our must-sees travel with the money sync (when it is connected)
+  // the queue, our must-sees and my-route stars travel with the money sync (when it is connected)
   var qT=+(lsGet('rt_qT')||0), mT=+(lsGet('rt_mT')||0);
   function onRemoteDoc(name, d){
     if(!d) return;
-    if(name==='queue' && Array.isArray(d.items) && (+d.t||0)>qT){ qT=+d.t; lsSet('rt_qT', String(qT)); queue=d.items; lsSet(QKEY, JSON.stringify(queue)); renderQueue(); planRoute(); }
-    if(name==='must' && d.ids && (+d.t||0)>mT){ mT=+d.t; lsSet('rt_mT', String(mT)); MUST=d.ids; lsSet('rt_must', JSON.stringify(MUST)); mustChanged(false); }
+    if(name==='queue' && Array.isArray(d.items) && (+d.t||0)>qT){ qT=+d.t; lsSet('rt_qT', String(qT)); queue=d.items; lsSet(QKEY, JSON.stringify(queue)); renderQueue(); planRoute(); refreshPoiLabels(); remoteNote('התור'); }
+    if(name==='must' && d.ids && (+d.t||0)>mT){ mT=+d.t; lsSet('rt_mT', String(mT)); MUST=d.ids; lsSet('rt_must', JSON.stringify(MUST)); mustChanged(false); remoteNote('החובה'); }
+    if(name==='picks' && remotePicks(d)) remoteNote('המסלול שלי');
   }
   function queueChanged(){
     qT=Date.now(); lsSet('rt_qT', String(qT));
     if(FIN) FIN.setDoc('queue', {items:queue, t:qT});
-    planRoute();
+    planRoute(); refreshPoiLabels();
   }
 
   /* ---------- our own must-sees (on top of the list's), glowing on the map ---------- */
@@ -303,10 +309,11 @@
     map.addLayer({id:'ev-dot', type:'symbol', source:'events', minzoom:5, layout:{'icon-image':['concat','e-',['get','t']], 'icon-size':['interpolate',['linear'],['zoom'],5,.55,10,.85,13,1], 'icon-allow-overlap':true}}, 'poi-glow');
     map.on('mouseenter','ev-dot', function(){ map.getCanvas().style.cursor='pointer'; });
     map.on('mouseleave','ev-dot', function(){ map.getCanvas().style.cursor=''; });
-    glowStart(); finStart(); planRoute(); syncTabs();
+    glowStart(); finStart(); planRoute(); liveOnLoad(); syncTabs();
     window.addEventListener('online', function(){ setTimeout(planRoute, 1500); });
   }
   function appMapClick(e){
+    if(liveMapClick(e)) return true;
     if(!map.getLayer('ev-dot')) return false;
     var h=map.queryRenderedFeatures([[e.point.x-9,e.point.y-9],[e.point.x+9,e.point.y+9]], {layers:['ev-dot']});
     if(!h.length) return false;

@@ -265,11 +265,12 @@ SW = """// the app shell works offline once it was opened; the map parts are sto
 var V='rt-__V__', SHELL=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-180.png'];
 self.addEventListener('install', function(e){ e.waitUntil(caches.open(V).then(function(c){ return c.addAll(SHELL); }).then(function(){ return self.skipWaiting(); })); });
 self.addEventListener('activate', function(e){ e.waitUntil(caches.keys().then(function(ks){ return Promise.all(ks.filter(function(k){ return k!==V && k.indexOf('rt-')===0; }).map(function(k){ return caches.delete(k); })); }).then(function(){ return self.clients.claim(); })); });
+function netFirst(e){ return fetch(e.request).then(function(res){ if(res && res.ok){ var c=res.clone(); caches.open(V).then(function(x){ x.put(e.request, c); }); } return res; }, function(){ return caches.match(e.request, {ignoreSearch:true}); }); }
 function cacheFirst(e){ return caches.match(e.request, {ignoreSearch:true}).then(function(r){ return r || fetch(e.request).then(function(res){ if(res && res.ok){ var c=res.clone(); caches.open(V).then(function(x){ x.put(e.request, c); }); } return res; }); }); }
 self.addEventListener('fetch', function(e){
   if(e.request.method!=='GET') return;
   var u=new URL(e.request.url);
-  if(u.origin===location.origin){ if(/\\/map\\//.test(u.pathname)) return; e.respondWith(cacheFirst(e)); return; }
+  if(u.origin===location.origin){ if(/\\/map\\//.test(u.pathname)) return; if(/fuel\\.json$/.test(u.pathname)){ e.respondWith(netFirst(e)); return; } e.respondWith(cacheFirst(e)); return; }
   if(/fonts\\.(googleapis|gstatic)\\.com$/.test(u.host)) e.respondWith(cacheFirst(e).catch(function(){ return new Response('', {status:504}); }));
 });
 """
@@ -339,10 +340,10 @@ def main():
                .replace("__EXT_CSS__", open(P(HERE, "ext.css"), encoding="utf-8").read())
                .replace("__EXT_JS__", open(P(HERE, "markers.js"), encoding="utf-8").read() + open(P(HERE, "ext.js"), encoding="utf-8").read())
                .replace("__FIN_JS__", open(P(FIN, "fin.js"), encoding="utf-8").read())
-               .replace("__APP_JS__", open(P(HERE, "app.js"), encoding="utf-8").read())
+               .replace("__APP_JS__", open(P(HERE, "app.js"), encoding="utf-8").read() + "\n" + open(P(HERE, "live.js"), encoding="utf-8").read())
                .replace("__FIN_HTML__", open(P(FIN, "fin.html"), encoding="utf-8").read())
                .replace("__FIN_CSS__", open(P(FIN, "fin.css"), encoding="utf-8").read())
-               .replace("__APP_CSS__", open(P(HERE, "app.css"), encoding="utf-8").read())
+               .replace("__APP_CSS__", open(P(HERE, "app.css"), encoding="utf-8").read() + "\n" + open(P(HERE, "live.css"), encoding="utf-8").read())
                .replace("__EVENTS__", js(events()))
                .replace("__ICONS__", open(P(HERE, "icons.json"), encoding="utf-8").read()))
     # each hosted page carries one half of the offline map as parts next to it; the saved file carries none
