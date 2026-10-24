@@ -227,7 +227,7 @@
   }
 
   /* ---------- events along the way ---------- */
-  var EV_TYPE={concert:['music_note','#7E57C2','הופעה'], sports:['stadium','#1A5FB4','ספורט'], motorsport:['sports_score','#C2185B','מרוץ'], festival:['festival','#E07020','פסטיבל'], market:['storefront','#0B7FAB','שוק'], fair:['attractions','#D4A017','יריד'], rodeo:['rodeo','#8B5E34','רודאו'], parade:['celebration','#C2185B','מצעד'], holiday:['celebration','#2C8A5E','חג ואורות'], show:['theater_comedy','#12828F','מופע'], other:['event','#5F6368','אירוע']};
+  var EV_TYPE={concert:['music_note','#7E57C2','הופעה'], sports:['stadium','#1A5FB4','ספורט'], motorsport:['sports_score','#C2185B','מרוץ'], festival:['festival','#E07020','פסטיבל'], market:['storefront','#0B7FAB','שוק'], fair:['attractions','#D4A017','יריד'], rodeo:['rodeo','#8B5E34','רודאו'], parade:['celebration','#C2185B','מצעד'], holiday:['celebration','#2C8A5E','חג ואורות'], show:['theater_comedy','#12828F','מופע'], bar:['local_bar','#8E24AA','הופעה בבר'], farm:['agriculture','#558B2F','חקלאים'], local:['celebration','#00897B','אירוע מקומי'], other:['event','#5F6368','אירוע']};
   function evType(e){ return EV_TYPE[e.type]||EV_TYPE.other; }
   function tripDates(){
     var s=null; try{ s=JSON.parse(lsGet('fin_s')||'null'); }catch(e){}
@@ -246,7 +246,7 @@
     EVENTS.forEach(function(e){ var pr=project(e.n, e.g); e.mi=pr.mile; e.off=pr.km/1.609; e.eta=etaAt(pr.mile); e.sd=dParse(e.start); e.ed=dParse(e.end||e.start);
       var gap=e.eta<e.sd ? (e.sd-e.eta)/864e5 : e.eta>e.ed ? (e.eta-e.ed)/864e5 : 0; e.gap=Math.round(gap); });
   }
-  var evState={st:'', fit:false, sort:'route'};
+  var evState={st:'', fit:false, sort:'route', kind:'all'};
   function renderEvents(){
     evPrep();
     var sel=$('evState');
@@ -254,7 +254,7 @@
       var seen={}, order=[]; EVENTS.slice().sort(function(a,b){ return a.mi-b.mi; }).forEach(function(e){ if(!seen[e.state]){ seen[e.state]=1; order.push(e.state); } });
       sel.innerHTML='<option value="">כל המדינות ('+EVENTS.length+')</option>'+order.map(function(s){ return '<option value="'+esc(s)+'">'+esc(s)+'</option>'; }).join('');
     }
-    var list=EVENTS.filter(function(e){ return (!evState.st || e.state===evState.st) && (!evState.fit || e.gap<=6); });
+    var list=EVENTS.filter(function(e){ return (!evState.st || e.state===evState.st) && (!evState.fit || e.gap<=6) && evKindOK(e); });
     list.sort(evState.sort==='date' ? function(a,b){ return a.sd-b.sd; } : function(a,b){ return a.mi-b.mi || a.sd-b.sd; });
     var el=$('evList');
     if(!EVENTS.length){ el.innerHTML='<div class="evempty">רשימת האירועים עוד לא נטענה.</div>'; return; }
@@ -268,7 +268,7 @@
       var fit = e.gap===0 ? '<span class="est ok">אנחנו שם בערך בזמן ✓</span>' : e.gap<=6 ? '<span class="est">פער של ~'+e.gap+' ימים מהתכנון</span>' : '<span class="est no">לפי התכנון: באזור ~'+dFmt(e.eta)+'</span>';
       html+='<article class="evc'+(e.gap===0?' fit':'')+'" style="--ec:'+t[1]+'"><div class="evtop"><img alt="" src="'+badgeCanvas(t[0], t[1], 26, null, 2).toDataURL()+'"><div class="t"><b>'+esc(e.name_he)+'</b><small>'+esc(e.name_en)+' · '+esc(e.city)+'</small></div></div>'+
         '<div class="evdate">'+dFmt(e.sd,1)+(same?'':' – '+dFmt(e.ed,1))+(e.confirmed?'':' <span class="unc">תאריך משוער</span>')+fit+'</div>'+
-        '<p>'+esc(e.why)+'</p>'+(e.tip?'<div class="tip"><b>טיפ:</b> '+esc(e.tip)+'</div>':'')+
+        (e.weekly?'<div class="evwk"><b>מתי:</b> '+esc(e.weekly)+'</div>':'')+'<p>'+esc(e.why)+'</p>'+(e.tip?'<div class="tip"><b>טיפ:</b> '+esc(e.tip)+'</div>':'')+
         '<div class="links"><span>'+esc(t[2])+(e.cost?' · '+esc(e.cost):'')+(e.venue?' · '+esc(e.venue):'')+'</span>'+
         '<button class="maplink onmap" type="button" data-ev="'+esc(e.id)+'">במפה</button>'+qLink({n:e.name_he, lat:e.g, lng:e.n, k:t[2]})+
         (e.url?'<a class="maplink" target="_blank" rel="noopener" href="'+esc(e.url)+'">אתר ↗</a>':'')+'</div></article>';

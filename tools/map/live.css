@@ -75,3 +75,7 @@
   body:has(#gchips:not([hidden])) .status{top:calc(env(safe-area-inset-top,0px) + 108px)}
   body:has(#gchips:not([hidden])) .nearbar{top:calc(env(safe-area-inset-top,0px) + 110px)}
   body:has(#gchips:not([hidden])) .ioscomp{top:calc(env(safe-area-inset-top,0px) + 150px)}
+  .evwk{font-size:13px; font-weight:700; color:var(--ink2)}
+  .evnow{display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center; font-size:13px; background:var(--surface2); border-radius:9px; padding:7px 10px}
+  .evnow span{display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center}
+  .evnow small{color:var(--ink3); font-weight:700}

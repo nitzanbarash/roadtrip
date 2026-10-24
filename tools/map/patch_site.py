@@ -8,7 +8,7 @@ Then the service worker gets a new version, so phones pick up the change.
 
     python3 tools/map/patch_site.py            # from the repo root
 """
-import hashlib, os, re, subprocess, sys
+import glob, hashlib, json, os, re, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 PAGE = os.path.join(ROOT, "docs", "index.html")
@@ -25,6 +25,38 @@ SLOTS = [
     ("fin.html", ["tools/fin/fin.html"], ""),
 ]
 PH = re.compile(r"(__[A-Z0-9_]+__)")
+
+
+def js(obj):
+    return json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+
+
+def events_json():
+    """events along the way, from data/new2/events_*.json (same rules as build3.events)"""
+    out, seen = [], set()
+    for f in sorted(glob.glob(os.path.join(ROOT, "data", "new2", "events_*.json"))):
+        for e in json.load(open(f, encoding="utf-8")).get("events", []):
+            c = e.get("coords") or []
+            if len(c) != 2 or not (24 <= c[0] <= 50 and -125 <= c[1] <= -66) or not e.get("start"):
+                continue
+            k = re.sub(r"[^a-z0-9]+", "-", (e.get("name_en", "") + "-" + e["start"]).lower()).strip("-")[:60]
+            if k in seen:
+                continue
+            seen.add(k)
+            o = {"id": k, "name_en": e.get("name_en", ""), "name_he": e.get("name_he") or e.get("name_en", ""), "state": e.get("state", ""),
+                 "city": e.get("city", ""), "venue": e.get("venue", ""), "start": e["start"], "end": e.get("end") or e["start"],
+                 "confirmed": bool(e.get("confirmed")), "type": e.get("type", "other"), "why": e.get("why", ""), "tip": e.get("tip", ""),
+                 "cost": e.get("cost", ""), "url": e.get("url", ""), "g": round(c[0], 4), "n": round(c[1], 4)}
+            if e.get("weekly"):
+                o["weekly"] = e["weekly"]
+            if e.get("tags"):
+                o["tags"] = e["tags"]
+            out.append(o)
+    return js(out)
+
+
+# placeholders whose value comes from the data files, not from the old page
+FRESH = {"__EVENTS__": events_json}
 
 
 def at_rev(path):
@@ -63,12 +95,16 @@ def main():
     changed = 0
     for label, files, sep in SLOTS:
         old, new = join([at_rev(f) for f in files], sep), join([now(f) for f in files], sep)
-        if old == new:
+        if old == new and not set(PH.findall(new)) & set(FRESH):
             continue
         a, b, vals = locate(page, old)
+        for name in set(PH.findall(new)) & set(FRESH):
+            vals[name] = FRESH[name]()
         for name in set(PH.findall(new)) - set(vals):
             raise SystemExit("%s: new placeholder %s has no value in the page" % (label, name))
         out = PH.sub(lambda m: vals[m.group(1)], new)
+        if out == page[a:b]:
+            continue
         page = page[:a] + out + page[b:]
         changed += 1
         print("patched", label)

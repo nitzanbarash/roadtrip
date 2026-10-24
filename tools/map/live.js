@@ -206,6 +206,41 @@
   });
   setNear=(function(orig){ return function(id){ orig(id); Array.prototype.forEach.call($('gchips').children, function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-g')===id?'true':'false'); }); if(id){ var nb=$('nearbar'); if(nb.hidden){ nb.hidden=false; $('bNear').setAttribute('aria-expanded','true'); } } }; })(setNear);
 
+  /* ---------- events: small and local too (bars, farmers, town festivals), and what's on tonight ---------- */
+  var EV_KINDS=[['all','הכול'],['small','קטן ומקומי'],['music','הופעות ובר'],['farm','חקלאים ושווקים'],['big','גדולים']];
+  function evTags(e){ return e.tags||[]; }
+  function evKindOK(e){
+    var k=evState.kind||'all', t=e.type, tg=evTags(e);
+    if(k==='music') return t==='bar' || t==='concert' || tg.indexOf('bar')>=0;
+    if(k==='farm') return t==='farm' || t==='market' || tg.indexOf('farm')>=0;
+    if(k==='small') return /^(bar|farm|market|local)$/.test(t) || tg.indexOf('local')>=0 || tg.indexOf('young')>=0;
+    if(k==='big') return !/^(bar|farm|market|local)$/.test(t) && tg.indexOf('local')<0;
+    return true;
+  }
+  (function(){
+    var tools=$('epanel').querySelector('.evtools');
+    tools.insertAdjacentHTML('afterbegin', '<div class="prow" id="evKind">'+EV_KINDS.map(function(k,i){ return '<button class="chip" type="button" data-k="'+k[0]+'" aria-pressed="'+(i?'false':'true')+'">'+k[1]+'</button>'; }).join('')+'</div>');
+    tools.insertAdjacentHTML('beforeend', '<div class="evnow"><b>מה יש הערב לידי?</b><span id="evNowLinks"></span></div>');
+    $('evKind').addEventListener('click', function(e){ var b=e.target.closest('button'); if(!b) return; evState.kind=b.getAttribute('data-k'); Array.prototype.forEach.call(this.children, function(x){ x.setAttribute('aria-pressed', x===b?'true':'false'); }); renderEvents(); });
+  })();
+  var EVC={key:'', city:null};
+  function nearCityItem(p){ var best=null, bd=1e9; ITEMS.forEach(function(it){ if(it.g==null || !it.l) return; var d=Math.abs(it.g-p.lat)+Math.abs(it.n-p.lng)*.8; if(d<bd){ bd=d; best=it; } }); return best && best.l; }
+  function evNowLinks(){
+    var p=hereNow(), key=p.lat.toFixed(1)+','+p.lng.toFixed(1);
+    var draw=function(city){
+      var c=city||'', parts=c.split(','), ct=(parts[0]||'').trim(), st=stOfLoc(c)||'', E=encodeURIComponent, where=ct+(st?' '+st:'');
+      var eb= ct && st ? 'https://www.eventbrite.com/d/'+st.toLowerCase()+'--'+ct.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'/events--this-weekend/' : 'https://www.eventbrite.com/d/united-states/events--this-weekend/';
+      var L=[['הופעות הערב','https://www.google.com/search?q='+E('live music tonight '+where)],['בסוף השבוע','https://www.google.com/search?q='+E('events this weekend '+where)],['Eventbrite',eb],['שוק איכרים','https://www.google.com/maps/search/'+E('farmers market')+'/@'+p.lat.toFixed(4)+','+p.lng.toFixed(4)+',11z']];
+      $('evNowLinks').innerHTML=(ct?'<small>'+esc(where)+'</small>':'')+L.map(function(l){ return '<a class="maplink" target="_blank" rel="noopener" href="'+esc(l[1])+'">'+esc(l[0])+' ↗</a>'; }).join('');
+    };
+    if(EVC.key===key && EVC.city){ draw(EVC.city); return; }
+    EVC.key=key; EVC.city=nearCityItem(p); draw(EVC.city);
+    if(netUp()) jfetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=10&lat='+p.lat+'&lon='+p.lng, 8000).then(function(j){
+      var a=j && j.address; if(!a) return; var ct=a.city||a.town||a.village||a.county||''; var st=a.state||''; if(ct && EVC.key===key){ EVC.city=ct+', '+st; draw(EVC.city); }
+    }).catch(function(){});
+  }
+  renderEvents=(function(orig){ return function(){ orig(); evNowLinks(); }; })(renderEvents);
+
   /* ---------- fuel: today's state averages along the way + live prices at nearby stations ---------- */
   var FUEL={data:null, grade:lsGet('rt_fuel_g')||'regular', at:0, zip:null};
   var GRADE_HE={regular:'רגיל', mid:'בינוני', premium:'פרימיום', diesel:'דיזל'};

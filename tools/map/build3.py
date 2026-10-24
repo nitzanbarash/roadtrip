@@ -69,6 +69,9 @@ def events():
                         "city": e.get("city", ""), "venue": e.get("venue", ""), "start": e["start"], "end": e.get("end") or e["start"],
                         "confirmed": bool(e.get("confirmed")), "type": e.get("type", "other"), "why": e.get("why", ""), "tip": e.get("tip", ""),
                         "cost": e.get("cost", ""), "url": e.get("url", ""), "g": round(c[0], 4), "n": round(c[1], 4)})
+            for f2 in ("weekly", "tags"):
+                if e.get(f2):
+                    out[-1][f2] = e[f2]
     print("events", len(out))
     return out
 
