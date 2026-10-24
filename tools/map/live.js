@@ -204,7 +204,14 @@
     if(map.getZoom()<NEAR_BY[g].z) map.easeTo({zoom:NEAR_BY[g].z+.3, duration:500});
     setTimeout(function(){ setNear(near.cat===g ? null : g); }, map.getZoom()<NEAR_BY[g].z ? 650 : 0);
   });
-  setNear=(function(orig){ return function(id){ orig(id); Array.prototype.forEach.call($('gchips').children, function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-g')===id?'true':'false'); }); if(id){ var nb=$('nearbar'); if(nb.hidden){ nb.hidden=false; $('bNear').setAttribute('aria-expanded','true'); } } }; })(setNear);
+  setNear=(function(orig){ return function(id){ orig(id); Array.prototype.forEach.call($('gchips').children, function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-g')===id?'true':'false'); }); }; })(setNear);
+  // the chips row is enough: results go on the map, a short note says how many. The old panel gets a close button.
+  (function(){
+    var nb=$('nearbar'); nb.insertAdjacentHTML('afterbegin', '<button class="nbx" id="nearX" type="button" aria-label="סגירה">×</button>');
+    $('nearX').addEventListener('click', function(){ nb.hidden=true; $('bNear').setAttribute('aria-expanded','false'); setNear(null); });
+    var last='';
+    new MutationObserver(function(){ var t=$('nearNote').textContent; if(nb.hidden && near.cat && t && t!==last && !/^בחרו/.test(t)){ last=t; toast(t.replace('רשימה לפי מרחק','').trim(), 2600); } }).observe($('nearNote'), {childList:true, characterData:true, subtree:true});
+  })();
 
   /* ---------- events: small and local too (bars, farmers, town festivals), and what's on tonight ---------- */
   var EV_KINDS=[['all','הכול'],['small','קטן ומקומי'],['music','הופעות ובר'],['farm','חקלאים ושווקים'],['big','גדולים']];

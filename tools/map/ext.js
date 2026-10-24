@@ -323,16 +323,16 @@
     if(map.getZoom()<c.z){ $('nearNote').textContent='התקרבו עוד קצת למפה (האזור גדול מדי לחיפוש).'; return; }
     var b=map.getBounds(), bb=[b.getSouth(),b.getWest(),b.getNorth(),b.getEast()];
     if(near.bb && bb[0]>=near.bb[0] && bb[1]>=near.bb[1] && bb[2]<=near.bb[2] && bb[3]<=near.bb[3]) return;
-    var dy=(bb[2]-bb[0])*.3, dx=(bb[3]-bb[1])*.3; bb=[bb[0]-dy, bb[1]-dx, bb[2]+dy, bb[3]+dx];
+    // a small area answers fast: what's on screen, at most ~15 km around the middle
+    var cy=(bb[0]+bb[2])/2, cx=(bb[1]+bb[3])/2, hy=Math.min((bb[2]-bb[0])/2*1.1, .14), hx=Math.min((bb[3]-bb[1])/2*1.1, .14/Math.cos(cy*Math.PI/180));
+    bb=[cy-hy, cx-hx, cy+hy, cx+hx];
     if(near.busy) return; near.busy=true;
     $('nearNote').textContent='מחפש '+c.he+'…';
-    var q='[out:json][timeout:25];('+c.q+'('+bb.map(function(v){ return v.toFixed(4); }).join(',')+'););out center 160;';
+    var q='[out:json][timeout:12];('+c.q+'('+bb.map(function(v){ return v.toFixed(4); }).join(',')+'););out center 100;';
     var cat=near.cat;
-    function tryAt(i){
-      if(i>=OVP.length) return Promise.reject(new Error('all'));
-      return jfetch(OVP[i]+'?data='+encodeURIComponent(q), 30000).catch(function(){ return tryAt(i+1); });
-    }
-    tryAt(0).then(function(j){
+    // ask both servers at once and take the first answer
+    var race=new Promise(function(res, rej){ var left=OVP.length; OVP.forEach(function(u){ jfetch(u+'?data='+encodeURIComponent(q), 15000).then(res, function(){ if(--left===0) rej(new Error('all')); }); }); });
+    race.then(function(j){
       if(near.cat!==cat) return;
       near.bb=bb;
       near.feats=(j.elements||[]).map(function(el){
@@ -341,7 +341,7 @@
         return {type:'Feature', properties:{id:el.type+el.id, n:nm, c:c.c, cat:cat, tags:JSON.stringify({brand:t.brand, hours:t.opening_hours, phone:t.phone||t['contact:phone'], web:t.website||t['contact:website'], cuisine:t.cuisine, fuel:t['fuel:diesel']?'דיזל':'', addr:[t['addr:housenumber'],t['addr:street'],t['addr:city']].filter(Boolean).join(' ')})}, geometry:{type:'Point', coordinates:[lon,lat]}};
       }).filter(Boolean);
       setNearData();
-      $('nearNote').innerHTML=(near.feats.length? near.feats.length+' '+c.he+' באזור הזה' : 'לא נמצאו '+c.he+' באזור הזה')+(near.feats.length>=160?' (יש עוד; התקרבו)':'')+' <button type="button" id="nearList">רשימה לפי מרחק</button>';
+      $('nearNote').innerHTML=(near.feats.length? near.feats.length+' '+c.he+' באזור הזה' : 'לא נמצאו '+c.he+' באזור הזה')+(near.feats.length>=100?' (יש עוד; התקרבו)':'')+' <button type="button" id="nearList">רשימה לפי מרחק</button>';
     }).catch(function(){ if(near.cat===cat) $('nearNote').textContent='החיפוש לא הצליח כרגע. נסו שוב בעוד רגע.'; }).then(function(){ near.busy=false; });
   }
   $('nearNote').addEventListener('click', function(e){ if(e.target && e.target.id==='nearList') nearListSheet(); });
