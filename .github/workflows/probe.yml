@@ -1,0 +1,14 @@
+name: probe
+# One-off checks of outside services (sync storage, logos, gas prices). Safe to delete.
+on:
+  workflow_dispatch:
+  push:
+    paths: [tools/probe/**, .github/workflows/probe.yml]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tools/probe
+      - run: bash tools/probe/probe.sh
