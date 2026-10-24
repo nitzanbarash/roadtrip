@@ -26,6 +26,11 @@ async function one(url){
   const C=mk('C'+url);
   for(let i=0;i<60 && !(C.s.db.exp.a2&&C.s.db.exp.b2&&C.s.db.del.e1);i++) await wait(250);
   const late=!!(C.s.db.exp.a2&&C.s.db.exp.b2&&C.s.db.del.e1&&C.s.db.docs.queue);
+  // a big trip: 1000 expenses at once
+  for(let i=0;i<1000;i++) A.s.put('exp','big'+i,{amt:i, note:'הוצאה ארוכה מספר '+i, d:'2027-01-01', cat:'food', payer:'p1', split:{p1:.5,p2:.5}, cur:'USD', t:Date.now()});
+  t1=Date.now(); for(let i=0;i<100 && !B.s.db.exp.big999;i++) await wait(200);
+  const big=B.s.db.exp.big999 ? Date.now()-t1 : -1;
+  console.log(JSON.stringify({url, big_ms:big, big_kb:Math.round(JSON.stringify(A.s.db).length/1024)}));
   console.log(JSON.stringify({url, connect_ms:tc, a_to_b_ms:ab, b_to_a_ms:ba, both_at_once:both, late_phone_gets_all:late, sizeA:JSON.stringify(A.s.db).length}));
 }
 (async()=>{ await Promise.all(SERVERS.map(u=>one(u).catch(e=>console.log(u,'ERR',e.message)))); process.exit(0); })();

@@ -16,4 +16,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: LATE=120000 timeout 300 node tools/probe/sync_test.js wss://broker.emqx.io:8084/mqtt wss://broker.hivemq.com:8884/mqtt wss://test.mosquitto.org:8081/mqtt wss://public.mqtthq.com:8084/mqtt wss://mqtt.eclipseprojects.io:443/mqtt
+      - run: LATE=5000 timeout 300 node tools/probe/sync_test.js wss://broker.emqx.io:8084/mqtt wss://broker.hivemq.com:8884/mqtt wss://test.mosquitto.org:8081/mqtt
