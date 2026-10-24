@@ -18,7 +18,7 @@ REV = sys.argv[1] if len(sys.argv) > 1 else "HEAD"
 SLOTS = [
     ("app.js + live.js", ["tools/map/app.js", "tools/map/live.js"], "\n"),
     ("markers.js + ext.js", ["tools/map/markers.js", "tools/map/ext.js"], ""),
-    ("fin.js", ["tools/fin/fin.js"], ""),
+    ("live_sync.js + fin.js", ["tools/fin/live_sync.js", "tools/fin/fin.js"], "\n"),
     ("app.css + live.css", ["tools/map/app.css", "tools/map/live.css"], "\n"),
     ("ext.css", ["tools/map/ext.css"], ""),
     ("fin.css", ["tools/fin/fin.css"], ""),

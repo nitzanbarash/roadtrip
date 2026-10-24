@@ -43,7 +43,8 @@
   }
   function finStart(){
     try{
-      FIN=finInit($('fin'), {toast:toast, download:saveText, loadScript:loadScript, claude:false, fire:!!(HOST && HOST.sw) && !IN_FRAME, docs:['queue','must','picks'], onDoc:onRemoteDoc, builtin:FB_BUILTIN});
+      FIN=finInit($('fin'), {toast:toast, download:saveText, loadScript:loadScript, claude:false, fire:!!(HOST && HOST.sw) && !IN_FRAME, docs:['queue','must','picks'], onDoc:onRemoteDoc, builtin:FB_BUILTIN,
+        live:(HOST && HOST.sw && !IN_FRAME) ? LIVE_SYNC : null, docsNow:docsNow});
     }catch(e){ FIN=null; }
   }
   // the queue, our must-sees and my-route stars travel with the money sync (when it is connected)
@@ -53,6 +54,9 @@
     if(name==='queue' && Array.isArray(d.items) && (+d.t||0)>qT){ qT=+d.t; lsSet('rt_qT', String(qT)); queue=d.items; lsSet(QKEY, JSON.stringify(queue)); renderQueue(); planRoute(); refreshPoiLabels(); remoteNote('התור'); }
     if(name==='must' && d.ids && (+d.t||0)>mT){ mT=+d.t; lsSet('rt_mT', String(mT)); MUST=d.ids; lsSet('rt_must', JSON.stringify(MUST)); mustChanged(false); remoteNote('החובה'); }
     if(name==='picks' && remotePicks(d)) remoteNote('המסלול שלי');
+  }
+  function docsNow(){   // what this phone has, for the first sync
+    var o={}; if(qT) o.queue={items:queue, t:qT}; if(mT) o.must={ids:mustMap(), t:mT}; if(pT) o.picks={ids:picks, t:pT}; return o;
   }
   function queueChanged(){
     qT=Date.now(); lsSet('rt_qT', String(qT));

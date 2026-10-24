@@ -342,7 +342,7 @@ def main():
                .replace("__RTL__", js(rtl))
                .replace("__EXT_CSS__", open(P(HERE, "ext.css"), encoding="utf-8").read())
                .replace("__EXT_JS__", open(P(HERE, "markers.js"), encoding="utf-8").read() + open(P(HERE, "ext.js"), encoding="utf-8").read())
-               .replace("__FIN_JS__", open(P(FIN, "fin.js"), encoding="utf-8").read())
+               .replace("__FIN_JS__", open(P(FIN, "live_sync.js"), encoding="utf-8").read() + "\n" + open(P(FIN, "fin.js"), encoding="utf-8").read())
                .replace("__APP_JS__", open(P(HERE, "app.js"), encoding="utf-8").read() + "\n" + open(P(HERE, "live.js"), encoding="utf-8").read())
                .replace("__FIN_HTML__", open(P(FIN, "fin.html"), encoding="utf-8").read())
                .replace("__FIN_CSS__", open(P(FIN, "fin.css"), encoding="utf-8").read())

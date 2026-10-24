@@ -6,6 +6,9 @@
   // The shared trip. When set, everyone who opens the link is on the same trip with no setup:
   // {c:{apiKey,authDomain,projectId,storageBucket,messagingSenderId,appId}, t:'trip id (16+ chars)'}
   var FB_BUILTIN=null;
+  // the shared trip, open to whoever has the app (only the two of us): free public MQTT servers, no account
+  var LIVE_SYNC={topic:'roadtrip-nb/rwa3o6bho9e7nq0u0t026e/trip', servers:['wss://broker.emqx.io:8084/mqtt', 'wss://broker.hivemq.com:8884/mqtt', 'wss://test.mosquitto.org:8081/mqtt']};
+  try{ var _ls=JSON.parse(lsGet('rt_live_servers')||'null'); if(_ls && _ls.length) LIVE_SYNC.servers=_ls; }catch(e){}   // for tests
 
   /* ---------- small helpers ---------- */
   var US={AL:['Alabama','אלבמה'],AK:['Alaska','אלסקה'],AZ:['Arizona','אריזונה'],AR:['Arkansas','ארקנסו'],CA:['California','קליפורניה'],CO:['Colorado','קולורדו'],CT:['Connecticut','קונטיקט'],DE:['Delaware','דלאוור'],DC:['District of Columbia','וושינגטון די.סי.'],FL:['Florida','פלורידה'],GA:['Georgia','ג׳ורג׳יה'],HI:['Hawaii','הוואי'],ID:['Idaho','איידהו'],IL:['Illinois','אילינוי'],IN:['Indiana','אינדיאנה'],IA:['Iowa','איווה'],KS:['Kansas','קנזס'],KY:['Kentucky','קנטקי'],LA:['Louisiana','לואיזיאנה'],ME:['Maine','מיין'],MD:['Maryland','מרילנד'],MA:['Massachusetts','מסצ׳וסטס'],MI:['Michigan','מישיגן'],MN:['Minnesota','מינסוטה'],MS:['Mississippi','מיסיסיפי'],MO:['Missouri','מיזורי'],MT:['Montana','מונטנה'],NE:['Nebraska','נברסקה'],NV:['Nevada','נבדה'],NH:['New Hampshire','ניו המפשייר'],NJ:['New Jersey','ניו ג׳רזי'],NM:['New Mexico','ניו מקסיקו'],NY:['New York','ניו יורק'],NC:['North Carolina','צפון קרוליינה'],ND:['North Dakota','צפון דקוטה'],OH:['Ohio','אוהיו'],OK:['Oklahoma','אוקלהומה'],OR:['Oregon','אורגון'],PA:['Pennsylvania','פנסילבניה'],RI:['Rhode Island','רוד איילנד'],SC:['South Carolina','דרום קרוליינה'],SD:['South Dakota','דרום דקוטה'],TN:['Tennessee','טנסי'],TX:['Texas','טקסס'],UT:['Utah','יוטה'],VT:['Vermont','ורמונט'],VA:['Virginia','וירג׳יניה'],WA:['Washington','וושינגטון'],WV:['West Virginia','מערב וירג׳יניה'],WI:['Wisconsin','ויסקונסין'],WY:['Wyoming','ויומינג']};
@@ -331,6 +334,29 @@
     if(k) $('gKeyDel').onclick=function(){ try{ localStorage.removeItem('rt_gkey'); }catch(e){} keyUI(); };
     else $('gKeySave').onclick=function(){ var v=$('gKey').value.trim(); if(!/^AIza[\w-]{20,}$/.test(v)){ toast('זה לא נראה כמו מפתח של Google (מתחיל ב-AIza).'); return; } lsSet('rt_gkey', v); keyUI(); nearStations(); };
   }
+  // gas brands: logo (from the brand's site icon), color, and how far from the state average they usually price
+  var BRANDS=[
+    [/costco/,'Costco','costco.com','#E31837',-.32],[/sam'?s club/,"Sam's Club",'samsclub.com','#0067A0',-.28],[/\bbj'?s\b/,"BJ's",'bjs.com','#CC0033',-.25],
+    [/murphy/,'Murphy USA','murphyusa.com','#0055A5',-.14],[/walmart/,'Walmart','walmart.com','#0071CE',-.14],[/kroger/,'Kroger','kroger.com','#21409A',-.12],[/safeway/,'Safeway','safeway.com','#E21A2C',-.08],
+    [/quik ?trip|\bqt\b/,'QuikTrip','www.quiktrip.com','#D52B1E',-.1],[/racetrac/,'RaceTrac','racetrac.com','#FFC72C',-.1],[/raceway/,'RaceWay','racetrac.com','#E21A2C',-.1],[/sheetz/,'Sheetz','sheetz.com','#D71920',-.08],[/wawa/,'Wawa','wawa.com','#E31837',-.06],
+    [/buc-?ee/,"Buc-ee's",'buc-ees.com','#FFD100',-.1],[/arco/,'ARCO','arco.com','#0E2C8E',-.18],[/maverik/,'Maverik','maverik.com','#C8102E',-.04],[/love'?s/,"Love's",'loves.com','#E31837',-.04],[/pilot|flying j/,'Pilot Flying J','pilotflyingj.com','#E31837',.0],
+    [/speedway/,'Speedway','speedway.com','#E21A2C',-.02],[/circle ?k/,'Circle K','circlek.com','#EE3124',.0],[/casey/,"Casey's",'caseys.com','#E31837',-.02],[/kum ?& ?go/,'Kum & Go','kumandgo.com','#00843D',-.02],[/holiday/,'Holiday','holidaystationstores.com','#D71920',.0],
+    [/7-?eleven|7 eleven/,'7-Eleven','7-eleven.com','#008163',.02],[/marathon/,'Marathon','marathonpetroleum.com','#E31837',.02],[/sunoco/,'Sunoco','sunoco.com','#FFD100',.02],[/valero/,'Valero','valero.com','#0080C6',.0],[/citgo/,'Citgo','citgo.com','#E31837',.0],
+    [/sinclair/,'Sinclair','sinclairoil.com','#00843D',.02],[/gulf/,'Gulf','gulfoil.com','#F58025',.03],[/conoco/,'Conoco','conoco.com','#E31837',.06],[/phillips ?66/,'Phillips 66','phillips66.com','#E31837',.07],[/\b76\b/,'76','www.76.com','#F58025',.08],
+    [/texaco/,'Texaco','texaco.com','#E31837',.1],[/exxon/,'Exxon','exxon.com','#E31837',.1],[/mobil/,'Mobil','mobil.com','#0055A5',.1],[/\bbp\b|amoco/,'BP','www.bp.com','#009B3A',.08],[/shell/,'Shell','shell.com','#FFD500',.1],[/chevron/,'Chevron','chevron.com','#0054A4',.12]
+  ];
+  function brandOf(name){
+    var n=String(name||'').toLowerCase();
+    for(var i=0;i<BRANDS.length;i++) if(BRANDS[i][0].test(n)) return {n:BRANDS[i][1], dom:BRANDS[i][2], c:BRANDS[i][3], d:BRANDS[i][4]};
+    return null;
+  }
+  function brandLogo(b, nm){
+    var init=esc(((b && b.n) || nm || '⛽').replace(/[^A-Za-z0-9]/g,'').slice(0,2) || '⛽'), col=b ? b.c : '#5F6368';
+    var fb='<span class="blogo" style="--bc:'+col+'">'+init+'</span>';
+    if(!b) return fb;
+    return '<span class="blogo img" style="--bc:'+col+'"><img alt="" loading="lazy" src="https://www.google.com/s2/favicons?domain='+b.dom+'&amp;sz=64" onerror="this.parentNode.classList.remove(\'img\');this.parentNode.textContent=\''+init+'\'"></span>';
+  }
+  function stNear(p){ var mm=myMile(), rs=routeStates(); if(mm!=null && p.me){ var pr=project(p.lng,p.lat); if(pr.km<40){ var i=stateAt(mm); if(i!=null) return rs[i].st; } } return stOfLoc(nearCityItem(p)||''); }
   function nearStations(){
     if(!netUp()){ $('gNearNote').textContent='צריך אינטרנט. במפה עצמה תחנות הדלק מופיעות גם בלי קליטה.'; return; }
     $('gNearNote').textContent='מאתר את המיקום…';
@@ -355,24 +381,29 @@
           return (j.elements||[]).map(function(e){ var c=ll2(e), t=e.tags||{}; return {n:t.brand||t.name||'תחנת דלק', a:t['addr:street']?(t['addr:housenumber']||'')+' '+t['addr:street']:'', lat:c.lat, lng:c.lng, pr:{}, t:0, hgv:t.hgv==='yes'}; });
         });
     job.then(function(list){
-      list.forEach(function(s){ s.d=miAB(p, s); s.v=s.pr[g]; });
+      // today's state average for this grade, moved by what each brand usually charges, when there is no live price
+      var st=stNear(p), avg=priceOf(st, g);
+      list.forEach(function(s){
+        s.d=miAB(p, s); s.b=brandOf(s.n); s.v=s.pr[g]; s.est=false;
+        if(s.v==null && avg!=null){ s.v=Math.round((avg+(s.b ? s.b.d : 0))*100)/100; s.est=true; }
+      });
       list=list.filter(function(s){ return s.lat!=null; });
-      list.sort(function(a,b){ return (a.v!=null?0:1)-(b.v!=null?0:1) || (a.v!=null && b.v!=null ? a.v-b.v : 0) || a.d-b.d; });
-      list=list.slice(0, 15);
+      list.sort(function(a,b){ return (a.v!=null?0:1)-(b.v!=null?0:1) || (a.v!=null && b.v!=null ? (a.v-b.v) || (a.est-b.est) : 0) || a.d-b.d; });
+      list=list.slice(0, 20);
       if(!list.length){ note.textContent='לא נמצאו תחנות בטווח של 10 מייל.'; return; }
-      var withP=list.filter(function(s){ return s.v!=null; }), cheap=withP.length ? withP[0].v : null;
-      note.textContent= withP.length ? 'מחיר '+GRADE_HE[g]+' לגלון, מהזול ליקר. ההפרש בין הזולה ליקרה: '+usd(withP[withP.length-1].v-cheap)+'.' : key ? 'לתחנות האלה אין כרגע מחיר בגוגל.' : 'התחנות הקרובות. המחיר העדכני: GasBuddy או Google Maps (למעלה), או מפתח Google כדי לראות אותו כאן.';
+      var withP=list.filter(function(s){ return s.v!=null; }), cheap=withP.length ? withP[0].v : null, nEst=list.filter(function(s){ return s.est; }).length;
+      note.innerHTML= withP.length ? 'מחיר '+GRADE_HE[g]+' לגלון, מהזול ליקר.'+(avg!=null?' ממוצע היום ב'+esc(stHe(st))+': <b class="lat">'+usd(avg)+'</b>.':'')+(nEst ? ' <b>~</b> = הערכה לפי ממוצע המדינה היום וסוג התחנה'+(key?'':' (המחיר המדויק: GasBuddy למעלה, או מפתח Google)')+'.' : '') : 'התחנות הקרובות. המחיר העדכני: GasBuddy או Google Maps (למעלה).';
       el.innerHTML=list.map(function(s){
-        return '<div class="gstn'+(s.v!=null && s.v===cheap?' best':'')+'"><img alt="" src="'+badgeURL('local_gas_station', s.v!=null && s.v===cheap ? '#188038' : '#5F6368', 22)+'"><div class="t"><b>'+esc(s.n)+'</b><small>'+fmtMi(s.d)+' mi '+esc(dirAB(p,s))+(s.a?' · '+esc(s.a):'')+(s.t?' · עודכן '+agoHe(s.t):'')+(s.hgv?' · משאיות':'')+'</small></div>'+
-          (s.v!=null ? '<b class="pz lat">'+usd(s.v)+'</b>' : '')+'<a class="maplink" target="_blank" rel="noopener" href="'+wazeLL(s.lat, s.lng)+'">נווט</a></div>';
+        return '<div class="gstn'+(s.v!=null && s.v===cheap?' best':'')+'">'+brandLogo(s.b, s.n)+'<div class="t"><b>'+esc(s.b && s.n.toLowerCase().indexOf(s.b.n.toLowerCase().slice(0,4))<0 ? s.b.n+' · '+s.n : s.n)+'</b><small>'+fmtMi(s.d)+' mi '+esc(dirAB(p,s))+(s.a?' · '+esc(s.a):'')+(s.t?' · עודכן '+agoHe(s.t):'')+(s.hgv?' · משאיות':'')+'</small></div>'+
+          (s.v!=null ? '<b class="pz lat'+(s.est?' est':'')+'">'+(s.est?'~':'')+usd(s.v)+'</b>' : '')+'<a class="maplink" target="_blank" rel="noopener" href="'+wazeLL(s.lat, s.lng)+'">נווט</a></div>';
       }).join('');
-      addMapPts('fuelpts', list.map(function(s){ return {type:'Feature', properties:{h:s.v!=null ? usd(s.v) : s.n, c:s.v!=null && s.v===cheap ? '#188038' : '#5F6368'}, geometry:{type:'Point', coordinates:[s.lng, s.lat]}}; }), '#5F6368');
+      addMapPts('fuelpts', list.map(function(s){ return {type:'Feature', properties:{h:(s.b?s.b.n+' ':'')+(s.v!=null ? (s.est?'~':'')+usd(s.v) : (s.b?'':s.n)), c:s.v!=null && s.v===cheap ? '#188038' : (s.b ? s.b.c : '#5F6368')}, geometry:{type:'Point', coordinates:[s.lng, s.lat]}}; }), '#5F6368');
     }).catch(function(e){ note.textContent= key ? 'גוגל לא החזיר מחירים: '+String(e.message||e).slice(0,140)+'. בדקו שהמפתח פעיל ו-Places API (New) מופעל.' : 'החיפוש לא הצליח. נסו שוב בעוד רגע.'; });
   }
   function fuelOpen(){
     fuelLinks(); keyUI();
     if(FUEL.data) renderFuel();
-    loadFuel().then(renderFuel);
+    loadFuel().then(function(){ renderFuel(); if(!$('gNearList').children.length && netUp()) nearStations(); });
     // if location is already allowed, use it (no prompt)
     try{ if(!hereNow().me && navigator.permissions) navigator.permissions.query({name:'geolocation'}).then(function(r){ if(r.state==='granted') withHere(function(){ renderFuel(); fuelLinks(); }); }, function(){}); }catch(e){}
   }
@@ -590,7 +621,19 @@
     return false;
   }
   try{ window.__rt={map:map, state:state, SL:SL, FUEL:FUEL}; }catch(e){}  // for tests
+  // my location: shown by itself at launch (like Google Maps), without taking over the map
+  var autoLoc={moved:false};
+  map.on('movestart', function(e){ if(e && e.originalEvent) autoLoc.moved=true; });
+  onPos=(function(orig){ return function(p){
+    var first=!geo.pos; orig(p);
+    if(first && geo.mode===1 && !autoLoc.moved && sheet.hidden) map.easeTo({center:[geo.pos.lng, geo.pos.lat], zoom:Math.max(map.getZoom(), 11), duration:900});
+  }; })(onPos);
+  function autoLocate(){
+    if(!navigator.geolocation || IN_FRAME || geo.watch!=null) return;
+    try{ geo.watch=navigator.geolocation.watchPosition(onPos, onPosErr, {enableHighAccuracy:true, maximumAge:5000, timeout:25000}); setFollow(1); }catch(e){}
+  }
   function liveOnLoad(){
+    autoLocate();
     tidyLayers();
     dlCardSync(); setTimeout(dlCardSync, 2500);
     loadFuel();

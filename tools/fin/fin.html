@@ -11,9 +11,11 @@
   </div>
 
   <section data-p="add">
+    <div class="fcard ftoday" id="fToday"></div>
     <div class="fcard">
       <div class="frow"><span class="flbl">אני:</span><div class="fseg inl" id="fMe"></div></div>
-      <div class="famt"><input id="fAmt" type="number" inputmode="decimal" step="0.01" min="0" placeholder="0.00" aria-label="סכום"><div class="fseg inl" id="fCur"></div></div>
+      <div class="famt"><input id="fAmt" type="number" inputmode="decimal" step="0.01" min="0" placeholder="0.00" aria-label="סכום"><div class="fseg inl" id="fCur"></div><select id="fCurMore" class="fcurmore" aria-label="מטבע אחר"></select></div>
+      <div class="fnote" id="fFx" hidden></div>
       <div><span class="flbl">מי שילם</span><div class="fseg" id="fPay" style="margin-top:4px"></div></div>
       <div><span class="flbl">קטגוריה</span><div class="fchips" id="fCats" style="margin-top:4px"></div></div>
       <div><span class="flbl">איך מתחלקים</span><div class="fseg" id="fSplit" style="margin-top:4px"></div>
@@ -26,7 +28,19 @@
 
   <section data-p="bal" hidden>
     <div class="fcard"><h3>מי חייב למי</h3><div class="fowe" id="fOwe"></div><div class="ftiles" id="fTiles"></div>
+      <div class="frow"><button class="fbtn pri" id="fSettle" type="button" hidden>סגירת החשבון</button></div>
       <p class="fnote">החשבון כולל רק את מה שמשותף. הוצאה ״רק שלי״ נספרת בתקציב של מי שהיא שלו.</p></div>
+    <div class="fcard"><h3>העברת כסף בינינו</h3><p class="fnote">החזר, או הלוואה במזומן. זה משנה רק את ״מי חייב למי״, לא את ההוצאות.</p>
+      <div class="frow"><div class="fseg inl" id="fXFrom"></div><span class="flbl">נתן/ה ל</span><b id="fXTo"></b></div>
+      <div class="famt"><input id="fXAmt" type="number" inputmode="decimal" step="0.01" min="0" placeholder="0.00" aria-label="סכום"><span class="fcurlbl" id="fXCur"></span></div>
+      <div class="frow"><input id="fXNote" class="fgrow" type="text" placeholder="על מה? (לא חובה)" maxlength="60"><button class="fbtn pri" id="fXSave" type="button">רישום</button></div>
+      <div class="flist" id="fXList"></div></div>
+    <div class="fcard"><h3>חובות עם אחרים</h3><p class="fnote">חברים, משפחה, מארחים: מי חייב לכם ולמי אתם חייבים.</p>
+      <div class="ftiles" id="fDTiles"></div>
+      <div class="frow"><div class="fseg inl" id="fDDir"></div><input id="fDWho" class="fgrow" type="text" placeholder="מי?" maxlength="30"></div>
+      <div class="famt"><input id="fDAmt" type="number" inputmode="decimal" step="0.01" min="0" placeholder="0.00" aria-label="סכום"><span class="fcurlbl" id="fDCur"></span></div>
+      <div class="frow"><input id="fDNote" class="fgrow" type="text" placeholder="על מה? (לא חובה)" maxlength="60"><button class="fbtn pri" id="fDSave" type="button">הוספה</button></div>
+      <div class="flist" id="fDList"></div></div>
     <div class="fcard"><h3>לאן הולך הכסף</h3><div class="fdonut" id="fDonut"></div></div>
     <div class="fcard"><h3>מי שילם בפועל</h3><div id="fWho"></div></div>
     <div class="fcard"><h3>כל יום</h3><div class="ftip" id="fDayTip">לחצו על עמודה לפרטים</div><div class="fbars" id="fDays"></div></div>
@@ -47,9 +61,11 @@
     <div class="fcard"><h3>סנכרון בין הטלפונים</h3><div id="fSyncBox"></div></div>
     <div class="fcard"><h3>אנחנו</h3><div class="frow"><label class="fgrow"><span class="flbl">שם 1</span><input id="fN1" type="text" maxlength="24"></label><label class="fgrow"><span class="flbl">שם 2</span><input id="fN2" type="text" maxlength="24"></label></div></div>
     <div class="fcard"><h3>מטבעות</h3>
+      <p class="fnote" id="fFxAuto"></p>
+      <label class="frow"><input type="checkbox" id="fFxMan"> <span>שער ידני לשקל ולאירו (במקום האוטומטי)</span></label>
       <div class="frow"><label class="fgrow"><span class="flbl">₪ לדולר אחד</span><input id="fRILS" type="number" step="0.01" min="0" inputmode="decimal"></label><label class="fgrow"><span class="flbl">€ לדולר אחד</span><input id="fREUR" type="number" step="0.01" min="0" inputmode="decimal"></label></div>
       <label><span class="flbl">להציג סכומים ב-</span><select id="fDisp"><option value="USD">דולר $</option><option value="ILS">שקל ₪</option><option value="EUR">אירו €</option></select></label>
-      <p class="fnote">עדכנו לשער שהבנק באמת גובה (כולל עמלה).</p></div>
+      <p class="fnote">כל הוצאה שומרת את השער של היום שבו נרשמה, אז הסיכומים לא זזים כשהשער משתנה.</p></div>
     <div class="fcard"><h3>תאריכי הטיול</h3><div class="frow"><label class="fgrow"><span class="flbl">התחלה</span><input id="fDS" type="date"></label><label class="fgrow"><span class="flbl">סיום</span><input id="fDE" type="date"></label></div><p class="fnote">עם תאריכים, התקציב מראה כמה נשאר לכל יום.</p></div>
     <div class="fcard"><h3>קטגוריות</h3><p class="fnote">7 הראשונות מקבלות צבע בגרפים. סדרו עם החצים.</p><div class="fcats" id="fCatsEdit"></div><div class="frow"><input id="fNewCat" class="fgrow" type="text" placeholder="קטגוריה חדשה" maxlength="24"><button class="fbtn" id="fAddCat" type="button">הוספה</button></div></div>
     <div class="fcard"><div class="frow"><button class="fbtn pri" id="fSetSave" type="button">שמירת ההגדרות</button><span class="fnote" id="fSetNote"></span></div></div>

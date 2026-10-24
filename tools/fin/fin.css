@@ -129,3 +129,23 @@
   .fin details ol{margin:6px 0 0; padding-inline-start:20px; font-size:13.5px; line-height:1.5}
   .fin code{font:600 12px ui-monospace,Menlo,monospace; direction:ltr; unicode-bidi:isolate; background:var(--surface); padding:1px 4px; border-radius:4px}
   .fin pre{font:600 11.5px ui-monospace,Menlo,monospace; direction:ltr; text-align:left; background:var(--surface); border:1px solid var(--line); padding:8px; border-radius:8px; overflow-x:auto; margin:6px 0 0}
+  /* today card, like a daily wallet */
+  .ftoday{gap:8px}
+  .ft1{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  .ft1 > div{display:flex; flex-direction:column; gap:1px; min-width:0}
+  .ft1 small{font-size:12.5px; color:var(--ink3)}
+  .fnum.big{font-size:26px; font-weight:800; line-height:1.15}
+  .ft2 .fnum.big{color:var(--park,#188038)}
+  .ft2.warn .fnum.big{color:var(--fgold)}
+  .ft2.over .fnum.big{color:var(--fpink)}
+  .fcurmore{flex:0 1 auto; max-width:120px; border:1px solid var(--line2); border-radius:10px; background:var(--surface2); color:inherit; font:inherit; font-size:14px; padding:0 6px}
+  .fcurmore.on{background:var(--go,#1A73E8); color:#fff; border-color:transparent}
+  .fcurlbl{direction:ltr; display:grid; place-items:center; min-width:44px; font-weight:800; font-size:18px; border:1px solid var(--line2); border-radius:10px; background:var(--surface2)}
+  .fex .fx{flex:none; width:30px; height:30px; border-radius:50%; border:1px solid var(--line2); background:var(--surface); color:var(--ink3); font-size:16px; padding:0; white-space:nowrap}
+  .fex .fx[data-arm="1"]{width:auto; padding:0 9px; font-size:12.5px; font-weight:800; color:var(--fpink); border-radius:100px}
+  .fex.fx2 .ic{display:grid; place-items:center; background:none; width:18px; font-size:17px; font-weight:800; color:var(--fgold)}
+  .fex.fd{gap:8px}
+  .fex.fd .fbtn.sm{padding:5px 9px; font-size:12.5px; flex:none}
+  .fex.fd.done{opacity:.55}
+  .fex.fd.done .am{text-decoration:line-through}
+  div.fex{cursor:default}

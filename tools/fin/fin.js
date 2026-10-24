@@ -13,7 +13,9 @@ function finInit(root, env){
   function b64e(s){ return btoa(unescape(encodeURIComponent(s))); }
   function b64d(s){ return decodeURIComponent(escape(atob(s.replace(/-/g,'+').replace(/_/g,'/')))); }
   var toast=env.toast||function(){};
-  var SYM={USD:'$', ILS:'₪', EUR:'€'}, CURS=['USD','ILS','EUR'];
+  var SYM={USD:'$', ILS:'₪', EUR:'€', GBP:'£', CAD:'C$', MXN:'MX$', JPY:'¥'}, CURS=['USD','ILS','EUR'];
+  var CUR_HE={USD:'דולר אמריקאי', ILS:'שקל', EUR:'אירו', CAD:'דולר קנדי', MXN:'פסו מקסיקני', GBP:'לירה שטרלינג', JPY:'ין יפני', CHF:'פרנק שוויצרי', AUD:'דולר אוסטרלי', THB:'באט תאילנדי', TRY:'לירה טורקית', JOD:'דינר ירדני', EGP:'לירה מצרית', AED:'דירהם', CNY:'יואן', INR:'רופי הודי', BRL:'ריאל ברזילאי', CZK:'קורונה צ׳כית', HUF:'פורינט', PLN:'זלוטי', GEL:'לארי', CRC:'קולון', COP:'פסו קולומביאני', PEN:'סול', ARS:'פסו ארגנטינאי', CLP:'פסו צ׳ילאני', DOP:'פסו דומיניקני', BSD:'דולר בהאמי', JMD:'דולר ג׳מייקני'};
+  function sym(c){ return SYM[c] || (c+' '); }
   var DEF={people:[{id:'p1',name:'ניצן'},{id:'p2',name:'אוסטר'}],
     cats:[{id:'fuel',name:'דלק'},{id:'food',name:'אוכל'},{id:'sleep',name:'לינה'},{id:'fun',name:'אטרקציות'},{id:'gro',name:'סופר'},{id:'car',name:'רכב והשכרה'},{id:'shop',name:'קניות'},{id:'park',name:'חניה ואגרה'},{id:'ins',name:'ביטוח'},{id:'other',name:'אחר'}],
     rates:{ILS:3.65, EUR:0.92}, display:'USD', start:'2026-12-14', end:'2027-02-15', budgets:{}};
@@ -30,17 +32,27 @@ function finInit(root, env){
   var editing=null, store=null, tab=lg('fin_tab')||'add', sortBy={k:'d', up:false}, H;
 
   /* ---------- money ---------- */
-  function rate(c){ return c==='USD' ? 1 : (+S.rates[c]||1); }
-  function usd(e){ return (+e.amt||0)/rate(e.cur); }
+  // exchange rates: automatic every day (open.er-api.com, ~160 currencies); ILS/EUR can be fixed by hand
+  var FX=lj('fin_fx')||{t:0, r:{}};
+  function rate(c){ if(c==='USD') return 1; if(S.fxMan && +S.rates[c]) return +S.rates[c]; return +FX.r[c] || +S.rates[c] || 1; }
+  function loadFx(force){
+    if(!force && Date.now()-FX.t<6*3600e3) return;
+    try{ fetch('https://open.er-api.com/v6/latest/USD').then(function(r){ return r.json(); }).then(function(j){
+      if(j && j.rates && j.rates.ILS){ FX={t:Date.now(), r:j.rates, d:j.time_last_update_unix ? j.time_last_update_unix*1000 : Date.now()}; ls('fin_fx', JSON.stringify(FX)); render(false); }
+    }).catch(function(){}); }catch(e){}
+  }
+  function usd(e){ return (+e.amt||0)/(+e.fx || rate(e.cur)); }   // each expense keeps the rate of its own day
+  function isX(e){ return e.kind==='xfer'; }
   function disp(u){ return u*rate(S.display); }
-  function fmt(u, cur){ var c=cur||S.display, v=cur?u:disp(u), a=Math.abs(v), d=a<100?2:0; return (v<0?'−':'')+SYM[c]+a.toLocaleString('en-US',{minimumFractionDigits:d, maximumFractionDigits:d}); }
+  function fmt(u, cur){ var c=cur||S.display, v=cur?u:disp(u), a=Math.abs(v), d=a<100?2:0; return (v<0?'−':'')+sym(c)+a.toLocaleString('en-US',{minimumFractionDigits:d, maximumFractionDigits:d}); }
   function shareOf(e,p){ if(!e.split) return .5; return e.split[p]!=null ? +e.split[p] : 0; }
   function pName(id){ for(var i=0;i<S.people.length;i++) if(S.people[i].id===id) return S.people[i].name; return id; }
   function catIdx(id){ for(var i=0;i<S.cats.length;i++) if(S.cats[i].id===id) return i; return 99; }
-  function cName(id){ var i=catIdx(id); return i<99 ? S.cats[i].name : id; }
+  function cName(id){ if(id==='xfer') return 'העברה בינינו'; var i=catIdx(id); return i<99 ? S.cats[i].name : id; }
   function catColor(id){ var i=catIdx(id); return i<7 ? 'var(--c'+(i+1)+')' : 'var(--cx)'; }
   function pColor(id){ return id===S.people[0].id ? 'var(--p1)' : 'var(--p2)'; }
   function pad(n){ return (n<10?'0':'')+n; }
+  function fmtAgo(t){ var m=Math.round((Date.now()-t)/60000); return m<60 ? 'לפני '+Math.max(1,m)+' דק׳' : m<1440 ? 'לפני '+Math.round(m/60)+' שע׳' : 'לפני '+Math.round(m/1440)+' ימים'; }
   function today(){ var d=new Date(); return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate()); }
   function dObj(s){ var p=String(s||'').split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }
   function fmtDate(d, short){ if(!d) return ''; var dt=dObj(d); return (short?'':['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'][dt.getDay()]+' ')+dt.getDate()+'.'+(dt.getMonth()+1); }
@@ -50,7 +62,9 @@ function finInit(root, env){
     var o={paid:{}, owed:{}, spent:{}, cat:{}, day:{}, tot:0};
     S.people.forEach(function(p){ o.paid[p.id]=0; o.owed[p.id]=0; o.spent[p.id]={tot:0, cats:{}}; });
     list.forEach(function(e){
-      var u=usd(e); o.tot+=u; if(o.paid[e.payer]!=null) o.paid[e.payer]+=u;
+      var u=usd(e); if(o.paid[e.payer]!=null) o.paid[e.payer]+=u;
+      if(isX(e)){ S.people.forEach(function(p){ o.owed[p.id]+=u*shareOf(e,p.id); }); return; }   // money between us: not spending
+      o.tot+=u;
       S.people.forEach(function(p){ var sh=u*shareOf(e,p.id); o.owed[p.id]+=sh; o.spent[p.id].tot+=sh; o.spent[p.id].cats[e.cat]=(o.spent[p.id].cats[e.cat]||0)+sh; });
       o.cat[e.cat]=(o.cat[e.cat]||0)+u; o.day[e.d]=(o.day[e.d]||0)+u;
     });
@@ -75,7 +89,7 @@ function finInit(root, env){
   function render(remote){
     renderForm();
     var sec=root.querySelector('section[data-p="'+tab+'"]');
-    if(tab==='add') renderList();
+    if(tab==='add'){ renderToday(); renderList(); }
     else if(tab==='bal') renderBal();
     else if(tab==='tab') renderTable();
     else if(tab==='bud'){ if(!(remote && busy(sec))) renderBud(); }
@@ -90,7 +104,14 @@ function finInit(root, env){
   function renderForm(){
     var ppl=S.people.map(function(p){ return {v:p.id, t:p.name}; });
     seg($f('fMe'), ppl, me, function(v){ me=v; ls('fin_me', v); if(!editing) form.payer=v; renderForm(); });
-    seg($f('fCur'), CURS.map(function(c){ return {v:c, t:SYM[c]}; }), form.cur, function(v){ form.cur=v; ls('fin_cur', v); renderForm(); });
+    seg($f('fCur'), CURS.map(function(c){ return {v:c, t:sym(c)}; }), form.cur, function(v){ form.cur=v; ls('fin_cur', v); renderForm(); });
+    var codes=Object.keys(FX.r||{}).filter(function(c){ return CURS.indexOf(c)<0; }).sort(function(a,b){ return (CUR_HE[a]?0:1)-(CUR_HE[b]?0:1) || (a<b?-1:1); });
+    if(CURS.indexOf(form.cur)<0 && codes.indexOf(form.cur)<0) codes.unshift(form.cur);
+    var cm=$f('fCurMore'); cm.innerHTML='<option value="">עוד…</option>'+codes.map(function(c){ return '<option value="'+c+'">'+c+(CUR_HE[c]?' · '+CUR_HE[c]:'')+'</option>'; }).join('');
+    cm.value=CURS.indexOf(form.cur)<0 ? form.cur : ''; cm.classList.toggle('on', CURS.indexOf(form.cur)<0);
+    cm.onchange=function(){ if(cm.value){ form.cur=cm.value; ls('fin_cur', form.cur); renderForm(); } };
+    var fx=$f('fFx'); fx.hidden=form.cur==='USD';
+    if(form.cur!=='USD') fx.textContent='$1 = '+rate(form.cur).toLocaleString('en-US',{maximumFractionDigits:4})+' '+form.cur+' · '+(S.fxMan&&+S.rates[form.cur] ? 'שער ידני' : FX.t ? 'שער אוטומטי, עודכן '+fmtAgo(FX.d||FX.t) : 'אין עדיין שער: צריך אינטרנט פעם אחת');
     seg($f('fPay'), ppl, form.payer, function(v){ form.payer=v; renderForm(); });
     var other=S.people.filter(function(p){ return p.id!==form.payer; })[0];
     seg($f('fSplit'), [{v:'eq', t:'חצי-חצי'}, {v:'mine', t:'רק '+pName(form.payer)}, {v:'theirs', t:'רק '+(other?other.name:'')}, {v:'custom', t:'אחוזים'}], form.split, function(v){ form.split=v; renderForm(); });
@@ -120,6 +141,7 @@ function finInit(root, env){
     var amt=parseFloat($f('fAmt').value);
     if(!(amt>0)){ toast('כתבו סכום.'); $f('fAmt').focus(); return; }
     var e={d:$f('fDate').value||today(), t:editing?editing.t:Date.now(), payer:form.payer, amt:Math.round(amt*100)/100, cur:form.cur, cat:form.cat, note:$f('fNote').value.trim(), split:splitOf()};
+    if(form.cur!=='USD') e.fx = (editing && editing.cur===form.cur && +editing.fx) ? +editing.fx : rate(form.cur);
     var id=editing ? editing.id : newId(), was=!!editing;
     applyLocal(id, e);
     store.setExpense(id, e).then(function(ok){ if(!ok && store.kind!=='local') toast('נשמר בטלפון. יסונכרן כשיהיה חיבור.'); });
@@ -143,16 +165,111 @@ function finInit(root, env){
   function renderList(){
     var el=$f('fList'), list=sorted();
     if(!list.length){ el.innerHTML='<div class="fempty">עוד אין הוצאות. כותבים סכום למעלה, בוחרים מי שילם ואיך מתחלקים, ולוחצים ״הוספת הוצאה״.</div>'; return; }
-    var dayTot={}; list.forEach(function(e){ dayTot[e.d]=(dayTot[e.d]||0)+usd(e); });
+    var dayTot={}; list.forEach(function(e){ if(!isX(e)) dayTot[e.d]=(dayTot[e.d]||0)+usd(e); });
     var html='', day=null;
     list.slice(0,40).forEach(function(e){
       if(e.d!==day){ day=e.d; html+='<div class="fday"><span>'+fmtDate(day)+'</span><span class="fnum">'+fmt(dayTot[day])+'</span></div>'; }
-      html+='<button class="fex" type="button" data-id="'+fe(e.id)+'" style="--sw:'+catColor(e.cat)+'"><span class="ic"></span><span class="tx"><b>'+fe(e.note||cName(e.cat))+'</b><small>'+fe(cName(e.cat))+' · שילם/ה '+fe(pName(e.payer))+(isPersonal(e)?' · רק של '+fe(pName(S.people.filter(function(p){ return shareOf(e,p.id)>0; })[0].id)):'')+(e.cur!==S.display?' · '+SYM[e.cur]+e.amt:'')+'</small></span><b class="am fnum">'+fmt(usd(e))+'</b></button>';
+      if(isX(e)){ html+=xRow(e); return; }
+      html+='<button class="fex" type="button" data-id="'+fe(e.id)+'" style="--sw:'+catColor(e.cat)+'"><span class="ic"></span><span class="tx"><b>'+fe(e.note||cName(e.cat))+'</b><small>'+fe(cName(e.cat))+' · שילם/ה '+fe(pName(e.payer))+(isPersonal(e)?' · רק של '+fe(pName(S.people.filter(function(p){ return shareOf(e,p.id)>0; })[0].id)):'')+(e.cur!==S.display?' · '+sym(e.cur)+e.amt:'')+'</small></span><b class="am fnum">'+fmt(usd(e))+'</b></button>';
     });
     if(list.length>40) html+='<p class="fnote" style="padding-top:8px">ועוד '+(list.length-40)+' הוצאות בלשונית ״טבלה״.</p>';
     el.innerHTML=html;
   }
-  root.addEventListener('click', function(e){ var b=e.target.closest('[data-id]'); if(!b || !root.contains(b)) return; var x=byId(b.getAttribute('data-id')); if(x) startEdit(x); });
+  root.addEventListener('click', function(e){ var b=e.target.closest('[data-id]'); if(!b || !root.contains(b)) return; var x=byId(b.getAttribute('data-id')); if(x && !isX(x)) startEdit(x); });
+
+  /* ---------- today, like a daily wallet ---------- */
+  function budgetTotal(){ var t=0; S.people.forEach(function(p){ t+=+((S.budgets[p.id]||{}).total)||0; }); return t; }
+  function renderToday(){
+    var s=sums(), td=today(), now=s.day[td]||0, n=EX.filter(function(e){ return e.d===td && !isX(e); }).length, di=daysInfo(), B=budgetTotal();
+    var mine=0; EX.forEach(function(e){ if(e.d===td && !isX(e)) mine+=usd(e)*shareOf(e, me); });
+    var wk=0, d7=dObj(td); d7.setDate(d7.getDate()-6); var w0=d7.getFullYear()+'-'+pad(d7.getMonth()+1)+'-'+pad(d7.getDate());
+    for(var d in s.day) if(d>=w0 && d<=td) wk+=s.day[d];
+    var html='<div class="ft1"><div><span class="flbl">היום הוצאנו</span><b class="fnum big">'+fmt(now)+'</b><small>'+(n?n+' הוצאות · החלק של '+fe(pName(me))+': '+fmt(mine):'עוד כלום היום')+'</small></div>';
+    if(B && di){
+      var before=s.tot-now, per=Math.max(0, B-before)/di.left, left=per-now, pct=per>0 ? Math.min(100, now/per*100) : 100;
+      html+='<div class="ft2 '+(left<0?'over':pct>80?'warn':'')+'"><span class="flbl">'+(left>=0?'נשאר להיום':'חרגנו היום')+'</span><b class="fnum big">'+fmt(Math.abs(left))+'</b><small>מתוך '+fmt(per)+' ליום</small></div></div>'+
+        '<div class="fbar'+(left<0?' over':pct>80?' warn':'')+'"><div class="g"><i style="width:'+pct.toFixed(1)+'%"></i></div></div>'+
+        '<p class="fnote">התקציב היומי = מה שנשאר מהתקציב ('+fmt(Math.max(0,B-before))+') חלקי '+di.left+' ימים שנשארו. ב-7 הימים האחרונים: '+fmt(wk)+'.</p>';
+    } else {
+      var days=Object.keys(s.day).length;
+      html+='<div class="ft2"><span class="flbl">ממוצע ליום</span><b class="fnum big">'+fmt(s.tot/Math.max(1,days))+'</b><small>'+fmt(wk)+' ב-7 ימים</small></div></div>'+
+        '<p class="fnote">קובעים תקציב בלשונית ״תקציב״ ורואים כאן כמה נשאר להוציא כל יום.</p>';
+    }
+    $f('fToday').innerHTML=html;
+  }
+
+  /* ---------- money between us (paybacks, cash loans) ---------- */
+  var xFrom=me;
+  function xRow(e){
+    var to=S.people.filter(function(p){ return shareOf(e,p.id)>0; })[0];
+    return '<div class="fex fx2" style="--sw:var(--fgold)"><span class="ic">⇄</span><span class="tx"><b>'+fe(pName(e.payer))+' נתן/ה ל'+fe(to?to.name:'')+'</b><small>'+fe(e.note||'העברה בינינו')+(e.cur!=='USD'?' · '+sym(e.cur)+e.amt:'')+'</small></span><b class="am fnum">'+fmt(usd(e))+'</b><button class="fx" type="button" data-xdel="'+fe(e.id)+'" aria-label="מחיקה">×</button></div>';
+  }
+  function addX(from, amt, cur, note){
+    var to=S.people.filter(function(p){ return p.id!==from; })[0], sp={}; sp[to.id]=1;
+    var e={d:today(), t:Date.now(), payer:from, amt:Math.round(amt*100)/100, cur:cur, cat:'xfer', kind:'xfer', note:note||'', split:sp};
+    if(cur!=='USD') e.fx=rate(cur);
+    var id=newId(); applyLocal(id, e); store.setExpense(id, e);
+    return e;
+  }
+  function renderX(){
+    seg($f('fXFrom'), S.people.map(function(p){ return {v:p.id, t:p.name}; }), xFrom, function(v){ xFrom=v; renderX(); });
+    var to=S.people.filter(function(p){ return p.id!==xFrom; })[0]; $f('fXTo').textContent=to?to.name:'';
+    $f('fXCur').textContent=sym(form.cur).trim();
+    var xs=sorted().filter(isX).slice(0,12);
+    $f('fXList').innerHTML= xs.length ? xs.map(function(e){ return '<div class="fday"><span>'+fmtDate(e.d)+'</span><span></span></div>'+xRow(e); }).join('') : '';
+  }
+  $f('fXSave').addEventListener('click', function(){
+    var a=parseFloat($f('fXAmt').value); if(!(a>0)){ toast('כתבו סכום.'); $f('fXAmt').focus(); return; }
+    var e=addX(xFrom, a, form.cur, $f('fXNote').value.trim()); $f('fXAmt').value=''; $f('fXNote').value='';
+    toast('נרשם: '+pName(e.payer)+' נתן/ה '+fmt(usd(e))+'.');
+  });
+  $f('fSettle').addEventListener('click', function(){
+    var b=this; if(b.getAttribute('data-arm')!=='1'){ b.setAttribute('data-arm','1'); b.dataset.t=b.textContent; b.textContent='לרשום שהחוב הוחזר? לחצו שוב'; setTimeout(function(){ if(b.dataset.t){ b.textContent=b.dataset.t; } b.removeAttribute('data-arm'); }, 3500); return; }
+    b.removeAttribute('data-arm'); b.dataset.t='';
+    var s=sums(), a=S.people[0], c=S.people[1], net=s.paid[a.id]-s.owed[a.id];
+    if(Math.abs(net)<.005) return;
+    addX(net>0?c.id:a.id, Math.abs(net), 'USD', 'סגירת חשבון'); toast('החשבון נסגר. מאוזן.');
+  });
+  root.addEventListener('click', function(e){
+    var b=e.target.closest('[data-xdel]'); if(!b) return;
+    if(b.getAttribute('data-arm')!=='1'){ b.setAttribute('data-arm','1'); b.textContent='למחוק?'; setTimeout(function(){ b.removeAttribute('data-arm'); b.textContent='×'; }, 3000); return; }
+    var id=b.getAttribute('data-xdel'); applyLocal(id, null); store.delExpense(id); toast('נמחק.');
+  });
+
+  /* ---------- debts with other people ---------- */
+  var D=lj('fin_debts')||{items:[], t:0}, dDir='in';
+  function saveDebts(){ D.t=Date.now(); ls('fin_debts', JSON.stringify(D)); if(store) store.setDoc('debts', D); renderDebts(); }
+  function dUsd(x){ return (+x.amt||0)/(+x.fx || rate(x.cur)); }
+  function renderDebts(){
+    seg($f('fDDir'), [{v:'in', t:'חייבים לי'}, {v:'out', t:'אני חייב/ת'}], dDir, function(v){ dDir=v; renderDebts(); });
+    $f('fDCur').textContent=sym(form.cur).trim();
+    var open=D.items.filter(function(x){ return !x.done; }), tin=0, tout=0;
+    open.forEach(function(x){ if(x.dir==='in') tin+=dUsd(x); else tout+=dUsd(x); });
+    $f('fDTiles').innerHTML='<div class="ftile"><span class="flbl">חייבים לנו</span><span class="fnum" style="color:var(--park,#188038)">'+fmt(tin)+'</span><small>'+open.filter(function(x){ return x.dir==='in'; }).length+' פתוחים</small></div>'+
+      '<div class="ftile"><span class="flbl">אנחנו חייבים</span><span class="fnum" style="color:var(--fpink)">'+fmt(tout)+'</span><small>'+open.filter(function(x){ return x.dir==='out'; }).length+' פתוחים</small></div>';
+    var list=D.items.slice().sort(function(a,b){ return (a.done?1:0)-(b.done?1:0) || (b.t||0)-(a.t||0); });
+    $f('fDList').innerHTML=list.map(function(x){
+      return '<div class="fex fd'+(x.done?' done':'')+'" style="--sw:'+(x.dir==='in'?'var(--park,#188038)':'var(--fpink)')+'"><span class="ic"></span><span class="tx"><b>'+(x.dir==='in' ? fe(x.who)+' חייב/ת ל'+fe(pName(x.p)) : fe(pName(x.p))+' חייב/ת ל'+fe(x.who))+'</b><small>'+fe(x.note||'')+(x.note?' · ':'')+fmtDate(x.d,true)+(x.cur!=='USD'?' · '+sym(x.cur)+x.amt:'')+(x.done?' · הוחזר ✓':'')+'</small></span><b class="am fnum">'+fmt(dUsd(x))+'</b>'+
+        '<button class="fbtn sm" type="button" data-dok="'+fe(x.id)+'">'+(x.done?'פתיחה':'הוחזר ✓')+'</button><button class="fx" type="button" data-ddel="'+fe(x.id)+'" aria-label="מחיקה">×</button></div>';
+    }).join('');
+  }
+  $f('fDSave').addEventListener('click', function(){
+    var a=parseFloat($f('fDAmt').value), w=$f('fDWho').value.trim();
+    if(!w){ toast('כתבו מי.'); $f('fDWho').focus(); return; }
+    if(!(a>0)){ toast('כתבו סכום.'); $f('fDAmt').focus(); return; }
+    var x={id:newId(), p:me, who:w, amt:Math.round(a*100)/100, cur:form.cur, dir:dDir, note:$f('fDNote').value.trim(), d:today(), t:Date.now(), done:0};
+    if(form.cur!=='USD') x.fx=rate(form.cur);
+    D.items.push(x); saveDebts(); $f('fDAmt').value=''; $f('fDNote').value=''; $f('fDWho').value='';
+    toast(dDir==='in' ? 'נרשם: '+w+' חייב/ת לך '+fmt(dUsd(x))+'.' : 'נרשם: את/ה חייב/ת ל'+w+' '+fmt(dUsd(x))+'.');
+  });
+  $f('fDList').addEventListener('click', function(e){
+    var ok=e.target.closest('[data-dok]'), del=e.target.closest('[data-ddel]');
+    if(ok){ D.items.forEach(function(x){ if(x.id===ok.getAttribute('data-dok')) x.done=x.done?0:1; }); saveDebts(); }
+    if(del){
+      if(del.getAttribute('data-arm')!=='1'){ del.setAttribute('data-arm','1'); del.textContent='למחוק?'; setTimeout(function(){ del.removeAttribute('data-arm'); del.textContent='×'; }, 3000); return; }
+      D.items=D.items.filter(function(x){ return x.id!==del.getAttribute('data-ddel'); }); saveDebts();
+    }
+  });
 
   /* ---------- charts ---------- */
   function arc(cx,cy,R,r,a0,a1){
@@ -184,7 +301,7 @@ function finInit(root, env){
     return rows;
   }
   function niceMax(v){ if(!(v>0)) return 1; var m=Math.pow(10, Math.floor(Math.log(v)/Math.LN10)); var f=[1,2,2.5,5,10]; for(var i=0;i<f.length;i++) if(f[i]*m>=v) return f[i]*m; return 10*m; }
-  function short(v){ var c=SYM[S.display]; return v>=1000 ? c+(Math.round(v/100)/10)+'k' : c+Math.round(v); }
+  function short(v){ var c=sym(S.display); return v>=1000 ? c+(Math.round(v/100)/10)+'k' : c+Math.round(v); }
   function dayBars(el, tipEl, map){
     var days=Object.keys(map).sort();
     if(!days.length){ el.innerHTML='<p class="fnote">עוד אין הוצאות.</p>'; tipEl.textContent=''; return; }
@@ -210,8 +327,10 @@ function finInit(root, env){
     var s=sums(), a=S.people[0], b=S.people[1], net=s.paid[a.id]-s.owed[a.id], o=$f('fOwe'), even=Math.abs(net)<.005;
     o.className='fowe'+(even?' even':'');
     o.innerHTML= even ? 'מאוזן. אף אחד לא חייב כלום.' : fe(net>0?b.name:a.name)+' צריך/ה להחזיר ל'+fe(net>0?a.name:b.name)+'<br><span class="fnum">'+fmt(Math.abs(net))+'</span>';
+    var st=$f('fSettle'); st.hidden=even; if(!even && st.getAttribute('data-arm')!=='1') st.textContent=(net>0?b.name:a.name)+' החזיר/ה '+fmt(Math.abs(net))+' · סגירת החשבון';
+    renderX(); renderDebts();
     var di=daysInfo();
-    $f('fTiles').innerHTML='<div class="ftile"><span class="flbl">סה״כ הוצאות</span><span class="fnum">'+fmt(s.tot)+'</span><small>'+EX.length+' הוצאות</small></div>'+
+    $f('fTiles').innerHTML='<div class="ftile"><span class="flbl">סה״כ הוצאות</span><span class="fnum">'+fmt(s.tot)+'</span><small>'+EX.filter(function(e){ return !isX(e); }).length+' הוצאות</small></div>'+
       '<div class="ftile"><span class="flbl">ממוצע ליום</span><span class="fnum">'+fmt(s.tot/Math.max(1,Object.keys(s.day).length))+'</span><small>'+Object.keys(s.day).length+' ימים עם הוצאות</small></div>'+
       S.people.map(function(p){ return '<div class="ftile"><span class="flbl">'+fe(p.name)+' שילם/ה</span><span class="fnum">'+fmt(s.paid[p.id])+'</span><small>החלק שלו/ה: '+fmt(s.owed[p.id])+'</small></div>'; }).join('');
     donut($f('fDonut'), catRows(s.cat), 'סה״כ');
@@ -237,7 +356,7 @@ function finInit(root, env){
     function th(k,t,n){ return '<th'+(n?' class="n"':'')+'><button type="button" data-sort="'+k+'" class="'+(sortBy.k===k?'on'+(sortBy.up?' up':''):'')+'">'+t+'</button></th>'; }
     $f('fAll').innerHTML = !list.length ? '<p class="fnote" style="padding:10px">אין הוצאות לסינון הזה.</p>' :
       '<table class="ftable"><thead><tr>'+th('d','תאריך')+th('note','מה')+th('cat','קטגוריה')+th('payer','שילם')+th('amt','מקורי',1)+th('usd','סכום',1)+'</tr></thead><tbody>'+
-      list.map(function(e){ return '<tr data-id="'+fe(e.id)+'" style="cursor:pointer"><td>'+fmtDate(e.d,true)+'</td><td class="w">'+fe(e.note||'—')+'</td><td><span class="sw" style="--sw:'+catColor(e.cat)+'"></span>'+fe(cName(e.cat))+'</td><td>'+fe(pName(e.payer))+'</td><td class="n">'+SYM[e.cur]+(+e.amt).toLocaleString('en-US')+'</td><td class="n">'+fmt(usd(e))+'</td></tr>'; }).join('')+
+      list.map(function(e){ return '<tr data-id="'+fe(e.id)+'" style="cursor:pointer"><td>'+fmtDate(e.d,true)+'</td><td class="w">'+fe(e.note||'—')+'</td><td><span class="sw" style="--sw:'+catColor(e.cat)+'"></span>'+fe(cName(e.cat))+'</td><td>'+fe(pName(e.payer))+'</td><td class="n">'+sym(e.cur)+(+e.amt).toLocaleString('en-US')+'</td><td class="n">'+fmt(usd(e))+'</td></tr>'; }).join('')+
       '<tr class="tot"><td colspan="5">'+list.length+' הוצאות</td><td class="n">'+fmt(tot)+'</td></tr></tbody></table>';
   }
   function filtered(){
@@ -270,7 +389,7 @@ function finInit(root, env){
         (totB?'<div class="fbar'+(sp.tot>totB?' over':sp.tot>totB*.8?' warn':'')+'"><div class="t"><b>מהתקציב הכולל</b><span class="fnum">'+Math.round(sp.tot/totB*100)+'%</span></div><div class="g"><i style="width:'+Math.min(100,sp.tot/totB*100).toFixed(1)+'%"></i></div></div>':'')+
         '<div class="fdonut" data-don="'+p.id+'"></div>'+
         S.cats.map(function(c){ var cb=+(b.cats&&b.cats[c.id])||0, cs=sp.cats[c.id]||0; if(!cb) return ''; return '<div class="fbar'+(cs>cb?' over':cs>cb*.8?' warn':'')+'"><div class="t"><b>'+fe(c.name)+'</b><span class="fnum">'+fmt(cs)+' / '+fmt(cb)+'</span></div><div class="g"><i style="width:'+Math.min(100,cs/cb*100).toFixed(1)+'%"></i></div></div>'; }).join('')+
-        '<h4>התקציב שלי ('+SYM[S.display]+')</h4><div class="fbud"><span>סה״כ לכל הטיול</span><input type="number" min="0" step="1" inputmode="decimal" data-p="'+p.id+'" data-c="" value="'+(totB?Math.round(disp(totB)):'')+'">'+
+        '<h4>התקציב שלי ('+sym(S.display)+')</h4><div class="fbud"><span>סה״כ לכל הטיול</span><input type="number" min="0" step="1" inputmode="decimal" data-p="'+p.id+'" data-c="" value="'+(totB?Math.round(disp(totB)):'')+'">'+
         S.cats.map(function(c){ var cb=+(b.cats&&b.cats[c.id])||0; return '<span>'+fe(c.name)+'</span><input type="number" min="0" step="1" inputmode="decimal" data-p="'+p.id+'" data-c="'+fe(c.id)+'" value="'+(cb?Math.round(disp(cb)):'')+'" placeholder="—">'; }).join('')+'</div></div>';
     });
     $f('fBud').innerHTML=html;
@@ -284,7 +403,8 @@ function finInit(root, env){
 
   /* ---------- settings ---------- */
   function renderSet(){
-    $f('fN1').value=S.people[0].name; $f('fN2').value=S.people[1].name; $f('fRILS').value=S.rates.ILS; $f('fREUR').value=S.rates.EUR; $f('fDisp').value=S.display; $f('fDS').value=S.start||''; $f('fDE').value=S.end||'';
+    $f('fN1').value=S.people[0].name; $f('fN2').value=S.people[1].name; $f('fRILS').value=S.fxMan ? S.rates.ILS : (+FX.r.ILS ? (+FX.r.ILS).toFixed(3) : S.rates.ILS); $f('fREUR').value=S.fxMan ? S.rates.EUR : (+FX.r.EUR ? (+FX.r.EUR).toFixed(3) : S.rates.EUR); $f('fFxMan').checked=!!S.fxMan;
+    $f('fFxAuto').textContent= FX.t ? 'השערים מתעדכנים לבד כל יום ('+Object.keys(FX.r).length+' מטבעות). עודכן '+fmtAgo(FX.d||FX.t)+': $1 = ₪'+(+FX.r.ILS).toFixed(3)+' = €'+(+FX.r.EUR).toFixed(3)+'.' : 'השערים יתעדכנו לבד ברגע שיהיה אינטרנט.'; $f('fDisp').value=S.display; $f('fDS').value=S.start||''; $f('fDE').value=S.end||'';
     $f('fCatsEdit').innerHTML=S.cats.map(function(c,i){ return '<div class="frow"><i style="--sw:'+catColor(c.id)+'"></i><input type="text" maxlength="24" data-i="'+i+'" value="'+fe(c.name)+'" aria-label="שם קטגוריה"><button class="fbtn sm" type="button" data-up="'+i+'" aria-label="למעלה"'+(i?'':' disabled')+'>▲</button><button class="fbtn sm dng" type="button" data-rm="'+i+'">הסרה</button></div>'; }).join('');
     renderSyncBox();
   }
@@ -296,7 +416,7 @@ function finInit(root, env){
   $f('fAddCat').addEventListener('click', function(){ var n=$f('fNewCat').value.trim(); if(!n) return; readSet(); S.cats.push({id:'c'+Date.now().toString(36), name:n}); $f('fNewCat').value=''; renderSet(); });
   function readSet(){
     S.people[0].name=$f('fN1').value.trim()||S.people[0].name; S.people[1].name=$f('fN2').value.trim()||S.people[1].name;
-    S.rates.ILS=parseFloat($f('fRILS').value)||S.rates.ILS; S.rates.EUR=parseFloat($f('fREUR').value)||S.rates.EUR; S.display=$f('fDisp').value; S.start=$f('fDS').value; S.end=$f('fDE').value;
+    S.fxMan=$f('fFxMan').checked; if(S.fxMan){ S.rates.ILS=parseFloat($f('fRILS').value)||S.rates.ILS; S.rates.EUR=parseFloat($f('fREUR').value)||S.rates.EUR; } S.display=$f('fDisp').value; S.start=$f('fDS').value; S.end=$f('fDE').value;
     Array.prototype.forEach.call($f('fCatsEdit').querySelectorAll('input'), function(i){ var k=+i.getAttribute('data-i'); if(S.cats[k]) S.cats[k].name=i.value.trim()||S.cats[k].name; });
   }
   $f('fSetSave').addEventListener('click', function(){ readSet(); saveSettings($f('fSetNote')); renderSet(); renderForm(); });
@@ -331,6 +451,13 @@ function finInit(root, env){
     var el=$f('fSyncBox'), sc=syncCfg();
     if(store && store.kind==='claude'){
       el.innerHTML='<p class="fnote">הנתונים שמורים בדף הזה ומסתנכרנים לכל מי שהדף משותף איתו. כדי ש'+fe(S.people[1].name)+' יוכל/תוכל להוסיף: בתפריט <b>שיתוף</b> מזמינים אותו/ה <b>במייל, כעורך/ת</b>. קישור ציבורי לא מאפשר כתיבה.</p>';
+      return;
+    }
+    if(store && store.kind==='live'){
+      el.innerHTML='<p class="fnote">מחובר אונליין, בלי חשבון ובלי הגדרות. כל שינוי מופיע אצל שניכם תוך שניות: הוצאות, החזרים וחובות, התור, החובה והכוכבים במסלול. בלי קליטה הכול נשמר בטלפון ונשלח כשחוזרת.</p>'+
+        '<p class="fnote">זה פתוח: כל מי שמשתמש באפליקציה הזו רואה ועורך את אותו הטיול.</p>'+
+        '<div class="frow"><button class="fbtn sm" id="fSyncNow" type="button">לסנכרן עכשיו</button></div>';
+      $f('fSyncNow').onclick=function(){ store.now(); toast('מסנכרן…', 1500); };
       return;
     }
     if(!env.fire){ el.innerHTML='<p class="fnote">בתצוגה הזו אין סנכרון: ההוצאות נשמרות רק בטלפון הזה. אפשר להעביר אותן עם ״העברת נתונים״ למטה, או להשתמש באפליקציה (שם יש סנכרון).</p>'; return; }
@@ -390,6 +517,10 @@ function finInit(root, env){
     if(!quiet){ cache(); render(false); }
   }
   function T(){ return true; } function F(){ return false; }
+  function docIn(n, d){
+    if(n==='debts'){ if(d && Array.isArray(d.items) && (+d.t||0)>(+D.t||0)){ D={items:d.items, t:+d.t}; ls('fin_debts', JSON.stringify(D)); if(tab==='bal') renderDebts(); } return; }
+    if(env.onDoc) env.onDoc(n, d);
+  }
   function localStore(){
     return {kind:'local', start:function(h){ h.status('local','שמור רק בטלפון הזה'); },
       setSettings:function(){ return Promise.resolve(true); }, setExpense:function(){ return Promise.resolve(true); }, delExpense:function(){ return Promise.resolve(true); }, setDoc:function(){ return Promise.resolve(false); }};
@@ -414,13 +545,47 @@ function finInit(root, env){
             h.status(pw||pend.length?'':'ok', pw||pend.length ? 'מסנכרן…' : 'מסונכרן · '+s.docs.length+' הוצאות');
             flush();
           }, function(){ h.status('off','אין גישה לנתונים של הדף'); });
-          (env.docs||[]).forEach(function(n){ db.doc('trip/'+n).onSnapshot(function(s){ if(s.exists && env.onDoc) env.onDoc(n, s.data()); }, function(){}); });
+          (env.docs||[]).concat(['debts']).forEach(function(n){ db.doc('trip/'+n).onSnapshot(function(s){ if(s.exists) docIn(n, s.data()); }, function(){}); });
         }).catch(function(){ h.status('off','אין סנכרון בתצוגה הזו'); });
       },
       setSettings:function(s){ return db ? db.doc('trip/settings').set(clone(s)).then(T,F) : Promise.resolve(false); },
       setExpense:function(id,e){ if(!db){ queue(id,e); return Promise.resolve(false); } return db.doc('expenses/'+id).set(strip(e)).then(T, function(err){ queue(id,e); if(err && err.code==='permission_denied') h.status('local','אין הרשאת כתיבה: צריך הזמנה כעורך/ת'); return false; }); },
       delExpense:function(id){ if(!db){ queue(id,null); return Promise.resolve(false); } return db.doc('expenses/'+id).delete().then(T, function(){ queue(id,null); return false; }); },
       setDoc:function(n,o){ return db ? db.doc('trip/'+n).set(o).then(T,F) : Promise.resolve(false); }
+    };
+  }
+  // open live sync for the two of us: no account; every phone keeps everything and shares it (live_sync.js)
+  function liveStore(cfg){
+    var L=null, h=null, ALL={debts:true};
+    (env.docs||[]).forEach(function(n){ ALL[n]=true; });
+    function apply(db, ch){
+      if(ch.exp){ var list=[]; for(var id in db.exp){ var e=clone(db.exp[id]); e.id=id; list.push(e); } h.expenses(list); }
+      if(ch.set && db.set && db.set.s) h.settings(db.set.s, true);
+      for(var n in (ch.docs||{})) if(db.docs[n]) docIn(n, db.docs[n]);
+    }
+    return {kind:'live',
+      start:function(hh){
+        h=hh; h.status('','מתחבר לסנכרון…');
+        if(typeof liveSync!=='function' || typeof WebSocket==='undefined'){ h.status('off','אין סנכרון בדפדפן הזה'); return; }
+        L=liveSync({topic:cfg.topic, servers:cfg.servers, key:'rt_live_db',
+          onStatus:function(st, up){
+            h.status(st==='ok'?'ok':st==='busy'?'':'local', st==='ok' ? 'מסונכרן אונליין · '+up+(up>1?' שרתים':' שרת') : st==='busy' ? 'מסנכרן…' : st==='offline' ? 'בלי קליטה · נשמר, יישלח כשתחזור' : 'מתחבר לסנכרון…');
+          },
+          onData:function(db, ch){ apply(db, ch); }});
+        if(lg('rt_live_seeded')!==cfg.topic){
+          // first time on this phone: what was written here before joins the shared trip (anything newer wins)
+          var part={v:1, exp:{}, del:{}, set:{s:clone(S), u:1}, docs:env.docsNow ? env.docsNow() : {}};
+          if(D.t) part.docs.debts=clone(D);
+          EX.forEach(function(e){ var d=strip(e); d.u=+e.u||+e.t||1; part.exp[e.id]=d; });
+          L.seed(part); ls('rt_live_seeded', cfg.topic);
+        }
+        apply(L.db, {exp:true, set:!!L.db.set, docs:ALL});
+      },
+      setSettings:function(s){ if(!L) return Promise.resolve(false); L.put('set', null, clone(s)); return Promise.resolve(true); },
+      setExpense:function(id,e){ if(!L) return Promise.resolve(false); L.put('exp', id, strip(e)); return Promise.resolve(true); },
+      delExpense:function(id){ if(!L) return Promise.resolve(false); L.del(id); return Promise.resolve(true); },
+      setDoc:function(n,o){ if(!L) return Promise.resolve(false); var cur=L.db.docs[n]; if(!cur || (+o.t||0)>(+cur.t||0)) L.put('doc', n, clone(o)); return Promise.resolve(true); },
+      now:function(){ if(L) L.ping(); }
     };
   }
   function fireStore(cfg, trip){
@@ -442,7 +607,7 @@ function finInit(root, env){
             var m=s.metadata||{};
             h.status(m.fromCache?'local':m.hasPendingWrites?'':'ok', m.fromCache ? 'בלי קליטה · יסונכרן כשתחזור' : m.hasPendingWrites ? 'מסנכרן…' : 'מסונכרן עם '+S.people[1].name);
           }, err);
-          (env.docs||[]).forEach(function(n){ base.collection('fin').doc(n).onSnapshot(function(s){ if(s.exists && env.onDoc) env.onDoc(n, s.data()); }, function(){}); });
+          (env.docs||[]).concat(['debts']).forEach(function(n){ base.collection('fin').doc(n).onSnapshot(function(s){ if(s.exists) docIn(n, s.data()); }, function(){}); });
         }).catch(function(){ h.status('off','לא הצלחתי לטעון את הסנכרון. בדקו אינטרנט.'); });
       },
       // Firestore keeps writes made without signal and sends them later, so these never wait for the server
@@ -478,9 +643,11 @@ function finInit(root, env){
     ls('fin_sync', JSON.stringify(o)); setTimeout(function(){ toast('מחוברים לטיול המשותף. כל שינוי מתעדכן אצל כולם.', 4500); }, 1200);
   })();
   var sc=syncCfg();
-  store = env.claude ? claudeStore() : (env.fire && sc && sc.c && sc.t ? fireStore(sc.c, sc.t) : localStore());
+  var offSync=(lj('fin_sync')||{}).off;
+  store = env.claude ? claudeStore() : (env.fire && sc && sc.c && sc.t ? fireStore(sc.c, sc.t) : (env.live && !offSync ? liveStore(env.live) : localStore()));
   showTab(['add','bal','tab','bud','set'].indexOf(tab)>=0 ? tab : 'add');
   store.start(H);
+  loadFx(); document.addEventListener('visibilitychange', function(){ if(document.visibilityState==='visible') loadFx(); });
   return {
     setDoc:function(n,o){ return store.setDoc(n,o); },
     synced:function(){ return store.kind!=='local'; },
