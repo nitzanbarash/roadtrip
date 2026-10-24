@@ -1,0 +1,3229 @@
+{
+ "events": [
+  {
+   "name_en": "Comedy Cellar",
+   "name_he": "קומדי סלר - מועדון הסטנדאפ הכי מפורסם בניו יורק",
+   "state": "New York",
+   "city": "New York City",
+   "venue": "Comedy Cellar, 117 MacDougal St, Greenwich Village",
+   "start": "2026-12-01",
+   "end": "2026-12-02",
+   "weekly": "כל ערב, בדרך כלל 3 הופעות (19:30, 21:30, 23:30), יותר בסופ\"ש",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "nyc",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מרתף קטן בווילג' שבו קומיקאים ענקיים קופצים להופעות פתע. כל ערב יש ליינאפ של 5-6 קומיקאים.",
+   "tip": "חייבים להזמין באתר כמה ימים מראש, יש מינימום של 2 משקאות והטלפונים נכנסים לשקית. מגיל 21.",
+   "cost": "כרטיס כ-$25-30 + 2 משקאות",
+   "url": "https://www.comedycellar.com",
+   "coords": [
+    40.7302,
+    -74.0006
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/2/24/The_Comedy_Cellar_(48072765427).jpg"
+  },
+  {
+   "name_en": "Village Vanguard",
+   "name_he": "וילג' ואנגארד - מועדון הג'אז האגדי",
+   "state": "New York",
+   "city": "New York City",
+   "venue": "Village Vanguard, 178 7th Ave S, West Village",
+   "start": "2026-12-01",
+   "end": "2026-12-02",
+   "weekly": "2 סטים כל ערב (20:00 ו-22:00). בימי שני - התזמורת של הוואנגארד",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "nyc",
+   "tags": [
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון הג'אז המיתולוגי מ-1935, מרתף משולש וקטן שבו הקליטו קולטריין וביל אוונס. כל שבוע להקה אחרת.",
+   "tip": "קונים כרטיס באתר, אין קופה במקום. הזמנה טלפונית נשמרת רק עד רבע שעה לפני ההופעה.",
+   "cost": "כרטיס כ-$40-45 + משקה",
+   "url": "https://villagevanguard.com",
+   "coords": [
+    40.736,
+    -74.0017
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/8/87/Villagevanguard.jpg"
+  },
+  {
+   "name_en": "Union Square Holiday Market",
+   "name_he": "שוק החג של יוניון סקוור",
+   "state": "New York",
+   "city": "New York City",
+   "venue": "Union Square Park (south end)",
+   "start": "2026-12-01",
+   "end": "2026-12-02",
+   "weekly": "כל יום, בערך 11:00-21:00 (שבת מ-10:00), עד 24 בדצמבר",
+   "confirmed": false,
+   "type": "art",
+   "segment_id": "nyc",
+   "tags": [
+    "art",
+    "free",
+    "local",
+    "family"
+   ],
+   "why": "יותר מ-150 דוכנים של אמנים, מעצבים ואוכל ברחבה של יוניון סקוור. מקום טוב למתנות מקוריות ולשוקו חם.",
+   "tip": "תאריכי 2026 עוד לא פורסמו רשמית, ההערכה היא 12.11-24.12 לפי השנים הקודמות. בערבי סופ\"ש צפוף.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.urbanspacenyc.com",
+   "coords": [
+    40.7347,
+    -73.991
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Union_Square_NYC_Nov_2019_39.jpg"
+  },
+  {
+   "name_en": "Elsewhere (Bushwick)",
+   "name_he": "אלסוור - מועדון וחלל מוזיקה בבושוויק",
+   "state": "New York",
+   "city": "Brooklyn",
+   "venue": "Elsewhere, 599 Johnson Ave, Bushwick",
+   "start": "2026-12-01",
+   "end": "2026-12-02",
+   "weekly": "הופעות ומסיבות כמעט כל ערב, בסופ\"ש עד 4 לפנות בוקר",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "nyc",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מפעל רהיטים ישן שהפך למועדון עם כמה חללים - הופעות אינדי, DJ'ים וטכנו. מהמקומות הכי חמים של צעירים בברוקלין.",
+   "tip": "בודקים באתר מה יש בערב שלכם וקונים מראש. גיל הכניסה משתנה לפי האירוע (16+ עד 21+).",
+   "cost": "כרטיסים בדרך כלל $15-40",
+   "url": "https://www.elsewhere.club",
+   "coords": [
+    40.7096,
+    -73.9235
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bushwick_Collective_01.jpg"
+  },
+  {
+   "name_en": "Helium Comedy Club",
+   "name_he": "הליום - מועדון קומדיה בפילדלפיה",
+   "state": "Pennsylvania",
+   "city": "Philadelphia",
+   "venue": "Helium Comedy Club, 2031 Sansom St",
+   "start": "2026-12-01",
+   "end": "2026-12-04",
+   "weekly": "הופעות רוב הערבים. ערב במה פתוחה בימי שלישי (הרשמה מ-18:00)",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "mid_atlantic",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון הקומדיה המרכזי של פילדלפיה ליד ריטנהאוס, עם קומיקאים מהטלוויזיה ופתיחה של מקומיים.",
+   "tip": "ערב שלישי הוא במה פתוחה בחינם - כיף לראות כישרונות חדשים. לשמות גדולים קונים מראש.",
+   "cost": "במה פתוחה חינם, הופעות מ-$20",
+   "url": "https://philadelphia.heliumcomedy.com",
+   "coords": [
+    39.9512,
+    -75.1748
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Corner_of_21st_and_Sansom_Street.JPG"
+  },
+  {
+   "name_en": "DC Improv",
+   "name_he": "די.סי. אימפרוב - מועדון סטנדאפ בוושינגטון",
+   "state": "District of Columbia",
+   "city": "Washington",
+   "venue": "DC Improv, 1140 Connecticut Ave NW",
+   "start": "2026-12-03",
+   "end": "2026-12-05",
+   "weekly": "הופעות כמעט כל ערב בשני אולמות",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "mid_atlantic",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון הסטנדאפ הוותיק של וושינגטון (מ-1992) ליד תחנת Farragut North. כוכבים מסיבובי הופעות ובאולם הקטן קומיקאים מקומיים.",
+   "tip": "שישי בערב עם שם גדול נמכר מראש. שאר הערבים בדרך כלל אפשר לקנות ביום עצמו.",
+   "cost": "כרטיסים כ-$20-60",
+   "url": "https://www.dcimprov.com",
+   "coords": [
+    38.9053,
+    -77.0411
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/5/53/Farragut_Square_-_Connecticut_Avenue.JPG"
+  },
+  {
+   "name_en": "Black Cat",
+   "name_he": "בלאק קאט - מועדון אינדי בוושינגטון",
+   "state": "District of Columbia",
+   "city": "Washington",
+   "venue": "Black Cat, 1811 14th St NW",
+   "start": "2026-12-03",
+   "end": "2026-12-05",
+   "weekly": "הופעות כמעט כל ערב. הבר Red Room למטה בלי דמי כניסה",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "mid_atlantic",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון אינדי ופאנק מ-1993 עם אולם ל-700 ואולם קטן ל-200. פה ניגנו לפני שהתפרסמו להקות כמו Elliott Smith ו-Dinosaur Jr.",
+   "tip": "ההופעות לכל הגילאים. ב-11.12 יש Bouncing Souls. בדקו את הלוח באתר.",
+   "cost": "כרטיסים כ-$15-35",
+   "url": "https://www.blackcatdc.com",
+   "coords": [
+    38.9145,
+    -77.0318
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/5/5c/The_Black_Cat_-_Washington,_D.C..jpg"
+  },
+  {
+   "name_en": "9:30 Club",
+   "name_he": "מועדון 9:30 - הופעות בוושינגטון",
+   "state": "District of Columbia",
+   "city": "Washington",
+   "venue": "9:30 Club, 815 V St NW",
+   "start": "2026-12-03",
+   "end": "2026-12-05",
+   "weekly": "הופעות כמעט כל ערב",
+   "confirmed": true,
+   "type": "concert",
+   "segment_id": "mid_atlantic",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "אחד ממועדוני ההופעות הכי אהובים באמריקה, אולם בינוני עם סאונד מעולה. ב-3.12 מופיע nimino וב-9.12 Squirrel Nut Zippers.",
+   "tip": "כרטיסים נגמרים מהר, קונים באתר מראש. יש רחבת עמידה ומרפסת.",
+   "cost": "כרטיסים כ-$25-60",
+   "url": "https://www.930.com",
+   "coords": [
+    38.9179,
+    -77.0237
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/4/42/Nightclub_930_Closed_on_a_June_summer_night.jpg"
+  },
+  {
+   "name_en": "RVA First Fridays Art Walk",
+   "name_he": "שישי ראשון - סיור גלריות בריצ'מונד",
+   "state": "Virginia",
+   "city": "Richmond",
+   "venue": "Broad Street Arts District",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "weekly": "כל שישי ראשון בחודש, בערך 17:00-21:00",
+   "confirmed": false,
+   "type": "art",
+   "segment_id": "mid_atlantic",
+   "tags": [
+    "art",
+    "free",
+    "local",
+    "night"
+   ],
+   "why": "הגלריות, החנויות והמסעדות ברחוב ברוד נשארות פתוחות בערב, עם אמני רחוב ומוזיקה. בדצמבר יש אווירת חג.",
+   "tip": "התאריך 4.12 מחושב לפי התבנית החודשית, עוד לא פורסם. חנייה ברחובות הצדדיים.",
+   "cost": "חינם",
+   "url": "https://www.rvafirstfridays.com",
+   "coords": [
+    37.5459,
+    -77.441
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/b/bc/1st_and_East_Broad_Street_in_Richmond_Virginia.jpg"
+  },
+  {
+   "name_en": "First Friday Raleigh",
+   "name_he": "שישי ראשון בראלי - גלריות פתוחות בערב",
+   "state": "North Carolina",
+   "city": "Raleigh",
+   "venue": "Downtown Raleigh (Artspace, 201 E Davie St)",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "weekly": "כל שישי ראשון בחודש, 18:00-21:00 (Artspace פתוח עד 22:00)",
+   "confirmed": true,
+   "type": "art",
+   "segment_id": "carolinas",
+   "tags": [
+    "art",
+    "free",
+    "local",
+    "night"
+   ],
+   "why": "ערב חודשי שבו גלריות, סטודיו ומוזיאונים במרכז ראלי פתוחים עד מאוחר. ב-Artspace אפשר לראות אמנים עובדים בסטודיו.",
+   "tip": "מתחילים ב-Artspace ומשם הולכים ברגל ברחוב פייטוויל. יש הרבה ברים ואוכל מסביב.",
+   "cost": "חינם",
+   "url": "https://www.artspacenc.org",
+   "coords": [
+    35.7759,
+    -78.637
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Fayetteville_Street_in_Raleigh,_NC_at_Night.jpg"
+  },
+  {
+   "name_en": "Goodnights Comedy Club",
+   "name_he": "גודנייטס - מועדון קומדיה בראלי",
+   "state": "North Carolina",
+   "city": "Raleigh",
+   "venue": "Goodnights Comedy Club, 401 Woodburn Rd",
+   "start": "2026-12-04",
+   "end": "2026-12-06",
+   "weekly": "הופעות מחמישי עד ראשון, בשבת 2 הופעות",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "carolinas",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון הקומדיה הגדול של משולש ראלי-דרהאם, עם קומיקאים מהטלוויזיה ומ-Netflix בסופי שבוע.",
+   "tip": "בודקים מי מופיע באתר. רוב ההופעות 18+. יש אוכל ובר.",
+   "cost": "כרטיסים כ-$25-35",
+   "url": "https://www.goodnightscomedy.com",
+   "coords": [
+    35.7945,
+    -78.6582
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Fayetteville_Street_in_downtown_Raleigh,_North_Carolina.jpg"
+  },
+  {
+   "name_en": "Motorco Music Hall",
+   "name_he": "מוטורקו - אולם הופעות בדרהאם",
+   "state": "North Carolina",
+   "city": "Durham",
+   "venue": "Motorco Music Hall, 723 Rigsbee Ave",
+   "start": "2026-12-05",
+   "end": "2026-12-07",
+   "weekly": "הופעות רוב הערבים, ובר ופטיו פתוחים כל יום",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "carolinas",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מוסך מכוניות ישן שהפך לאולם הופעות אינדי ובר עם פטיו ענק, ליד הקמפוס של Duke. סצנת צעירים חזקה.",
+   "tip": "הופעות מקומיות זולות באמצע השבוע. אפשר לאכול ב-Parts & Labor שבאותו מתחם.",
+   "cost": "כרטיסים כ-$12-30",
+   "url": "https://motorcomusic.com",
+   "coords": [
+    36.0016,
+    -78.9031
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Motorco-Parts%26Labor-DurhamNC-sunset.jpeg"
+  },
+  {
+   "name_en": "Night on the Town (Beaufort)",
+   "name_he": "ערב בעיר - חגיגת החג של בופורט",
+   "state": "South Carolina",
+   "city": "Beaufort",
+   "venue": "Bay Street & Henry C. Chambers Waterfront Park",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "confirmed": false,
+   "type": "local",
+   "segment_id": "carolinas",
+   "tags": [
+    "local",
+    "free",
+    "family",
+    "night"
+   ],
+   "why": "רחוב ביי נסגר לרכבים, החנויות פתוחות בערב, יש דוכני אוכל, להקת המרינס והדלקת עץ על המים. עיירה דרומית קסומה.",
+   "tip": "בדרך כלל ביום שישי הראשון של דצמבר - ההערכה היא 4.12, עוד לא אושר. בסופ\"ש שאחריו יש גם מצעד סירות מוארות.",
+   "cost": "חינם",
+   "url": "https://www.cityofbeaufort.org",
+   "coords": [
+    32.4315,
+    -80.6705
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Bay_Street_Downtown_Beaufort.JPG"
+  },
+  {
+   "name_en": "Charleston Holiday Market (Marion Square)",
+   "name_he": "שוק החג של צ'רלסטון בכיכר מריון",
+   "state": "South Carolina",
+   "city": "Charleston",
+   "venue": "Marion Square, 329 Meeting St",
+   "start": "2026-12-05",
+   "end": "2026-12-13",
+   "weekly": "שבת וראשון 5-6.12 ו-12-13.12, וגם שבת 19.12, 9:00-15:00",
+   "confirmed": true,
+   "type": "market",
+   "segment_id": "carolinas",
+   "tags": [
+    "farm",
+    "art",
+    "local",
+    "free",
+    "family"
+   ],
+   "why": "שוק האיכרים של צ'רלסטון הופך בדצמבר לשוק חג - תוצרת מקומית, אמנים, קישוטים, אוכל ומוזיקה חיה בכיכר המרכזית.",
+   "tip": "בואו בבוקר לפני העומס. אפשר לשלב עם הליכה ברחוב קינג.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.charlestonfarmersmarket.com",
+   "coords": [
+    32.7876,
+    -79.9357
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/6/61/Marion_Square.jpg"
+  },
+  {
+   "name_en": "Theatre 99 (The Have Nots!)",
+   "name_he": "תיאטרון 99 - אימפרוב בצ'רלסטון",
+   "state": "South Carolina",
+   "city": "Charleston",
+   "venue": "Theatre 99, 280 Meeting St",
+   "start": "2026-12-06",
+   "end": "2026-12-09",
+   "weekly": "הופעות אימפרוב 3 ערבים בשבוע (בדרך כלל רביעי, שישי ושבת)",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "carolinas",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly",
+    "local"
+   ],
+   "why": "התיאטרון הקטן של להקת The Have Nots!, הלהקה הוותיקה בצ'רלסטון (מ-1995). אימפרוב שהקהל קובע את הנושאים.",
+   "tip": "ערב רביעי זול ונעים. אפשר לקנות בכניסה, אבל בסופ\"ש עדיף מראש.",
+   "cost": "כרטיסים כ-$10-20",
+   "url": "https://theatre99.com",
+   "coords": [
+    32.7843,
+    -79.9346
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Charleston_king_street1.jpg"
+  },
+  {
+   "name_en": "The Royal American",
+   "name_he": "הרויאל אמריקן - בר מוזיקה בצ'רלסטון",
+   "state": "South Carolina",
+   "city": "Charleston",
+   "venue": "The Royal American, 970 Morrison Dr",
+   "start": "2026-12-04",
+   "end": "2026-12-05",
+   "weekly": "מוזיקה חיה בעיקר בשישי ושבת מ-21:00; הבר פתוח כל יום עד 2:00",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "carolinas",
+   "tags": [
+    "music",
+    "night",
+    "local",
+    "young"
+   ],
+   "why": "בר שכונתי עם פטיו גדול, אוכל טוב ובמה ללהקות מקומיות ומסיבובי הופעות. מקום של מקומיים, לא של תיירים.",
+   "tip": "כניסה בערבי הופעה כ-$10. המטבח פתוח עד 1:00 בלילה.",
+   "cost": "כניסה כ-$10",
+   "url": "https://www.theroyalamerican.com",
+   "coords": [
+    32.8066,
+    -79.9439
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Charleston-SC-Waterfront-Park.jpg"
+  },
+  {
+   "name_en": "Savannah Smiles Dueling Pianos",
+   "name_he": "סוואנה סמיילס - בר פסנתרים בדו-קרב",
+   "state": "Georgia",
+   "city": "Savannah",
+   "venue": "Savannah Smiles, 314 Williamson St",
+   "start": "2026-12-09",
+   "end": "2026-12-12",
+   "weekly": "רביעי עד שבת בערב, מופע של כ-6 שעות",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "ga_fl_coast",
+   "tags": [
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "שני פסנתרנים מנגנים ושרים לפי בקשות הקהל - מרוק ועד היפ הופ. בר מ-2000 שנבחר לבר הטוב בג'ורג'יה.",
+   "tip": "כניסה בערך $10. כותבים שיר על פתק עם טיפ, והם מנגנים אותו.",
+   "cost": "כניסה כ-$10",
+   "url": "https://www.savannahsmiles.net",
+   "coords": [
+    32.0818,
+    -81.096
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/1/10/Street_clock,_City_Market,_Savannah.jpg"
+  },
+  {
+   "name_en": "Starland Yard",
+   "name_he": "סטארלנד יארד - מתחם פודטראקים בסוואנה",
+   "state": "Georgia",
+   "city": "Savannah",
+   "venue": "Starland Yard, 2411 De Soto Ave, Starland District",
+   "start": "2026-12-09",
+   "end": "2026-12-12",
+   "weekly": "שלישי-חמישי 17:00-22:00, שישי-שבת 12:00-22:00, ראשון 12:00-21:00",
+   "confirmed": false,
+   "type": "food",
+   "segment_id": "ga_fl_coast",
+   "tags": [
+    "food",
+    "local",
+    "young",
+    "family"
+   ],
+   "why": "מגרש עם פודטראקים מתחלפים, בר בירה ופיצה מתנור, בשכונת סטארלנד האמנותית. אווירה של צעירים ומשפחות.",
+   "tip": "הטראקים משתנים כל שבוע - בודקים באינסטגרם. בערב יש לפעמים מוזיקה חיה.",
+   "cost": "בלי כניסה, מנה כ-$12-18",
+   "url": "https://www.starlandyard.com",
+   "coords": [
+    32.056,
+    -81.099
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Ellis_Square_Savannah_2020.jpg"
+  },
+  {
+   "name_en": "Dickens on Centre",
+   "name_he": "דיקנס ברחוב סנטר - פסטיבל חג ויקטוריאני",
+   "state": "Florida",
+   "city": "Fernandina Beach",
+   "venue": "Centre Street, historic downtown",
+   "start": "2026-12-10",
+   "end": "2026-12-13",
+   "confirmed": true,
+   "type": "local",
+   "segment_id": "ga_fl_coast",
+   "tags": [
+    "local",
+    "free",
+    "family",
+    "night"
+   ],
+   "why": "העיירה באי אמיליה מתחפשת ללונדון של דיקנס - תהלוכה מוארת (חמישי), שוק חג, שחקנים בתלבושות ומוזיקה ברחוב הראשי.",
+   "tip": "השוק: שישי 16:00-21:00, שבת 10:00-21:00, ראשון 10:00-15:00. התהלוכה בחמישי 10.12 בערב.",
+   "cost": "חינם",
+   "url": "https://www.ameliaisland.com/dickens",
+   "coords": [
+    30.6708,
+    -81.463
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/8/89/Centre_St_looking_East,_Fernandina_Beach.jpg"
+  },
+  {
+   "name_en": "Deck the Chairs",
+   "name_he": "מקשטים את הכיסאות - כיסאות מצילים מוארים",
+   "state": "Florida",
+   "city": "Jacksonville Beach",
+   "venue": "Seawalk Pavilion, Jacksonville Beach",
+   "start": "2026-12-09",
+   "end": "2026-12-12",
+   "weekly": "כל ערב, מופע אורות כל שעה 18:00-21:00, עד 1 בינואר",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "ga_fl_coast",
+   "tags": [
+    "local",
+    "free",
+    "family",
+    "night"
+   ],
+   "why": "כ-70 כיסאות מצילים שקושטו על ידי עסקים מקומיים, עם עצי חג ומופע אורות על החוף. מסורת מקומית חמודה.",
+   "tip": "תאריכי 2026 עוד לא פורסמו - בשנה שעברה זה רץ מסוף נובמבר עד 1 בינואר. חנייה ליד הביץ'.",
+   "cost": "חינם",
+   "url": "https://www.deckthechairs.org",
+   "coords": [
+    30.2862,
+    -81.389
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/6/65/Seawalk_Pavilion,_Jacksonville_Beach.jpg"
+  },
+  {
+   "name_en": "The Comedy Zone Jacksonville",
+   "name_he": "קומדי זון - מועדון קומדיה בג'קסונוויל",
+   "state": "Florida",
+   "city": "Jacksonville",
+   "venue": "The Comedy Zone, Ramada, 3130 Hartley Rd, Mandarin",
+   "start": "2026-12-09",
+   "end": "2026-12-12",
+   "weekly": "הופעות שלישי עד שבת",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "ga_fl_coast",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון הקומדיה הוותיק של ג'קסונוויל, עם קומיקאים מסיבובי הופעות ומ-America's Got Talent.",
+   "tip": "באמצע השבוע הכרטיסים זולים מאוד. בודקים ליינאפ באתר.",
+   "cost": "כרטיסים מ-$6 באמצע השבוע, $20+ בסופ\"ש",
+   "url": "https://www.comedyzone.com",
+   "coords": [
+    30.1795,
+    -81.623
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/5/58/Skyline_of_Jacksonville.JPG"
+  },
+  {
+   "name_en": "Riverfront Market (Daytona Beach)",
+   "name_he": "שוק שישי על הנהר בדייטונה",
+   "state": "Florida",
+   "city": "Daytona Beach",
+   "venue": "Riverfront Esplanade, 179 S Beach St",
+   "start": "2026-12-11",
+   "end": "2026-12-11",
+   "weekly": "כל יום שישי 17:00-21:00",
+   "confirmed": true,
+   "type": "market",
+   "segment_id": "ga_fl_coast",
+   "tags": [
+    "local",
+    "free",
+    "night",
+    "weekly",
+    "art",
+    "food"
+   ],
+   "why": "שוק ערב שבועי לאורך הנהר במרכז דייטונה - עד 45 דוכנים של יוצרים ואוכל, ומוזיקה חיה.",
+   "tip": "רשום כשוק שבועי עד אפריל 2027. נחמד לשלב עם ארוחה ברחוב ביץ'.",
+   "cost": "חינם",
+   "url": "https://www.daytonabeach.com/event/riverfront-market-on-the-riverfront-esplanade/55084/",
+   "coords": [
+    29.21,
+    -81.0215
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Daytonabeachstsouth.JPG"
+  },
+  {
+   "name_en": "Clematis by Night",
+   "name_he": "קלמטיס בלילה - הופעות חינם בווסט פאלם ביץ'",
+   "state": "Florida",
+   "city": "West Palm Beach",
+   "venue": "Great Lawn, 100 N Clematis St",
+   "start": "2026-12-10",
+   "end": "2026-12-10",
+   "weekly": "כל יום חמישי 18:00-21:00",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "fl_east",
+   "tags": [
+    "music",
+    "free",
+    "local",
+    "night",
+    "weekly"
+   ],
+   "why": "סדרת הופעות חינם על הדשא מול המים, שנבחרה ב-2026 לסדרת ההופעות בחוץ הטובה בארה\"ב (USA TODAY).",
+   "tip": "מביאים כיסא או שמיכה. הלהקה של כל שבוע מתפרסמת באתר העירייה.",
+   "cost": "חינם",
+   "url": "https://wpb.org/cbn",
+   "coords": [
+    26.7136,
+    -80.0497
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/5/52/ClematisStWPB500block.JPG"
+  },
+  {
+   "name_en": "Seminole Hard Rock Winterfest Boat Parade",
+   "name_he": "מצעד הסירות המוארות של פורט לודרדייל",
+   "state": "Florida",
+   "city": "Fort Lauderdale",
+   "venue": "New River & Intracoastal Waterway (from Stranahan House)",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "confirmed": true,
+   "type": "parade",
+   "segment_id": "fl_east",
+   "tags": [
+    "free",
+    "family",
+    "night",
+    "local"
+   ],
+   "why": "מצעד הסירות המוארות הגדול בעולם - יאכטות מקושטות שטות 12 מייל בנהר ובתעלה. המצעד ה-55, מתחיל ב-18:00.",
+   "tip": "תופסים מקום מוקדם על הגדה, ליד Las Olas. צופים בחינם; מושבים בטריבונה בתשלום. לוקח כשעתיים וחצי לעבור.",
+   "cost": "חינם לצפייה",
+   "url": "https://winterfestparade.com",
+   "coords": [
+    26.1186,
+    -80.1375
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/4/4a/New_River_(Fort_Lauderdale).jpg"
+  },
+  {
+   "name_en": "Wynwood Art Walk",
+   "name_he": "סיור האמנות של ווינווד",
+   "state": "Florida",
+   "city": "Miami",
+   "venue": "Wynwood Arts District (NW 2nd Ave)",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "weekly": "כל שבת שנייה בחודש, מ-18:00",
+   "confirmed": false,
+   "type": "art",
+   "segment_id": "miami",
+   "tags": [
+    "art",
+    "free",
+    "young",
+    "night",
+    "local"
+   ],
+   "why": "גלריות פתוחות בערב, ציורי קיר ענקיים ומסיבת רחוב בשכונת ווינווד. בדצמבר עוד מורגשת האווירה של שבוע ארט באזל.",
+   "tip": "התאריך 12.12 לפי התבנית החודשית. הרבה גלריות בחינם; חנייה יקרה - עדיף אובר.",
+   "cost": "חינם",
+   "url": "https://wynwoodmiami.com/wynwood-art-walk/",
+   "coords": [
+    25.801,
+    -80.1994
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/9/94/Wynwood_Walls_Miami_Florida_October_2013.jpg"
+  },
+  {
+   "name_en": "Club Space Miami",
+   "name_he": "קלאב ספייס - מועדון האלקטרוני האגדי של מיאמי",
+   "state": "Florida",
+   "city": "Miami",
+   "venue": "Club Space, 34 NE 11th St, Downtown",
+   "start": "2026-12-11",
+   "end": "2026-12-13",
+   "weekly": "שישי ושבת כל הלילה, עד הבוקר על הטרסה",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "miami",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "המועדון הכי מפורסם של מיאמי למוזיקה אלקטרונית, הטרסה פתוחה עד הזריחה. בשבוע ארט באזל (1-6.12) יש סדרת מסיבות Space Basel.",
+   "tip": "קונים כרטיס מראש, מגיל 21. הכי שווה להגיע אחרי 2 בלילה ולהישאר לזריחה.",
+   "cost": "כרטיסים כ-$30-80",
+   "url": "https://clubspace.com",
+   "coords": [
+    25.7845,
+    -80.1929
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/7/75/Club_Space_in_Downtown_Miami.jpg"
+  },
+  {
+   "name_en": "Lagniappe",
+   "name_he": "לניאפ - בר יין עם ג'אז כל ערב",
+   "state": "Florida",
+   "city": "Miami",
+   "venue": "Lagniappe, 3425 NE 2nd Ave, Midtown",
+   "start": "2026-12-12",
+   "end": "2026-12-14",
+   "weekly": "מוזיקה חיה כל ערב, בדרך כלל מ-21:00",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "miami",
+   "tags": [
+    "music",
+    "night",
+    "local",
+    "free"
+   ],
+   "why": "בר יין בסגנון ניו אורלינס עם חצר ענקית, אורות וג'אז או בלוז חי כל ערב. קונים בקבוק במחיר חנות ומרכיבים פלטת גבינות.",
+   "tip": "אין הזמנות, מי שבא ראשון יושב. בסופ\"ש מגיעים מוקדם.",
+   "cost": "בלי כניסה, יין ואוכל בתשלום",
+   "url": "https://lagniappehouse.com",
+   "coords": [
+    25.8087,
+    -80.1925
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Bacardi_building_Miami.jpg"
+  },
+  {
+   "name_en": "Miami Improv",
+   "name_he": "מיאמי אימפרוב - מועדון קומדיה",
+   "state": "Florida",
+   "city": "Doral",
+   "venue": "Miami Improv, CityPlace Doral, 8300 NW 36th St",
+   "start": "2026-12-12",
+   "end": "2026-12-14",
+   "weekly": "הופעות רוב הערבים, כולל ערבי קומדיה בספרדית",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "miami",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון וארוחת ערב עם קומיקאים ידועים ומקומיים, וגם ערבי סטנדאפ לטיני.",
+   "tip": "יש מינימום של 2 משקאות שנאכף. בודקים ליינאפ באתר.",
+   "cost": "כרטיסים כ-$20-50",
+   "url": "https://www.miamiimprov.com",
+   "coords": [
+    25.8077,
+    -80.3328
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Downtown_Miami,_Florida_skyline_viewed_at_night_over_the_Biscayne_Bay.jpg"
+  },
+  {
+   "name_en": "Audubon Park Community Market",
+   "name_he": "שוק הערב של אודובון פארק",
+   "state": "Florida",
+   "city": "Orlando",
+   "venue": "Stardust Video & Coffee lot, 1842 E Winter Park Rd",
+   "start": "2026-12-14",
+   "end": "2026-12-21",
+   "weekly": "כל יום שני 17:00-20:00",
+   "confirmed": false,
+   "type": "market",
+   "segment_id": "florida_north",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "night",
+    "weekly",
+    "food"
+   ],
+   "why": "שוק שכונתי של אוכל מפלורידה - ירקות, דגים, אפייה ואוכל מוכן, עם מוזיקה חיה. מקומי ואמיתי.",
+   "tip": "השעות בדפים שונים לא אחידות - בודקים לפני. בית הקפה Stardust פתוח לידו.",
+   "cost": "חינם",
+   "url": "https://www.orlando.gov/Events/Audubon-Park-Community-Market",
+   "coords": [
+    28.5711,
+    -81.348
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Lake_eola_in_Orlando_Florida_with_fountain.jpg"
+  },
+  {
+   "name_en": "Orlando Improv",
+   "name_he": "אורלנדו אימפרוב - קומדיה באינטרנשיונל דרייב",
+   "state": "Florida",
+   "city": "Orlando",
+   "venue": "Orlando Improv, Pointe Orlando, 9101 International Dr",
+   "start": "2026-12-17",
+   "end": "2026-12-20",
+   "weekly": "הופעות חמישי עד ראשון. במה פתוחה בחינם בחמישי ב-Fat Fish Blue הסמוך",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "florida_north",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "המועדון הכי רציני לסטנדאפ באורלנדו, אולם של 325 מקומות עם שמות גדולים מסיבובי הופעות.",
+   "tip": "מגיל 21 עם תעודה. המחירים משתנים מאוד לפי מי מופיע.",
+   "cost": "כרטיסים כ-$20-60",
+   "url": "https://improvorlando.com",
+   "coords": [
+    28.4335,
+    -81.471
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/2/24/Pointe_Orlando_001.jpg"
+  },
+  {
+   "name_en": "Old Town Saturday Nite Car Cruise",
+   "name_he": "מצעד המכוניות הקלאסיות של אולד טאון",
+   "state": "Florida",
+   "city": "Kissimmee",
+   "venue": "Old Town Kissimmee, 5770 W Irlo Bronson Hwy",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "weekly": "כל שבת: תצוגה במשך היום, מצעד ב-20:30. מכוניות שרירים כל שישי מ-15:00",
+   "confirmed": false,
+   "type": "local",
+   "segment_id": "florida_north",
+   "tags": [
+    "local",
+    "free",
+    "family",
+    "night",
+    "weekly"
+   ],
+   "why": "מאות מכוניות אמריקאיות קלאסיות נוסעות לאורך הרחוב הראשי - 'תערוכת הרכב השבועית הוותיקה באמריקה'.",
+   "tip": "מגיעים לפני 20:00 כדי לתפוס מקום על המדרכה. יש גם מתקנים ואוכל במתחם.",
+   "cost": "חינם",
+   "url": "https://www.myoldtownusa.com",
+   "coords": [
+    28.331,
+    -81.5233
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Old_Town,_Orlando_02.JPG"
+  },
+  {
+   "name_en": "Orlando Farmers Market at Lake Eola",
+   "name_he": "שוק האיכרים של אגם איאולה",
+   "state": "Florida",
+   "city": "Orlando",
+   "venue": "Lake Eola Park (Eola Dr & Central Blvd)",
+   "start": "2026-12-20",
+   "end": "2026-12-20",
+   "weekly": "כל יום ראשון 10:00-15:00",
+   "confirmed": false,
+   "type": "market",
+   "segment_id": "florida_north",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family",
+    "weekly"
+   ],
+   "why": "שוק ראשון על שפת האגם במרכז אורלנדו - פירות פלורידה, צמחים, אוכל רחוב ואומנים, עם ברבורים מסביב.",
+   "tip": "חנייה חינם ברחובות הסמוכים בראשון. אפשר לשכור סירת ברבור באגם.",
+   "cost": "חינם",
+   "url": "https://www.orlando.gov/Events/Orlando-Farmers-Market",
+   "coords": [
+    28.543,
+    -81.3707
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Lake_Eola_Park_in_Orlando_01.jpg"
+  },
+  {
+   "name_en": "Showcase of Citrus U-Pick",
+   "name_he": "שואוקייס אוף סיטרוס - קטיף הדרים עצמי",
+   "state": "Florida",
+   "city": "Clermont",
+   "venue": "Showcase of Citrus, 5010 US-27",
+   "start": "2026-12-15",
+   "end": "2026-12-20",
+   "weekly": "כל יום 8:00-18:00 בעונה (אוקטובר-מאי)",
+   "confirmed": false,
+   "type": "farm",
+   "segment_id": "florida_north",
+   "tags": [
+    "farm",
+    "family",
+    "local"
+   ],
+   "why": "פרדס של 2,500 דונם ליד אורלנדו - קוטפים בעצמכם תפוזים, מנדרינות ואשכוליות, ויש סיור במשאית מפלצת בפרדס.",
+   "tip": "תחילת העונה בדצמבר - מתקשרים לבדוק מה בשל. משלמים לפי משקל.",
+   "cost": "כניסה חינם, פרי לפי משקל",
+   "url": "https://www.showcaseofcitrus.com",
+   "coords": [
+    28.4865,
+    -81.733
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Citrus_Tower_Clermont04.jpg"
+  },
+  {
+   "name_en": "Now Snowing in Celebration",
+   "name_he": "שלג בסלבריישן - 'שלג' ברחוב כל ערב",
+   "state": "Florida",
+   "city": "Celebration",
+   "venue": "Market Street, Celebration Town Center",
+   "start": "2026-12-15",
+   "end": "2026-12-24",
+   "weekly": "כל ערב עד 31.12, 'שלג' ב-18:00, 19:00, 20:00, 21:00",
+   "confirmed": false,
+   "type": "holiday",
+   "segment_id": "florida_north",
+   "tags": [
+    "free",
+    "family",
+    "night",
+    "local"
+   ],
+   "why": "העיירה שדיסני תכננה מפזרת 'שלג' (קצף) ברחוב הראשי ארבע פעמים בערב, עם אורות, החלקה על קרח ודוכנים.",
+   "tip": "תאריכי 2026 משוערים לפי השנים הקודמות. חנייה חינם, ההחלקה בתשלום.",
+   "cost": "חינם",
+   "url": "https://www.celebrationtowncenter.com",
+   "coords": [
+    28.3186,
+    -81.5412
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/7/79/Celebration_fl.JPG"
+  },
+  {
+   "name_en": "WEC Winter Wonderland",
+   "name_he": "ארץ החורף במרכז הרכיבה העולמי באוקלה",
+   "state": "Florida",
+   "city": "Ocala",
+   "venue": "World Equestrian Center, Ocala",
+   "start": "2026-12-16",
+   "end": "2026-12-23",
+   "weekly": "רביעי עד ראשון 17:00-21:00, עד 23.12",
+   "confirmed": true,
+   "type": "holiday",
+   "segment_id": "florida_north",
+   "tags": [
+    "farm",
+    "family",
+    "night"
+   ],
+   "why": "מתחם סוסים ענק באוקלה (בירת הסוסים של פלורידה) עם יותר ממיליון אורות, עץ ענק, סנטה וגרינץ' באולמות הרכיבה. עד 13.12 יש גם תחרויות קפיצה.",
+   "tip": "חייבים כרטיס כניסה. שישי ושבת עם בידור נוסף ועומס.",
+   "cost": "כרטיסים בתשלום (בדקו באתר)",
+   "url": "https://worldequestriancenter.com",
+   "coords": [
+    29.215,
+    -82.256
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Lightnin' Salvage (Satchel's)",
+   "name_he": "לייטנין סאלבג' - בר מוזיקה בגיינסוויל",
+   "state": "Florida",
+   "city": "Gainesville",
+   "venue": "Lightnin' Salvage at Satchel's Pizza, 1800 NE 23rd Ave",
+   "start": "2026-12-16",
+   "end": "2026-12-19",
+   "weekly": "מוזיקה חיה שלישי עד שבת 18:00-21:00",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "florida_north",
+   "tags": [
+    "music",
+    "free",
+    "local",
+    "night",
+    "weekly"
+   ],
+   "why": "בר-חנות משוגע ליד הפיצרייה הכי אהובה בעיר הסטודנטים, עם הופעות מקומיות כמעט כל ערב בחינם.",
+   "tip": "אוכלים פיצה ב-Satchel's ושומעים מוזיקה. אין מזומן? יש כספומט.",
+   "cost": "חינם",
+   "url": "https://www.satchelspizza.com",
+   "coords": [
+    29.6742,
+    -82.303
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Gainesville,_FL_Downtown.jpg"
+  },
+  {
+   "name_en": "Ellis Bros. Pecans",
+   "name_he": "אליס ברוס - חנות פקאנים ליד הכביש 75",
+   "state": "Georgia",
+   "city": "Vienna",
+   "venue": "Ellis Bros. Pecans, 1315 Tippettville Rd (I-75 exit 109)",
+   "start": "2026-12-20",
+   "end": "2026-12-22",
+   "weekly": "כל יום 8:00-19:00, כל השנה",
+   "confirmed": false,
+   "type": "farm",
+   "segment_id": "georgia",
+   "tags": [
+    "farm",
+    "family",
+    "local"
+   ],
+   "why": "חוות פקאנים משפחתית בלב אזור הפקאנים של ג'ורג'יה. דצמבר זו עונת הקטיף - פקאנים טריים, פרלינים וגלידת פקאן.",
+   "tip": "יוצאים ביציאה 109 בכביש 75. סיור במפעל רק בתיאום מראש.",
+   "cost": "כניסה חינם",
+   "url": "https://www.ellisbrospecans.com",
+   "coords": [
+    32.0925,
+    -83.7655
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/4/49/Dooly_County_Courthouse,_Vienna,_GA,_US.jpg"
+  },
+  {
+   "name_en": "Pearson Farm",
+   "name_he": "חוות פירסון - פקאנים ואפרסקים",
+   "state": "Georgia",
+   "city": "Fort Valley",
+   "venue": "Pearson Farm, 5575 Zenith Mill Rd",
+   "start": "2026-12-21",
+   "end": "2026-12-23",
+   "weekly": "עונת הפקאנים עד סוף דצמבר, בימי חול",
+   "confirmed": false,
+   "type": "farm",
+   "segment_id": "georgia",
+   "tags": [
+    "farm",
+    "family",
+    "local"
+   ],
+   "why": "חווה משפחתית מ-1885 שמגדלת אפרסקים ופקאנים. בדצמבר יש פקאנים טריים מהקטיף ומארזי חג.",
+   "tip": "השעות באתר לא אחידות (חלק אומרים רק בימי חול 10:00-15:00) - מתקשרים לפני. קרוב ל-Lane Southern Orchards.",
+   "cost": "כניסה חינם",
+   "url": "https://pearsonfarm.com",
+   "coords": [
+    32.53,
+    -83.94
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Peach_County_Courthouse,_Fort_Valley,_GA,_US.jpg"
+  },
+  {
+   "name_en": "Grant's Lounge",
+   "name_he": "גרנטס לאונג' - הבר ההיסטורי של מייקון",
+   "state": "Georgia",
+   "city": "Macon",
+   "venue": "Grant's Lounge, 576 Poplar St",
+   "start": "2026-12-18",
+   "end": "2026-12-19",
+   "weekly": "הופעות בעיקר בסופי שבוע, דלתות ב-21:00",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "georgia",
+   "tags": [
+    "music",
+    "night",
+    "local"
+   ],
+   "why": "בר רוק ובלוז במרכז מייקון, עיר האולמן ברדרס. פה ניגנו בשנות ה-70 להקות הסאות'רן רוק הגדולות.",
+   "tip": "כרטיסים זולים ($10-15). שלבו עם המוזיאון של האולמן ברדרס (Big House) בעיר.",
+   "cost": "כרטיסים כ-$10-15",
+   "url": "https://www.songkick.com/venues/1461153-grants-lounge",
+   "coords": [
+    32.8358,
+    -83.6318
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/3/3e/DowntownMaconGa.jpg"
+  },
+  {
+   "name_en": "Laughing Skull Lounge",
+   "name_he": "לאפינג סקאל - מועדון הקומדיה הכי קטן בעולם",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Laughing Skull Lounge, The Vortex, 878 Peachtree St NE",
+   "start": "2026-12-20",
+   "end": "2026-12-24",
+   "weekly": "הופעות חמישי עד ראשון; במה פתוחה שני עד רביעי ב-20:00",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "georgia",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון של 74 מקומות בלבד בתוך בר הוורטקס במידטאון. בכל ערב כמה מהקומיקאים הכי טובים של אטלנטה.",
+   "tip": "יש מינימום 2 משקאות לאדם, ואין אוכל בזמן ההופעה. קונים מראש לסופ\"ש.",
+   "cost": "כרטיס כ-$20",
+   "url": "https://www.laughingskulllounge.com",
+   "coords": [
+    33.7787,
+    -84.3838
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Peachtree_Street_at_Sixth_Street,_Midtown_Atlanta_GA.jpg"
+  },
+  {
+   "name_en": "Dad's Garage Theatre",
+   "name_he": "דאדס גראז' - תיאטרון אימפרוב באטלנטה",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Dad's Garage, 569 Ezzard St SE, Old Fourth Ward",
+   "start": "2026-12-23",
+   "end": "2026-12-24",
+   "weekly": "פתוח רביעי עד שבת, כל שבוע בשנה; ברביעי קרב אימפרוב Maestro",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "georgia",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly",
+    "local"
+   ],
+   "why": "תיאטרון אימפרוב וקומדיה שמעלה יותר מ-400 הופעות בשנה, בכנסייה ישנה. מצחיק, פרוע וזול.",
+   "tip": "בשבוע של חג המולד יכול להיות לוח מצומצם - בודקים באתר.",
+   "cost": "כרטיסים כ-$15-25",
+   "url": "https://www.dadsgarage.com",
+   "coords": [
+    33.7577,
+    -84.3728
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Atlanta_Montage_2.jpg"
+  },
+  {
+   "name_en": "Terminal West",
+   "name_he": "טרמינל ווסט - אולם הופעות באטלנטה",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Terminal West, King Plow Arts Center, 887 W Marietta St",
+   "start": "2026-12-20",
+   "end": "2026-12-24",
+   "weekly": "הופעות רוב הערבים",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "georgia",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "אולם של 600 איש בתוך מפעל מחרשות ישן שהפך למרכז אמנות. אינדי, אלקטרוני והיפ הופ. ב-17.12 מופיע Emancipator.",
+   "tip": "מדיניות תיקים קשוחה - רק תיק שקוף או קטן. חלק מההופעות 18+.",
+   "cost": "כרטיסים כ-$20-50",
+   "url": "https://www.terminalwestatl.com",
+   "coords": [
+    33.7795,
+    -84.412
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Atlanta_Montage_2.jpg"
+  },
+  {
+   "name_en": "Smith's Olde Bar",
+   "name_he": "סמית'ס אולד בר - בר הופעות באטלנטה",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Smith's Olde Bar, 1578 Piedmont Ave NE",
+   "start": "2026-12-20",
+   "end": "2026-12-24",
+   "weekly": "הופעות כמעט כל ערב בשני חדרים (Music Room ו-Atlanta Room)",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "georgia",
+   "tags": [
+    "music",
+    "night",
+    "young",
+    "weekly"
+   ],
+   "why": "בר הופעות ותיק ליד פידמונט פארק, שבו התחילו הרבה להקות דרומיות. להקות מקומיות ומסיבובי הופעות.",
+   "tip": "רוב ההופעות 18+. כרטיסים זולים, אפשר לקנות בכניסה.",
+   "cost": "כרטיסים כ-$10-25",
+   "url": "https://www.sobatl.com",
+   "coords": [
+    33.797,
+    -84.37
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Peachtree_Street_at_Sixth_Street,_Midtown_Atlanta_GA.jpg"
+  },
+  {
+   "name_en": "The Comedy Catch",
+   "name_he": "קומדי קאץ' - מועדון קומדיה בצ'טנוגה",
+   "state": "Tennessee",
+   "city": "Chattanooga",
+   "venue": "The Comedy Catch, 29 Station St (Chattanooga Choo Choo)",
+   "start": "2026-12-24",
+   "end": "2026-12-27",
+   "weekly": "הופעות רוב סופי השבוע, בשישי ושבת 19:00 ו-21:15",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "tennessee",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "המועדון היחיד לקומדיה בצ'טנוגה, מ-1985, במתחם תחנת הרכבת ההיסטורית צ'טנוגה צ'ו צ'ו.",
+   "tip": "בודקים באתר אם יש הופעה בשבוע של חג המולד. רחוב סטיישן מלא ברים.",
+   "cost": "כרטיסים כ-$25-60",
+   "url": "https://www.thecomedycatch.com",
+   "coords": [
+    35.036,
+    -85.3083
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/0/02/Chattanooga_Choo_Choo_in_Terminal_Station_(Chattanooga).jpg"
+  },
+  {
+   "name_en": "JJ's Bohemia",
+   "name_he": "ג'יי ג'יי'ס בוהמיה - בר פאנק ורוק בצ'טנוגה",
+   "state": "Tennessee",
+   "city": "Chattanooga",
+   "venue": "JJ's Bohemia, 231 E MLK Blvd",
+   "start": "2026-12-24",
+   "end": "2026-12-27",
+   "weekly": "הופעות כמעט כל ערב, דלתות ב-20:00",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "tennessee",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "local",
+    "weekly"
+   ],
+   "why": "בר קטן ל-150 איש עם 2-3 להקות כל ערב - פאנק, רוק, בלוז ולפעמים קומדיה. המקום של הצעירים בעיר.",
+   "tip": "מגיל 21. להקות מסיבובי הופעות נמכרות מראש.",
+   "cost": "כניסה כ-$5-15",
+   "url": "https://www.jjsbohemia.com",
+   "coords": [
+    35.044,
+    -85.306
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Downtown_chattanooga.JPG"
+  },
+  {
+   "name_en": "Zanies Comedy Night Club",
+   "name_he": "זאניז - מועדון הקומדיה של נאשוויל",
+   "state": "Tennessee",
+   "city": "Nashville",
+   "venue": "Zanies, 2025 8th Ave S",
+   "start": "2026-12-25",
+   "end": "2026-12-29",
+   "weekly": "הופעות רוב הערבים; ב-The Lab ערבי New Material ומופעים מיוחדים",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "tennessee",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון הקומדיה הוותיק של נאשוויל, עם אולם ראשי ואולם קטן (The Lab) שבו נייט ברגאצי מקליט את הפודקאסט שלו.",
+   "tip": "כרטיסים רק באיסוף עם תעודה של הקונה. הטלפונים נכנסים לשקית. מינימום 2 פריטים.",
+   "cost": "כרטיסים כ-$16-50",
+   "url": "https://nashville.zanies.com",
+   "coords": [
+    36.132,
+    -86.777
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Honky Tonk Tuesday at Eastside Bowl",
+   "name_he": "הונקי טונק טיוזדיי - ערב ריקודי קאנטרי",
+   "state": "Tennessee",
+   "city": "Madison (Nashville)",
+   "venue": "Eastside Bowl, 1508 Gallatin Pike S",
+   "start": "2026-12-29",
+   "end": "2026-12-29",
+   "weekly": "כל יום שלישי: שיעור ריקוד, להקות מתחלפות, וסט סיום של The Cowpokes",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "tennessee",
+   "tags": [
+    "music",
+    "night",
+    "local",
+    "weekly",
+    "young"
+   ],
+   "why": "הערב הכי אמיתי של קאנטרי בנאשוויל - מקומיים צעירים רוקדים טו-סטפ לצלילי להקת הבית. עבר מהליגיון 82 לאולם גדול יותר.",
+   "tip": "מתחילים בשיעור הריקוד בתחילת הערב. מגיל 18, חנייה חינם, חיילים משוחררים בחינם.",
+   "cost": "כניסה כ-$10-15",
+   "url": "https://www.eastsidebowl.com",
+   "coords": [
+    36.247,
+    -86.714
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Motown Monday at The 5 Spot",
+   "name_he": "מוטאון מאנדיי - מסיבת ריקודים במזרח נאשוויל",
+   "state": "Tennessee",
+   "city": "Nashville",
+   "venue": "The 5 Spot, 1006 Forrest Ave, Five Points",
+   "start": "2026-12-28",
+   "end": "2026-12-28",
+   "weekly": "כל יום שני מ-21:00 עד מאוחר",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "tennessee",
+   "tags": [
+    "music",
+    "night",
+    "local",
+    "young",
+    "weekly"
+   ],
+   "why": "מסיבת סול, פאנק ומוטאון מתקליטי ויניל, אחת המסיבות השבועיות הוותיקות בנאשוויל. כולם רוקדים.",
+   "tip": "מגיל 21. כניסה זולה מאוד. השכונה Five Points מלאה ברים ואוכל.",
+   "cost": "כניסה כ-$5",
+   "url": "https://www.the5spotlive.com",
+   "coords": [
+    36.1767,
+    -86.748
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Exit/In",
+   "name_he": "אקזיט/אין - מועדון הרוק ההיסטורי של נאשוויל",
+   "state": "Tennessee",
+   "city": "Nashville",
+   "venue": "Exit/In, 2208 Elliston Pl",
+   "start": "2026-12-25",
+   "end": "2026-12-29",
+   "weekly": "הופעות רוב הערבים",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "tennessee",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון מ-1971 ברשימת המקומות ההיסטוריים - ניגנו פה ג'וני קאש, REM ועוד. היום אינדי, רוק והיפ הופ.",
+   "tip": "בודקים לוח באתר. אזור אליסטון פלייס קרוב לאוניברסיטת ונדרבילט.",
+   "cost": "כרטיסים כ-$15-35",
+   "url": "https://www.exitin.com",
+   "coords": [
+    36.1508,
+    -86.8055
+   ],
+   "img": "https://upload.wikimedia.org/wikipedia/commons/e/e5/WTN_EVula_006.jpg"
+  },
+  {
+   "name_en": "Paducah Beer Werks",
+   "name_he": "פדוקה ביר וורקס - מבשלה עם הופעות",
+   "state": "Kentucky",
+   "city": "Paducah",
+   "venue": "Paducah Beer Werks, 301 N 4th St",
+   "start": "2026-12-29",
+   "end": "2026-12-31",
+   "weekly": "הופעות של להקות מקומיות ומסיבובים, ערב קומדיה ובמה פתוחה",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "ky_il",
+   "tags": [
+    "music",
+    "local",
+    "night"
+   ],
+   "why": "מבשלת בירה בתחנת אוטובוסים ישנה במרכז פדוקה, עם במה ללהקות. עיר קטנה, מקום מקומי נחמד לערב.",
+   "tip": "לוח ההופעות מתעדכן בפייסבוק ובאתר - בדקו לפני. כניסה בדרך כלל $5-10.",
+   "cost": "כניסה כ-$5-10",
+   "url": "https://www.paducahbeerwerks.com",
+   "coords": [
+    37.088,
+    -88.6
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "The Funny Bone (Westport)",
+   "name_he": "פאני בון - מועדון קומדיה בסנט לואיס",
+   "state": "Missouri",
+   "city": "St. Louis (Maryland Heights)",
+   "venue": "The Funny Bone, 614 Westport Plaza",
+   "start": "2026-12-30",
+   "end": "2027-01-02",
+   "weekly": "הופעות רוב הערבים; במה פתוחה בימי שלישי וראשון",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "ky_il",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון הקומדיה הוותיק של סנט לואיס, עם קומיקאים מקומיים וכוכבים מסיבובי הופעות.",
+   "tip": "יש גם סניף בסנט צ'רלס על הכביש 70. בסוף השנה יש הופעות מיוחדות - קונים מראש.",
+   "cost": "כרטיסים כ-$20-45",
+   "url": "https://stlouis.funnybone.com",
+   "coords": [
+    38.7055,
+    -90.448
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "The Duck Room at Blueberry Hill",
+   "name_he": "דאק רום - המרתף של צ'אק ברי",
+   "state": "Missouri",
+   "city": "St. Louis (University City)",
+   "venue": "Blueberry Hill, 6504 Delmar Blvd, The Loop",
+   "start": "2026-12-30",
+   "end": "2027-01-02",
+   "weekly": "הופעות רוב הערבים",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "ky_il",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "אולם קטן במרתף של בלוברי היל, שבו צ'אק ברי הופיע פעם בחודש עד 2014. רוק, אינדי, בלוז והיפ הופ.",
+   "tip": "אוכלים המבורגר למעלה במסעדה המפורסמת ויורדים להופעה. רחוב דלמר לופ מלא ברים.",
+   "cost": "כרטיסים כ-$15-30",
+   "url": "https://blueberryhill.com",
+   "coords": [
+    38.6557,
+    -90.3056
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "recordBar",
+   "name_he": "רקורד בר - מועדון הופעות בקנזס סיטי",
+   "state": "Missouri",
+   "city": "Kansas City",
+   "venue": "recordBar, 1520 Grand Blvd, Crossroads",
+   "start": "2027-01-01",
+   "end": "2027-01-05",
+   "weekly": "הופעות רוב הערבים",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "missouri",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון של כ-400 איש בקרוסרואדס, אינדי, פאנק וזמרים צעירים בדרך למעלה. לב סצנת הצעירים של קנזס סיטי.",
+   "tip": "בודקים באתר. קרוב ל-Green Lady Lounge לג'אז אחרי ההופעה.",
+   "cost": "כרטיסים כ-$15-45",
+   "url": "https://www.therecordbar.com",
+   "coords": [
+    39.0985,
+    -94.581
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "The Bottleneck",
+   "name_he": "הבוטלנק - מועדון הסטודנטים של לורנס",
+   "state": "Kansas",
+   "city": "Lawrence",
+   "venue": "The Bottleneck, 737 New Hampshire St",
+   "start": "2027-01-04",
+   "end": "2027-01-07",
+   "weekly": "הופעות רוב הערבים",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "kansas",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון של 350 איש בעיר האוניברסיטה של קנזס, עם להקות אינדי, פאנק ואלקטרוני מסיבובי הופעות.",
+   "tip": "בינואר הסטודנטים בחופשה עד אמצע החודש, אבל ההופעות ממשיכות. רחוב מסצ'וסטס מלא ברים.",
+   "cost": "כרטיסים כ-$12-30",
+   "url": "https://www.thebottlenecklive.com",
+   "coords": [
+    38.9706,
+    -95.235
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Auntie Mae's Parlor (Aggieville)",
+   "name_he": "אנטי מייז - בר מרתף באגיוויל",
+   "state": "Kansas",
+   "city": "Manhattan",
+   "venue": "Auntie Mae's Parlor, 616 N 12th St, Aggieville",
+   "start": "2027-01-06",
+   "end": "2027-01-08",
+   "weekly": "מוזיקה חיה, קומדיה וטריוויה רוב הערבים",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "kansas",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "local"
+   ],
+   "why": "בר מרתף מ-1974 ברובע הברים של אוניברסיטת קנזס סטייט. אגיוויל היא שכונת הבילויים הכי ותיקה בקנזס.",
+   "tip": "סטייה קצרה מהכביש 70 (כ-15 דק'). מתמלא מהר בערבים.",
+   "cost": "כניסה בדרך כלל זולה או חינם",
+   "url": "https://www.manhattancvb.org/285/Aggieville-entertainment",
+   "coords": [
+    39.1865,
+    -96.577
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Decadence Colorado (NYE)",
+   "name_he": "דקדנס - פסטיבל אלקטרוני בערב השנה החדשה",
+   "state": "Colorado",
+   "city": "Denver",
+   "venue": "Colorado Convention Center",
+   "start": "2026-12-30",
+   "end": "2026-12-31",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "colorado",
+   "tags": [
+    "young",
+    "music",
+    "night"
+   ],
+   "why": "פסטיבל EDM ענק של שני לילות עם Marshmello, DJ Snake, Excision, GRiZ, Zeds Dead ועוד, ורחבה בגודל של 6 מגרשי כדורגל.",
+   "tip": "זה לפני שאתם מגיעים לקולורדו - שווה רק אם אתם בדנוור בסוף השנה. כרטיסים נמכרים מהר. בעבר מגיל 18.",
+   "cost": "כרטיסים מ-$150",
+   "url": "https://www.decadencenye.com",
+   "coords": [
+    39.7428,
+    -104.996
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Big Beers, Belgians & Barleywines Festival",
+   "name_he": "פסטיבל הבירות החזקות של ברקנרידג'",
+   "state": "Colorado",
+   "city": "Breckenridge",
+   "venue": "Beaver Run Resort & Conference Center",
+   "start": "2027-01-07",
+   "end": "2027-01-09",
+   "confirmed": false,
+   "type": "food",
+   "segment_id": "colorado",
+   "tags": [
+    "food",
+    "young"
+   ],
+   "why": "פסטיבל בירה של בירות חזקות, בלגיות וברליווין, עם מאות מבשלות, ארוחות בירה וסדנאות, בעיירת סקי.",
+   "tip": "תאריכי 2027 עוד לא פורסמו - בדרך כלל סוף השבוע הראשון או השני של ינואר. הכרטיסים לטעימה הגדולה נגמרים.",
+   "cost": "כרטיסים כ-$85+",
+   "url": "https://www.bigbeersfestival.com",
+   "coords": [
+    39.472,
+    -106.048
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Comedy Works Downtown",
+   "name_he": "קומדי וורקס - מועדון הקומדיה של דנוור",
+   "state": "Colorado",
+   "city": "Denver",
+   "venue": "Comedy Works, 1226 15th St, Larimer Square",
+   "start": "2027-01-08",
+   "end": "2027-01-14",
+   "weekly": "הופעות רוב הערבים, בסופ\"ש 2 הופעות",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "colorado",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מרתף בלרימר סקוור מ-1981, אחד ממועדוני הקומדיה הכי מוערכים בארה\"ב. הרבה כוכבים מתחילים פה סיבובים.",
+   "tip": "קונים באתר. יש גם סניף דרומי בגרינווד וילג'.",
+   "cost": "כרטיסים כ-$20-45",
+   "url": "https://www.comedyworks.com",
+   "coords": [
+    39.7476,
+    -104.999
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Cervantes' Masterpiece Ballroom",
+   "name_he": "סרוונטס - אולם פאנק וג'אם בדנוור",
+   "state": "Colorado",
+   "city": "Denver",
+   "venue": "Cervantes' Masterpiece Ballroom & Other Side, 2637 Welton St, Five Points",
+   "start": "2027-01-08",
+   "end": "2027-01-14",
+   "weekly": "הופעות כמעט כל ערב בשני אולמות צמודים",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "colorado",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "שני אולמות צמודים בשכונת פייב פוינטס - פאנק, ג'אם, אלקטרוני והיפ הופ. המקום של סצנת הצעירים של דנוור.",
+   "tip": "הופעות מסתיימות מאוחר. בודקים באתר את ההופעה של הערב.",
+   "cost": "כרטיסים כ-$15-40",
+   "url": "https://www.cervantesmasterpiece.com",
+   "coords": [
+    39.7547,
+    -104.979
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Lion's Lair",
+   "name_he": "ליונס לייר - בר פאנק בקולפקס",
+   "state": "Colorado",
+   "city": "Denver",
+   "venue": "Lion's Lair, 2022 E Colfax Ave",
+   "start": "2027-01-08",
+   "end": "2027-01-14",
+   "weekly": "הופעות רוב הערבים",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "colorado",
+   "tags": [
+    "music",
+    "night",
+    "local",
+    "young"
+   ],
+   "why": "בר דייב קטן ל-120 איש בשדרת קולפקס, עם להקות מקומיות ומדי פעם אגדות שמנגנות במקומות קטנים.",
+   "tip": "מגיל 21. זול ופשוט - בירה ולהקה.",
+   "cost": "כניסה כ-$5-15",
+   "url": "https://www.colfaxave.com/lion-s-lair",
+   "coords": [
+    39.7402,
+    -104.963
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Fox Theatre Boulder",
+   "name_he": "תיאטרון פוקס - מועדון הסטודנטים של בולדר",
+   "state": "Colorado",
+   "city": "Boulder",
+   "venue": "Fox Theatre, 1135 13th St, University Hill",
+   "start": "2027-01-08",
+   "end": "2027-01-14",
+   "weekly": "הופעות רוב הערבים",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "colorado",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון של כ-600 איש על 'הגבעה' ליד אוניברסיטת קולורדו - ג'אם, אלקטרוני ואינדי. אווירה של עיר קולג'.",
+   "tip": "רוב ההופעות 16+ או 18+. ליד יש הרבה מקומות אוכל זולים לסטודנטים.",
+   "cost": "כרטיסים כ-$20-40",
+   "url": "https://www.foxtheatre.com",
+   "coords": [
+    40.009,
+    -105.2763
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Glenwood Vaudeville Revue",
+   "name_he": "גלנווד וודוויל - מופע קומדיה וארוחה",
+   "state": "Colorado",
+   "city": "Glenwood Springs",
+   "venue": "Glenwood Vaudeville Revue, 915 Grand Ave",
+   "start": "2027-01-15",
+   "end": "2027-01-17",
+   "weekly": "שישי, שבת וראשון; דלתות ב-18:00, הופעה ב-18:45",
+   "confirmed": false,
+   "type": "show",
+   "segment_id": "colorado",
+   "tags": [
+    "comedy",
+    "family",
+    "local",
+    "weekly"
+   ],
+   "why": "תיאטרון קטן עם מופע וודוויל מקורי - שירים, מערכונים וקומדיה לכל המשפחה, עם ארוחה ממסעדות מקומיות.",
+   "tip": "משלב טוב עם המעיינות החמים של גלנווד. האוכל מוזמן בנפרד.",
+   "cost": "מבוגר $35, אוכל בנפרד",
+   "url": "https://gvrshow.com",
+   "coords": [
+    39.546,
+    -107.3245
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Mesa Theater",
+   "name_he": "מסה תיאטר - מועדון ההופעות של גרנד ג'נקשן",
+   "state": "Colorado",
+   "city": "Grand Junction",
+   "venue": "Mesa Theater, 538 Main St",
+   "start": "2027-01-15",
+   "end": "2027-01-17",
+   "weekly": "הופעות כמה ערבים בשבוע (שלישי-שבת)",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "moab",
+   "tags": [
+    "young",
+    "music",
+    "night"
+   ],
+   "why": "אולם הופעות במרכז העיר הראשי של מערב קולורדו, שמביא להקות פאנק, מטאל, היפ הופ ורגאיי לעיר קטנה.",
+   "tip": "בודקים באתר אם יש הופעה בערב שלכם. רחוב מיין נחמד לטיול ערב.",
+   "cost": "כרטיסים כ-$15-35",
+   "url": "https://www.mesatheater.com",
+   "coords": [
+    39.0685,
+    -108.565
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Martin Luther King Jr. Day Marade",
+   "name_he": "מרייד יום מרטין לותר קינג בדנוור",
+   "state": "Colorado",
+   "city": "Denver",
+   "venue": "City Park (Dr. King statue) to Civic Center Park",
+   "start": "2027-01-18",
+   "end": "2027-01-18",
+   "confirmed": false,
+   "type": "parade",
+   "segment_id": "colorado",
+   "tags": [
+    "free",
+    "local",
+    "family"
+   ],
+   "why": "צעדה-מצעד ('Marade') מהגדולות בארה\"ב ליום מרטין לותר קינג - אלפים צועדים מסיטי פארק לאורך קולפקס עד הקפיטול.",
+   "tip": "התאריך לפי יום MLK (18.1) - הפרטים עוד לא פורסמו. בשנים קודמות טקס ב-10:00 וצעדה ב-11:45. מתקיים בכל מזג אוויר.",
+   "cost": "חינם",
+   "url": "https://coloradosun.com/2026/01/19/mlk-day-marade-denver-2026/",
+   "coords": [
+    39.749,
+    -104.948
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Blu Pig Community Music Night",
+   "name_he": "ערב מוזיקה קהילתי בבלו פיג במואב",
+   "state": "Utah",
+   "city": "Moab",
+   "venue": "The Blu Pig, 811 S Main St",
+   "start": "2027-01-16",
+   "end": "2027-01-20",
+   "weekly": "בחורף מוזיקה רביעי עד שבת; ברביעי במה פתוחה וג'אם קהילתי 19:00-22:00",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "moab",
+   "tags": [
+    "music",
+    "free",
+    "local",
+    "night",
+    "weekly"
+   ],
+   "why": "מסעדת ברביקיו ובר עם מוזיקה חיה. ערב רביעי הוא הג'אם של מואב מ-2013 - מקומיים מכל הרמות עולים לנגן.",
+   "tip": "חינם. בחורף מואב שקטה, אז זה המקום לפגוש מקומיים.",
+   "cost": "חינם",
+   "url": "https://moabsunnews.com/2022/11/03/brisket-with-a-side-of-live-music",
+   "coords": [
+    38.564,
+    -109.549
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Velour Live Music Gallery",
+   "name_he": "ולור - מועדון האינדי של פרובו",
+   "state": "Utah",
+   "city": "Provo",
+   "venue": "Velour, 135 N University Ave",
+   "start": "2027-01-20",
+   "end": "2027-01-23",
+   "weekly": "הופעות רוב הערבים; במה פתוחה בימי רביעי",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "utah_north",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון קטן בעיר הסטודנטים של BYU שהצמיח להקות כמו Imagine Dragons ו-Neon Trees. אווירה צעירה ובלי אלכוהול.",
+   "tip": "כל הגילאים, אין בר. ערב רביעי הוא במה פתוחה.",
+   "cost": "כרטיסים כ-$10-20",
+   "url": "https://velourlive.com",
+   "coords": [
+    40.235,
+    -111.6585
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "ComedySportz Utah",
+   "name_he": "קומדיספורטס - אימפרוב תחרותי בפרובו",
+   "state": "Utah",
+   "city": "Provo",
+   "venue": "ComedySportz, 36 W Center St",
+   "start": "2027-01-22",
+   "end": "2027-01-23",
+   "weekly": "Main Event בשישי ושבת (בערך 19:30 ו-21:30)",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "utah_north",
+   "tags": [
+    "comedy",
+    "family",
+    "night",
+    "weekly"
+   ],
+   "why": "שתי קבוצות (אדומה וכחולה) מתחרות במשחקי אימפרוב והקהל מחליט מי ניצח. נקי ומתאים לכל הגילאים.",
+   "tip": "השעות משתנות בין מקורות - בודקים באתר. מחיר זול.",
+   "cost": "כרטיסים כ-$12-18",
+   "url": "https://comedysportzutah.com",
+   "coords": [
+    40.2338,
+    -111.6593
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Salt Lake Winter Farmers Market",
+   "name_he": "שוק האיכרים החורפי של סולט לייק",
+   "state": "Utah",
+   "city": "Salt Lake City",
+   "venue": "Downtown (in 2025-26 moved to the former Leonardo building, 209 E 500 S)",
+   "start": "2027-01-23",
+   "end": "2027-01-23",
+   "weekly": "כל שבת 10:00-14:00, מנובמבר עד אפריל",
+   "confirmed": false,
+   "type": "market",
+   "segment_id": "utah_north",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family",
+    "weekly"
+   ],
+   "why": "שוק איכרים מקורה בחורף - חקלאים מיוטה, גבינות, דבש, לחם ואוכל. מראה שיש חקלאות גם בשלג.",
+   "tip": "המקום השתנה בשנים האחרונות - בודקים באתר איפה הוא בעונת 2026-27.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.slcfarmersmarket.org",
+   "coords": [
+    40.759,
+    -111.884
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Salt Lake Gallery Stroll",
+   "name_he": "גלרי סטרול - ערב גלריות בסולט לייק",
+   "state": "Utah",
+   "city": "Salt Lake City",
+   "venue": "Downtown galleries",
+   "start": "2027-01-15",
+   "end": "2027-01-15",
+   "weekly": "כל שישי שלישי בחודש 18:00-21:00",
+   "confirmed": false,
+   "type": "art",
+   "segment_id": "utah_north",
+   "tags": [
+    "art",
+    "free",
+    "local",
+    "night"
+   ],
+   "why": "ערב חודשי מ-1983 שבו הגלריות בעיר פתוחות עד מאוחר עם תערוכות חדשות, יין ואמנים.",
+   "tip": "התאריך לפי שישי שלישי בינואר (15.1). המפה של הגלריות באתר.",
+   "cost": "חינם",
+   "url": "https://gallerystroll.org",
+   "coords": [
+    40.7608,
+    -111.891
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Wiseguys Comedy at The Gateway",
+   "name_he": "וייזגאייז - מועדון קומדיה בסולט לייק",
+   "state": "Utah",
+   "city": "Salt Lake City",
+   "venue": "Wiseguys, The Gateway, 194 S 400 W",
+   "start": "2027-01-21",
+   "end": "2027-01-25",
+   "weekly": "הופעות רוב הערבים; בראשון במה פתוחה ($5) ו-Comedy Church",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "utah_north",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון הקומדיה הגדול של יוטה, עם אולם ראשי לכוכבים ואולם קטן (Rickles Room) לקומיקאים מקומיים.",
+   "tip": "קונים רק באתר הרשמי - כרטיסים מספסרים לא מתקבלים. רוב ההופעות 21+.",
+   "cost": "כרטיסים כ-$15-50",
+   "url": "https://wiseguyscomedy.com/utah/salt-lake-city/the-gateway",
+   "coords": [
+    40.766,
+    -111.903
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Kilby Court",
+   "name_he": "קילבי קורט - המועדון הכי ותיק לכל הגילאים",
+   "state": "Utah",
+   "city": "Salt Lake City",
+   "venue": "Kilby Court, 741 S Kilby Ct",
+   "start": "2027-01-21",
+   "end": "2027-01-25",
+   "weekly": "הופעות רוב הערבים",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "utah_north",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מוסך קטן בסמטה שהפך מ-1999 למקום של להקות אינדי צעירות לפני שהן מתפרסמות. כל הגילאים, אווירה של חצר אחורית.",
+   "tip": "אין אלכוהול. קונים כרטיסים מראש דרך S&S Presents.",
+   "cost": "כרטיסים כ-$12-25",
+   "url": "https://kilbycourt.com",
+   "coords": [
+    40.7525,
+    -111.901
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Wheeler Historic Farm",
+   "name_he": "חוות ווילר ההיסטורית",
+   "state": "Utah",
+   "city": "Murray (Salt Lake City)",
+   "venue": "Wheeler Historic Farm, 6351 S 900 E",
+   "start": "2027-01-21",
+   "end": "2027-01-25",
+   "weekly": "פתוח כל יום באור יום; שוק חורף בימי ראשון 9:00-13:00 (ינואר-אפריל)",
+   "confirmed": false,
+   "type": "farm",
+   "segment_id": "utah_north",
+   "tags": [
+    "farm",
+    "family",
+    "local",
+    "free"
+   ],
+   "why": "חווה מתחילת המאה ה-20 בתוך העיר - פרות, תרנגולות וסוסים, הדגמת חליבה, ובימי ראשון שוק חורף מקורה.",
+   "tip": "הדגמת החליבה ב-$1, עגלה $3 כשמזג האוויר מאפשר.",
+   "cost": "כניסה לחווה בלי תשלום",
+   "url": "https://www.saltlakecounty.gov/wheeler-farm/visit/",
+   "coords": [
+    40.638,
+    -111.866
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "The Spur Bar & Grill",
+   "name_he": "הספר - בר מוזיקה בפארק סיטי",
+   "state": "Utah",
+   "city": "Park City",
+   "venue": "The Spur, 352 Main St",
+   "start": "2027-01-22",
+   "end": "2027-01-25",
+   "weekly": "מוזיקה חיה כל ערב",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "utah_north",
+   "tags": [
+    "music",
+    "night",
+    "local"
+   ],
+   "why": "סלון בסגנון מערבי ברחוב הראשי של פארק סיטי עם להקות כל ערב - רוק, קאנטרי, בלוגראס. אפרה-סקי אמיתי.",
+   "tip": "מגיל 21. בעונת הסקי צפוף בסופ\"ש.",
+   "cost": "בדרך כלל בלי כניסה",
+   "url": "https://www.thespurbarandgrill.com",
+   "coords": [
+    40.642,
+    -111.495
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Egyptian Theatre Park City",
+   "name_he": "התיאטרון המצרי של פארק סיטי",
+   "state": "Utah",
+   "city": "Park City",
+   "venue": "Egyptian Theatre, 328 Main St",
+   "start": "2027-01-22",
+   "end": "2027-01-25",
+   "weekly": "הופעות והצגות כמה ערבים בשבוע",
+   "confirmed": false,
+   "type": "show",
+   "segment_id": "utah_north",
+   "tags": [
+    "music",
+    "night",
+    "local"
+   ],
+   "why": "תיאטרון היסטורי מ-1926 ברחוב הראשי, אולם קטן ואינטימי להופעות פולק, רוק ותיאטרון. היה במה של סאנדנס.",
+   "tip": "בודקים באתר מה מופיע. אולם קטן - כל מקום טוב.",
+   "cost": "כרטיסים כ-$30-80",
+   "url": "https://www.egyptiantheatrecompany.org",
+   "coords": [
+    40.643,
+    -111.4952
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Peppermill Concert Hall",
+   "name_he": "אולם ההופעות של הפפרמיל בוונדובר",
+   "state": "Nevada",
+   "city": "West Wendover",
+   "venue": "Peppermill Concert Hall, Wendover Blvd",
+   "start": "2027-01-23",
+   "end": "2027-01-24",
+   "weekly": "הופעות בעיקר בסופי שבוע",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "nevada80",
+   "tags": [
+    "music",
+    "night"
+   ],
+   "why": "עיר קזינו קטנה על הגבול עם יוטה, ואולם הופעות שמביא כוכבי קאנטרי ורוק ותיקים. עצירה מצחיקה באמצע המדבר.",
+   "tip": "בודקים באתר מי מופיע בסופ\"ש שלכם. לידה מישור המלח של בונוויל.",
+   "cost": "כרטיסים כ-$30-80",
+   "url": "https://www.wendoverfun.com/concerthall",
+   "coords": [
+    40.737,
+    -114.062
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Duncan LittleCreek Gallery & Bar",
+   "name_he": "גלריה ובר דנקן ליטלקריק באלקו",
+   "state": "Nevada",
+   "city": "Elko",
+   "venue": "DLC Gallery Bar, 516 Commercial St",
+   "start": "2027-01-24",
+   "end": "2027-01-26",
+   "weekly": "שלישי עד שבת; מוזיקה חיה והופעות לעתים קרובות",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "nevada80",
+   "tags": [
+    "music",
+    "art",
+    "local",
+    "night"
+   ],
+   "why": "גלריה של אמן מקומי ובר קטן ונעים במרכז אלקו עם הופעות ותיאטרון. אלקו היא עיר בוקרים אמיתית.",
+   "tip": "בסוף ינואר יש באלקו את כנס שירת הבוקרים, אז העיר מלאה מוזיקה. בדקו בפייסבוק מה יש.",
+   "cost": "בדרך כלל בלי כניסה",
+   "url": "https://exploreelko.com",
+   "coords": [
+    40.833,
+    -115.762
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "The Saint (Reno)",
+   "name_he": "הסיינט - בר מוזיקה במידטאון רינו",
+   "state": "Nevada",
+   "city": "Reno",
+   "venue": "The Saint, 761 S Virginia St, Midtown",
+   "start": "2027-01-26",
+   "end": "2027-01-29",
+   "weekly": "הופעות רוב הערבים; בעבר ג'אם בלוז בימי רביעי",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "nevada80",
+   "tags": [
+    "music",
+    "night",
+    "young",
+    "local"
+   ],
+   "why": "בר בירה ואולם הופעות ל-216 איש במידטאון - השכונה הצעירה של רינו עם ציורי קיר, ברים ואוכל.",
+   "tip": "מגיל 21. בודקים לוח באתר או באינסטגרם.",
+   "cost": "כניסה כ-$5-20",
+   "url": "https://www.thesaintreno.com",
+   "coords": [
+    39.517,
+    -119.809
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Laugh Factory Reno",
+   "name_he": "לאף פקטורי - קומדיה בסילבר לגסי",
+   "state": "Nevada",
+   "city": "Reno",
+   "venue": "Laugh Factory, Silver Legacy Resort, 407 N Virginia St",
+   "start": "2027-01-26",
+   "end": "2027-01-29",
+   "weekly": "הופעות כמעט כל ערב, 19:30 ובסופ\"ש גם 21:30",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "nevada80",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "סניף של מועדון הקומדיה המפורסם מהוליווד בתוך הקזינו במרכז רינו, עם 3-4 קומיקאים בכל ערב.",
+   "tip": "קונים באתר של Laugh Factory. מגיל 21.",
+   "cost": "כרטיסים כ-$30-55",
+   "url": "https://www.laughfactory.com",
+   "coords": [
+    39.53,
+    -119.815
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Brew HaHa (Reno)",
+   "name_he": "ברו הה-הה - ערב בירה בנאגט",
+   "state": "Nevada",
+   "city": "Sparks",
+   "venue": "Nugget Casino Resort, Grand Ballroom",
+   "start": "2027-01-23",
+   "end": "2027-01-23",
+   "confirmed": false,
+   "type": "food",
+   "segment_id": "nevada80",
+   "tags": [
+    "food",
+    "night",
+    "young"
+   ],
+   "why": "ערב אחד בינואר שבו מבשלות מקומיות ומהאזור מוזגות בירות באולם הגדול של הנאגט, עם אוכל ומוזיקה.",
+   "tip": "התאריך של 2027 עוד לא פורסם - זה ערב אחד בינואר, בדקו באתר הנאגט. 23.1 רק הערכה.",
+   "cost": "כרטיסים כ-$40-60",
+   "url": "https://www.visitrenotahoe.com/articles/crawl-beer-events-reno",
+   "coords": [
+    39.533,
+    -119.752
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Moody's Bistro Bar & Beats",
+   "name_he": "מודיז - ג'אז חי בטראקי",
+   "state": "California",
+   "city": "Truckee",
+   "venue": "Moody's, 10007 Bridge St",
+   "start": "2027-01-28",
+   "end": "2027-01-30",
+   "weekly": "ג'אז חי כמה ערבים בשבוע (בעבר חמישי-שבת בחינם בחורף)",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "tahoe_sac",
+   "tags": [
+    "music",
+    "night",
+    "local",
+    "free"
+   ],
+   "why": "מסעדה ובר בעיירה ההיסטורית טראקי ליד טאהו, עם ג'אז ונשמה חיים אחרי יום סקי.",
+   "tip": "השעות משתנות - מתקשרים לפני. העיירה יפה מאוד בשלג.",
+   "cost": "בדרך כלל בלי כניסה",
+   "url": "https://www.moodysbistro.com",
+   "coords": [
+    39.327,
+    -120.185
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Crystal Bay Club Crown Room",
+   "name_he": "קראון רום - הופעות על אגם טאהו",
+   "state": "Nevada",
+   "city": "Crystal Bay",
+   "venue": "Crystal Bay Club Casino, 14 NV-28",
+   "start": "2027-01-28",
+   "end": "2027-01-31",
+   "weekly": "הופעות בעיקר בסופי שבוע",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "tahoe_sac",
+   "tags": [
+    "young",
+    "music",
+    "night"
+   ],
+   "why": "אולם קזינו ישן על הגבול בצד הצפוני של טאהו, עם להקות ג'אם, פאנק ובלוגראס. מקום אהוב על צעירי טאהו ורינו.",
+   "tip": "בודקים באתר. הכביש סביב האגם יכול להיות מושלג - בדקו תנאים.",
+   "cost": "כרטיסים כ-$20-50",
+   "url": "https://www.crystalbaycasino.com",
+   "coords": [
+    39.227,
+    -120.003
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Punch Line Sacramento",
+   "name_he": "פאנץ' ליין - מועדון קומדיה בסקרמנטו",
+   "state": "California",
+   "city": "Sacramento",
+   "venue": "Punch Line, 2100 Arden Way",
+   "start": "2027-01-29",
+   "end": "2027-02-01",
+   "weekly": "הופעות רוב הערבים, כולל ערב קומיקאים מקומיים",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "tahoe_sac",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון קומדיה מ-1991 שבו הופיעו דייב שאפל, ג'ו קוי ובובי לי. היום כוכבים מסיבובים וערבי מקומיים.",
+   "tip": "מינימום 2 משקאות. יש תפריט ארוחת ערב.",
+   "cost": "כרטיסים כ-$20-45",
+   "url": "https://www.punchlinesac.com",
+   "coords": [
+    38.596,
+    -121.412
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Harlow's",
+   "name_he": "הארלוז - מועדון הופעות בסקרמנטו",
+   "state": "California",
+   "city": "Sacramento",
+   "venue": "Harlow's, 2708 J St, Midtown",
+   "start": "2027-01-29",
+   "end": "2027-02-01",
+   "weekly": "הופעות רוב הערבים; אולם קטן נוסף - Starlet Room",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "tahoe_sac",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון של כ-475 איש במידטאון סקרמנטו - פאנק, רגאיי, ג'אם ואינדי. ב-24.1 מופיעה Fruition.",
+   "tip": "חלק מההופעות 21+. מידטאון מלא ברים ומסעדות.",
+   "cost": "כרטיסים כ-$20-40",
+   "url": "https://www.harlows.com",
+   "coords": [
+    38.5735,
+    -121.469
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "SF Sketchfest",
+   "name_he": "פסטיבל הקומדיה של סן פרנסיסקו",
+   "state": "California",
+   "city": "San Francisco",
+   "venue": "Venues across San Francisco",
+   "start": "2027-01-16",
+   "end": "2027-02-02",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "sf",
+   "tags": [
+    "comedy",
+    "night",
+    "young"
+   ],
+   "why": "פסטיבל קומדיה ענק עם יותר מ-200 הופעות ו-500 קומיקאים - סטנדאפ, מערכונים, פודקאסטים חיים ומפגשי איחוד של סדרות.",
+   "tip": "התאריכים לפי רישום של sftravel - עוד לא אושרו רשמית. מופעים פופולריים נגמרים, קונים מיד כשהתוכנית יוצאת.",
+   "cost": "כרטיסים כ-$25-75",
+   "url": "https://sfsketchfest.com",
+   "coords": [
+    37.788,
+    -122.4075
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Biscuits and Blues",
+   "name_he": "ביסקוויטס אנד בלוז - מועדון בלוז בסן פרנסיסקו",
+   "state": "California",
+   "city": "San Francisco",
+   "venue": "Biscuits and Blues, 401 Mason St, Union Square",
+   "start": "2027-01-30",
+   "end": "2027-02-02",
+   "weekly": "הופעות שלישי עד ראשון, בדרך כלל 2 הופעות בערב (18:30 ו-21:00)",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "sf",
+   "tags": [
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון בלוז במרתף ליד יוניון סקוור מ-1996, עם אוכל דרומי (עוף מטוגן וביסקוויטים) ונגני בלוז מכל הארץ.",
+   "tip": "סגור בימי שני. קונים מראש לסופ\"ש.",
+   "cost": "כרטיסים כ-$30-40",
+   "url": "https://www.biscuitsandblues.com",
+   "coords": [
+    37.787,
+    -122.4097
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Mr. Tipple's Recording Studio",
+   "name_he": "מיסטר טיפלס - בר ג'אז בסן פרנסיסקו",
+   "state": "California",
+   "city": "San Francisco",
+   "venue": "Mr. Tipple's, 39 Fell St, Civic Center",
+   "start": "2027-01-30",
+   "end": "2027-02-02",
+   "weekly": "ג'אז חי רביעי עד ראשון בערב",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "sf",
+   "tags": [
+    "music",
+    "night",
+    "local"
+   ],
+   "why": "בר ג'אז בסגנון מרתף ניו יורקי משנות ה-50, עם קוקטיילים טובים ונגנים חיים כל ערב. ליד אולם הסימפוניה.",
+   "tip": "בערבים מסוימים יש כרטיס, בחלקם לא - בודקים באתר. מזמינים שולחן.",
+   "cost": "לפעמים חינם, לפעמים $15-45",
+   "url": "https://www.mrtipplessf.com",
+   "coords": [
+    37.7765,
+    -122.418
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Cobb's Comedy Club",
+   "name_he": "קובס - מועדון הקומדיה של נורת' ביץ'",
+   "state": "California",
+   "city": "San Francisco",
+   "venue": "Cobb's Comedy Club, 915 Columbus Ave, North Beach",
+   "start": "2027-01-30",
+   "end": "2027-02-02",
+   "weekly": "הופעות שלישי עד ראשון",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "sf",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון של 400 מקומות בנורת' ביץ' עם כוכבי קומדיה מכל הארץ. בתקופת Sketchfest יש פה הרבה הופעות של הפסטיבל.",
+   "tip": "מינימום 2 משקאות מהמלצר. פעם בחודש ערב אורחים סודי בחינם עם הרשמה.",
+   "cost": "כרטיסים כ-$20-50",
+   "url": "https://www.cobbscomedy.com",
+   "coords": [
+    37.804,
+    -122.4155
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Harley Farms Goat Dairy",
+   "name_he": "חוות העיזים הארלי בפסקדרו",
+   "state": "California",
+   "city": "Pescadero",
+   "venue": "Harley Farms, 250 North St",
+   "start": "2027-02-02",
+   "end": "2027-02-03",
+   "weekly": "החנות פתוחה כל יום 11:00-16:00; סיורים בעיקר בסופ\"ש (עם הזמנה)",
+   "confirmed": false,
+   "type": "farm",
+   "segment_id": "hwy1",
+   "tags": [
+    "farm",
+    "family",
+    "local"
+   ],
+   "why": "חוות עיזים קטנה וציורית ליד כביש 1 שמייצרת גבינות עזים. פברואר זו עונת הגדיים - אפשר לראות גדיים קטנים.",
+   "tip": "בחורף השעות משתנות - בודקים באתר. מזמינים סיור מראש.",
+   "cost": "כניסה לחנות חינם, סיור כ-$25-35",
+   "url": "https://www.harleyfarms.com",
+   "coords": [
+    37.256,
+    -122.381
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Moe's Alley",
+   "name_he": "מוז אליי - מועדון הופעות בסנטה קרוז",
+   "state": "California",
+   "city": "Santa Cruz",
+   "venue": "Moe's Alley, 1535 Commercial Way",
+   "start": "2027-02-02",
+   "end": "2027-02-03",
+   "weekly": "הופעות כמעט כל ערב",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "hwy1",
+   "tags": [
+    "music",
+    "night",
+    "local",
+    "young",
+    "weekly"
+   ],
+   "why": "מועדון קטן ואהוב בסנטה קרוז עם בלוז, רגאיי, פאנק וקאנטרי. בקהל גולשים, סטודנטים ומקומיים.",
+   "tip": "בודקים לוח באתר. מגיל 21 ברוב ההופעות.",
+   "cost": "כרטיסים כ-$15-35",
+   "url": "https://www.moesalley.com",
+   "coords": [
+    36.983,
+    -121.9875
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Frog & Peach Pub",
+   "name_he": "פרוג אנד פיץ' - פאב עם מוזיקה בסן לואיס אוביספו",
+   "state": "California",
+   "city": "San Luis Obispo",
+   "venue": "Frog & Peach Pub, 728 Higuera St",
+   "start": "2027-02-03",
+   "end": "2027-02-05",
+   "weekly": "מוזיקה חיה רוב הערבים, ערב רגאיי שבועי",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "hwy1",
+   "tags": [
+    "music",
+    "night",
+    "young",
+    "local",
+    "free"
+   ],
+   "why": "פאב בריטי ברחוב הראשי של עיר הסטודנטים SLO, עם להקה על הפטיו האחורי ליד הנחל. אווירה צעירה ונינוחה.",
+   "tip": "ביום חמישי יש גם שוק הערב ברחוב היגוארה - משלבים. כניסה בדרך כלל חינם.",
+   "cost": "בדרך כלל חינם",
+   "url": "https://www.frogandpeachpub.com",
+   "coords": [
+    35.2795,
+    -120.6625
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Santa Barbara 1st Thursday",
+   "name_he": "חמישי ראשון - ערב אמנות בסנטה ברברה",
+   "state": "California",
+   "city": "Santa Barbara",
+   "venue": "Downtown Santa Barbara (State Street)",
+   "start": "2027-02-04",
+   "end": "2027-02-04",
+   "weekly": "כל חמישי ראשון בחודש, 17:00-20:00",
+   "confirmed": false,
+   "type": "art",
+   "segment_id": "hwy1",
+   "tags": [
+    "art",
+    "free",
+    "local",
+    "night"
+   ],
+   "why": "גלריות ומקומות אמנות במרכז העיר פתוחים בחינם עם פתיחות, מוזיקה חיה, טעימות יין ופעילויות.",
+   "tip": "התאריך 4.2 לפי התבנית החודשית. שווה לסיים בפאנק זון ליד הים.",
+   "cost": "חינם",
+   "url": "https://downtownsb.org",
+   "coords": [
+    34.42,
+    -119.699
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "World Ag Expo",
+   "name_he": "תערוכת החקלאות העולמית בטולרי",
+   "state": "California",
+   "city": "Tulare",
+   "venue": "International Agri-Center, 4500 S Laspina St",
+   "start": "2027-02-09",
+   "end": "2027-02-11",
+   "confirmed": true,
+   "type": "farm",
+   "segment_id": "hwy1",
+   "tags": [
+    "farm",
+    "local"
+   ],
+   "why": "תערוכת החקלאות הגדולה בעולם - טרקטורים ענקיים, מכונות קטיף, בעלי חיים ואלפי חקלאים, בלב עמק סן חואקין.",
+   "tip": "סטייה של כשעתיים מהחוף (דרך פאסו רובלס). נועלים נעליים נוחות - השטח ענק. כרטיס יומי בכניסה או באתר.",
+   "cost": "כרטיס יומי כ-$20",
+   "url": "https://www.worldagexpo.com",
+   "coords": [
+    36.1735,
+    -119.342
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "The Groundlings",
+   "name_he": "הגראונדלינגס - תיאטרון האימפרוב של הוליווד",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "The Groundlings Theatre, 7307 Melrose Ave",
+   "start": "2027-02-05",
+   "end": "2027-02-06",
+   "weekly": "המופע הראשי בשישי 20:00 ובשבת 20:00 ו-22:00; מופעים נוספים באמצע השבוע",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "la",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "להקת המערכונים והאימפרוב שהוציאה את וויל פרל, קריסטן וויג ומליסה מקארתי. תיאטרון קטן ברחוב מלרוז.",
+   "tip": "הופעות של כשעתיים. קונים מראש באתר, האולם קטן.",
+   "cost": "כרטיסים כ-$25-30",
+   "url": "https://groundlings.com",
+   "coords": [
+    34.0836,
+    -118.35
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Melrose Trading Post",
+   "name_he": "מלרוז טריידינג פוסט - שוק פשפשים של ראשון",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "Fairfax High School, 7850 Melrose Ave",
+   "start": "2027-02-07",
+   "end": "2027-02-07",
+   "weekly": "כל יום ראשון 9:00-17:00",
+   "confirmed": false,
+   "type": "market",
+   "segment_id": "la",
+   "tags": [
+    "art",
+    "young",
+    "local",
+    "weekly"
+   ],
+   "why": "שוק וינטג' ויוצרים עם כ-200 דוכנים - בגדים משומשים, תכשיטים, אמנות, אוכל ומוזיקה חיה. מלא צעירים.",
+   "tip": "הכניסה מממנת את בית הספר. יש קופון הנחה באתר.",
+   "cost": "כניסה כ-$5",
+   "url": "https://melrosetradingpost.org",
+   "coords": [
+    34.0835,
+    -118.3615
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "The Comedy Store",
+   "name_he": "קומדי סטור - המועדון האגדי בסאנסט סטריפ",
+   "state": "California",
+   "city": "West Hollywood",
+   "venue": "The Comedy Store, 8433 Sunset Blvd",
+   "start": "2027-02-05",
+   "end": "2027-02-10",
+   "weekly": "הופעות כל ערב, 365 ימים בשנה, בשלושה אולמות",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "la",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "המועדון שבו התחילו רובין וויליאמס, ג'ים קרי ודייב שאפל. כל ערב ליינאפ של 8-10 קומיקאים, לפעמים עם כוכבים בהפתעה.",
+   "tip": "מגיל 21, מינימום 2 משקאות. ה-Original Room הכי אינטימי.",
+   "cost": "כרטיסים כ-$20-30",
+   "url": "https://thecomedystore.com",
+   "coords": [
+    34.0953,
+    -118.3735
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Largo at the Coronet",
+   "name_he": "לארגו - מופעים קטנים בלוס אנג'לס",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "Largo at the Coronet, 366 N La Cienega Blvd",
+   "start": "2027-02-05",
+   "end": "2027-02-10",
+   "weekly": "מופעים רוב הערבים",
+   "confirmed": false,
+   "type": "show",
+   "segment_id": "la",
+   "tags": [
+    "comedy",
+    "music",
+    "night"
+   ],
+   "why": "תיאטרון קטן ואהוב שמארח קומיקאים כמו פטון אוסוולט וטיג נוטארו ומוזיקאים באווירה אינטימית. בלי טלפונים.",
+   "tip": "כרטיסים נמכרים מהר - בודקים באתר. האולם הקטן ל-130 איש.",
+   "cost": "כרטיסים כ-$30-70",
+   "url": "https://largo-la.com",
+   "coords": [
+    34.079,
+    -118.3765
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Harvelle's Santa Monica",
+   "name_he": "הארוולז - מועדון בלוז בסנטה מוניקה",
+   "state": "California",
+   "city": "Santa Monica",
+   "venue": "Harvelle's, 1432 4th St",
+   "start": "2027-02-05",
+   "end": "2027-02-10",
+   "weekly": "מוזיקה חיה כמעט כל ערב (בלוז, סווינג, פאנק)",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "la",
+   "tags": [
+    "music",
+    "night",
+    "local"
+   ],
+   "why": "מועדון המוזיקה החיה הכי ותיק בווסטסייד (מ-1931) - חדר חשוך וקטן עם בלוז ורחבת ריקודים.",
+   "tip": "מגיל 21. בודקים איזה ערב מה (יש ערבי סווינג וערבי בורלסק).",
+   "cost": "כניסה כ-$10-20",
+   "url": "https://www.harvelles.com",
+   "coords": [
+    34.0145,
+    -118.495
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "The Mint",
+   "name_he": "המינט - בר הופעות מ-1937",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "The Mint, 6010 W Pico Blvd",
+   "start": "2027-02-05",
+   "end": "2027-02-10",
+   "weekly": "הופעות רוב הערבים",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "la",
+   "tags": [
+    "music",
+    "night",
+    "local"
+   ],
+   "why": "בר מוזיקה קטן ל-120 איש מ-1937, עם בלוז, סול, רוק ופאנק. מקום שבו רואים נגנים טובים מקרוב.",
+   "tip": "יש אוכל בסגנון טאפאס. בודקים באתר.",
+   "cost": "כרטיסים כ-$10-25",
+   "url": "https://themintla.com",
+   "coords": [
+    34.0525,
+    -118.37
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Dub Club at the Echoplex",
+   "name_he": "דאב קלאב - ערב רגאיי שבועי באקופלקס",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "The Echoplex, 1154 Glendale Blvd, Echo Park",
+   "start": "2027-02-10",
+   "end": "2027-02-10",
+   "weekly": "כל יום רביעי בלילה",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "la",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מסיבת רגאיי ודאב שבועית מ-2000, אחת הוותיקות בעולם. DJ'ים ולפעמים אגדות ג'מייקניות חיות.",
+   "tip": "מגיל 21. בעבר כניסה חינם לפני 22:00 - בדקו.",
+   "cost": "כניסה כ-$5-15",
+   "url": "https://www.theecho.com",
+   "coords": [
+    34.0777,
+    -118.2605
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Super Bowl LXI Studio 61",
+   "name_he": "סטודיו 61 - הופעות של שבוע הסופרבול",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "Hollywood Palladium, 6215 Sunset Blvd",
+   "start": "2027-02-12",
+   "end": "2027-02-13",
+   "confirmed": true,
+   "type": "concert",
+   "segment_id": "la",
+   "tags": [
+    "music",
+    "night"
+   ],
+   "why": "סדרת הופעות של ה-NFL לקראת הסופרבול בלוס אנג'לס - שני ערבים בהוליווד פלדיום עם אמנים גדולים וסלבס.",
+   "tip": "האמנים יוכרזו בסתיו. אלה חבילות פרימיום יקרות - רק אם רוצים חוויה של שבוע הסופרבול.",
+   "cost": "חבילות יקרות (מאות דולרים)",
+   "url": "https://www.onlocationexp.com",
+   "coords": [
+    34.098,
+    -118.324
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Riverside County Fair & National Date Festival",
+   "name_he": "פסטיבל התמרים הלאומי באינדיו",
+   "state": "California",
+   "city": "Indio",
+   "venue": "Riverside County Fairgrounds, 82503 CA-111",
+   "start": "2027-02-11",
+   "end": "2027-02-20",
+   "confirmed": false,
+   "type": "farm",
+   "segment_id": "la2lv",
+   "tags": [
+    "farm",
+    "family",
+    "food",
+    "local"
+   ],
+   "why": "יריד מחוזי ופסטיבל תמרים במדבר קואצ'לה - מילקשייק תמרים, מרוצי גמלים ויענים, בעלי חיים ומתקנים.",
+   "tip": "רץ עד 28.2 (תאריכי 2027 לפי לוחות אירועים, לא אושר). סטייה מפאלם ספרינגס כ-30 דק'.",
+   "cost": "כרטיס כ-$15",
+   "url": "https://www.datefest.org",
+   "coords": [
+    33.718,
+    -116.225
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Civil War Days at Calico Ghost Town",
+   "name_he": "ימי מלחמת האזרחים בעיירת הרפאים קליקו",
+   "state": "California",
+   "city": "Yermo",
+   "venue": "Calico Ghost Town Regional Park",
+   "start": "2027-02-13",
+   "end": "2027-02-15",
+   "confirmed": false,
+   "type": "local",
+   "segment_id": "la2lv",
+   "tags": [
+    "family",
+    "local"
+   ],
+   "why": "שחזור קרבות ומחנה של מלחמת האזרחים בעיירת כורים נטושה ליד הכביש 15, בסוף שבוע של יום הנשיאים.",
+   "tip": "תאריכי 2027 לא פורסמו - הערכה לפי סוף שבוע יום הנשיאים. נמצא ממש ליד הכביש 15 ליד בארסטו.",
+   "cost": "כניסה לפארק כ-$10",
+   "url": "https://parks.sbcounty.gov/park/calico-ghost-town-regional-park/",
+   "coords": [
+    34.949,
+    -116.864
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Comedy Cellar Las Vegas",
+   "name_he": "קומדי סלר וגאס - בקזינו ריו",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "Rio Las Vegas",
+   "start": "2027-02-07",
+   "end": "2027-02-12",
+   "weekly": "כל ערב, 19:00 ו-21:30",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "vegas",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "הסניף הווגאסי של המועדון המפורסם מניו יורק, עם ליינאפ של כמה קומיקאים כל ערב.",
+   "tip": "מגיל 21. זול יותר מרוב המופעים בסטריפ.",
+   "cost": "כרטיסים כ-$50-65",
+   "url": "https://www.caesars.com/rio-las-vegas/shows/comedy-cellar",
+   "coords": [
+    36.117,
+    -115.188
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "XS Nightclub (Wynn)",
+   "name_he": "XS - מועדון ה-EDM של ווין",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "XS Nightclub, Wynn Las Vegas",
+   "start": "2027-02-05",
+   "end": "2027-02-13",
+   "weekly": "שישי עד ראשון מ-22:30 עד 4:00",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "vegas",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון הלילה הכי מפורסם בווגאס, שנפתח מחדש בנובמבר 2026 אחרי שיפוץ, עם DJ'ים ענקיים כמו קלווין האריס ו-The Chainsmokers.",
+   "tip": "הרשימה של 2027 תפורסם בסוף 2026. מגיל 21, קוד לבוש. כרטיס מראש זול יותר מבכניסה.",
+   "cost": "כרטיסים מ-$50",
+   "url": "https://www.wynnsocial.com",
+   "coords": [
+    36.1275,
+    -115.166
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Chinese New Year in the Desert",
+   "name_he": "ראש השנה הסיני במדבר - ווגאס",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "Fremont East district & Downtown Container Park",
+   "start": "2027-02-05",
+   "end": "2027-02-07",
+   "confirmed": false,
+   "type": "festival",
+   "segment_id": "vegas",
+   "tags": [
+    "free",
+    "family",
+    "local",
+    "music"
+   ],
+   "why": "חגיגת ראש השנה הסיני של ווגאס - מצעד אביב ברובע פרימונט מזרח, ריקודי דרקונים ואריות, אומנויות לחימה ומוזיקה.",
+   "tip": "התאריכים של 2027 עוד לא פורסמו - ראש השנה הסיני חל ב-6.2.2027. בצ'יינהטאון (ספרינג מאונטן) יש גם אוכל וחגיגות.",
+   "cost": "רוב האירועים חינם",
+   "url": "https://travelnevada.com/event/chinese-new-year-in-the-desert/",
+   "coords": [
+    36.1695,
+    -115.139
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Kingman First Friday",
+   "name_he": "שישי ראשון בקינגמן - ערב ברחוב ביל",
+   "state": "Arizona",
+   "city": "Kingman",
+   "venue": "Beale Street, Historic Downtown",
+   "start": "2027-02-05",
+   "end": "2027-02-05",
+   "weekly": "כל שישי ראשון בחודש, ערב",
+   "confirmed": false,
+   "type": "local",
+   "segment_id": "phoenix",
+   "tags": [
+    "local",
+    "free",
+    "family",
+    "night"
+   ],
+   "why": "ערב חודשי בעיירת ראוט 66 - רחוב ביל נסגר, יש דוכנים, מוזיקה ואוכל. 2026 הייתה שנת המאה של ראוט 66.",
+   "tip": "התאריך 5.2 לפי התבנית - לא אושר. קינגמן נמצאת על הכביש 93 בין ווגאס לפיניקס.",
+   "cost": "חינם",
+   "url": "https://www.explorekingman.com",
+   "coords": [
+    35.1894,
+    -114.053
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Oatman Gunfighter Shows",
+   "name_he": "קרבות אקדחים ברחוב באואטמן",
+   "state": "Arizona",
+   "city": "Oatman",
+   "venue": "Main Street (Historic Route 66)",
+   "start": "2027-02-12",
+   "end": "2027-02-14",
+   "weekly": "כל יום, בדרך כלל ב-13:30 וב-15:30",
+   "confirmed": false,
+   "type": "show",
+   "segment_id": "phoenix",
+   "tags": [
+    "free",
+    "family",
+    "local"
+   ],
+   "why": "עיירת מכרות זהב ישנה על ראוט 66 עם חמורים פראיים שמסתובבים ברחוב, ו'שודדים' שעושים קרבות אקדחים מבוימים.",
+   "tip": "השעות משתנות לפי כמות התיירים - שווה להתקשר. לא מאכילים את החמורים אוכל של בני אדם, רק ביסקוויטים שנמכרים בחנויות.",
+   "cost": "חינם (טיפ לשחקנים)",
+   "url": "https://www.golakehavasu.com/oatman",
+   "coords": [
+    35.0263,
+    -114.3836
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Rancho Bar 7",
+   "name_he": "ראנצ'ו בר 7 - מוזיקה על הפטיו בוויקנבורג",
+   "state": "Arizona",
+   "city": "Wickenburg",
+   "venue": "Rancho Bar 7, 111 E Wickenburg Way",
+   "start": "2027-02-12",
+   "end": "2027-02-14",
+   "weekly": "בחורף מוזיקה חיה על הפטיו (בעיקר סופ\"ש)",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "phoenix",
+   "tags": [
+    "music",
+    "local",
+    "night"
+   ],
+   "why": "מסעדה ובר ותיקים בעיירת הבוקרים ויקנבורג, עם להקות על הפטיו בעונת החורף. מקום של רוכבי רודיאו ומקומיים.",
+   "tip": "בסופ\"ש של 12-14.2 יש בעיר את Gold Rush Days. בודקים לוח בטלפון 928-684-2492.",
+   "cost": "בדרך כלל בלי כניסה",
+   "url": "https://www.ranchobar7.net",
+   "coords": [
+    33.969,
+    -112.729
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Coors Light Birds Nest",
+   "name_he": "הבירדס נסט - הופעות שבוע הפיניקס אופן",
+   "state": "Arizona",
+   "city": "Scottsdale",
+   "venue": "Coors Light Birds Nest, TPC Scottsdale",
+   "start": "2027-02-10",
+   "end": "2027-02-13",
+   "confirmed": true,
+   "type": "festival",
+   "segment_id": "phoenix",
+   "tags": [
+    "young",
+    "music",
+    "night"
+   ],
+   "why": "מסיבת ההופעות של שבוע הגולף, אוהל ענק לצעירים: רביעי ריילי גרין, חמישי ג'ייסון אלדין, שישי סנופ דוג עם טי-פיין.",
+   "tip": "מגיל 21. כרטיסים נמכרים באתר, נגמרים מהר. השבת עוד לא הוכרזה.",
+   "cost": "כרטיסים מ-$135",
+   "url": "https://coorslightbirdsnest.com",
+   "coords": [
+    33.641,
+    -111.911
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Tubac Festival of the Arts",
+   "name_he": "פסטיבל האמנות של טובאק",
+   "state": "Arizona",
+   "city": "Tubac",
+   "venue": "Historic Tubac Village",
+   "start": "2027-02-10",
+   "end": "2027-02-14",
+   "confirmed": true,
+   "type": "art",
+   "segment_id": "phoenix",
+   "tags": [
+    "art",
+    "local",
+    "family"
+   ],
+   "why": "פסטיבל האמנות הוותיק באריזונה (ה-68) - מאות אמנים בכפר אמנים קטן ליד הגבול, 10:00-17:00 כל יום.",
+   "tip": "רחוק מפיניקס (כ-2.5 שעות, דרום לטוסון). שווה לשלב עם טוסון ותערוכת האבנים.",
+   "cost": "כניסה חינם, חנייה בתשלום",
+   "url": "https://www.tubacaz.com/event-details/68th-annual-tubac-festival-of-the-arts",
+   "coords": [
+    31.612,
+    -111.048
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Downtown Phoenix Farmers Market",
+   "name_he": "שוק האיכרים של מרכז פיניקס",
+   "state": "Arizona",
+   "city": "Phoenix",
+   "venue": "Arizona Center area, 455 N 3rd St",
+   "start": "2027-02-13",
+   "end": "2027-02-20",
+   "weekly": "כל שבת 8:00-13:00 (אוקטובר-אפריל)",
+   "confirmed": false,
+   "type": "market",
+   "segment_id": "phoenix",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family",
+    "weekly"
+   ],
+   "why": "יותר מ-90 חקלאים ויצרנים מאריזונה - הדרים, דבש מדברי, לחם ואוכל מוכן, עם מוזיקה חיה. פברואר זו עונת שיא.",
+   "tip": "המיקום והשעות השתנו לאורך השנים - בודקים לפני.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.phoenixnewtimes.com/food-drink/farmers-markets-to-check-out-in-metro-phoenix-14510409/",
+   "coords": [
+    33.4535,
+    -112.07
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Stand Up Live Phoenix",
+   "name_he": "סטנד אפ לייב - מועדון קומדיה בפיניקס",
+   "state": "Arizona",
+   "city": "Phoenix",
+   "venue": "Stand Up Live, 50 W Jefferson St",
+   "start": "2027-02-13",
+   "end": "2027-02-20",
+   "weekly": "הופעות רוב הערבים, ובמה פתוחה מדי פעם",
+   "confirmed": false,
+   "type": "comedy",
+   "segment_id": "phoenix",
+   "tags": [
+    "comedy",
+    "night",
+    "weekly"
+   ],
+   "why": "מועדון קומדיה גדול במרכז פיניקס ליד זירת הסאנס, עם שמות מהטלוויזיה ו-Netflix.",
+   "tip": "בשבוע של משחק האולסטאר (19.2) מרכז העיר עמוס. חנייה מוזלת ל-3 שעות בחניונים הסמוכים.",
+   "cost": "כרטיסים כ-$25-60",
+   "url": "https://www.standuplive.com",
+   "coords": [
+    33.447,
+    -112.075
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Crescent Ballroom",
+   "name_he": "קרסנט בולרום - מועדון האינדי של פיניקס",
+   "state": "Arizona",
+   "city": "Phoenix",
+   "venue": "Crescent Ballroom, 308 N 2nd Ave",
+   "start": "2027-02-13",
+   "end": "2027-02-20",
+   "weekly": "הופעות רוב הערבים; בר ומטבח מקסיקני כל יום",
+   "confirmed": false,
+   "type": "concert",
+   "segment_id": "phoenix",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "weekly"
+   ],
+   "why": "מוסך ישן במרכז פיניקס שהפך למועדון אינדי ובר עם טאקוס. לב סצנת הצעירים של העיר.",
+   "tip": "הבר פתוח גם בלי הופעה. ב-23.2 מופיע Jack Kays.",
+   "cost": "כרטיסים כ-$15-40",
+   "url": "https://www.crescentphx.com",
+   "coords": [
+    33.4515,
+    -112.077
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Valley Bar",
+   "name_he": "וואלי בר - בר הופעות מחתרתי בפיניקס",
+   "state": "Arizona",
+   "city": "Phoenix",
+   "venue": "Valley Bar, 130 N Central Ave (basement)",
+   "start": "2027-02-13",
+   "end": "2027-02-20",
+   "weekly": "הופעות, DJ'ים וקומדיה רוב הערבים",
+   "confirmed": false,
+   "type": "bar",
+   "segment_id": "phoenix",
+   "tags": [
+    "young",
+    "music",
+    "night",
+    "comedy"
+   ],
+   "why": "בר ואולם של 250 איש במרתף של בניין מ-1949, מאותם אנשים של קרסנט. נכנסים מסמטה - מרגיש כמו מקום סודי.",
+   "tip": "מגיל 21 ברוב האירועים. בודקים לוח באתר.",
+   "cost": "כניסה כ-$10-25",
+   "url": "https://www.valleybarphx.com",
+   "coords": [
+    33.4495,
+    -112.0735
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Queen Creek Olive Mill",
+   "name_he": "מטע הזיתים של קווין קריק",
+   "state": "Arizona",
+   "city": "Queen Creek",
+   "venue": "Queen Creek Olive Mill, 25062 S Meridian Rd",
+   "start": "2027-02-14",
+   "end": "2027-02-20",
+   "weekly": "פתוח כל יום; סיורי 'שמן זית 101' כל יום (בערך 9:30-15:30)",
+   "confirmed": false,
+   "type": "farm",
+   "segment_id": "phoenix",
+   "tags": [
+    "farm",
+    "family",
+    "food",
+    "local"
+   ],
+   "why": "מטע זיתים משפחתי במדבר מזרחית לפיניקס - סיור קצר על הפקת שמן זית, טעימות ומסעדה תחת העצים.",
+   "tip": "כרטיסים לסיור בקופה, מי שבא ראשון. מגיעים 20-30 דק' לפני.",
+   "cost": "סיור כ-$10, כניסה חינם",
+   "url": "https://www.queencreekolivemill.com",
+   "coords": [
+    33.215,
+    -111.634
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Scottsdale ArtWalk",
+   "name_he": "ארט ווק - ערב גלריות בסקוטסדייל",
+   "state": "Arizona",
+   "city": "Scottsdale",
+   "venue": "Old Town Scottsdale Arts District (Main St & Marshall Way)",
+   "start": "2027-02-18",
+   "end": "2027-02-18",
+   "weekly": "כל יום חמישי 19:00-21:00",
+   "confirmed": false,
+   "type": "art",
+   "segment_id": "phoenix",
+   "tags": [
+    "art",
+    "free",
+    "local",
+    "night",
+    "weekly"
+   ],
+   "why": "מסורת מ-1975 - הגלריות ברחובות מיין ומרשל פתוחות בערב חמישי, עם הדגמות אמנים, פתיחות ומוזיקה.",
+   "tip": "קורה כל שבוע. אפשר לשלב עם ארוחה באולד טאון.",
+   "cost": "חינם",
+   "url": "https://www.experiencescottsdale.com/stories/post/how-to-artwalk",
+   "coords": [
+    33.493,
+    -111.927
+   ],
+   "img": ""
+  },
+  {
+   "name_en": "Third Friday on Roosevelt Row",
+   "name_he": "שישי שלישי ברוזוולט רו",
+   "state": "Arizona",
+   "city": "Phoenix",
+   "venue": "Roosevelt Row Arts District",
+   "start": "2027-02-19",
+   "end": "2027-02-19",
+   "weekly": "כל שישי שלישי בחודש, 18:00-22:00",
+   "confirmed": false,
+   "type": "art",
+   "segment_id": "phoenix",
+   "tags": [
+    "art",
+    "free",
+    "young",
+    "night",
+    "local"
+   ],
+   "why": "גלריות, סטודיו וגלריות בתוך מכולות ברובע האמנות של פיניקס, עם ציורי קיר ושוק אמנים. רגוע יותר מ'שישי הראשון'.",
+   "tip": "התאריך 19.2 לפי התבנית החודשית. באותו ערב יש בעיר אירועי האולסטאר של ה-NBA - עומס.",
+   "cost": "חינם",
+   "url": "https://www.rooseveltrow.org",
+   "coords": [
+    33.4585,
+    -112.068
+   ],
+   "img": ""
+  }
+ ]
+}

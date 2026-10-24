@@ -32,6 +32,15 @@ def get(params):
     return {}
 
 
+def alive(url):
+    """does this picture address really give a picture?"""
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA, method="HEAD"), timeout=15) as r:
+            return r.status == 200 and r.headers.get("Content-Type", "").startswith("image/")
+    except Exception:
+        return False
+
+
 def words(s):
     return {w for w in re.findall(r"[a-z0-9]+", (s or "").lower()) if w not in STOP and len(w) > 1}
 
@@ -93,7 +102,9 @@ def main():
     for e in evs:
         k = eid(e)
         if e.get("img"):
-            n["own"] += 1; continue
+            if alive(e["img"]):
+                out[k] = {"img": e["img"], "from": "own", "title": ""}; n["own"] += 1; continue
+            n["bad_own"] = n.get("bad_own", 0) + 1
         hit, src = None, None
         at = tuple(e["coords"]) if len(e.get("coords") or []) == 2 else None
         name, venue = e.get("name_en", ""), re.split(r",", e.get("venue", ""))[0].strip()

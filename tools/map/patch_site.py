@@ -53,10 +53,10 @@ def events_json():
                 o["weekly"] = e["weekly"]
             if e.get("tags"):
                 o["tags"] = e["tags"]
-            im = e.get("img") or (imgs.get(k) or {}).get("img")
-            if im and im.startswith("https://"):
-                o["img"] = im
-                o["imgFrom"] = "event" if e.get("img") else imgs[k].get("from", "")
+            hit = imgs.get(k) or {}   # pictures the job checked (an event's own picture only if it opens)
+            if hit.get("img", "").startswith("https://"):
+                o["img"] = hit["img"]
+                o["imgFrom"] = "event" if hit.get("from") == "own" else hit.get("from", "")
             out.append(o)
     return js(out)
 
