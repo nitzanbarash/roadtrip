@@ -288,7 +288,7 @@
     var t=evType(ev); selected=null;
     sheetBody.innerHTML='<div class="mini"><div class="k">'+esc(t[2])+' · '+dFmt(ev.sd,1)+(ev.start===(ev.end||ev.start)?'':' – '+dFmt(ev.ed,1))+'</div><h3 style="direction:rtl;text-align:right;font-family:\'Suez One\',serif;font-weight:400">'+esc(ev.name_he)+'</h3><div class="cen">'+esc(ev.name_en)+' · '+esc(ev.city)+', '+esc(ev.state)+'</div>'+
       '<p class="cwhy" style="margin:0">'+esc(ev.why)+'</p>'+(ev.tip?'<div class="ctip"><b>טיפ:</b> '+esc(ev.tip)+'</div>':'')+
-      '<div class="navbtns"><a class="wz" target="_blank" rel="noopener" href="'+wazeLL(ev.g,ev.n)+'">נווט בוויז</a>'+(ev.url?'<a target="_blank" rel="noopener" href="'+esc(ev.url)+'">אתר האירוע</a>':'')+'</div><div class="navbtns">'+qBtn({n:ev.name_he, lat:ev.g, lng:ev.n, k:t[2]})+'</div></div>';
+      '<div class="navbtns"><a class="wz" target="_blank" rel="noopener" href="'+wazeLL(ev.g,ev.n)+'">נווט בוויז</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent((ev.venue||ev.name_en)+', '+ev.city+', '+ev.state)+'">בגוגל מפות</a>'+(ev.url?'<a target="_blank" rel="noopener" href="'+esc(ev.url)+'">אתר האירוע</a>':'')+'</div><div class="navbtns">'+qBtn({n:ev.name_he, lat:ev.g, lng:ev.n, k:t[2]})+'</div></div>';
     hideQ(); sheet.hidden=false; sheet.scrollTop=0; $('nav').hidden=true; syncQButtons();
   }
   function eventsGeo(){

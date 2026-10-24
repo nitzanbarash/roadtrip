@@ -1,0 +1,2440 @@
+{
+ "events": [
+  {
+   "name_en": "Union Square Greenmarket",
+   "name_he": "שוק האיכרים של יוניון סקוור",
+   "state": "New York",
+   "city": "New York City",
+   "venue": "Union Square Park",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "weekly": "ימים ב', ד', ו' ושבת, 8:00-18:00, כל השנה",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free"
+   ],
+   "why": "שוק החקלאים הכי מפורסם בניו יורק, עם חקלאים ממדינת ניו יורק והסביבה. בדצמבר יש תפוחים, סיידר חם, גבינות ועצי חג.",
+   "tip": "בוקר יום רביעי הכי נעים. בחודש דצמבר יש גם שוק חג באותה כיכר.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.grownyc.org/greenmarket/manhattan-union-square-m",
+   "coords": [
+    40.7359,
+    -73.9906
+   ]
+  },
+  {
+   "name_en": "Smalls Jazz Club",
+   "name_he": "סמולס - מועדון ג'אז קטן בווילג'",
+   "state": "New York",
+   "city": "New York City",
+   "venue": "Smalls, 183 W 10th St, Greenwich Village",
+   "start": "2026-12-01",
+   "end": "2026-12-02",
+   "weekly": "ג'אז חי כל ערב, מ-19:30 עד אחרי חצות",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "young"
+   ],
+   "why": "מרתף קטן וצפוף בגריניץ' וילג' עם ג'אז חי כל ערב. בסטים המאוחרים מגיעים נגנים צעירים לג'אם.",
+   "tip": "קונים כרטיס לסט מראש באתר SmallsLIVE, המקום קטן ומתמלא.",
+   "cost": "כרטיס לסט כ-$25-35",
+   "url": "https://www.smallslive.com",
+   "coords": [
+    40.7344,
+    -74.0027
+   ]
+  },
+  {
+   "name_en": "Bank of America Winter Village at Bryant Park",
+   "name_he": "כפר החורף בבראיינט פארק",
+   "state": "New York",
+   "city": "New York City",
+   "venue": "Bryant Park",
+   "start": "2026-12-01",
+   "end": "2026-12-02",
+   "weekly": "כל יום, דוכני החג עד 3 בינואר",
+   "confirmed": true,
+   "type": "holiday",
+   "tags": [
+    "free",
+    "family",
+    "night",
+    "local"
+   ],
+   "why": "שוק חג עם כ-180 דוכנים של אמנים ואוכל מסביב למשטח החלקה על הקרח. בערב עם האורות זה הכי יפה.",
+   "tip": "ההחלקה בחינם, השכרת מחליקים בתשלום. בערבי סוף שבוע עמוס מאוד.",
+   "cost": "כניסה חופשית",
+   "url": "https://wintervillage.org",
+   "coords": [
+    40.7536,
+    -73.9832
+   ]
+  },
+  {
+   "name_en": "Barbès (Park Slope)",
+   "name_he": "ברבס - בר מוזיקת עולם בברוקלין",
+   "state": "New York",
+   "city": "Brooklyn",
+   "venue": "Barbès, 376 9th St, Park Slope",
+   "start": "2026-12-01",
+   "end": "2026-12-02",
+   "weekly": "הופעות כל ערב, בדרך כלל שתיים-שלוש להקות",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local"
+   ],
+   "why": "בר שכונתי קטן בפארק סלופ עם להקות של מוזיקת עולם, ג'אז וקומביה. ממש מקומי, כמעט בלי תיירים.",
+   "tip": "חדר ההופעות הקטן נמצא מאחורי הבר. מביאים מזומן לתרומה ללהקה.",
+   "cost": "תרומה מומלצת $10-20",
+   "url": "https://www.barbesbrooklyn.com",
+   "coords": [
+    40.6681,
+    -73.9838
+   ]
+  },
+  {
+   "name_en": "Christmas Village in Philadelphia",
+   "name_he": "כפר חג המולד בפילדלפיה",
+   "state": "Pennsylvania",
+   "city": "Philadelphia",
+   "venue": "LOVE Park & City Hall",
+   "start": "2026-12-02",
+   "end": "2026-12-05",
+   "weekly": "א'-ה' 12:00-20:00, ו' ושבת 12:00-21:00, עד 27 בדצמבר",
+   "confirmed": true,
+   "type": "holiday",
+   "tags": [
+    "free",
+    "family",
+    "night"
+   ],
+   "why": "שוק חג בסגנון גרמני ליד בניין העירייה, עם יין חם, נקניקיות ומתנות בעבודת יד.",
+   "tip": "בערב עם האורות הכי יפה. מגיעים ברכבת התחתית לתחנת City Hall.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.philachristmas.com",
+   "coords": [
+    39.9542,
+    -75.1655
+   ]
+  },
+  {
+   "name_en": "Reading Terminal Market",
+   "name_he": "שוק רידינג טרמינל",
+   "state": "Pennsylvania",
+   "city": "Philadelphia",
+   "venue": "Reading Terminal Market, 51 N 12th St",
+   "start": "2026-12-02",
+   "end": "2026-12-05",
+   "weekly": "כל יום 8:00-18:00",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "family"
+   ],
+   "why": "שוק מקורה ענק משנת 1893, עם דוכנים של חקלאי האמיש מפנסילבניה, סנדוויץ' פילי צ'יזסטייק וגלידה ביתית.",
+   "tip": "דוכני האמיש פתוחים רק בחלק מהימים, לא בראשון. בצהריים עמוס, עדיף בבוקר.",
+   "cost": "כניסה חופשית",
+   "url": "https://readingterminalmarket.org",
+   "coords": [
+    39.9533,
+    -75.159
+   ]
+  },
+  {
+   "name_en": "Old City First Friday",
+   "name_he": "פרסט פריידיי - ערב גלריות באולד סיטי",
+   "state": "Pennsylvania",
+   "city": "Philadelphia",
+   "venue": "Old City (Front to 3rd St, Market to Vine)",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "weekly": "יום שישי הראשון בחודש, 17:00-21:00",
+   "confirmed": true,
+   "type": "local",
+   "tags": [
+    "free",
+    "local",
+    "night",
+    "young"
+   ],
+   "why": "עשרות גלריות בשכונה העתיקה פותחות את הדלתות בערב, עם יין, מוזיקה ואמנים מקומיים.",
+   "tip": "מתחילים מוקדם, אחרי 20:00 חלק מהגלריות נסגרות.",
+   "cost": "חינם",
+   "url": "https://www.oldcitydistrict.org/first-friday",
+   "coords": [
+    39.953,
+    -75.144
+   ]
+  },
+  {
+   "name_en": "Chris' Jazz Cafe",
+   "name_he": "כריס ג'אז קפה",
+   "state": "Pennsylvania",
+   "city": "Philadelphia",
+   "venue": "Chris' Jazz Cafe, 1421 Sansom St",
+   "start": "2026-12-02",
+   "end": "2026-12-05",
+   "weekly": "ג'אז חי ב' עד שבת בערב",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night"
+   ],
+   "why": "מועדון הג'אז הוותיק של פילדלפיה, קטן וחמים, עם נגנים מקומיים וגם אורחים מוכרים.",
+   "tip": "ההופעה המוקדמת זולה יותר. בודקים באתר מי מנגן ומזמינים שולחן.",
+   "cost": "כניסה כ-$15-30",
+   "url": "https://www.chrisjazzcafe.com",
+   "coords": [
+    39.9503,
+    -75.1656
+   ]
+  },
+  {
+   "name_en": "Miracle on 34th Street (Hampden)",
+   "name_he": "רחוב 34 בהמפדן - קישוטי חג מטורפים",
+   "state": "Maryland",
+   "city": "Baltimore",
+   "venue": "700 block of W 34th St, Hampden",
+   "start": "2026-12-02",
+   "end": "2026-12-05",
+   "confirmed": false,
+   "type": "holiday",
+   "tags": [
+    "free",
+    "local",
+    "night",
+    "family"
+   ],
+   "why": "שורת בתים בשכונת המפדן שהשכנים מקשטים כל שנה באלפי נורות ובובות משוגעות. מסורת של כמעט 80 שנה.",
+   "tip": "מגיעים אחרי השקיעה. בדרך כלל דולק כל ערב מסוף נובמבר עד 1 בינואר. תאריך ההדלקה ל-2026 עוד לא פורסם.",
+   "cost": "חינם",
+   "url": "https://baltimore.org/event/miracle-on-34th-street/",
+   "coords": [
+    39.3288,
+    -76.63
+   ]
+  },
+  {
+   "name_en": "Cat's Eye Pub",
+   "name_he": "קאטס איי פאב בפלס פוינט",
+   "state": "Maryland",
+   "city": "Baltimore",
+   "venue": "Cat's Eye Pub, 1730 Thames St, Fells Point",
+   "start": "2026-12-02",
+   "end": "2026-12-05",
+   "weekly": "מוזיקה חיה כמעט כל ערב: בלוז, רוק וג'אז",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "free",
+    "local"
+   ],
+   "why": "פאב ותיק וצפוף ליד הנמל עם להקות בלוז ופולק כמעט כל ערב. אווירה של בר שכונתי אמיתי.",
+   "tip": "באמצע השבוע בדרך כלל בלי כניסה, בסוף שבוע לפעמים $5. יש עוד הרבה ברים ברחוב.",
+   "cost": "בדרך כלל חינם, בסופ״ש עד $5",
+   "url": "https://www.catseyepub.com",
+   "coords": [
+    39.2823,
+    -76.5918
+   ]
+  },
+  {
+   "name_en": "Waverly Farmers Market",
+   "name_he": "שוק האיכרים של וייברלי",
+   "state": "Maryland",
+   "city": "Baltimore",
+   "venue": "400 E 32nd St, Waverly",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "weekly": "כל שבת 7:00-12:00, כל השנה",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free"
+   ],
+   "why": "שוק שכונתי ותיק של בולטימור עם חקלאים ממרילנד, ביצים, דבש וארוחת בוקר מדוכני אוכל.",
+   "tip": "עד 10:00 יש הכי הרבה מבחר. שעות החורף ל-2026 לא אומתו.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.waverlyfarmersmarket.com",
+   "coords": [
+    39.3268,
+    -76.6106
+   ]
+  },
+  {
+   "name_en": "DowntownDC Holiday Market",
+   "name_he": "שוק החג של מרכז וושינגטון",
+   "state": "District of Columbia",
+   "city": "Washington",
+   "venue": "F St NW between 7th & 9th St",
+   "start": "2026-12-02",
+   "end": "2026-12-05",
+   "weekly": "ב'-ה' 12:00-20:00, ו'-שבת 11:00-21:00, א' 11:00-20:00, עד 23 בדצמבר",
+   "confirmed": true,
+   "type": "holiday",
+   "tags": [
+    "free",
+    "local",
+    "family",
+    "night"
+   ],
+   "why": "רחוב שלם של דוכני אמנים ואוכל מקומי מול מוזיאון הפורטרטים, עם מוזיקה חיה בערבים.",
+   "tip": "מגיעים במטרו לתחנת Gallery Place-Chinatown.",
+   "cost": "כניסה חופשית",
+   "url": "https://downtowndc.org/holiday-market/",
+   "coords": [
+    38.8975,
+    -77.023
+   ]
+  },
+  {
+   "name_en": "Eastern Market (Capitol Hill)",
+   "name_he": "איסטרן מרקט בקפיטול היל",
+   "state": "District of Columbia",
+   "city": "Washington",
+   "venue": "Eastern Market, 225 7th St SE",
+   "start": "2026-12-02",
+   "end": "2026-12-05",
+   "weekly": "ג' עד א'; בסוף שבוע גם שוק חקלאים ושוק פשפשים בחוץ",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "family"
+   ],
+   "why": "שוק מקורה משנת 1873, הוותיק בוושינגטון. בשבת יש חקלאים, אמנים ושוק פשפשים ברחוב.",
+   "tip": "שבת בבוקר הכי חי. נסו פנקייק בדוכן Market Lunch. סגור בימי ב'.",
+   "cost": "כניסה חופשית",
+   "url": "https://easternmarket-dc.org",
+   "coords": [
+    38.8865,
+    -76.9963
+   ]
+  },
+  {
+   "name_en": "Blues Alley",
+   "name_he": "בלוז אלי - מועדון ג'אז בג'ורג'טאון",
+   "state": "District of Columbia",
+   "city": "Washington",
+   "venue": "Blues Alley, 1073 Wisconsin Ave NW, Georgetown",
+   "start": "2026-12-02",
+   "end": "2026-12-05",
+   "weekly": "הופעות כל ערב, בדרך כלל ב-20:00 וב-22:00",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night"
+   ],
+   "why": "מועדון ג'אז קטן בסמטה בג'ורג'טאון שפועל מ-1965, עם נרות על השולחנות ואווירה אינטימית.",
+   "tip": "קונים כרטיס מראש באתר. יש מינימום הזמנה של אוכל או שתייה.",
+   "cost": "כרטיס כ-$30-50",
+   "url": "https://www.bluesalley.com",
+   "coords": [
+    38.9047,
+    -77.0628
+   ]
+  },
+  {
+   "name_en": "Madam's Organ",
+   "name_he": "מאדאמס אורגן - בר בלוז באדמס מורגן",
+   "state": "District of Columbia",
+   "city": "Washington",
+   "venue": "Madam's Organ, 2461 18th St NW, Adams Morgan",
+   "start": "2026-12-02",
+   "end": "2026-12-05",
+   "weekly": "להקה חיה כל ערב: בלוז, פולק ורוק",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "young",
+    "local"
+   ],
+   "why": "בר צבעוני ומשוגע בשכונת הבילויים אדמס מורגן, עם להקות כל ערב וקהל צעיר.",
+   "tip": "באמצע השבוע זול יותר. ברחוב 18 יש עוד הרבה ברים.",
+   "cost": "כניסה כ-$5-10",
+   "url": "https://www.madamsorgan.com",
+   "coords": [
+    38.9213,
+    -77.0423
+   ]
+  },
+  {
+   "name_en": "Dominion Energy GardenFest of Lights",
+   "name_he": "פסטיבל האורות בגן הבוטני לואיס גינטר",
+   "state": "Virginia",
+   "city": "Richmond",
+   "venue": "Lewis Ginter Botanical Garden",
+   "start": "2026-12-05",
+   "end": "2026-12-09",
+   "confirmed": false,
+   "type": "holiday",
+   "tags": [
+    "family",
+    "night"
+   ],
+   "why": "גן בוטני גדול מואר במיליון נורות, עם פסלים מצמחים ורכבות קטנות. אחד ממופעי האורות היפים בווירג'יניה.",
+   "tip": "קונים כרטיס לשעה מסוימת באתר. תאריכי 2026 לא אומתו, בדרך כלל מסוף נובמבר עד תחילת ינואר.",
+   "cost": "כרטיס כ-$20-25",
+   "url": "https://www.lewisginter.org",
+   "coords": [
+    37.6219,
+    -77.4717
+   ]
+  },
+  {
+   "name_en": "State Farmers Market (Raleigh)",
+   "name_he": "שוק האיכרים הממלכתי של ראלי",
+   "state": "North Carolina",
+   "city": "Raleigh",
+   "venue": "1201 Agriculture St",
+   "start": "2026-12-06",
+   "end": "2026-12-09",
+   "weekly": "ב'-שבת 5:00-19:00, א' 8:00-17:00, כל השנה",
+   "confirmed": true,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "family",
+    "free"
+   ],
+   "why": "שוק חקלאים ענק של צפון קרוליינה. בדצמבר מגיעים מגדלי עצי אשוח מההרים, ויש בטטות, דבש ופקאנים.",
+   "tip": "יש במקום מסעדה דרומית לארוחת בוקר. החניה בחינם.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.ncagr.gov/divisions/marketing/farmers-markets-agricultural-centers/state-farmers-market-raleigh",
+   "coords": [
+    35.764,
+    -78.6625
+   ]
+  },
+  {
+   "name_en": "Cat's Cradle",
+   "name_he": "קאטס קריידל - מועדון אינדי בקרבורו",
+   "state": "North Carolina",
+   "city": "Carrboro",
+   "venue": "Cat's Cradle, 300 E Main St",
+   "start": "2026-12-06",
+   "end": "2026-12-09",
+   "weekly": "הופעות ברוב ערבי השבוע",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "young",
+    "night"
+   ],
+   "why": "מועדון אגדי ליד אוניברסיטת צ'פל היל, שבו ניגנו להקות כמו נירוונה בתחילת הדרך. קהל סטודנטים.",
+   "tip": "בחדר הקטן (Back Room) יש הופעות זולות יותר. כרטיסים באתר.",
+   "cost": "כרטיס כ-$15-30",
+   "url": "https://catscradle.com",
+   "coords": [
+    35.9104,
+    -79.072
+   ]
+  },
+  {
+   "name_en": "Charleston Pour House",
+   "name_he": "צ'רלסטון פור האוס - הופעות על המרפסת",
+   "state": "South Carolina",
+   "city": "Charleston",
+   "venue": "Charleston Pour House, 1977 Maybank Hwy, James Island",
+   "start": "2026-12-06",
+   "end": "2026-12-09",
+   "weekly": "הופעות חינם על המרפסת רוב הערבים מ-18:00, והופעות בתשלום בפנים מאוחר יותר",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "free",
+    "night",
+    "local",
+    "young"
+   ],
+   "why": "בר מוזיקה אהוב על המקומיים, עם להקות מקומיות בחינם על מרפסת עץ בחוץ וקהל צעיר ורגוע.",
+   "tip": "מגיעים מוקדם כדי לשבת על המרפסת. בערבים קרים ההופעות בחוץ קצרות יותר.",
+   "cost": "מרפסת חינם, בפנים $10-25",
+   "url": "https://charlestonpourhouse.com",
+   "coords": [
+    32.7425,
+    -79.9905
+   ]
+  },
+  {
+   "name_en": "Holy City Holiday Parade",
+   "name_he": "מצעד החג של צ'רלסטון",
+   "state": "South Carolina",
+   "city": "Charleston",
+   "venue": "King St & Marion Square",
+   "start": "2026-12-06",
+   "end": "2026-12-06",
+   "confirmed": false,
+   "type": "parade",
+   "tags": [
+    "free",
+    "family",
+    "local"
+   ],
+   "why": "מצעד חג עירוני ברחובות ההיסטוריים של צ'רלסטון, עם תזמורות בתי ספר, רכבים מקושטים וסנטה.",
+   "tip": "בשנה שעברה היה ביום ראשון הראשון של דצמבר (7.12.2025). צריך לבדוק את תאריך 2026 באתר העירייה.",
+   "cost": "חינם",
+   "url": "https://www.charleston-sc.gov",
+   "coords": [
+    32.786,
+    -79.937
+   ]
+  },
+  {
+   "name_en": "Forsyth Farmers Market",
+   "name_he": "שוק האיכרים בפארק פורסיית'",
+   "state": "Georgia",
+   "city": "Savannah",
+   "venue": "South end of Forsyth Park (Bull St & Park Ave)",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "weekly": "כל שבת 9:00-13:00, כל השנה",
+   "confirmed": true,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family"
+   ],
+   "why": "שוק חקלאים בקצה הפארק היפה של סוואנה, מתחת לעצי אלון עם טחב ספרדי. חקלאים מג'ורג'יה ודרום קרוליינה.",
+   "tip": "אחרי השוק הולכים ברגל צפונה דרך הפארק אל המזרקה המפורסמת.",
+   "cost": "כניסה חופשית",
+   "url": "https://forsythfarmersmarket.com",
+   "coords": [
+    32.0655,
+    -81.096
+   ]
+  },
+  {
+   "name_en": "Congress Street live music bars (The Jinx, Barrelhouse South)",
+   "name_he": "ברים עם מוזיקה חיה ברחוב קונגרס",
+   "state": "Georgia",
+   "city": "Savannah",
+   "venue": "W Congress St, Historic District",
+   "start": "2026-12-09",
+   "end": "2026-12-12",
+   "weekly": "הופעות ברוב הערבים, בעיקר ה' עד שבת",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "young"
+   ],
+   "why": "בסוואנה מותר להסתובב ברחוב עם כוס משקה, ורחוב קונגרס מלא ברים עם להקות רוק, בלוז ותקליטנים.",
+   "tip": "מבקשים כוס To-Go ועוברים בין הברים. בסוף שבוע יש כניסה קטנה בחלק מהמקומות.",
+   "cost": "חינם עד $10",
+   "url": "https://www.visitsavannah.com",
+   "coords": [
+    32.08,
+    -81.0925
+   ]
+  },
+  {
+   "name_en": "Riverside Arts Market (RAM Holiday Market)",
+   "name_he": "שוק האמנים מתחת לגשר בג'קסונוויל",
+   "state": "Florida",
+   "city": "Jacksonville",
+   "venue": "715 Riverside Ave, under the Fuller Warren Bridge",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "weekly": "שבת; בעונת החגים 11:00-16:00 לפי אתרים לא רשמיים",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "local",
+    "free",
+    "family"
+   ],
+   "why": "שוק אמנים ואוכל מתחת לגשר הכביש המהיר על גדת הנהר, עם חקלאים, מוזיקה חיה ודוכני אוכל.",
+   "tip": "בדצמבר השוק עובר לפורמט שוק חג והשעות לא ברורות. לבדוק באתר לפני שמגיעים.",
+   "cost": "כניסה חופשית",
+   "url": "https://riversideartsmarket.com",
+   "coords": [
+    30.3168,
+    -81.6773
+   ]
+  },
+  {
+   "name_en": "Jacksonville Farmers Market",
+   "name_he": "שוק האיכרים של ג'קסונוויל",
+   "state": "Florida",
+   "city": "Jacksonville",
+   "venue": "1810 W Beaver St",
+   "start": "2026-12-09",
+   "end": "2026-12-12",
+   "weekly": "כל יום, מהבוקר עד אחר הצהריים",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local"
+   ],
+   "why": "שוק חקלאים מ-1938, מהוותיקים בפלורידה. פירות הדר טריים, בוטנים מבושלים וירקות דרומיים.",
+   "tip": "דצמבר הוא עונת התפוזים והטנג'רינות. המחירים זולים בהרבה מהסופר.",
+   "cost": "כניסה חופשית",
+   "url": "https://jaxfarmersmarket.com",
+   "coords": [
+    30.3355,
+    -81.6885
+   ]
+  },
+  {
+   "name_en": "Nights of Lights",
+   "name_he": "לילות האורות בסנט אוגוסטין",
+   "state": "Florida",
+   "city": "St. Augustine",
+   "venue": "Historic downtown & Plaza de la Constitución",
+   "start": "2026-12-09",
+   "end": "2026-12-12",
+   "confirmed": true,
+   "type": "holiday",
+   "tags": [
+    "free",
+    "family",
+    "night",
+    "local"
+   ],
+   "why": "העיר העתיקה בארה״ב מכוסה בשלושה מיליון נורות לבנות. מטיילים ברגל בסמטאות הספרדיות ולאורך המים.",
+   "tip": "חניה בערב קשה, עדיף החניון העירוני הגדול ומשם ברגל. באמצע השבוע פחות עמוס. דולק עד 18 בינואר.",
+   "cost": "חינם",
+   "url": "https://www.visitstaugustine.com/events/nights-lights",
+   "coords": [
+    29.8925,
+    -81.3115
+   ]
+  },
+  {
+   "name_en": "Mill Top Tavern",
+   "name_he": "מיל טופ טברן",
+   "state": "Florida",
+   "city": "St. Augustine",
+   "venue": "Mill Top Tavern, 19 1/2 St George St",
+   "start": "2026-12-09",
+   "end": "2026-12-12",
+   "weekly": "מוזיקה חיה כל יום, מהצהריים עד הלילה",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "free",
+    "local"
+   ],
+   "why": "בר בקומה השנייה של טחנה ישנה, עם נוף למבצר הספרדי ומוזיקה אקוסטית חיה כל יום.",
+   "tip": "הכי נחמד בשקיעה. אין כניסה, רק מזמינים משקה.",
+   "cost": "חינם",
+   "url": "https://milltoptavern.com",
+   "coords": [
+    29.8978,
+    -81.3128
+   ]
+  },
+  {
+   "name_en": "St. Augustine Amphitheatre Farmers Market",
+   "name_he": "שוק האיכרים באמפיתיאטרון של סנט אוגוסטין",
+   "state": "Florida",
+   "city": "St. Augustine",
+   "venue": "St. Augustine Amphitheatre, 1340C A1A S",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "weekly": "כל שבת 8:30-12:30",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family"
+   ],
+   "why": "שוק שבת מקומי עם חקלאים, אופים ומוזיקה חיה, מתחת לעצים ליד האמפיתיאטרון.",
+   "tip": "החניה בחינם. משם ממשיכים לחוף אנסטסיה הסמוך.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.staugamphitheatre.com",
+   "coords": [
+    29.8768,
+    -81.2885
+   ]
+  },
+  {
+   "name_en": "Tradewinds Lounge",
+   "name_he": "טריידווינדס לאונג'",
+   "state": "Florida",
+   "city": "St. Augustine",
+   "venue": "Tradewinds Lounge, 124 Charlotte St",
+   "start": "2026-12-09",
+   "end": "2026-12-12",
+   "weekly": "להקות כל ערב",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local"
+   ],
+   "why": "בר ימאים ותיק מ-1943 בעיר העתיקה, עם להקות רוק ובלוז כל ערב וקהל מקומי מעורב.",
+   "tip": "באמצע השבוע בדרך כלל בלי כניסה. כדאי מזומן.",
+   "cost": "בדרך כלל חינם",
+   "url": "https://www.tradewindslounge.com",
+   "coords": [
+    29.893,
+    -81.3112
+   ]
+  },
+  {
+   "name_en": "West Palm Beach GreenMarket",
+   "name_he": "גרין מרקט של ווסט פאלם ביץ'",
+   "state": "Florida",
+   "city": "West Palm Beach",
+   "venue": "Great Lawn, 100 N Clematis St",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "weekly": "כל שבת 8:30-13:30, מאוקטובר עד מאי",
+   "confirmed": true,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family"
+   ],
+   "why": "מהשווקים הטובים בארה״ב, על מדשאה מול המים. פירות טרופיים, מיצים טריים ואוכל מכל העולם.",
+   "tip": "רק בשבת. אם אתם באזור ב-12 או ב-19 בדצמבר, הגיעו לפני 10:00.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.thepalmbeaches.com/event/return-of-the-west-palm-beach-greenmarket",
+   "coords": [
+    26.713,
+    -80.0505
+   ]
+  },
+  {
+   "name_en": "Ball & Chain (Little Havana)",
+   "name_he": "בול אנד צ'יין בליטל הוואנה",
+   "state": "Florida",
+   "city": "Miami",
+   "venue": "Ball & Chain, 1513 SW 8th St (Calle Ocho)",
+   "start": "2026-12-13",
+   "end": "2026-12-15",
+   "weekly": "מוזיקה לטינית חיה כל יום; בשבת מסיבת La Pachanga מ-21:00 עד 3:00",
+   "confirmed": true,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "free",
+    "local"
+   ],
+   "why": "מועדון היסטורי מ-1935 ברחוב קאייה אוצ'ו, עם להקות סלסה קובניות וריקודים בחצר.",
+   "tip": "בדרך כלל בלי כניסה. בערב מגיל 21, להביא דרכון. מוחיטו כאן חובה.",
+   "cost": "בדרך כלל חינם",
+   "url": "https://ballandchainmiami.com",
+   "coords": [
+    25.7656,
+    -80.2185
+   ]
+  },
+  {
+   "name_en": "Knaus Berry Farm",
+   "name_he": "חוות קנאוס - תותים ולחמניות קינמון",
+   "state": "Florida",
+   "city": "Homestead (Redland)",
+   "venue": "Knaus Berry Farm, SW 248th St, Redland",
+   "start": "2026-12-13",
+   "end": "2026-12-15",
+   "weekly": "ג' עד א' 8:00-17:00, סגור בימי ב'",
+   "confirmed": true,
+   "type": "farm",
+   "tags": [
+    "farm",
+    "family",
+    "local"
+   ],
+   "why": "חווה משפחתית מ-1956 שמפורסמת בלחמניות קינמון חמות ובקטיף תותים עצמי. העונה נפתחה ב-13 באוקטובר.",
+   "tip": "התור יכול להגיע לשעה, מגיעים מוקדם בבוקר. יש הגבלה על כמות הלחמניות לאדם.",
+   "cost": "כניסה חופשית, משלמים על הקנייה",
+   "url": "https://www.wlrn.org/business/2026-10-01/knaus-berry-farms-cinnamon-rolls",
+   "coords": [
+    25.5292,
+    -80.4568
+   ]
+  },
+  {
+   "name_en": "Robert Is Here Fruit Stand",
+   "name_he": "רוברט איז הייר - דוכן פירות טרופיים",
+   "state": "Florida",
+   "city": "Homestead",
+   "venue": "19200 SW 344th St",
+   "start": "2026-12-13",
+   "end": "2026-12-15",
+   "weekly": "כל יום 9:00-18:00",
+   "confirmed": true,
+   "type": "farm",
+   "tags": [
+    "farm",
+    "family",
+    "local"
+   ],
+   "why": "דוכן פירות משנת 1959 בדרך לאוורגליידס ולקיז. שייקים של מנגו, פסיפלורה וקי ליים, ופינת חיות קטנה.",
+   "tip": "עצירה מושלמת בדרך לפארק האוורגליידס או לקי ווסט. השייק של קי ליים הכי מפורסם.",
+   "cost": "כניסה חופשית",
+   "url": "https://robertishere.com",
+   "coords": [
+    25.4475,
+    -80.4994
+   ]
+  },
+  {
+   "name_en": "Green Parrot Bar",
+   "name_he": "הגרין פארוט - בר מוזיקה בקי ווסט",
+   "state": "Florida",
+   "city": "Key West",
+   "venue": "Green Parrot, 601 Whitehead St",
+   "start": "2026-12-14",
+   "end": "2026-12-15",
+   "weekly": "להקות כל ערב; בסוף שבוע גם הופעה קצרה מוקדמת בסביבות 17:30",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local",
+    "free"
+   ],
+   "why": "הבר האהוב על המקומיים בקי ווסט, קצת מחוץ להמולה של דובאל. בלוז, פאנק וזיידקו חיים.",
+   "tip": "בדרך כלל אין כניסה, ויש פופקורן חינם. ההופעה המרכזית מתחילה מאוחר.",
+   "cost": "בדרך כלל חינם",
+   "url": "https://www.greenparrot.com",
+   "coords": [
+    24.5517,
+    -81.803
+   ]
+  },
+  {
+   "name_en": "Sloppy Joe's Bar",
+   "name_he": "סלופי ג'וז ברחוב דובאל",
+   "state": "Florida",
+   "city": "Key West",
+   "venue": "Sloppy Joe's, 201 Duval St",
+   "start": "2026-12-14",
+   "end": "2026-12-15",
+   "weekly": "מוזיקה חיה כל יום מהצהריים עד הלילה",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "free",
+    "night"
+   ],
+   "why": "הבר המפורסם שקשור להמינגוויי, בפינת רחוב דובאל, עם להקות חיות מהצהריים עד הלילה.",
+   "tip": "אין כניסה. משם ממשיכים לאורך דובאל לקפטן טוני'ס ולשאר הברים.",
+   "cost": "חינם",
+   "url": "https://sloppyjoes.com",
+   "coords": [
+    24.5594,
+    -81.804
+   ]
+  },
+  {
+   "name_en": "Mallory Square Sunset Celebration",
+   "name_he": "חגיגת השקיעה בכיכר מלורי",
+   "state": "Florida",
+   "city": "Key West",
+   "venue": "Mallory Square",
+   "start": "2026-12-14",
+   "end": "2026-12-15",
+   "weekly": "כל ערב, מכשעתיים לפני השקיעה",
+   "confirmed": false,
+   "type": "local",
+   "tags": [
+    "free",
+    "local",
+    "family"
+   ],
+   "why": "כל ערב מתאספים ברציף אמני רחוב, להטוטנים ומוכרי אוכל כדי לראות את השקיעה מעל המים. מסורת של קי ווסט.",
+   "tip": "בדצמבר השקיעה בסביבות 17:45. מגיעים שעה לפני כדי לראות את המופעים.",
+   "cost": "חינם",
+   "url": "https://www.mallorysquare.com",
+   "coords": [
+    24.5603,
+    -81.8076
+   ]
+  },
+  {
+   "name_en": "Winter Park Farmers' Market",
+   "name_he": "שוק האיכרים של וינטר פארק",
+   "state": "Florida",
+   "city": "Winter Park",
+   "venue": "Central Park West Meadow, New York Ave & Morse Blvd",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "weekly": "כל שבת 8:00-13:00",
+   "confirmed": true,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family"
+   ],
+   "why": "שוק שבת בפארק המרכזי של עיירה מקסימה ליד אורלנדו, עם חקלאים, פרחים ומאפים.",
+   "tip": "רק בשבת, אם אתם עוד באזור אורלנדו. אחרי השוק מטיילים ברחוב Park Ave הסמוך.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.cityofwinterpark.org/farmers-market",
+   "coords": [
+    28.5975,
+    -81.3515
+   ]
+  },
+  {
+   "name_en": "Will's Pub",
+   "name_he": "וילס פאב - מועדון אינדי באורלנדו",
+   "state": "Florida",
+   "city": "Orlando",
+   "venue": "Will's Pub, 1042 N Mills Ave",
+   "start": "2026-12-15",
+   "end": "2026-12-19",
+   "weekly": "הופעות ברוב ערבי השבוע",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "young",
+    "night",
+    "bar"
+   ],
+   "why": "מועדון קטן ואהוב של סצנת האינדי והפאנק באורלנדו, רחוק מהפארקים. להקות מקומיות ומסיבובי הופעות.",
+   "tip": "יש גם בר עם פינבול. רוב ההופעות זולות, כרטיסים באתר.",
+   "cost": "כרטיס כ-$10-20",
+   "url": "https://www.willspub.org",
+   "coords": [
+    28.559,
+    -81.3645
+   ]
+  },
+  {
+   "name_en": "Mount Dora holiday lights",
+   "name_he": "אורות החג של מאונט דורה",
+   "state": "Florida",
+   "city": "Mount Dora",
+   "venue": "Downtown Mount Dora & Donnelly Park",
+   "start": "2026-12-15",
+   "end": "2026-12-19",
+   "confirmed": false,
+   "type": "holiday",
+   "tags": [
+    "free",
+    "local",
+    "family",
+    "night"
+   ],
+   "why": "עיירת אגם קטנה וחמודה שמתקשטת בשלושה מיליון נורות. מטיילים ברחובות עם חנויות עתיקות ובתי קפה.",
+   "tip": "בשנה שעברה האורות דלקו מסוף נובמבר עד 6 בינואר. תאריכי 2026 עוד לא פורסמו. כ-45 דקות מאורלנדו.",
+   "cost": "חינם",
+   "url": "https://www.floridarambler.com/florida-festivals/best-christmas-lights-in-florida/",
+   "coords": [
+    28.802,
+    -81.6445
+   ]
+  },
+  {
+   "name_en": "Union Street Farmers Market",
+   "name_he": "שוק האיכרים של יוניון סטריט בגיינסוויל",
+   "state": "Florida",
+   "city": "Gainesville",
+   "venue": "Bo Diddley Plaza, 111 E University Ave",
+   "start": "2026-12-16",
+   "end": "2026-12-16",
+   "weekly": "כל יום רביעי 16:00-19:00",
+   "confirmed": true,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "young"
+   ],
+   "why": "שוק ערב במרכז העיר האוניברסיטאית, עם חקלאים מצפון פלורידה ולהקה חיה על הבמה מבערך 17:00.",
+   "tip": "קהל של סטודנטים ומשפחות. ממש מסביב יש ברים ומסעדות.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.naturalnorthflorida.com/blog/?p=4419",
+   "coords": [
+    29.6518,
+    -82.3246
+   ]
+  },
+  {
+   "name_en": "Alachua County Farmers Market (441 Market)",
+   "name_he": "שוק האיכרים של מחוז אלאצ'ואה (שוק 441)",
+   "state": "Florida",
+   "city": "Gainesville",
+   "venue": "5920 NW 13th St (US-441)",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "weekly": "כל שבת 8:30-13:00",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family"
+   ],
+   "why": "שוק שבו כל המוכרים מגדלים בעצמם: ירקות חורף, פטריות, דבש ושתילים.",
+   "tip": "בבוקר יש הכי הרבה מבחר. שעות החורף לא אומתו לעונה הזו.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.441market.com",
+   "coords": [
+    29.7095,
+    -82.3378
+   ]
+  },
+  {
+   "name_en": "High Dive",
+   "name_he": "היי דייב - מועדון הופעות בגיינסוויל",
+   "state": "Florida",
+   "city": "Gainesville",
+   "venue": "High Dive, 210 SW 2nd Ave",
+   "start": "2026-12-16",
+   "end": "2026-12-19",
+   "weekly": "הופעות ברוב ערבי השבוע",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "young",
+    "night"
+   ],
+   "why": "מועדון קטן במרכז גיינסוויל, עיר עם סצנת פאנק ואינדי מפורסמת. טום פטי בא מכאן.",
+   "tip": "בדצמבר הסטודנטים בחופשה, אז בודקים באתר מה יש. הכרטיסים זולים.",
+   "cost": "כרטיס כ-$10-20",
+   "url": "https://highdivegainesville.com",
+   "coords": [
+    29.6497,
+    -82.3275
+   ]
+  },
+  {
+   "name_en": "Lane Southern Orchards",
+   "name_he": "חוות ליין - אפרסקים ופקאנים ליד הכביש",
+   "state": "Georgia",
+   "city": "Fort Valley",
+   "venue": "50 Lane Rd (I-75 exit 142)",
+   "start": "2026-12-20",
+   "end": "2026-12-21",
+   "weekly": "כל יום 9:00-17:00",
+   "confirmed": false,
+   "type": "farm",
+   "tags": [
+    "farm",
+    "family",
+    "local"
+   ],
+   "why": "חוות אפרסקים ופקאנים גדולה בג'ורג'יה, עם חנות חווה, פאי פקאן וגלידת אפרסקים. בחורף זו עונת הפקאנים.",
+   "tip": "עצירה טובה בנסיעה על I-75. שעות החג לא פורסמו, כדאי להתקשר.",
+   "cost": "כניסה חופשית",
+   "url": "https://lanesouthernorchards.com",
+   "coords": [
+    32.5383,
+    -83.8175
+   ]
+  },
+  {
+   "name_en": "Your DeKalb Farmers Market",
+   "name_he": "השוק הבינלאומי של דקאלב",
+   "state": "Georgia",
+   "city": "Decatur",
+   "venue": "3000 E Ponce de Leon Ave",
+   "start": "2026-12-20",
+   "end": "2026-12-24",
+   "weekly": "כל יום 9:00-21:00",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "family"
+   ],
+   "why": "שוק ענק בגודל של מחסן, עם תוצרת מכל העולם, דגים טריים ועובדים מעשרות ארצות. אטלנטה האמיתית.",
+   "tip": "אסור לצלם בפנים. ביום חג המולד כנראה סגור.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.dekalbfarmersmarket.com",
+   "coords": [
+    33.777,
+    -84.256
+   ]
+  },
+  {
+   "name_en": "Blind Willie's",
+   "name_he": "בליינד ווילי'ס - מועדון בלוז באטלנטה",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Blind Willie's, 828 N Highland Ave NE, Virginia-Highland",
+   "start": "2026-12-20",
+   "end": "2026-12-24",
+   "weekly": "בלוז חי ברוב הערבים, בדרך כלל ד' עד א'",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local"
+   ],
+   "why": "מועדון בלוז קטן ומפורסם בשכונה יפה, עם אוכל קייג'ון ולהקות מקומיות.",
+   "tip": "אי אפשר להזמין מקום מראש. מגיעים מוקדם כדי לשבת.",
+   "cost": "כניסה כ-$5-15",
+   "url": "https://blindwilliesblues.com",
+   "coords": [
+    33.7787,
+    -84.3533
+   ]
+  },
+  {
+   "name_en": "Eddie's Attic",
+   "name_he": "אדי'ס אטיק - מועדון אקוסטי בדקייטר",
+   "state": "Georgia",
+   "city": "Decatur",
+   "venue": "Eddie's Attic, 515-B N McDonough St",
+   "start": "2026-12-20",
+   "end": "2026-12-24",
+   "weekly": "הופעות כמעט כל ערב",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "night",
+    "young"
+   ],
+   "why": "חדר האזנה קטן שבו התחילו זמרים כמו ג'ון מאייר. שקט מוחלט בזמן השירים, חוויה מיוחדת.",
+   "tip": "כרטיסים באתר. יש גם ערבי במה פתוחה לזמרים מתחילים.",
+   "cost": "כרטיס כ-$15-30",
+   "url": "https://www.eddiesattic.com",
+   "coords": [
+    33.771,
+    -84.296
+   ]
+  },
+  {
+   "name_en": "Northside Tavern",
+   "name_he": "נורת'סייד טברן - בר בלוז שכונתי",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Northside Tavern, 1058 Howell Mill Rd",
+   "start": "2026-12-20",
+   "end": "2026-12-24",
+   "weekly": "בלוז חי כמעט כל ערב",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local"
+   ],
+   "why": "בר שכונתי אמיתי בבניין של תחנת דלק ישנה, עם להקות בלוז מקומיות וקהל מכל הגילים.",
+   "tip": "באמצע השבוע בדרך כלל בלי כניסה, בסוף שבוע כמה דולרים. כדאי מזומן.",
+   "cost": "חינם עד $10",
+   "url": "https://www.northsidetavern.com",
+   "coords": [
+    33.7838,
+    -84.4118
+   ]
+  },
+  {
+   "name_en": "Garden Lights, Holiday Nights",
+   "name_he": "אורות החג בגן הבוטני של אטלנטה",
+   "state": "Georgia",
+   "city": "Atlanta",
+   "venue": "Atlanta Botanical Garden",
+   "start": "2026-12-20",
+   "end": "2026-12-24",
+   "confirmed": false,
+   "type": "holiday",
+   "tags": [
+    "family",
+    "night"
+   ],
+   "why": "הגן הבוטני בלב העיר הופך למופע אורות, עם עצים מוארים ומופע אור על האגם.",
+   "tip": "קונים כרטיס לשעה מסוימת מראש, לפני חג המולד נגמר מהר. תאריכי 2026 לא אומתו באתר הרשמי.",
+   "cost": "כרטיס כ-$30-50",
+   "url": "https://atlantabg.org",
+   "coords": [
+    33.7899,
+    -84.3733
+   ]
+  },
+  {
+   "name_en": "Rock City Enchanted Garden of Lights",
+   "name_he": "גן האורות הקסום ברוק סיטי",
+   "state": "Georgia",
+   "city": "Lookout Mountain",
+   "venue": "Rock City Gardens, 1400 Patten Rd",
+   "start": "2026-12-25",
+   "end": "2026-12-28",
+   "confirmed": true,
+   "type": "holiday",
+   "tags": [
+    "family",
+    "night"
+   ],
+   "why": "שביל בין צוקים על הר לוקאאוט עם מיליוני נורות ותצפית על כמה מדינות. 10 דקות מצ'טנוגה.",
+   "tip": "כרטיסים רק באתר ולשעה מסוימת. סגור רק ב-24 בדצמבר. להתלבש חם, על ההר קר.",
+   "cost": "כרטיס כ-$31-49",
+   "url": "https://www.seerockcity.com/enchanted-garden-of-lights",
+   "coords": [
+    34.9733,
+    -85.35
+   ]
+  },
+  {
+   "name_en": "Lower Broadway honky-tonks (Tootsie's, Robert's Western World)",
+   "name_he": "ברים עם הופעות חיות בברודווי התחתונה",
+   "state": "Tennessee",
+   "city": "Nashville",
+   "venue": "Lower Broadway",
+   "start": "2026-12-25",
+   "end": "2026-12-28",
+   "weekly": "כל יום מ-10:00 בבוקר עד 3:00 בלילה, בלי כניסה",
+   "confirmed": true,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "free",
+    "night",
+    "young"
+   ],
+   "why": "רחוב שלם של ברי קאנטרי עם להקות חיות מהבוקר עד הלילה, בכמה קומות. הלב של בירת הקאנטרי.",
+   "tip": "אין כניסה, אבל משאירים טיפ ללהקה. רוברט'ס הכי אותנטי, ובראשון בבוקר יש שם שעת גוספל בלי אלכוהול.",
+   "cost": "חינם, טיפ ללהקה",
+   "url": "https://robertswesternworld.com",
+   "coords": [
+    36.1612,
+    -86.7775
+   ]
+  },
+  {
+   "name_en": "Station Inn Sunday Bluegrass Jam",
+   "name_he": "ג'אם בלוגראס של יום ראשון בסטיישן אין",
+   "state": "Tennessee",
+   "city": "Nashville",
+   "venue": "Station Inn, 402 12th Ave S, The Gulch",
+   "start": "2026-12-27",
+   "end": "2026-12-27",
+   "weekly": "כל יום ראשון בערב, הדלתות נפתחות ב-19:00",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "free",
+    "local",
+    "night"
+   ],
+   "why": "מועדון הבלוגראס הוותיק של נאשוויל. בראשון נגנים מכל הרמות יושבים במעגל ומנגנים יחד, והקהל נכנס בחינם.",
+   "tip": "בשאר הערבים יש הופעות בתשלום. כדאי מזומן לפיצה ובירה. לבדוק באתר שאין שינוי בשבוע החג.",
+   "cost": "חינם",
+   "url": "https://stationinn.com",
+   "coords": [
+    36.1525,
+    -86.7845
+   ]
+  },
+  {
+   "name_en": "The Bluebird Cafe",
+   "name_he": "בלובירד קפה - ערבי כותבי שירים",
+   "state": "Tennessee",
+   "city": "Nashville",
+   "venue": "Bluebird Cafe, 4104 Hillsboro Pike",
+   "start": "2026-12-25",
+   "end": "2026-12-28",
+   "weekly": "הופעות כל ערב, בדרך כלל ב-18:00 וב-21:00",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "night",
+    "local"
+   ],
+   "why": "חדר קטן לכ-90 איש שבו כותבי השירים של נאשוויל מנגנים את הלהיטים שכתבו לכוכבים. כאן התגלתה טיילור סוויפט.",
+   "tip": "כרטיסים נמכרים באתר כשבוע מראש ונגמרים מהר. בימי החג ייתכן שסגור.",
+   "cost": "כרטיס כ-$10-40",
+   "url": "https://bluebirdcafe.com",
+   "coords": [
+    36.1033,
+    -86.8166
+   ]
+  },
+  {
+   "name_en": "Nashville Farmers' Market",
+   "name_he": "שוק האיכרים של נאשוויל",
+   "state": "Tennessee",
+   "city": "Nashville",
+   "venue": "900 Rosa L Parks Blvd",
+   "start": "2026-12-26",
+   "end": "2026-12-28",
+   "weekly": "בית השוק כל יום 8:00-20:00; סככות החקלאים בחורף ו' עד א' 10:00-14:00",
+   "confirmed": true,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "family"
+   ],
+   "why": "שוק עירוני ליד גבעת הקפיטול, עם סככות חקלאים, ובבניין המרכזי דוכני אוכל מכל העולם.",
+   "tip": "סגור ב-25 וב-31 בדצמבר וב-1 בינואר. אפשר לשלב עם הפארק הצמוד.",
+   "cost": "כניסה חופשית",
+   "url": "https://nashvillefarmersmarket.org/hours-and-directions",
+   "coords": [
+    36.1705,
+    -86.788
+   ]
+  },
+  {
+   "name_en": "Christmas in the Park (Noble Park)",
+   "name_he": "חג המולד בפארק נובל בפדוקה",
+   "state": "Kentucky",
+   "city": "Paducah",
+   "venue": "Noble Park",
+   "start": "2026-12-29",
+   "end": "2026-12-31",
+   "confirmed": false,
+   "type": "holiday",
+   "tags": [
+    "free",
+    "family",
+    "night",
+    "local"
+   ],
+   "why": "פארק עירוני עם יותר מחצי מיליון נורות שנוסעים דרכו ברכב. עיירה קטנה ונעימה על נהר האוהיו.",
+   "tip": "פתוח מבלאק פריידיי עד ערב ראש השנה. נכנסים ברכב אחרי השקיעה.",
+   "cost": "חינם",
+   "url": "https://wpsdlocal6.com/news/paducah-announces-lineup-of-2026-festivals/article_c67ac734-b02f-422d-ada3-ed85ab5023d6.html",
+   "coords": [
+    37.079,
+    -88.6345
+   ]
+  },
+  {
+   "name_en": "Soulard Farmers Market",
+   "name_he": "שוק סולארד בסנט לואיס",
+   "state": "Missouri",
+   "city": "St. Louis",
+   "venue": "730 Carroll St, Soulard",
+   "start": "2026-12-30",
+   "end": "2027-01-02",
+   "weekly": "ד' עד ו' 8:00-17:00, שבת 7:00-17:30",
+   "confirmed": true,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "family"
+   ],
+   "why": "שוק האיכרים הוותיק ממערב למיסיסיפי, פועל מ-1779. בשבת כל הדוכנים פתוחים: תבלינים, בשר ומאפים.",
+   "tip": "שבת בבוקר הכי חי. שכונת סולארד מלאה בברי בלוז לערב.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.stlouis-mo.gov/soulard-market/",
+   "coords": [
+    38.605,
+    -90.201
+   ]
+  },
+  {
+   "name_en": "Garden Glow at Missouri Botanical Garden",
+   "name_he": "גארדן גלואו בגן הבוטני של מיזורי",
+   "state": "Missouri",
+   "city": "St. Louis",
+   "venue": "Missouri Botanical Garden",
+   "start": "2026-12-29",
+   "end": "2027-01-02",
+   "confirmed": true,
+   "type": "holiday",
+   "tags": [
+    "family",
+    "night"
+   ],
+   "why": "הגן הבוטני הוותיק של ארה״ב מואר במיליון נורות, עם מדורות ושוקו חם.",
+   "tip": "פתוח 17:00-21:30 עד 2 בינואר. קונים כרטיס לשעה מסוימת מראש.",
+   "cost": "כרטיס כ-$20-30",
+   "url": "https://www.missouribotanicalgarden.org",
+   "coords": [
+    38.6128,
+    -90.2594
+   ]
+  },
+  {
+   "name_en": "BB's Jazz, Blues & Soups",
+   "name_he": "בי.בי'ס - ג'אז, בלוז ומרקים",
+   "state": "Missouri",
+   "city": "St. Louis",
+   "venue": "BB's, 700 S Broadway",
+   "start": "2026-12-29",
+   "end": "2027-01-01",
+   "weekly": "בלוז וג'אז חיים כל ערב, לפי התוכנית אחרי הפתיחה המחודשת",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local"
+   ],
+   "why": "מועדון בלוז היסטורי בבניין ישן ליד הנהר, שנפתח מחדש ב-2026 בניהול חדש.",
+   "tip": "לבדוק באתר שהמקום כבר פתוח ומה הלוח. ברודווי אויסטר בר נמצא ממש ליד.",
+   "cost": "כניסה כ-$5-15",
+   "url": "https://www.bbsjazzbluessoups.com",
+   "coords": [
+    38.6195,
+    -90.1907
+   ]
+  },
+  {
+   "name_en": "Broadway Oyster Bar",
+   "name_he": "ברודווי אויסטר בר",
+   "state": "Missouri",
+   "city": "St. Louis",
+   "venue": "Broadway Oyster Bar, 736 S Broadway",
+   "start": "2026-12-29",
+   "end": "2027-01-01",
+   "weekly": "מוזיקה חיה כל ערב, לפעמים שתי הופעות",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "free",
+    "local"
+   ],
+   "why": "בר בסגנון ניו אורלינס עם צדפות, אוכל קייג'ון ולהקות בלוז, פאנק ורגאיי כל ערב. אווירה של מסיבה.",
+   "tip": "רוב ההופעות בחינם, ללהקות מוכרות יש כניסה קטנה.",
+   "cost": "בדרך כלל חינם",
+   "url": "https://www.broadwayoysterbar.com",
+   "coords": [
+    38.6187,
+    -90.191
+   ]
+  },
+  {
+   "name_en": "The Blue Note",
+   "name_he": "בלו נוט - מועדון הופעות בקולומביה",
+   "state": "Missouri",
+   "city": "Columbia",
+   "venue": "The Blue Note, 17 N 9th St",
+   "start": "2027-01-01",
+   "end": "2027-01-03",
+   "weekly": "הופעות ברוב ערבי השבוע",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "young",
+    "night"
+   ],
+   "why": "אולם הופעות ותיק בתיאטרון ישן בעיר הסטודנטים של מיזורי, באמצע הדרך בין סנט לואיס לקנזס סיטי.",
+   "tip": "רחוב 9 מלא בברים ומסעדות. בחופשת החורף יש פחות הופעות, לבדוק באתר.",
+   "cost": "כרטיס כ-$15-30",
+   "url": "https://thebluenote.com",
+   "coords": [
+    38.9515,
+    -92.328
+   ]
+  },
+  {
+   "name_en": "The Blue Room (18th & Vine)",
+   "name_he": "הבלו רום - מועדון הג'אז של 18th & Vine",
+   "state": "Missouri",
+   "city": "Kansas City",
+   "venue": "1600 E 18th St (American Jazz Museum)",
+   "start": "2027-01-01",
+   "end": "2027-01-04",
+   "weekly": "ב' ג'אם חינם 19:00-22:30; ו' ב-17:00 שעת ג'אז חינם; ו' ושבת הופעות ב-20:30 וב-22:00",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local",
+    "free"
+   ],
+   "why": "מועדון הג'אז של מוזיאון הג'אז האמריקאי, ברובע שבו נולד הג'אז של קנזס סיטי. נגנים מקומיים מעולים.",
+   "tip": "בערב ב' (4.1) יש ג'אם פתוח בחינם, הכי מקומי. הלוח משתנה כל חודש, לבדוק באתר.",
+   "cost": "ג'אם חינם, הופעות $10-15",
+   "url": "https://americanjazzmuseum.org/blue-room",
+   "coords": [
+    39.0913,
+    -94.5623
+   ]
+  },
+  {
+   "name_en": "Green Lady Lounge",
+   "name_he": "גרין ליידי לאונג'",
+   "state": "Missouri",
+   "city": "Kansas City",
+   "venue": "Green Lady Lounge, 1809 Grand Blvd, Crossroads",
+   "start": "2027-01-01",
+   "end": "2027-01-05",
+   "weekly": "ג'אז חי כל ערב; בראשון גם מטינה עם פסנתר 16:00-19:00",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "free",
+    "local"
+   ],
+   "why": "לאונג' אדום וחשוך בסגנון שנות ה-30, עם ג'אז חי כל ערב. מהברים הכי יפים בעיר.",
+   "tip": "בסוף שבוע מתמלא, מגיעים לפני 21:00. לא מצאנו מידע עדכני על כניסה, בדרך כלל בלי.",
+   "cost": "בדרך כלל בלי כניסה",
+   "url": "https://greenladylounge.com",
+   "coords": [
+    39.0905,
+    -94.5812
+   ]
+  },
+  {
+   "name_en": "Mutual Musicians Foundation late-night jam",
+   "name_he": "ג'אם הלילה במוטואל מוזישנס",
+   "state": "Missouri",
+   "city": "Kansas City",
+   "venue": "1823 Highland Ave, 18th & Vine",
+   "start": "2027-01-01",
+   "end": "2027-01-02",
+   "weekly": "שישי ושבת בלילה, מבערך 1:30 עד הבוקר",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "night",
+    "local"
+   ],
+   "why": "הבניין של איגוד המוזיקאים השחורים משנות ה-30, שבו צ'רלי פרקר ניגן בצעירותו. בסוף שבוע נגנים מגיעים לג'אם עד הבוקר.",
+   "tip": "מגיעים אחרי 1:00 בלילה. לבדוק באתר אם יש כניסה.",
+   "cost": "לבדוק באתר",
+   "url": "https://www.mutualmusicianslive.com",
+   "coords": [
+    39.0905,
+    -94.5615
+   ]
+  },
+  {
+   "name_en": "City Market Farmers Market (River Market)",
+   "name_he": "שוק האיכרים של סיטי מרקט",
+   "state": "Missouri",
+   "city": "Kansas City",
+   "venue": "City Market, 20 E 5th St",
+   "start": "2027-01-02",
+   "end": "2027-01-02",
+   "weekly": "כל שבת 9:00-15:00 בינואר ובפברואר",
+   "confirmed": true,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family"
+   ],
+   "why": "שוק חקלאים ושוק פשפשים בביתנים מחוממים, באזור המחסנים ליד הנהר. פועל מ-1857.",
+   "tip": "שעתיים חניה בחינם. אפשר להגיע בחשמלית החינמית של העיר.",
+   "cost": "כניסה חופשית",
+   "url": "https://thecitymarket.org",
+   "coords": [
+    39.1095,
+    -94.582
+   ]
+  },
+  {
+   "name_en": "Country Club Plaza Lights",
+   "name_he": "אורות הפלאזה בקנזס סיטי",
+   "state": "Missouri",
+   "city": "Kansas City",
+   "venue": "Country Club Plaza",
+   "start": "2027-01-01",
+   "end": "2027-01-05",
+   "confirmed": false,
+   "type": "holiday",
+   "tags": [
+    "free",
+    "family",
+    "night"
+   ],
+   "why": "מרכז קניות בסגנון ספרדי שכל קווי הבניינים שלו מוארים בנורות צבעוניות. מסורת מ-1925.",
+   "tip": "בעונה שעברה האורות דלקו עד 11 בינואר, 17:00-3:00. לבדוק שזה כך גם השנה.",
+   "cost": "חינם",
+   "url": "https://www.visitkc.com/articles/kansas-city-plaza-lights/",
+   "coords": [
+    39.042,
+    -94.5925
+   ]
+  },
+  {
+   "name_en": "Knuckleheads Saloon",
+   "name_he": "נאקלהדס סאלון",
+   "state": "Missouri",
+   "city": "Kansas City",
+   "venue": "Knuckleheads, 2715 Rochester Ave",
+   "start": "2027-01-01",
+   "end": "2027-01-05",
+   "weekly": "הופעות ד' עד א'; ברביעי ערב בלוז-כנסייה בגוספל לאונג'",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local"
+   ],
+   "why": "סאלון רוקנרול ובלוז ליד פסי רכבת, שהרכבות עוברות בו באמצע ההופעה. מהמועדונים האהובים במערב התיכון.",
+   "tip": "יש כמה במות, חלק מההופעות בחינם. לבדוק באתר.",
+   "cost": "חינם עד $30",
+   "url": "https://knuckleheadskc.com",
+   "coords": [
+    39.1213,
+    -94.5515
+   ]
+  },
+  {
+   "name_en": "Topeka Farm Show",
+   "name_he": "תערוכת החקלאות של טופיקה",
+   "state": "Kansas",
+   "city": "Topeka",
+   "venue": "Stormont Vail Events Center",
+   "start": "2027-01-05",
+   "end": "2027-01-07",
+   "confirmed": false,
+   "type": "farm",
+   "tags": [
+    "farm",
+    "free",
+    "local"
+   ],
+   "why": "תערוכת חקלאות גדולה של קנזס, עם טרקטורים, ציוד חווה וחקלאים אמיתיים מכל האזור.",
+   "tip": "כניסה וחניה בחינם לפי המארגנים. התאריכים מאתרי אירועים, לאשר קרוב למועד.",
+   "cost": "חינם",
+   "url": "https://www.wibw.com/2025/12/10/annual-topeka-farm-show-set-jan-6-8-stormont-vail-events-center",
+   "coords": [
+    39.027,
+    -95.6895
+   ]
+  },
+  {
+   "name_en": "Replay Lounge",
+   "name_he": "ריפליי לאונג' בלורנס",
+   "state": "Kansas",
+   "city": "Lawrence",
+   "venue": "Replay Lounge, 946 Massachusetts St",
+   "start": "2027-01-04",
+   "end": "2027-01-07",
+   "weekly": "להקות כמה ערבים בשבוע",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "young",
+    "bar",
+    "night"
+   ],
+   "why": "בר פינבול ורוקנרול מ-1993 בעיר האוניברסיטה של קנזס, עם להקות אינדי ופאנק וקהל סטודנטים.",
+   "tip": "בחופשת החורף יש פחות סטודנטים. רחוב מסצ'וסטס מלא בברים ומסעדות.",
+   "cost": "כניסה של כמה דולרים",
+   "url": "https://replaylounge.com",
+   "coords": [
+    38.9665,
+    -95.2358
+   ]
+  },
+  {
+   "name_en": "Farmers & Ranchers Livestock cattle auction",
+   "name_he": "מכירת בקר פומבית בסלינה",
+   "state": "Kansas",
+   "city": "Salina",
+   "venue": "Farmers & Ranchers Livestock, 1500 W Hwy 40",
+   "start": "2027-01-04",
+   "end": "2027-01-11",
+   "weekly": "מכירות בימי ב' וה', לפי מידע ישן",
+   "confirmed": false,
+   "type": "farm",
+   "tags": [
+    "farm",
+    "local",
+    "free"
+   ],
+   "why": "מכירה פומבית אמיתית של בקר, עם כרוזים שמדברים מהר מאוד וחוואים בכובעי בוקרים. קנזס האמיתית.",
+   "tip": "הציבור יכול לשבת ביציע ולצפות. להתקשר לפני (785-825-0211) ולשאול על הימים והשעות.",
+   "cost": "חינם",
+   "url": "https://hpj.com/tag/farmers-and-ranchers-livestock-commission-co",
+   "coords": [
+    38.8455,
+    -97.6335
+   ]
+  },
+  {
+   "name_en": "Dazzle Jazz (El Chapultepec Lounge)",
+   "name_he": "דאזל - מועדון ג'אז בדנבר",
+   "state": "Colorado",
+   "city": "Denver",
+   "venue": "Dazzle, Denver Performing Arts Complex, 1080 14th St",
+   "start": "2027-01-13",
+   "end": "2027-01-15",
+   "weekly": "הופעות בתשלום כל ערב; בסוף שבוע בלילה סטים בחינם בלאונג'",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "free"
+   ],
+   "why": "מועדון הג'אז המוביל בדנבר. הלאונג' שלו ממשיך את המסורת של אל צ'פולטפק, בר הג'אז האגדי של העיר.",
+   "tip": "הפי האוור ב' עד ו' 15:00-18:00. בלאונג' לא צריך כרטיס.",
+   "cost": "לאונג' חינם, הופעות $20-40",
+   "url": "https://www.dazzledenver.com",
+   "coords": [
+    39.7457,
+    -104.999
+   ]
+  },
+  {
+   "name_en": "Woody's Tavern",
+   "name_he": "וודי'ס טברן במואב",
+   "state": "Utah",
+   "city": "Moab",
+   "venue": "Woody's Tavern, 221 S Main St",
+   "start": "2027-01-15",
+   "end": "2027-01-16",
+   "weekly": "להקות בימי ו' ושבת, בעיקר בעונה",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "local",
+    "night"
+   ],
+   "why": "הבר המקומי של מואב, עם ביליארד, להקות רוק וקאנטרי, מטפסים ורוכבי אופניים.",
+   "tip": "בחורף מואב שקטה ולא תמיד יש להקה. לבדוק ב-Moab Happenings.",
+   "cost": "בדרך כלל חינם",
+   "url": "https://moabhappenings.com/LiveMusic.htm",
+   "coords": [
+    38.571,
+    -109.5505
+   ]
+  },
+  {
+   "name_en": "Urban Lounge",
+   "name_he": "אורבן לאונג' בסולט לייק סיטי",
+   "state": "Utah",
+   "city": "Salt Lake City",
+   "venue": "Urban Lounge, 241 S 500 E",
+   "start": "2027-01-18",
+   "end": "2027-01-21",
+   "weekly": "הופעות כמעט כל ערב, מגיל 21",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "young",
+    "night",
+    "bar"
+   ],
+   "why": "המועדון הקטן החשוב של סצנת האינדי בסולט לייק, לכ-400 איש, עם להקות מקומיות ומסיבובי הופעות.",
+   "tip": "רק מגיל 21, להביא דרכון. כרטיסים באתר.",
+   "cost": "כרטיס כ-$10-25",
+   "url": "https://www.theurbanloungeslc.com",
+   "coords": [
+    40.763,
+    -111.8838
+   ]
+  },
+  {
+   "name_en": "Garage on Beck",
+   "name_he": "גראז' און בק",
+   "state": "Utah",
+   "city": "Salt Lake City",
+   "venue": "Garage on Beck, 1199 Beck St",
+   "start": "2027-01-18",
+   "end": "2027-01-21",
+   "weekly": "להקות בסופי שבוע ובחלק מימי החול",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local"
+   ],
+   "why": "בר שכונתי במוסך ישן בקצה העיר, עם מוזיקה חיה, מדורות בחצר ואוכל בר טוב.",
+   "tip": "מגיל 21. נמצא ליד הכביש צפונה, נוח ביציאה מהעיר.",
+   "cost": "בדרך כלל חינם או כניסה קטנה",
+   "url": "https://www.garageonbeck.com",
+   "coords": [
+    40.7935,
+    -111.9095
+   ]
+  },
+  {
+   "name_en": "The Holland Project",
+   "name_he": "הולנד פרוג'קט - מועדון לכל הגילים ברינו",
+   "state": "Nevada",
+   "city": "Reno",
+   "venue": "Holland Project, 140 Vesta St",
+   "start": "2027-01-21",
+   "end": "2027-01-29",
+   "weekly": "הופעות וערבי אמנות כמה פעמים בחודש",
+   "confirmed": false,
+   "type": "concert",
+   "tags": [
+    "young",
+    "local",
+    "night"
+   ],
+   "why": "מרכז מוזיקה ואמנות של צעירים, בלי אלכוהול, עם להקות פאנק ואינדי מקומיות. הצד של רינו שאינו קזינו.",
+   "tip": "לבדוק בלוח באתר מה יש בשבוע שלכם. הכרטיסים זולים מאוד.",
+   "cost": "כרטיס כ-$5-15",
+   "url": "https://hollandreno.org",
+   "coords": [
+    39.5165,
+    -119.8005
+   ]
+  },
+  {
+   "name_en": "Bucket of Blood Saloon",
+   "name_he": "סאלון באקט אוף בלאד בווירג'יניה סיטי",
+   "state": "Nevada",
+   "city": "Virginia City",
+   "venue": "1 S C St",
+   "start": "2027-01-23",
+   "end": "2027-01-24",
+   "weekly": "מוזיקה חיה בסופי שבוע",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "local",
+    "free"
+   ],
+   "why": "סאלון מ-1876 בעיירת כורי הכסף, עם נוף לעמק ולהקת קאנטרי בסוף שבוע. מרגיש כמו מערבון.",
+   "tip": "45 דקות מרינו. בחורף הדרך יכולה להיות מושלגת.",
+   "cost": "בדרך כלל חינם",
+   "url": "https://www.bucketofbloodsaloon.com",
+   "coords": [
+    39.3093,
+    -119.6493
+   ]
+  },
+  {
+   "name_en": "Sacramento Central Farmers Market",
+   "name_he": "שוק האיכרים המרכזי של סקרמנטו",
+   "state": "California",
+   "city": "Sacramento",
+   "venue": "8th & W St (under Highway 50)",
+   "start": "2027-01-31",
+   "end": "2027-01-31",
+   "weekly": "כל יום ראשון 8:00-12:00, כל השנה",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family"
+   ],
+   "why": "שוק החקלאים הגדול של סקרמנטו מתחת לגשר הכביש, עם פירות הדר של החורף, אגוזים ודבש מהעמק המרכזי.",
+   "tip": "מגיעים מוקדם, אחרי 10:00 עמוס. בסוף ינואר יש המון תפוזים ומנדרינות.",
+   "cost": "כניסה חופשית",
+   "url": "https://marketspread.com/market/9998/sacramento-central-certified-farmers-market/",
+   "coords": [
+    38.5677,
+    -121.5047
+   ]
+  },
+  {
+   "name_en": "Torch Club",
+   "name_he": "טורץ' קלאב - בר בלוז בסקרמנטו",
+   "state": "California",
+   "city": "Sacramento",
+   "venue": "Torch Club, 904 15th St",
+   "start": "2027-01-29",
+   "end": "2027-01-31",
+   "weekly": "הופעה חינם בהפי האוור בערב המוקדם, והופעה מרכזית בלילה",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "free",
+    "local"
+   ],
+   "why": "בר בלוז מ-1934, קטן וחשוך, עם להקות מקומיות ושמות מוכרים שעוברים בעיר.",
+   "tip": "ההופעה המוקדמת בחינם. לבדוק באתר באילו ימים פתוח.",
+   "cost": "מוקדם חינם, בלילה $5-15",
+   "url": "https://www.torchclub.net",
+   "coords": [
+    38.579,
+    -121.485
+   ]
+  },
+  {
+   "name_en": "Davis Farmers Market",
+   "name_he": "שוק האיכרים של דייוויס",
+   "state": "California",
+   "city": "Davis",
+   "venue": "Central Park, 4th & C St",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "weekly": "כל שבת 8:00-13:00, וגם ברביעי אחר הצהריים",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family",
+    "young"
+   ],
+   "why": "שוק של עיר אוניברסיטה שנבחר כמה פעמים לטוב בארה״ב, עם חקלאים מהעמק, מוזיקה ופעילות לילדים.",
+   "tip": "20 דקות מסקרמנטו. דייוויס היא עיר אופניים, כיף להסתובב.",
+   "cost": "כניסה חופשית",
+   "url": "https://davisfarmersmarket.org",
+   "coords": [
+    38.545,
+    -121.743
+   ]
+  },
+  {
+   "name_en": "Ferry Plaza Farmers Market",
+   "name_he": "שוק האיכרים של בניין המעבורות",
+   "state": "California",
+   "city": "San Francisco",
+   "venue": "Ferry Building, The Embarcadero",
+   "start": "2027-01-30",
+   "end": "2027-02-02",
+   "weekly": "שבת 8:00-14:00, ג' וה' 10:00-14:00",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free"
+   ],
+   "why": "השוק המפורסם של סן פרנסיסקו מול המפרץ, עם חקלאים אורגניים, צדפות ומאפים. בפנים יש אולם אוכל.",
+   "tip": "בשבת הכי גדול. ביום ג' (2.2) יש שוק קטן יותר.",
+   "cost": "כניסה חופשית",
+   "url": "https://foodwise.org",
+   "coords": [
+    37.7955,
+    -122.3937
+   ]
+  },
+  {
+   "name_en": "The Saloon (North Beach)",
+   "name_he": "הסלון בנורת' ביץ' - בר בלוז ותיק",
+   "state": "California",
+   "city": "San Francisco",
+   "venue": "The Saloon, 1232 Grant Ave, North Beach",
+   "start": "2027-02-01",
+   "end": "2027-02-02",
+   "weekly": "בלוז חי כל יום: 16:00-20:00 ו-21:30-1:30",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "free",
+    "night",
+    "local"
+   ],
+   "why": "מהברים הוותיקים בעיר, משנת 1861, ששרד את רעידת האדמה. בלוז חי פעמיים ביום.",
+   "tip": "אין כניסה, מזומן בלבד. מגיעים בהפסקה בין הסטים כדי לתפוס מקום.",
+   "cost": "חינם",
+   "url": "https://www.thesaloonsf.com",
+   "coords": [
+    37.799,
+    -122.4075
+   ]
+  },
+  {
+   "name_en": "Chinese New Year Flower Market Fair",
+   "name_he": "יריד הפרחים של השנה הסינית בצ'יינה טאון",
+   "state": "California",
+   "city": "San Francisco",
+   "venue": "Grant Ave & Pacific Ave, Chinatown",
+   "start": "2027-01-30",
+   "end": "2027-01-31",
+   "confirmed": false,
+   "type": "local",
+   "tags": [
+    "free",
+    "local",
+    "family"
+   ],
+   "why": "בסוף השבוע שלפני השנה הסינית החדשה (6.2.2027) הרחובות של צ'יינה טאון מתמלאים בדוכני פרחים, ממתקים ובמות.",
+   "tip": "התאריך משוער לפי לוח הפסטיבל. המצעד הגדול רק בסוף פברואר.",
+   "cost": "חינם",
+   "url": "https://www.chineseparade.com",
+   "coords": [
+    37.7955,
+    -122.4065
+   ]
+  },
+  {
+   "name_en": "Downtown Santa Cruz Farmers Market",
+   "name_he": "שוק האיכרים במרכז סנטה קרוז",
+   "state": "California",
+   "city": "Santa Cruz",
+   "venue": "Cedar St & Lincoln St",
+   "start": "2027-02-03",
+   "end": "2027-02-03",
+   "weekly": "כל יום רביעי אחר הצהריים",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "young"
+   ],
+   "why": "שוק אחר הצהריים בעיר גלישה היפית, עם חקלאים מהעמקים הסמוכים, פרחים ואוכל רחוב.",
+   "tip": "רק ברביעי. אחר כך הולכים לרציף לראות את אריות הים מתחת לרציף.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.santacruzfarmersmarket.org",
+   "coords": [
+    36.972,
+    -122.027
+   ]
+  },
+  {
+   "name_en": "Downtown SLO Thursday Night Farmers' Market",
+   "name_he": "שוק ערב יום חמישי בסן לואיס אוביספו",
+   "state": "California",
+   "city": "San Luis Obispo",
+   "venue": "Higuera St (Osos to Nipomo)",
+   "start": "2027-02-04",
+   "end": "2027-02-04",
+   "weekly": "כל חמישי, בחורף 18:00-20:30",
+   "confirmed": true,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "night",
+    "young",
+    "family"
+   ],
+   "why": "רחוב שלם נסגר לשוק ערב, עם חקלאים, מנגלים ענקיים של טרי-טיפ, להקות ואמני רחוב. אווירה של עיר סטודנטים.",
+   "tip": "מבטלים כשיורד גשם, האתר מתעדכן עד 10:00 בבוקר. נסו כריך טרי-טיפ מהמנגלים.",
+   "cost": "כניסה חופשית",
+   "url": "https://downtownslo.com/farmers-market",
+   "coords": [
+    35.28,
+    -120.6625
+   ]
+  },
+  {
+   "name_en": "Santa Barbara Saturday Farmers Market",
+   "name_he": "שוק האיכרים של סנטה ברברה",
+   "state": "California",
+   "city": "Santa Barbara",
+   "venue": "Santa Barbara St & Cota St",
+   "start": "2027-02-06",
+   "end": "2027-02-06",
+   "weekly": "כל שבת 8:00-13:00",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free"
+   ],
+   "why": "שוק ותיק עם אבוקדו, פירות הדר וקיווי מהאזור, וגם קיפודי ים ודגים של דייגים מקומיים.",
+   "tip": "אם עוברים בשבת בדרך ללוס אנג'לס שווה לעצור. בבוקר יש חניה במגרשים העירוניים.",
+   "cost": "כניסה חופשית",
+   "url": "https://sbfarmersmarket.org",
+   "coords": [
+    34.419,
+    -119.695
+   ]
+  },
+  {
+   "name_en": "Hollywood Farmers' Market",
+   "name_he": "שוק האיכרים של הוליווד",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "Ivar Ave & Selma Ave, Hollywood",
+   "start": "2027-02-07",
+   "end": "2027-02-07",
+   "weekly": "כל יום ראשון 8:00-13:00",
+   "confirmed": true,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family"
+   ],
+   "why": "שוק ענק ברחובות הוליווד, עם יותר מ-150 חקלאים, אוכל רחוב ומוזיקה. המקומיים באמת קונים פה.",
+   "tip": "חניה בתשלום בחניונים מסביב. משם אפשר ללכת לשדרת הכוכבים הקרובה.",
+   "cost": "כניסה חופשית",
+   "url": "https://hollywoodpartnership.com/do/hollywood-farmers-market",
+   "coords": [
+    34.1012,
+    -118.3292
+   ]
+  },
+  {
+   "name_en": "Grand Central Market",
+   "name_he": "גרנד סנטרל מרקט במרכז לוס אנג'לס",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "317 S Broadway, Downtown",
+   "start": "2027-02-05",
+   "end": "2027-02-07",
+   "weekly": "כל יום מהבוקר עד הערב",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "local",
+    "family"
+   ],
+   "why": "שוק מקורה מ-1917 עם דוכני אוכל מכל העולם: טאקוס, ראמן, פופוסות וארוחות בוקר מפורסמות.",
+   "tip": "ממול יש את הרכבל הקטן Angels Flight. בצהריים עמוס מאוד.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.grandcentralmarket.com",
+   "coords": [
+    34.0508,
+    -118.2489
+   ]
+  },
+  {
+   "name_en": "Smorgasburg LA",
+   "name_he": "סמורגסבורג - שוק אוכל של יום ראשון",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "ROW DTLA, 777 S Alameda St",
+   "start": "2027-02-07",
+   "end": "2027-02-07",
+   "weekly": "כל יום ראשון 10:00-16:00",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "young",
+    "local",
+    "family"
+   ],
+   "why": "שוק אוכל רחוב ענק עם עשרות דוכנים של שפים צעירים, מהסצנה הכי חמה של לוס אנג'לס.",
+   "tip": "מגיעים לפני 12:00, לפני התורים. כדאי לחלוק מנות כדי לטעום יותר.",
+   "cost": "כניסה חופשית",
+   "url": "https://la.smorgasburg.com",
+   "coords": [
+    34.0335,
+    -118.2405
+   ]
+  },
+  {
+   "name_en": "Venice Beach Drum Circle",
+   "name_he": "מעגל התופים בחוף ונציה",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "Venice Beach Boardwalk (near Brooks Ave)",
+   "start": "2027-02-07",
+   "end": "2027-02-07",
+   "weekly": "כל יום ראשון אחר הצהריים עד השקיעה",
+   "confirmed": false,
+   "type": "local",
+   "tags": [
+    "free",
+    "local",
+    "young"
+   ],
+   "why": "כבר עשרות שנים, בכל יום ראשון מתאספים בחוף מתופפים, רקדנים וסתם אנשים למעגל תופים ספונטני עד השקיעה.",
+   "tip": "מצטרפים חופשי, אפשר להביא כלי הקשה. שומרים על התיק, הטיילת עמוסה.",
+   "cost": "חינם",
+   "url": "https://www.discoverlosangeles.com",
+   "coords": [
+    33.989,
+    -118.4745
+   ]
+  },
+  {
+   "name_en": "The Baked Potato",
+   "name_he": "הבייקד פוטייטו - מועדון ג'אז זעיר",
+   "state": "California",
+   "city": "Los Angeles (Studio City)",
+   "venue": "The Baked Potato, 3787 Cahuenga Blvd",
+   "start": "2027-02-05",
+   "end": "2027-02-07",
+   "weekly": "הופעות כל ערב, בדרך כלל ב-21:30",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night"
+   ],
+   "why": "מועדון ג'אז ופיוז'ן זעיר מ-1970, שבו מנגנים נגני האולפנים הטובים של לוס אנג'לס. אוכלים תפוחי אדמה אפויים ממולאים.",
+   "tip": "המקום קטן מאוד, כדאי להזמין באתר. יש מינימום של שני משקאות.",
+   "cost": "כניסה כ-$20-30",
+   "url": "https://www.thebakedpotato.com",
+   "coords": [
+    34.1393,
+    -118.3618
+   ]
+  },
+  {
+   "name_en": "Hotel Café",
+   "name_he": "הוטל קפה - ערבי זמר-יוצר בהוליווד",
+   "state": "California",
+   "city": "Los Angeles",
+   "venue": "Hotel Café, 1623 N Cahuenga Blvd",
+   "start": "2027-02-05",
+   "end": "2027-02-07",
+   "weekly": "כמה הופעות כל ערב, בשתי במות",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "young",
+    "night"
+   ],
+   "why": "מועדון קטן שבו הופיעו בתחילת הדרך זמרות כמו אדל וקייטי פרי. כמה אמנים צעירים בכל ערב.",
+   "tip": "כרטיסים זולים באתר. בערב אחד מופיעים כמה אמנים ברצף.",
+   "cost": "כרטיס כ-$10-25",
+   "url": "https://www.hotelcafe.com",
+   "coords": [
+    34.1001,
+    -118.3296
+   ]
+  },
+  {
+   "name_en": "Palm Springs VillageFest",
+   "name_he": "וילג'פסט - יריד הרחוב של פאלם ספרינגס",
+   "state": "California",
+   "city": "Palm Springs",
+   "venue": "Palm Canyon Dr (Baristo to Amado)",
+   "start": "2027-02-04",
+   "end": "2027-02-11",
+   "weekly": "כל חמישי 18:00-22:00, מאוקטובר עד מאי",
+   "confirmed": false,
+   "type": "local",
+   "tags": [
+    "free",
+    "local",
+    "night",
+    "family",
+    "farm"
+   ],
+   "why": "בכל ערב חמישי הרחוב הראשי נסגר ליריד, עם דוכני חקלאים, תמרים מהעמק, אמנים ומוזיקה חיה.",
+   "tip": "אם הדרך למדבר עוברת בפאלם ספרינגס, תכננו ערב חמישי (4.2 או 11.2).",
+   "cost": "חינם",
+   "url": "https://visitpalmsprings.com",
+   "coords": [
+    33.8235,
+    -116.5465
+   ]
+  },
+  {
+   "name_en": "Pappy & Harriet's Pioneertown Palace",
+   "name_he": "פאפי והרייט - בר בוקרים במדבר",
+   "state": "California",
+   "city": "Pioneertown",
+   "venue": "53688 Pioneertown Rd",
+   "start": "2027-02-07",
+   "end": "2027-02-11",
+   "weekly": "מוזיקה חיה ברוב הערבים, בדרך כלל סגור בג' וד'",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local",
+    "young"
+   ],
+   "why": "בר ומסעדת ברביקיו בעיירת תפאורה של מערבונים ליד ג'ושוע טרי. פול מקרטני הופיע כאן בהפתעה.",
+   "tip": "להזמין מקום לארוחה מראש. חלק מההופעות בחינם וחלק בכרטיס, לבדוק באתר.",
+   "cost": "חינם עד $40",
+   "url": "https://pappyandharriets.com",
+   "coords": [
+    34.1557,
+    -116.497
+   ]
+  },
+  {
+   "name_en": "Fremont Street Experience free concerts",
+   "name_he": "הופעות חינם ברחוב פרימונט",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "Fremont Street Experience, Downtown",
+   "start": "2027-02-07",
+   "end": "2027-02-11",
+   "weekly": "הופעות חינם כל ערב על שלוש במות",
+   "confirmed": false,
+   "type": "concert",
+   "tags": [
+    "free",
+    "night"
+   ],
+   "why": "המרכז הישן של לאס וגאס, עם להקות חיות, מסך אורות ענק בתקרה ואווירה של מסיבת רחוב.",
+   "tip": "המופע על התקרה מתחלף כל שעה בערב. כדאי ללכת גם לרחוב East Fremont עם הברים הקטנים.",
+   "cost": "חינם",
+   "url": "https://vegasexperience.com",
+   "coords": [
+    36.1707,
+    -115.144
+   ]
+  },
+  {
+   "name_en": "First Friday Las Vegas",
+   "name_he": "פרסט פריידיי ברובע האמנות של וגאס",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "Arts District (18b), Boulder Ave & Casino Center Blvd",
+   "start": "2027-02-05",
+   "end": "2027-02-05",
+   "weekly": "יום שישי הראשון בחודש, בערב",
+   "confirmed": false,
+   "type": "local",
+   "tags": [
+    "free",
+    "local",
+    "night",
+    "young"
+   ],
+   "why": "ערב אמנות חודשי ברובע הגלריות, עם דוכני אוכל, להקות ואמנים מקומיים. הצד המקומי של וגאס.",
+   "tip": "יוצא ב-5 בפברואר, רק אם מגיעים לווגאס קצת מוקדם.",
+   "cost": "חינם",
+   "url": "https://www.18b.org",
+   "coords": [
+    36.159,
+    -115.153
+   ]
+  },
+  {
+   "name_en": "Sand Dollar Lounge",
+   "name_he": "סנד דולר - בר בלוז בווגאס",
+   "state": "Nevada",
+   "city": "Las Vegas",
+   "venue": "Sand Dollar Lounge, 3355 Spring Mountain Rd",
+   "start": "2027-02-07",
+   "end": "2027-02-11",
+   "weekly": "בלוז ורוק חיים ברוב הערבים",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local"
+   ],
+   "why": "בר בלוז ותיק מ-1976, רחוק מהסטריפ, עם להקות מקומיות וקהל של מקומיים. יש סניף נוסף במלון פלאזה במרכז.",
+   "tip": "בסוף שבוע בדרך כלל יש כניסה קטנה. לבדוק את הלוח.",
+   "cost": "חינם עד $10",
+   "url": "https://www.sanddollarlv.com",
+   "coords": [
+    36.1265,
+    -115.186
+   ]
+  },
+  {
+   "name_en": "Gold Rush Days",
+   "name_he": "ימי הבהלה לזהב בוויקנבורג",
+   "state": "Arizona",
+   "city": "Wickenburg",
+   "venue": "Downtown Wickenburg",
+   "start": "2027-02-12",
+   "end": "2027-02-14",
+   "confirmed": false,
+   "type": "festival",
+   "tags": [
+    "farm",
+    "family",
+    "local"
+   ],
+   "why": "עיירת בוקרים על כביש 93 חוגגת את ימי כורי הזהב, עם רודיאו, מצעד, יריד אומנים ושטיפת זהב.",
+   "tip": "בדיוק על הדרך מווגאס לפניקס. המצעד בדרך כלל בשבת בבוקר. התאריכים עוד לא רשמיים.",
+   "cost": "רוב האירועים חינם, רודיאו בתשלום",
+   "url": "https://wickenburgchamber.com/goldrushdays",
+   "coords": [
+    33.9686,
+    -112.7296
+   ]
+  },
+  {
+   "name_en": "Old Town Scottsdale Farmers Market",
+   "name_he": "שוק האיכרים של סקוטסדייל",
+   "state": "Arizona",
+   "city": "Scottsdale",
+   "venue": "City Hall lot, 75th St & Bennie Gonzales Way",
+   "start": "2027-02-13",
+   "end": "2027-02-13",
+   "weekly": "כל שבת 8:00-13:00 בחורף",
+   "confirmed": false,
+   "type": "market",
+   "tags": [
+    "farm",
+    "local",
+    "free",
+    "family"
+   ],
+   "why": "שוק שבת עם חקלאים מאריזונה, דבש מדברי, פירות הדר, ריבות קקטוס וטמאלס.",
+   "tip": "השוק עבר העונה למגרש של בניין העירייה. אחרי זה מטיילים באולד טאון.",
+   "cost": "כניסה חופשית",
+   "url": "https://www.scottsdaleaz.gov/news/details/scottsdale-farmers-market-finds-new-home-at-city-hall",
+   "coords": [
+    33.4935,
+    -111.9225
+   ]
+  },
+  {
+   "name_en": "The Rhythm Room (farewell season)",
+   "name_he": "הרית'ם רום - מועדון בלוז בפניקס",
+   "state": "Arizona",
+   "city": "Phoenix",
+   "venue": "Rhythm Room, 1019 E Indian School Rd",
+   "start": "2027-02-11",
+   "end": "2027-02-15",
+   "weekly": "הופעות כמעט כל ערב",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "bar",
+    "night",
+    "local"
+   ],
+   "why": "מועדון הבלוז החשוב של אריזונה, וזו העונה האחרונה שלו: הוא נסגר ב-30 במאי 2027 אחרי 35 שנה.",
+   "tip": "כרטיסים באתר. הזדמנות אחרונה לראות אותו.",
+   "cost": "כרטיס כ-$10-30",
+   "url": "https://www.rhythmroom.com",
+   "coords": [
+    33.4943,
+    -112.06
+   ]
+  },
+  {
+   "name_en": "Yucca Tap Room",
+   "name_he": "יוקה טאפ רום בטמפי",
+   "state": "Arizona",
+   "city": "Tempe",
+   "venue": "Yucca Tap Room, 29 W Southern Ave",
+   "start": "2027-02-11",
+   "end": "2027-02-15",
+   "weekly": "מוזיקה חיה ברוב הערבים: פאנק, רוק ומיקרופון פתוח",
+   "confirmed": false,
+   "type": "bar",
+   "tags": [
+    "young",
+    "bar",
+    "night",
+    "free"
+   ],
+   "why": "בר מוזיקה ותיק ליד אוניברסיטת אריזונה, עם להקות מקומיות, קהל צעיר והרבה הופעות בחינם.",
+   "tip": "יש גם ארקייד ומטבח. ברוב הערבים בלי כניסה או כמה דולרים.",
+   "cost": "חינם עד $10",
+   "url": "https://www.yuccatap.com",
+   "coords": [
+    33.393,
+    -111.941
+   ]
+  }
+ ]
+}
