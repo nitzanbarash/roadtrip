@@ -344,7 +344,7 @@
             return {n:(s.displayName||{}).text||'תחנה', a:s.shortFormattedAddress||'', lat:s.location.latitude, lng:s.location.longitude, pr:pr, t:t, url:s.googleMapsUri};
           });
         })
-      : ovp('[out:json][timeout:20];nwr["amenity"="fuel"](around:12000,'+p.lat.toFixed(5)+','+p.lng.toFixed(5)+');out center tags 80;').then(function(j){
+      : ovp('[out:json][timeout:20];nwr["amenity"="fuel"](around:12000,'+p.lat.toFixed(5)+','+p.lng.toFixed(5)+');out center 80;').then(function(j){
           return (j.elements||[]).map(function(e){ var c=ll2(e), t=e.tags||{}; return {n:t.brand||t.name||'תחנת דלק', a:t['addr:street']?(t['addr:housenumber']||'')+' '+t['addr:street']:'', lat:c.lat, lng:c.lng, pr:{}, t:0, hgv:t.hgv==='yes'}; });
         });
     job.then(function(list){
@@ -428,9 +428,9 @@
   }
   function slQuery(area, types){
     var A='('+area+')', parts=[];
-    if(types.tent || types.car || types.rv) parts.push('(nwr["tourism"~"^(camp_site|caravan_site)$"]'+A+';);out center tags 260;');
-    if(types.motel || types.hostel) parts.push('(nwr["tourism"~"^(motel|hotel|hostel|guest_house|chalet|wilderness_hut)$"]'+A+';);out center tags 160;');
-    if(types.car) parts.push('(nwr["highway"="rest_area"]'+A+';nwr["brand"~"^(Walmart|Love\'s|Pilot|Flying J|Petro|TA|Cabela\'s|Bass Pro Shops|Cracker Barrel)$"]'+A+';);out center tags 80;');
+    if(types.tent || types.car || types.rv) parts.push('(nwr["tourism"~"^(camp_site|caravan_site)$"]'+A+';);out center 260;');
+    if(types.motel || types.hostel) parts.push('(nwr["tourism"~"^(motel|hotel|hostel|guest_house|chalet|wilderness_hut)$"]'+A+';);out center 160;');
+    if(types.car) parts.push('(nwr["highway"="rest_area"]'+A+';nwr["brand"~"^(Walmart|Love\'s|Pilot|Flying J|Petro|TA|Cabela\'s|Bass Pro Shops|Cracker Barrel)$"]'+A+';);out center 80;');
     return '[out:json][timeout:30];'+parts.join('');
   }
   function slTypesOn(){ var t={}, any=false; Object.keys(SL.types).forEach(function(k){ if(SL.types[k]){ t[k]=1; any=true; } }); return any ? t : {tent:1, car:1, rv:1, motel:1, hostel:1}; }
@@ -559,6 +559,14 @@
     $('sNote').textContent='מאתר את המיקום…';
     withHere(function(h){ if(!h.me){ SL.at='center'; segSet($('sAt'), 'center'); } sleepSearch(); });
   }
+
+  // a new version: right at launch it just reloads into it; later it waits for the next launch
+  (function(){
+    if(!('serviceWorker' in navigator) || !HOST || !HOST.sw || IN_FRAME) return;
+    var t0=Date.now(), had=!!navigator.serviceWorker.controller, done=false;
+    navigator.serviceWorker.addEventListener('controllerchange', function(){ if(had && !done && Date.now()-t0<20000 && !DL.busy){ done=true; location.reload(); } });
+    document.addEventListener('visibilitychange', function(){ if(document.visibilityState==='visible') navigator.serviceWorker.getRegistration().then(function(r){ if(r) r.update(); }).catch(function(){}); });
+  })();
 
   function liveMapClick(e){
     var box=[[e.point.x-8,e.point.y-8],[e.point.x+8,e.point.y+8]];
