@@ -79,7 +79,7 @@ def search(q, need, at):
         if len(nw & tw) / len(nw) < .6 or len(tw - nw) > 3:
             continue
         ok = near(p, at, 60)
-        if ok is False or (ok is None and not nw <= tw):   # far away, or no place and not all the words
+        if ok is False or (ok is None and (not nw <= tw or len(nw) < 2)):   # far away, or no place and not all of 2+ words
             continue
         return {"img": t, "title": p["title"]}
     return None
